@@ -1,0 +1,30 @@
+[
+  {
+    "case": "case_A_correct_grounded_claim",
+    "expected": "verified",
+    "got_confidence": "rejected",
+    "latency_s": 3.84,
+    "correct": false
+  },
+  {
+    "case": "case_B_fabricated_evidence_substring",
+    "expected": "rejected (step 1: substring check)",
+    "got_confidence": "rejected",
+    "latency_s": 0.0,
+    "correct": true
+  },
+  {
+    "case": "case_C_real_excerpt_but_unsupported_claim",
+    "expected": "rejected (step 2: LLM judgment)",
+    "got_confidence": "rejected",
+    "latency_s": 2.66,
+    "correct": true
+  },
+  {
+    "case": "case_D_dangling_evidence_ref",
+    "expected": "rejected (step 1: evidence_ref does not resolve)",
+    "got_confidence": "rejected",
+    "latency_s": 0.0,
+    "correct": true
+  }
+]

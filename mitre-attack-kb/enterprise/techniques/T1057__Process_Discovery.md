@@ -1,0 +1,328 @@
+# T1057: Process Discovery
+
+
+**ATT&CK ID:** T1057  
+**Domain:** Mitre Attack  
+**Tactic(s):** Discovery  
+**Platforms:** ESXi, Linux, macOS, Network Devices, Windows  
+**Reference:** https://attack.mitre.org/techniques/T1057  
+
+## Description
+Adversaries may attempt to get information about running processes on a system. Information obtained could be used to gain an understanding of common software/applications running on systems within the network. Administrator or otherwise elevated access may provide better process details. Adversaries may use the information from [Process Discovery](https://attack.mitre.org/techniques/T1057) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+
+In Windows environments, adversaries could obtain details on running processes using the [Tasklist](https://attack.mitre.org/software/S0057) utility via [cmd](https://attack.mitre.org/software/S0106) or <code>Get-Process</code> via [PowerShell](https://attack.mitre.org/techniques/T1059/001). Information about processes can also be extracted from the output of [Native API](https://attack.mitre.org/techniques/T1106) calls such as <code>CreateToolhelp32Snapshot</code>. In Mac and Linux, this is accomplished with the <code>ps</code> command. Adversaries may also opt to enumerate processes via `/proc`. ESXi also supports use of the `ps` command, as well as `esxcli system process list`.(Citation: Sygnia ESXi Ransomware 2025)(Citation: Crowdstrike Hypervisor Jackpotting Pt 2 2021)
+
+On network devices, [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) commands such as `show processes` can be used to display current running processes.(Citation: US-CERT-TA18-106A)(Citation: show_processes_cisco_cmd)
+
+## Known Threat Groups Using This Technique
+- G0006: APT1
+- G0007: APT28
+- G0022: APT3
+- G0067: APT37
+- G0082: APT38
+- G1023: APT5
+- G0138: Andariel
+- G0114: Chimera
+- G0012: Darkhotel
+- G0009: Deep Panda
+- G1006: Earth Lusca
+- G0046: FIN7
+- G0047: Gamaredon Group
+- G0125: HAFNIUM
+- G1001: HEXANE
+- G0126: Higaisa
+- G0100: Inception
+- G0004: Ke3chang
+- G0094: Kimsuky
+- G0032: Lazarus Group
+- G0059: Magic Hound
+- G1051: Medusa Group
+- G1054: MirrorFace
+- G0021: Molerats
+- G0069: MuddyWater
+- G0129: Mustang Panda
+- G0049: OilRig
+- G1040: Play
+- G0033: Poseidon Group
+- G0106: Rocke
+- G0121: Sidewinder
+- G0038: Stealth Falcon
+- G1053: Storm-0501
+- G0139: TeamTNT
+- G1022: ToddyCat
+- G0081: Tropic Trooper
+- G0010: Turla
+- G1048: UNC3886
+- G1017: Volt Typhoon
+- G0112: Windshift
+- G0044: Winnti Group
+
+## Known Software Using This Technique
+- S0065: 4H RAT
+- S0045: ADVSTORESHELL
+- S0331: Agent Tesla
+- S1129: Akira
+- S1133: Apostle
+- S0622: AppleSeed
+- S0456: Aria-body
+- S9031: AshTag
+- S0373: Astaroth
+- S1087: AsyncRAT
+- S0640: Avaddon
+- S0473: Avenger
+- S1053: AvosLocker
+- S0344: Azorult
+- S0031: BACKSPACE
+- S1081: BADHATCH
+- S0127: BBSRAT
+- S0017: BISCUIT
+- S0069: BLACKCOFFEE
+- S0657: BLUELIGHT
+- S9015: BRICKSTORM
+- S0638: Babuk
+- S0414: BabyShark
+- S0093: Backdoor.Oldrea
+- S0606: Bad Rabbit
+- S0239: Bankshot
+- S0534: Bazar
+- S0268: Bisonal
+- S0089: BlackEnergy
+- S0486: Bonadan
+- S0252: Brave Prince
+- S1063: Brute Ratel C4
+- S1039: Bumblebee
+- S0482: Bundlore
+- S1149: CHIMNEYSWEEP
+- S1105: COATHANGER
+- S0693: CaddyWiper
+- S0351: Cannon
+- S0030: Carbanak
+- S0484: Carberp
+- S0335: Carbon
+- S0348: Cardinal RAT
+- S0572: Caterpillar WebShell
+- S0144: ChChes
+- S0674: CharmPower
+- S0660: Clambling
+- S0611: Clop
+- S0154: Cobalt Strike
+- S0244: Comnie
+- S0575: Conti
+- S0115: Crimson
+- S0625: Cuba
+- S1153: Cuckoo Stealer
+- S0687: Cyclops Blink
+- S0694: DRATzarus
+- S1159: DUSTTRAP
+- S0497: Dacls
+- S0334: DarkComet
+- S1111: DarkGate
+- S1066: DarkTortilla
+- S0021: Derusbi
+- S0659: Diavol
+- S0600: Doki
+- S0695: Donut
+- S0567: Dtrack
+- S0038: Duqu
+- S0062: DustySky
+- S0605: EKANS
+- S0064: ELMER
+- S0081: Elise
+- S1247: Embargo
+- S0367: Emotet
+- S0363: Empire
+- S0091: Epic
+- S0396: EvilBunny
+- S0267: FELIXROOT
+- S0512: FatDuke
+- S0182: FinFisher
+- S0355: Final1stspy
+- S0696: Flagpro
+- S0661: FoggyWeb
+- S0503: FrameworkPOS
+- S0277: FruitFly
+- S1044: FunnyDream
+- S0410: Fysbis
+- S0666: Gelsemium
+- S0049: GeminiDuke
+- S0460: Get2
+- S0249: Gold Dragon
+- S0477: Goopy
+- S0531: Grandoreiro
+- S0237: GravityRAT
+- S0151: HALFBAKED
+- S0617: HELLOKITTY
+- S1230: HIUPAN
+- S1229: Havoc
+- S0170: Helminth
+- S1027: Heyoka Backdoor
+- S9023: HiddenFace
+- S0431: HotCroissant
+- S0203: Hydraq
+- S1139: INC Ransomware
+- S1132: IPsec Helper
+- S0434: Imminent Monitor
+- S1072: Industroyer2
+- S0260: InvisiMole
+- S1245: InvisibleFerret
+- S0581: IronNetInjector
+- S0015: Ixeshe
+- S0044: JHUHUGIT
+- S0201: JPIN
+- S0528: Javali
+- S0271: KEYMARBLE
+- S0356: KONNI
+- S1075: KOPILUWAK
+- S0088: Kasidet
+- S0265: Kazuar
+- S0607: KillDisk
+- S0599: Kinsing
+- S0162: Komplex
+- S0236: Kwampirs
+- S9035: LAMEHUG
+- S9020: LODEINFO
+- S9036: LP-Notes
+- S1160: Latrodectus
+- S1185: LightSpy
+- S0211: Linfo
+- S0681: Lizar
+- S1199: LockBit 2.0
+- S1202: LockBit 3.0
+- S0582: LookBack
+- S0451: LoudMiner
+- S0532: Lucifer
+- S1141: LunarWeb
+- S1016: MacMa
+- S0409: Machete
+- S1060: Mafalda
+- S0652: MarkiRAT
+- S0449: Maze
+- S1244: Medusa Ransomware
+- S1191: Megazord
+- S0455: Metamorfo
+- S0688: Meteor
+- S1146: MgBot
+- S1122: Mispadu
+- S0079: MobileOrder
+- S0149: MoonWind
+- S0256: Mosquito
+- S9032: MuddyViper
+- S0034: NETEAGLE
+- S0198: NETWIRE
+- S1107: NKAbuse
+- S0247: NavRAT
+- S0630: Nebulae
+- S1090: NightClub
+- S1147: Nightdoor
+- S1100: Ninja
+- S0644: ObliqueRAT
+- S0346: OceanSalt
+- S0229: Orz
+- S1017: OutSteel
+- S0626: P8RAT
+- S1233: PAKLOG
+- S0254: PLAINTEE
+- S0435: PLEAD
+- S0216: POORAIM
+- S0223: POWERSTATS
+- S0184: POWRUNER
+- S1228: PUBLOAD
+- S0664: Pandora
+- S0208: Pasam
+- S1050: PcShare
+- S0517: Pillowmint
+- S0501: PipeMon
+- S0013: PlugX
+- S0428: PoetRAT
+- S0139: PowerDuke
+- S0441: PowerShower
+- S0194: PowerSploit
+- S0393: PowerStallion
+- S0238: Proxysvc
+- S0192: Pupy
+- S9019: PureCrypter
+- S0650: QakBot
+- S1242: Qilin
+- S0241: RATANKBA
+- S0662: RCSession
+- S0240: ROKRAT
+- S0148: RTM
+- S0629: RainyDay
+- S0458: Ramsay
+- S1212: RansomHub
+- S1130: Raspberry Robin
+- S0332: Remcos
+- S0125: Remsec
+- S0448: Rising Sun
+- S0270: RogueRobin
+- S1078: RotaJakiro
+- S1073: Royal
+- S0446: Ryuk
+- S0461: SDBbot
+- S0063: SHOTPUT
+- S0692: SILENTTRINITY
+- S0533: SLOTHFULMEDIA
+- S9024: SPAWNCHIMERA
+- S0559: SUNBURST
+- S0562: SUNSPOT
+- S1064: SVCReady
+- S0464: SYSCON
+- S1210: Sagerunex
+- S1018: Saint Bot
+- S1085: Sardonic
+- S0345: Seasalt
+- S0596: ShadowPad
+- S0445: ShimRatReporter
+- S1178: ShrinkLocker
+- S0468: Skidmap
+- S1124: SocGholish
+- S0273: Socksbot
+- S0627: SodaMaster
+- S0615: SombRAT
+- S0516: SoreFang
+- S0142: StreamEx
+- S0491: StrongPity
+- S0018: Sykipot
+- S0242: SynAck
+- S0663: SysUpdate
+- S9001: SystemBC
+- S0586: TAINTEDSCRIBE
+- S1239: TONESHELL
+- S9012: TRAILBLAZE
+- S0436: TSCookie
+- S0011: Taidoor
+- S0467: TajMahal
+- S0057: Tasklist
+- S9041: TeamPCP Cloud Stealer
+- S0595: ThiefQuest
+- S0266: TrickBot
+- S0094: Trojan.Karagany
+- S0333: UBoatRAT
+- S1164: UPSTYLE
+- S0452: USBferry
+- S0022: Uroburos
+- S0386: Ursnif
+- S0257: VERMIN
+- S0476: Valak
+- S0180: Volgmer
+- S0219: WINERACK
+- S0670: WarzoneRAT
+- S0579: Waterbear
+- S0059: WinMM
+- S0141: Winnti for Windows
+- S1065: Woody RAT
+- S0161: XAgentOSX
+- S1114: ZIPLINE
+- S0251: Zebrocy
+- S0330: Zeus Panda
+- S0672: Zox
+- S0412: ZxShell
+- S1013: ZxxZ
+- S0472: down_new
+- S0032: gh0st RAT
+- S0278: iKitten
+- S0283: jRAT
+- S1048: macOS.OSAMiner
+- S1059: metaMain
+- S0385: njRAT
+- S0248: yty

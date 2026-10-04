@@ -1,0 +1,19 @@
+# CWE-270: Privilege Context Switching Error
+
+**Abstraction:** Base  
+**Status:** Draft  
+**Reference:** https://cwe.mitre.org/data/definitions/270.html  
+
+## Description
+The product does not properly manage privileges while it is switching between different contexts that have different privileges or spheres of control.
+
+## Related Weaknesses
+- ChildOf: CWE-269
+
+## Common Consequences
+- Scope: Access Control; Impact: Gain Privileges or Assume Identity — A user can assume the identity of another user with separate privileges in another context. This will give the user unauthorized access that may allow them to acquire the access information of other users.
+
+## Potential Mitigations
+- [Architecture and Design, Operation] Very carefully manage the setting, management, and handling of privileges. Explicitly manage trust zones in the software.
+- [Architecture and Design, Operation] Run your code using the lowest privileges that are required to accomplish the necessary tasks [REF-76]. If possible, create isolated accounts with limited privileges that are only used for a single task. That way, a successful attack will not immediately give the attacker access to the rest of the software or its environment. For example, database applications rarely need to run as the database administrator, especially in day-to-day operations.
+- [Architecture and Design] Consider following the principle of separation of privilege. Require multiple conditions to be met before permitting access to a system resource.

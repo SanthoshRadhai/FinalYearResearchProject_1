@@ -1,0 +1,75 @@
+[
+  {
+    "case": "clean_objective",
+    "expected_halted": false,
+    "got_halted": false,
+    "correct": true
+  },
+  {
+    "case": "deny_keyword_lowercase",
+    "expected_halted": true,
+    "got_halted": true,
+    "correct": true,
+    "halt_reason": "objective/target_scope references 'metasploit', which is out of scope per Research-Paper resources/01-SCOPE.md \u00a74 (no live-target execution). Passive OSINT/planning/analysis only."
+  },
+  {
+    "case": "deny_keyword_uppercase_case_insensitive",
+    "expected_halted": true,
+    "got_halted": true,
+    "correct": true
+  },
+  {
+    "case": "deny_keyword_in_target_scope_dict",
+    "expected_halted": true,
+    "got_halted": true,
+    "correct": true
+  },
+  {
+    "case": "false_positive_check_exploitation_word",
+    "expected_halted": false,
+    "got_halted": false,
+    "correct": true
+  },
+  {
+    "case": "each_deny_keyword_individually",
+    "results": [
+      {
+        "keyword": "execute_exploit",
+        "halted": true,
+        "correct": true
+      },
+      {
+        "keyword": "live_target",
+        "halted": true,
+        "correct": true
+      },
+      {
+        "keyword": "run_poc",
+        "halted": true,
+        "correct": true
+      },
+      {
+        "keyword": "metasploit",
+        "halted": true,
+        "correct": true
+      },
+      {
+        "keyword": "reverse_shell",
+        "halted": true,
+        "correct": true
+      }
+    ],
+    "correct": true
+  },
+  {
+    "case": "non_string_target_scope_value",
+    "crashed": false,
+    "halted": false,
+    "correct": true
+  },
+  {
+    "case": "empty_objective_and_scope",
+    "halted": false,
+    "correct": true
+  }
+]

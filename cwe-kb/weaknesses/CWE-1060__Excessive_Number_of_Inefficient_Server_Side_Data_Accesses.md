@@ -1,0 +1,17 @@
+# CWE-1060: Excessive Number of Inefficient Server-Side Data Accesses
+
+**Abstraction:** Base  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/1060.html  
+
+## Description
+The product performs too many data queries without using efficient data processing functionality such as stored procedures.
+
+## Extended Description
+While the interpretation of "too many data queries" may vary for each product or developer, CISQ recommends a default maximum of 5 data queries for an inefficient function/procedure.
+
+## Related Weaknesses
+- ChildOf: CWE-1120
+
+## Common Consequences
+- Scope: Other; Impact: Reduce Performance — This issue can make the product perform more slowly due to computational expense. If the relevant code is reachable by an attacker, then this performance problem might introduce a vulnerability.

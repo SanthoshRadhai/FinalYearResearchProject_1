@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="claude-code" version="24.7.17">
+  <diagram name="Multi-Agent StateGraph" id="stategraph-red-blue">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="1050" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ===================== Legend ===================== -->
+        <mxCell id="legend" value="Legend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;verticalAlign=top;fontStyle=1;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_start" value="START / END" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="30" y="45" width="180" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_orch_box" value="Orchestrator / Evaluator / Safety (no tools)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="30" y="75" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_red_box" value="Red team specialist (offensive)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="30" y="107" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_blue_box" value="Blue team specialist (defensive)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="30" y="139" width="180" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== START / END ===================== -->
+        <mxCell id="n_start" value="START" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="20" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="n_end" value="END" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="960" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== Orchestrator ===================== -->
+        <mxCell id="n_orch" value="Orchestrator / Coordinator&#10;(router — no tools)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="700" y="110" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== Safety / Guardrail ===================== -->
+        <mxCell id="n_safety" value="Safety / Guardrail Agent&#10;(scope allow-list check)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="110" width="220" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== RED TEAM COLUMN ===================== -->
+        <mxCell id="red_pool" value="RED TEAM (offensive)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#b85450;verticalAlign=top;fontStyle=1;fontColor=#b85450;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="250" width="380" height="560" as="geometry" />
+        </mxCell>
+
+        <mxCell id="n_recon" value="1. Recon / OSINT&#10;Web-Search Agent&#10;(cloakbrowser-mcp / NVD API)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="290" width="300" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="n_vuln" value="2. Vulnerability Analysis Agent&#10;(CVSS parser, CWE lookup)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="420" width="300" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="n_exploit" value="3. Exploit / PoC Discovery Agent&#10;(cloakbrowser-mcp, ATT&amp;CK lookup)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="550" width="300" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="n_attack" value="4. Attack Planning Agent&#10;(local MITRE ATT&amp;CK dataset)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="680" width="300" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== BLUE TEAM COLUMN ===================== -->
+        <mxCell id="blue_pool" value="BLUE TEAM (defensive)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontColor=#6c8ebf;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="250" width="380" height="560" as="geometry" />
+        </mxCell>
+
+        <mxCell id="n_threat" value="6. Threat Intel Correlation Agent&#10;(cloakbrowser-mcp, CISA KEV feed)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="290" width="300" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="n_log" value="7. Log / Alert Triage Agent&#10;(local log parser, ATT&amp;CK lookup)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="420" width="300" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="n_detect" value="8. Detection &amp; Mitigation Agent&#10;(local D3FEND / Sigma lookup)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="550" width="300" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="n_ir" value="9. Incident Response Agent&#10;(no tools — synthesis only)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="680" width="300" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== Evaluator ===================== -->
+        <mxCell id="n_eval" value="Evaluator / Judge Agent&#10;(substring check + LLM judgment — no tools)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="700" y="820" width="240" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== Edges: START / END ===================== -->
+        <mxCell id="e_start_orch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="n_start" target="n_orch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_orch_end" value="objective satisfied" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=10;" edge="1" parent="1" source="n_orch" target="n_end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===================== Edges: Orchestrator <-> Safety ===================== -->
+        <mxCell id="e_orch_safety" value="before red-team dispatch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="n_orch" target="n_safety">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_safety_orch" value="cleared / halted" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_safety" target="n_orch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== Edges: Orchestrator -> Red specialists ===================== -->
+        <mxCell id="e_orch_recon" value="route: red" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="n_orch" target="n_recon">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_orch_vuln" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="n_orch" target="n_vuln">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_orch_exploit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="n_orch" target="n_exploit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_orch_attack" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="n_orch" target="n_attack">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== Edges: Orchestrator -> Blue specialists ===================== -->
+        <mxCell id="e_orch_threat" value="route: blue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="n_orch" target="n_threat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_orch_log" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="n_orch" target="n_log">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_orch_detect" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="n_orch" target="n_detect">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_orch_ir" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="n_orch" target="n_ir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== Edges: Red specialist internal chain (typical order) ===================== -->
+        <mxCell id="e_recon_vuln" value="findings" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=9;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_recon" target="n_vuln">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="325" />
+              <mxPoint x="70" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_vuln_exploit" value="prioritized findings" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=9;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_vuln" target="n_exploit">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="455" />
+              <mxPoint x="70" y="585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_exploit_attack" value="verified findings" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=9;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_exploit" target="n_attack">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="585" />
+              <mxPoint x="70" y="715" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===================== Edges: Blue specialist internal chain (typical order) ===================== -->
+        <mxCell id="e_threat_log" value="context" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_threat" target="n_log">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="325" />
+              <mxPoint x="1530" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_log_detect" value="verified findings" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_log" target="n_detect">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="455" />
+              <mxPoint x="1530" y="585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_detect_ir" value="mitigation_plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_detect" target="n_ir">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="585" />
+              <mxPoint x="1530" y="715" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===================== Edges: specialists -> Evaluator ===================== -->
+        <mxCell id="e_recon_eval" value="Finding" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="n_recon" target="n_eval">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_vuln_eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="n_vuln" target="n_eval">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_exploit_eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="n_exploit" target="n_eval">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_attack_eval" value="attack_plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="n_attack" target="n_eval">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_threat_eval" value="Finding" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="n_threat" target="n_eval">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_log_eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="n_log" target="n_eval">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_detect_eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="n_detect" target="n_eval">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ir_eval" value="runbook" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="n_ir" target="n_eval">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== Edge: Evaluator -> Orchestrator (the cycle) ===================== -->
+        <mxCell id="e_eval_orch" value="verified -&gt; state.verified_findings&#10;rejected -&gt; retry / re-route" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;fontStyle=1;strokeColor=#9673a6;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_eval" target="n_orch">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="855" />
+              <mxPoint x="500" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

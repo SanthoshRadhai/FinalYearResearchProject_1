@@ -1,0 +1,70 @@
+[
+  {
+    "case": "A_no_findings_yet",
+    "expected": "recon",
+    "got": "recon",
+    "correct": true,
+    "latency_s": 3.19
+  },
+  {
+    "case": "B_recon_done_has_cvss",
+    "expected": "vuln_analysis",
+    "got": "vuln_analysis",
+    "correct": true,
+    "latency_s": 1.97
+  },
+  {
+    "case": "C_recon_and_vuln_done",
+    "expected": "end",
+    "got": "end",
+    "correct": true,
+    "note": "known over-verification bias (see RESULTS.md \u00a76) -- not a crash",
+    "latency_s": 2.83
+  },
+  {
+    "case": "D_stall_limit_forces_end",
+    "expected": "end (if router repeats recon)",
+    "got": "end",
+    "stall_count_after": 3,
+    "correct": true,
+    "latency_s": 2.87
+  },
+  {
+    "case": "E_halted_short_circuits_no_llm_call",
+    "expected": "end",
+    "got": "end",
+    "correct": true,
+    "note": "should return instantly without an LLM call when halted=True",
+    "latency_s": 0.0
+  },
+  {
+    "case": "F1_progress_resets_stall_count",
+    "got_next_agent": "recon",
+    "stall_count_after": 0,
+    "correct": true,
+    "note": "verified_findings grew since last dispatch -> stall_count must stay 0 even if 'recon' is picked again",
+    "latency_s": 2.58
+  },
+  {
+    "case": "F2_no_progress_still_increments",
+    "got_next_agent": "recon",
+    "stall_count_after": 1,
+    "scorable": true,
+    "correct": true,
+    "note": "verified_findings did NOT grow since last dispatch -> stall_count must still increment if 'recon' repeats",
+    "latency_s": 2.64
+  },
+  {
+    "case": "G_empty_objective",
+    "crashed": false,
+    "got": "end",
+    "latency_s": 1.93
+  },
+  {
+    "case": "H_blue_objective_valid_literal",
+    "got": "recon",
+    "is_valid_literal": true,
+    "note": "graph.py routes any not-yet-built pick to a safe no-op node, not a crash",
+    "latency_s": 1.4
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "enterprise": {
+    "counts": {
+      "x-mitre-tactic": 15,
+      "attack-pattern": 697,
+      "course-of-action": 44,
+      "intrusion-set": 176,
+      "malware": 730,
+      "tool": 95,
+      "campaign": 56,
+      "x-mitre-data-source": 0
+    },
+    "total": 1813
+  },
+  "mobile": {
+    "counts": {
+      "x-mitre-tactic": 12,
+      "attack-pattern": 124,
+      "course-of-action": 13,
+      "intrusion-set": 20,
+      "malware": 124,
+      "tool": 2,
+      "campaign": 3,
+      "x-mitre-data-source": 0
+    },
+    "total": 298
+  },
+  "ics": {
+    "counts": {
+      "x-mitre-tactic": 12,
+      "attack-pattern": 97,
+      "course-of-action": 52,
+      "intrusion-set": 14,
+      "malware": 23,
+      "tool": 0,
+      "campaign": 8,
+      "x-mitre-data-source": 0
+    },
+    "total": 206
+  }
+}

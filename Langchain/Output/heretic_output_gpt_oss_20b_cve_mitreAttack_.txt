@@ -1,0 +1,209 @@
+(base) ┌──(johndoe㉿DESKTOP-R9RED39)-[/mnt/s/FinalYear-Project/Langchain]
+└─$ bash run_cloak_agent.sh
+[cleanup] tearing down cloakbrowser-mcp subtree...
+[cleanup] done, nothing left running.
+[cleanup] Activating conda environment 'hexstrike'...
+[cleanup] starting 6_langchain_cloakbrowser_lama_cpp.py
+Loaded 26 tools from cloakbrowser-mcp:
+  - browser_close
+  - browser_resize
+  - browser_console_messages
+  - browser_handle_dialog
+  - browser_evaluate
+  - browser_file_upload
+  - browser_drop
+  - browser_find
+  - browser_fill_form
+  - browser_press_key
+  - browser_type
+  - browser_navigate
+  - browser_navigate_back
+  - browser_network_requests
+  - browser_network_request
+  - browser_run_code_unsafe
+  - browser_take_screenshot
+  - browser_snapshot
+  - browser_click
+  - browser_drag
+  - browser_hover
+  - browser_select_option
+  - browser_tabs
+  - browser_wait_for
+  - cloakbrowser_binary_info
+  - cloakbrowser_bridge_info
+
+/mnt/s/FinalYear-Project/Langchain/6_langchain_cloakbrowser_lama_cpp.py:470: LangGraphDeprecatedSinceV10: create_react_agent has been moved to `langchain.agents`. Please update your import to `from langchain.agents import create_agent`. Deprecated in LangGraph V1.0 to be removed in V2.0.
+  agent = create_react_agent(llm, tools, post_model_hook=sanitize_ai_message)
+Interactive session started. Type 'exit' or 'quit' to stop.
+
+You: who are you ?
+[warning] agent answered without calling any tool
+
+Agent: I’m your web‑automation assistant—an AI that can control a Playwright‑based browser through the CloakBrowser MCP interface. I can navigate pages, interact with elements, take screenshots, run JavaScript, and more, all using accessibility snapshots to reliably identify page elements. Feel free to ask me to perform any web‑automation task!
+
+You: use the mcp and tell me about CVE-2026-9862
+[tool call] browser_navigate({'url': 'https://nvd.nist.gov/vuln/detail/CVE-2026-9862'})
+[tool result] browser_navigate: [{'type': 'text', 'text': "### Ran Playwright code\n```js\nawait page.goto('https://nvd.nist.gov/vuln/detail/CVE-2026-9862');\n```\n### Page\n- Page URL: https://nvd.nist.gov/vuln/detail/cve-2026-9862\n- Page Title: NVD-CVE-2026-9862\n### Snapshot\n- [Snapshot](.playwright-mcp/page-2026-09-19T03-33-... [truncated]
+[tool call] browser_snapshot({'target': 'page-2026-09-19T03-33-45-891Z.yml'})
+[tool result] browser_snapshot: [{'type': 'text', 'text': '### Error\nError: "page-2026-09-19T03-33-45-891Z.yml" does not match any elements.', 'id': 'lc_1a1c3285-080a-49e4-8f4c-9b34addde42c'}]
+[tool call] browser_snapshot({'filename': 'cve-2026-9862_snapshot.yml'})
+[tool result] browser_snapshot: [{'type': 'text', 'text': '### Page\n- Page URL: https://nvd.nist.gov/vuln/detail/cve-2026-9862\n- Page Title: NVD-CVE-2026-9862\n### Snapshot\n- [Snapshot](./cve-2026-9862_snapshot.yml)', 'id': 'lc_f7bbeced-cd2b-450e-9327-8a03c305819d'}]
+[tool call] browser_find({'text': 'Description'})
+[tool result] browser_find: [{'type': 'text', 'text': '### Result\nFound 1 match for "Description":\n\n- generic [ref=e4]:\n  - main [ref=e47]:\n    - generic [ref=e52]:\n      - heading "CVE-2026-9862 Detail" [level=3] [ref=e53]\n      - generic [ref=e55]:\n        - generic [ref=e56]:\n          - heading "Description" [leve... [truncated]
+[tool call] browser_find({'text': 'CVSS'})
+[tool result] browser_find: [{'type': 'text', 'text': '### Result\nFound 9 matches for "CVSS":\n\n- generic [ref=e4]:\n  - main [ref=e47]:\n    - generic [ref=e52]:\n      - generic [ref=e55]:\n        - generic [ref=e56]:\n          - generic [ref=e60]:\n            - generic [ref=e61]:\n              - heading "Metrics" [lev... [truncated]
+[tool call] browser_find({'text': 'References'})
+[tool result] browser_find: [{'type': 'text', 'text': '### Result\nFound 1 match for "References":\n\n- generic [ref=e4]:\n  - main [ref=e47]:\n    - generic [ref=e52]:\n      - generic [ref=e55]:\n        - generic [ref=e56]:\n          - generic [ref=e60]:\n            ...\n            - generic [ref=e70]:\n              ...... [truncated]
+
+Agent: **CVE‑2026‑9862 – Fortra Core Privileged Access Manager (BoKS) OS Command Injection**
+
+| Item | Details |
+|------|---------|
+| **Description** | The `boks_autoregisterd` service in Fortra’s Core Privileged Access Manager (BoKS) contains an OS command‑injection vulnerability. A remote attacker with network access to the service can cause arbitrary commands to be executed with the privileges of the service during the autoregistration process. |
+| **CVSS** | • **Base Score:** 9.8 (CRITICAL) <br>• **Vector:** `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H` <br>• **Version:** 3.x (NIST CVSS 3.x) |
+| **References** | • NIST advisory page (the current page) <br>• Email contact: `nvd@nist.gov` <br>• (Other external links are listed on the page but are not included here for brevity.) |
+
+**Key Takeaway**
+If you are running Fortra’s Core Privileged Access Manager, ensure that the `boks_autoregisterd` service is patched or otherwise mitigated to prevent remote command execution.
+
+You: tell me about https://attack.mitre.org/techniques/T1595/001/
+[tool call] browser_navigate({'url': 'https://attack.mitre.org/techniques/T1595/001/'})
+[tool result] browser_navigate: [{'type': 'text', 'text': "### Ran Playwright code\n```js\nawait page.goto('https://attack.mitre.org/techniques/T1595/001/');\n```\n### Page\n- Page URL: https://attack.mitre.org/techniques/T1595/001/\n- Page Title: Active Scanning: Scanning IP Blocks, Sub-technique T1595.001 - Enterprise | MITRE AT... [truncated]
+[tool call] browser_snapshot({'target': 'page-2026-09-19T03-35-29-957Z.yml'})
+[tool result] browser_snapshot: [{'type': 'text', 'text': '### Error\nError: "page-2026-09-19T03-35-29-957Z.yml" does not match any elements.', 'id': 'lc_74c5c94a-d4fa-40b0-a33c-974bf055726d'}]
+[tool call] browser_snapshot({'filename': 't1595_001_snapshot.yml'})
+[tool result] browser_snapshot: [{'type': 'text', 'text': '### Page\n- Page URL: https://attack.mitre.org/techniques/T1595/001/\n- Page Title: Active Scanning: Scanning IP Blocks, Sub-technique T1595.001 - Enterprise | MITRE ATT&CK®\n### Snapshot\n- [Snapshot](./t1595_001_snapshot.yml)', 'id': 'lc_007d341c-8ad6-4a83-9dd0-c616a4d2c... [truncated]
+[tool call] browser_find({'text': 'Description'})
+[tool result] browser_find: [{'type': 'text', 'text': '### Result\nFound 3 matches for "Description":\n\n- generic [ref=f3e1]:\n  - generic [ref=f3e10]:\n    - generic [ref=f3e45]:\n      - tabpanel [ref=f3e49]:\n        - generic [ref=f3e63]:\n          - table [ref=f3e117]:\n            - rowgroup [ref=f3e118]:\n            ... [truncated]
+[tool call] browser_find({'text': 'Active Scanning'})
+[tool result] browser_find: [{'type': 'text', 'text': '### Result\nFound 5 matches for "Active Scanning":\n\n- generic [ref=f3e1]:\n  - generic [ref=f3e10]:\n    - generic [ref=f3e45]:\n      - tablist [ref=f3e46]:\n        - tablist [ref=f3e250]:\n          - generic [ref=f3e251]:\n            - generic "TECHNIQUES" [ref=f3e2... [truncated]
+[tool call] browser_find({'text': 'Adversaries may scan'})
+[tool result] browser_find: [{'type': 'text', 'text': '### Result\nFound 2 matches for "Adversaries may scan":\n\n- generic [ref=f3e1]:\n  - generic [ref=f3e10]:\n    - generic [ref=f3e45]:\n      - tabpanel [ref=f3e49]:\n        - generic [ref=f3e63]:\n          - generic [ref=f3e65]:\n            - generic [ref=f3e66]:\n    ... [truncated]
+[tool call] browser_find({'text': 'References'})
+[tool result] browser_find: [{'type': 'text', 'text': '### Result\nFound 3 matches for "References":\n\n- generic [ref=f3e1]:\n  - dialog "Cookie Consent Banner" [ref=f3e2]:\n    - generic [ref=f3e5]:\n      - generic [ref=f3e6]: "This website utilizes technologies such as cookies to enable essential site functionality, as wel... [truncated]
+
+Agent: **MITRE ATT&CK – Sub‑Technique T1595.001
+“Active Scanning: Scanning IP Blocks”**
+
+| Item | Detail |
+|------|--------|
+| **Technique ID** | T1595.001 |
+| **Parent Technique** | T1595 – Active Scanning |
+| **Title** | *Active Scanning: Scanning IP Blocks* |
+| **Description** | Adversaries may scan victim IP blocks to gather information that can be used during targeting. Public IP addresses may be allocated to organizations by block, or a range of sequential addresses. Scans may range from simple pings (ICMP requests and responses) to more nuanced scans that may reveal host software/versions via server banners or other network artifacts. |
+| **Goal** | Identify which IP addresses are actively in use and gather detailed host information (e.g., operating system, services, open ports). |
+| **Typical Tools / Methods** | • Network scanners (e.g., Nmap, Masscan) <br>• Ping sweeps <br>• Banner grabbing <br>• OS fingerprinting |
+| **Detection** | • Monitor for repeated connection attempts or unusual scanning patterns across a range of IP addresses. <br>• Look for high‑volume ICMP or TCP/UDP traffic to sequential addresses. <br>• Detect anomalous banner responses or service fingerprints that differ from normal network traffic. |
+| **Mitigation** | • Deploy network segmentation and firewall rules to limit inbound scanning. <br>• Use intrusion detection systems (IDS) tuned to detect scanning signatures. <br>• Harden hosts by disabling unnecessary services and applying patching. |
+| **References** | • MITRE ATT&CK page: <https://attack.mitre.org/techniques/T1595/001/> <br>• Related technique: T1590 – Gather Victim Network Information |
+
+**Key Takeaway**
+Scanning IP blocks is a reconnaissance activity that helps adversaries map an organization’s network topology and identify potential targets. Defensive measures focus on detecting scanning patterns and limiting the attack surface exposed to external probes.
+
+You: tell me the tools that that is used to do https://attack.mitre.org/techniques/T1595/001/ and tell me the procedure of the attack
+[tool call] browser_find({'text': 'Tools'})
+[tool result] browser_find: [{'type': 'text', 'text': '### Result\nNo matches found for "Tools".', 'id': 'lc_e252f604-2963-449c-acd8-917a165532ae'}]
+[tool call] browser_find({'text': 'Tool'})
+[tool result] browser_find: [{'type': 'text', 'text': '### Result\nNo matches found for "Tool".', 'id': 'lc_5316b0fe-35a4-4101-8374-6783fabf1f5f'}]
+[tool call] browser_find({'text': 'Nmap'})
+[tool result] browser_find: [{'type': 'text', 'text': '### Result\nNo matches found for "Nmap".', 'id': 'lc_9e6b6f03-4cb3-4aef-8ebe-78f77aae07fe'}]
+
+Agent: **Tools commonly used for “Active Scanning: Scanning IP Blocks” (T1595.001)**
+
+| Tool | Typical Usage | Why it’s useful |
+|------|---------------|-----------------|
+| **Nmap** | `nmap -sP 192.168.0.0/24` (ping sweep) or `nmap -sS -A 192.168.0.0/24` (TCP SYN + OS/Service detection) | Widely available, supports many scan types, can perform OS fingerprinting and banner grabbing. |
+| **Masscan** | `masscan -p0-65535 192.168.0.0/24 --rate 100000` | Extremely fast, can scan millions of IPs per second; ideal for large blocks. |
+| **ZMap** | `zmap -p 80 -o results.csv 192.168.0.0/24` | One‑shot, high‑speed scanning of a single port across a block; great for quick reconnaissance. |
+| **Angry IP Scanner** | GUI‑based ping/port scan | User‑friendly, good for quick checks on smaller networks. |
+| **Advanced IP Scanner** | GUI‑based scan | Similar to Angry IP Scanner, often used on Windows. |
+| **Netcat / Ncat** | `ncat -v -z -w 1 192.168.0.0/24 80` | Lightweight, can probe specific ports or services. |
+| **Shodan / Censys** | API queries for IP ranges | Provides pre‑collected data on open ports and services for a given block. |
+| **Metasploit’s auxiliary modules** | `auxiliary/scanner/discovery/icmp_ping` or `auxiliary/scanner/portscan/tcp` | Integrated into a larger exploitation framework. |
+| **Custom scripts (Python, Bash, PowerShell)** | Automate ping sweeps, port scans, and data parsing | Tailor scans to specific needs or integrate with other tools. |
+
+> *Note:* The MITRE ATT&CK page for T1595.001 does not list a dedicated “Tools” section, but the above tools are the most frequently cited in the security community for IP‑block reconnaissance.
+
+---
+
+### Typical Procedure for an IP‑Block Scanning Attack
+
+| Phase | Step | Typical Commands / Actions | Expected Outcome |
+|-------|------|---------------------------|------------------|
+| **1. Reconnaissance Planning** | Identify target IP block | • Determine the CIDR (e.g., 203.0.113.0/24) from prior intel or a domain’s DNS records. | Clear target range. |
+| **2. Initial Discovery (Ping Sweep)** | Quickly find live hosts | `nmap -sn 203.0.113.0/24`  <br>or `masscan -p0-65535 203.0.113.0/24 --rate 50000` | List of responsive IPs. |
+| **3. Port Scanning** | Identify open services | `nmap -sS -p 1-1024 203.0.113.0/24`  <br>or `masscan -p80,443,22 203.0.113.0/24` | Map of open ports per host. |
+| **4. Service / Banner Grabbing** | Gather service details | `nmap -sV -p80,443 203.0.113.0/24`  <br>or `nc -v -z -w 1 203.0.113.0/24 80` | Service version strings, potential vulnerabilities. |
+| **5. OS Fingerprinting** | Determine OS and version | `nmap -O 203.0.113.0/24`  <br>or `masscan -p0-65535 --os 203.0.113.0/24` | OS family, kernel, etc. |
+| **6. Data Aggregation & Analysis** | Correlate findings | • Export to CSV/JSON (`nmap -oX results.xml`) <br>• Use scripts or tools like `shodan` API to enrich data | Prioritized list of targets for exploitation. |
+| **7. Post‑Scan Actions** | Decide next steps | • Map discovered services to known exploits. <br>• Plan lateral movement or credential gathering. | Transition to exploitation phase. |
+
+#### Key Points to Remember
+
+- **Speed vs. Depth**:
+  *Masscan* and *ZMap* give you speed for large blocks, but they provide minimal service info.
+  *Nmap* is slower but richer in detail (OS, service versions, scripts).
+
+- **Avoid Detection**:
+  Use rate limits (`--rate` in Masscan, `--min-rate` in Nmap) and randomize scan order to reduce the chance of triggering IDS alerts.
+
+- **Legal & Ethical**:
+  Always have permission to scan the target network. Use the scans for defensive purposes or authorized penetration testing.
+
+- **Detection**:
+  IDS/IPS may flag high‑volume ICMP or SYN packets. Look for anomalies in logs (e.g., repeated connection attempts to many IPs).
+
+---
+
+**Bottom line:**
+An attacker uses a combination of fast scanners (Masscan, ZMap) for initial discovery, followed by a more detailed tool (Nmap) for port/service/OS fingerprinting. The collected data is then analyzed to identify high‑value targets within the IP block, setting the stage for further exploitation.
+
+You: ^C^C  + Exception Group Traceback (most recent call last):
+  |   File "/mnt/s/FinalYear-Project/Langchain/6_langchain_cloakbrowser_lama_cpp.py", line 517, in <module>
+  |     asyncio.run(main())
+  |   File "/home/johndoe/miniconda3/envs/hexstrike/lib/python3.11/asyncio/runners.py", line 190, in run
+  |     return runner.run(main)
+  |            ^^^^^^^^^^^^^^^^
+  |   File "/home/johndoe/miniconda3/envs/hexstrike/lib/python3.11/asyncio/runners.py", line 118, in run
+  |     return self._loop.run_until_complete(task)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/home/johndoe/miniconda3/envs/hexstrike/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+  |     return future.result()
+  |            ^^^^^^^^^^^^^^^
+  |   File "/mnt/s/FinalYear-Project/Langchain/6_langchain_cloakbrowser_lama_cpp.py", line 460, in main
+  |     async with stdio_client(SERVER_PARAMS) as (read, write):
+  |   File "/home/johndoe/miniconda3/envs/hexstrike/lib/python3.11/contextlib.py", line 231, in __aexit__
+  |     await self.gen.athrow(typ, value, traceback)
+  |   File "/home/johndoe/miniconda3/envs/hexstrike/lib/python3.11/site-packages/mcp/client/stdio/__init__.py", line 182, in stdio_client
+  |     async with (
+  |   File "/home/johndoe/miniconda3/envs/hexstrike/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 847, in __aexit__
+  |     raise BaseExceptionGroup(
+  | BaseExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Exception Group Traceback (most recent call last):
+    |   File "/home/johndoe/miniconda3/envs/hexstrike/lib/python3.11/site-packages/mcp/client/stdio/__init__.py", line 189, in stdio_client
+    |     yield read_stream, write_stream
+    |   File "/mnt/s/FinalYear-Project/Langchain/6_langchain_cloakbrowser_lama_cpp.py", line 461, in main
+    |     async with ClientSession(read, write) as session:
+    |   File "/home/johndoe/miniconda3/envs/hexstrike/lib/python3.11/site-packages/mcp/shared/session.py", line 238, in __aexit__
+    |     return await self._task_group.__aexit__(exc_type, exc_val, exc_tb)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/johndoe/miniconda3/envs/hexstrike/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 847, in __aexit__
+    |     raise BaseExceptionGroup(
+    | BaseExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+    +-+---------------- 1 ----------------
+      | Traceback (most recent call last):
+      |   File "/mnt/s/FinalYear-Project/Langchain/6_langchain_cloakbrowser_lama_cpp.py", line 476, in main
+      |     user_input = input("You: ").strip()
+      |                  ^^^^^^^^^^^^^^
+      |   File "/home/johndoe/miniconda3/envs/hexstrike/lib/python3.11/asyncio/runners.py", line 157, in _on_sigint
+      |     raise KeyboardInterrupt()
+      | KeyboardInterrupt
+      +------------------------------------
+[cleanup] tearing down cloakbrowser-mcp subtree...
+[cleanup] removed stale Singleton* lock file(s) from the profile dir
+[cleanup] done, nothing left running.
+[cleanup] python exited with code 1
+
+(base) ┌──(johndoe㉿DESKTOP-R9RED39)-[/mnt/s/FinalYear-Project/Langchain]
+└─$

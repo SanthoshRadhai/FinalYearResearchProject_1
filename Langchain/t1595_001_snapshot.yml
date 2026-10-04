@@ -1,0 +1,387 @@
+- generic [ref=f3e1]:
+  - dialog "Cookie Consent Banner" [ref=f3e2]:
+    - button "Close this dialog" [active] [ref=f3e3] [cursor=pointer]:
+      - img "Close this dialog" [ref=f3e4]
+    - generic [ref=f3e5]:
+      - generic [ref=f3e6]: "This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. To learn more, view the following link:"
+      - link "Privacy Policy" [ref=f3e7] [cursor=pointer]:
+        - /url: https://attack.mitre.org/resources/legal-and-branding/privacy/
+    - button "Manage Preferences" [ref=f3e9] [cursor=pointer]
+  - generic [ref=f3e10]:
+    - banner [ref=f3e12]:
+      - navigation [ref=f3e13]:
+        - link [ref=f3e14] [cursor=pointer]:
+          - /url: /
+          - img "ATT&CK Home" [ref=f3e15]
+        - list [ref=f3e17]:
+          - listitem [ref=f3e18]:
+            - button "Matrices" [ref=f3e19] [cursor=pointer]
+          - listitem [ref=f3e20]:
+            - button "Tactics" [ref=f3e21] [cursor=pointer]
+          - listitem [ref=f3e22]:
+            - button "Techniques" [ref=f3e23] [cursor=pointer]
+          - listitem [ref=f3e24]:
+            - button "Defenses" [ref=f3e25] [cursor=pointer]
+          - listitem [ref=f3e26]:
+            - button "CTI" [ref=f3e27] [cursor=pointer]
+          - listitem [ref=f3e28]:
+            - button "Resources" [ref=f3e29] [cursor=pointer]
+          - listitem [ref=f3e30]:
+            - link "Benefactors" [ref=f3e31] [cursor=pointer]:
+              - /url: /resources/engage-with-attack/benefactors/
+          - listitem [ref=f3e32]:
+            - link "Contribute" [ref=f3e33] [cursor=pointer]:
+              - /url: /resources/engage-with-attack/contribute/
+          - listitem [ref=f3e34]:
+            - link [ref=f3e35] [cursor=pointer]:
+              - /url: https://medium.com/mitre-attack/
+              - text: Blog
+              - img "External site" [ref=f3e36]
+          - listitem [ref=f3e37]:
+            - button "Search" [ref=f3e38] [cursor=pointer]
+    - generic [ref=f3e42]:
+      - text: ATT&CKcon 7.0 in-person tickets are open! Join us October 27-28, 2026 in McLean, VA.
+      - link "Register here" [ref=f3e43] [cursor=pointer]:
+        - /url: https://na.eventscloud.com/website/93925/
+      - text: for in-person tickets; hotel and location details can be found in the
+      - link "FAQ" [ref=f3e44] [cursor=pointer]:
+        - /url: https://na.eventscloud.com/website/93925/faq/
+      - text: .
+    - generic [ref=f3e45]:
+      - tablist [ref=f3e46]:
+        - tablist [ref=f3e250]:
+          - generic [ref=f3e251]:
+            - generic: TECHNIQUES
+            - generic "TECHNIQUES" [ref=f3e252]:
+              - generic [ref=f3e253]:
+                - generic [ref=f3e254]:
+                  - link "Enterprise" [ref=f3e255] [cursor=pointer]:
+                    - /url: /techniques/enterprise/
+                  - generic [ref=f3e256] [cursor=pointer]
+                - generic [ref=f3e257]:
+                  - generic [ref=f3e258]:
+                    - generic [ref=f3e259]:
+                      - link "Reconnaissance" [ref=f3e260] [cursor=pointer]:
+                        - /url: https://attack.mitre.org/tactics/TA0043/
+                      - generic [ref=f3e261] [cursor=pointer]
+                    - generic [ref=f3e262]:
+                      - generic [ref=f3e263]:
+                        - generic [ref=f3e264]:
+                          - link "Active Scanning" [ref=f3e265] [cursor=pointer]:
+                            - /url: /techniques/T1595/
+                          - generic [ref=f3e266] [cursor=pointer]
+                        - generic [ref=f3e267]:
+                          - link "Scanning IP Blocks" [ref=f3e270] [cursor=pointer]:
+                            - /url: /techniques/T1595/001/
+                          - link "Vulnerability Scanning" [ref=f3e273] [cursor=pointer]:
+                            - /url: /techniques/T1595/002/
+                          - link "Wordlist Scanning" [ref=f3e276] [cursor=pointer]:
+                            - /url: /techniques/T1595/003/
+                      - generic [ref=f3e278]:
+                        - link "Gather Victim Host Information" [ref=f3e279] [cursor=pointer]:
+                          - /url: /techniques/T1592/
+                        - generic [ref=f3e280] [cursor=pointer]
+                      - generic [ref=f3e282]:
+                        - link "Gather Victim Identity Information" [ref=f3e283] [cursor=pointer]:
+                          - /url: /techniques/T1589/
+                        - generic [ref=f3e284] [cursor=pointer]
+                      - generic [ref=f3e286]:
+                        - link "Gather Victim Network Information" [ref=f3e287] [cursor=pointer]:
+                          - /url: /techniques/T1590/
+                        - generic [ref=f3e288] [cursor=pointer]
+                      - generic [ref=f3e290]:
+                        - link "Gather Victim Org Information" [ref=f3e291] [cursor=pointer]:
+                          - /url: /techniques/T1591/
+                        - generic [ref=f3e292] [cursor=pointer]
+                      - generic [ref=f3e294]:
+                        - link "Phishing for Information" [ref=f3e295] [cursor=pointer]:
+                          - /url: /techniques/T1598/
+                        - generic [ref=f3e296] [cursor=pointer]
+                      - link "Query Public AI Services" [ref=f3e299] [cursor=pointer]:
+                        - /url: /techniques/T1682/
+                      - generic [ref=f3e301]:
+                        - link "Search Closed Sources" [ref=f3e302] [cursor=pointer]:
+                          - /url: /techniques/T1597/
+                        - generic [ref=f3e303] [cursor=pointer]
+                      - generic [ref=f3e305]:
+                        - link "Search Open Technical Databases" [ref=f3e306] [cursor=pointer]:
+                          - /url: /techniques/T1596/
+                        - generic [ref=f3e307] [cursor=pointer]
+                      - generic [ref=f3e309]:
+                        - link "Search Open Websites/Domains" [ref=f3e310] [cursor=pointer]:
+                          - /url: /techniques/T1593/
+                        - generic [ref=f3e311] [cursor=pointer]
+                      - link "Search Threat Vendor Data" [ref=f3e314] [cursor=pointer]:
+                        - /url: /techniques/T1681/
+                      - link "Search Victim-Owned Websites" [ref=f3e317] [cursor=pointer]:
+                        - /url: /techniques/T1594/
+                  - generic [ref=f3e319]:
+                    - link "Resource Development" [ref=f3e320] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0042/
+                    - generic [ref=f3e321] [cursor=pointer]
+                  - generic [ref=f3e323]:
+                    - link "Initial Access" [ref=f3e324] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0001/
+                    - generic [ref=f3e325] [cursor=pointer]
+                  - generic [ref=f3e327]:
+                    - link "Execution" [ref=f3e328] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0002/
+                    - generic [ref=f3e329] [cursor=pointer]
+                  - generic [ref=f3e331]:
+                    - link "Persistence" [ref=f3e332] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0003/
+                    - generic [ref=f3e333] [cursor=pointer]
+                  - generic [ref=f3e335]:
+                    - link "Privilege Escalation" [ref=f3e336] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0004/
+                    - generic [ref=f3e337] [cursor=pointer]
+                  - generic [ref=f3e339]:
+                    - link "Stealth" [ref=f3e340] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0005/
+                    - generic [ref=f3e341] [cursor=pointer]
+                  - generic [ref=f3e343]:
+                    - link "Defense Impairment" [ref=f3e344] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0112/
+                    - generic [ref=f3e345] [cursor=pointer]
+                  - generic [ref=f3e347]:
+                    - link "Credential Access" [ref=f3e348] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0006/
+                    - generic [ref=f3e349] [cursor=pointer]
+                  - generic [ref=f3e351]:
+                    - link "Discovery" [ref=f3e352] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0007/
+                    - generic [ref=f3e353] [cursor=pointer]
+                  - generic [ref=f3e355]:
+                    - link "Lateral Movement" [ref=f3e356] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0008/
+                    - generic [ref=f3e357] [cursor=pointer]
+                  - generic [ref=f3e359]:
+                    - link "Collection" [ref=f3e360] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0009/
+                    - generic [ref=f3e361] [cursor=pointer]
+                  - generic [ref=f3e363]:
+                    - link "Command and Control" [ref=f3e364] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0011/
+                    - generic [ref=f3e365] [cursor=pointer]
+                  - generic [ref=f3e367]:
+                    - link "Exfiltration" [ref=f3e368] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0010/
+                    - generic [ref=f3e369] [cursor=pointer]
+                  - generic [ref=f3e371]:
+                    - link "Impact" [ref=f3e372] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/tactics/TA0040/
+                    - generic [ref=f3e373] [cursor=pointer]
+              - generic [ref=f3e375]:
+                - link "Mobile" [ref=f3e376] [cursor=pointer]:
+                  - /url: /techniques/mobile/
+                - generic [ref=f3e377] [cursor=pointer]
+              - generic [ref=f3e379]:
+                - link "ICS" [ref=f3e380] [cursor=pointer]:
+                  - /url: /techniques/ics/
+                - generic [ref=f3e381] [cursor=pointer]
+      - tabpanel [ref=f3e49]:
+        - list [ref=f3e50]:
+          - listitem [ref=f3e51]:
+            - link "Home" [ref=f3e52] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f3e53]:
+            - text: ">"
+            - link "Techniques" [ref=f3e54] [cursor=pointer]:
+              - /url: /techniques/enterprise
+          - listitem [ref=f3e55]:
+            - text: ">"
+            - link "Enterprise" [ref=f3e56] [cursor=pointer]:
+              - /url: /techniques/enterprise
+          - listitem [ref=f3e57]:
+            - text: ">"
+            - link "Active Scanning" [ref=f3e58] [cursor=pointer]:
+              - /url: /techniques/T1595
+          - listitem [ref=f3e59]: "> Scanning IP Blocks"
+        - tabpanel
+        - generic [ref=f3e63]:
+          - 'heading "Active Scanning: Scanning IP Blocks" [level=1] [ref=f3e64]'
+          - generic [ref=f3e65]:
+            - generic [ref=f3e66]:
+              - heading "Other sub-techniques of Active Scanning (3)" [level=5] [ref=f3e70] [cursor=pointer]
+              - generic [ref=f3e71]:
+                - paragraph [ref=f3e72]: Adversaries may scan victim IP blocks to gather information that can be used during targeting. Public IP addresses may be allocated to organizations by block, or a range of sequential addresses.
+                - paragraph [ref=f3e73]:
+                  - text: Adversaries may scan IP blocks in order to
+                  - link "Gather Victim Network Information" [ref=f3e74] [cursor=pointer]:
+                    - /url: /techniques/T1590
+                  - text: ", such as which IP addresses are actively in use as well as more detailed information about hosts assigned these addresses. Scans may range from simple pings (ICMP requests and responses) to more nuanced scans that may reveal host software/versions via server banners or other network artifacts."
+                  - generic "Dainotti, A. et al. (2012). Analysis of a" [ref=f3e75]:
+                    - superscript [ref=f3e76]:
+                      - link "[1]" [ref=f3e77] [cursor=pointer]:
+                        - /url: https://www.caida.org/publications/papers/2012/analysis_slash_zero/analysis_slash_zero.pdf
+                  - text: "Information from these scans may reveal opportunities for other forms of reconnaissance (ex:"
+                  - link "Search Open Websites/Domains" [ref=f3e78] [cursor=pointer]:
+                    - /url: /techniques/T1593
+                  - text: or
+                  - link "Search Open Technical Databases" [ref=f3e79] [cursor=pointer]:
+                    - /url: /techniques/T1596
+                  - text: "), establishing operational resources (ex:"
+                  - link "Develop Capabilities" [ref=f3e80] [cursor=pointer]:
+                    - /url: /techniques/T1587
+                  - text: or
+                  - link "Obtain Capabilities" [ref=f3e81] [cursor=pointer]:
+                    - /url: /techniques/T1588
+                  - text: "), and/or initial access (ex:"
+                  - link "External Remote Services" [ref=f3e82] [cursor=pointer]:
+                    - /url: /techniques/T1133
+                  - text: ).
+            - generic [ref=f3e83]:
+              - generic [ref=f3e85]:
+                - generic [ref=f3e86]: "ID: T1595.001"
+                - generic [ref=f3e91]:
+                  - text: "Sub-technique of:"
+                  - link "T1595" [ref=f3e92] [cursor=pointer]:
+                    - /url: /techniques/T1595
+                - generic [ref=f3e93]:
+                  - generic [ref=f3e94]: ⓘ
+                  - generic [ref=f3e95]:
+                    - text: "Tactic:"
+                    - link "Reconnaissance" [ref=f3e96] [cursor=pointer]:
+                      - /url: /tactics/TA0043
+                - generic [ref=f3e97]:
+                  - generic [ref=f3e98]: ⓘ
+                  - generic [ref=f3e99]: "Platforms: PRE"
+                - generic [ref=f3e100]: "Contributors: Diego Sappa, Securonix"
+                - generic [ref=f3e103]: "Version: 1.1"
+                - generic [ref=f3e106]: "Created: 02 October 2020"
+                - generic [ref=f3e109]: "Last Modified: 12 May 2026"
+              - link "Version Permalink" [ref=f3e114] [cursor=pointer]:
+                - /url: /versions/v19/techniques/T1595/001/
+          - heading "Procedure Examples" [level=2] [ref=f3e115]
+          - table [ref=f3e117]:
+            - rowgroup [ref=f3e118]:
+              - row [ref=f3e119]:
+                - columnheader "ID" [ref=f3e120]
+                - columnheader "Name" [ref=f3e121]
+                - columnheader "Description" [ref=f3e122]
+            - rowgroup [ref=f3e123]:
+              - row [ref=f3e124]:
+                - cell [ref=f3e125]:
+                  - link "C0062" [ref=f3e126] [cursor=pointer]:
+                    - /url: /campaigns/C0062
+                - cell [ref=f3e127]:
+                  - link "Anthropic AI-orchestrated Campaign" [ref=f3e128] [cursor=pointer]:
+                    - /url: /campaigns/C0062
+                - cell [ref=f3e129]:
+                  - paragraph [ref=f3e130]:
+                    - text: During the
+                    - link "Anthropic AI-orchestrated Campaign" [ref=f3e131] [cursor=pointer]:
+                      - /url: https://attack.mitre.org/campaigns/C0062
+                    - text: ", the adversary used Claude Code to scan infrastructure across IP ranges associated with the target organization."
+                    - generic "Anthropic. (2025, November). Disrupting the first reported AI-orchestrated cyber espionage campaign. Retrieved April 20, 2026." [ref=f3e132]:
+                      - superscript [ref=f3e133]:
+                        - link "[2]" [ref=f3e134] [cursor=pointer]:
+                          - /url: https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf
+              - row [ref=f3e135]:
+                - cell [ref=f3e136]:
+                  - link "G1003" [ref=f3e137] [cursor=pointer]:
+                    - /url: /groups/G1003
+                - cell [ref=f3e138]:
+                  - link "Ember Bear" [ref=f3e139] [cursor=pointer]:
+                    - /url: /groups/G1003
+                - cell [ref=f3e140]:
+                  - paragraph [ref=f3e141]:
+                    - link "Ember Bear" [ref=f3e142] [cursor=pointer]:
+                      - /url: /groups/G1003
+                    - text: has targeted IP ranges for vulnerability scanning related to government and critical infrastructure organizations.
+                    - generic "US Cybersecurity & Infrastructure Security Agency et al. (2024, September 5). Russian Military Cyber Actors Target U.S. and Global Critical Infrastructure. Retrieved September 6, 2024." [ref=f3e143]:
+                      - superscript [ref=f3e144]:
+                        - link "[3]" [ref=f3e145] [cursor=pointer]:
+                          - /url: https://www.cisa.gov/sites/default/files/2024-09/aa24-249a-russian-military-cyber-actors-target-us-and-global-critical-infrastructure.pdf
+              - row [ref=f3e146]:
+                - cell [ref=f3e147]:
+                  - link "G0139" [ref=f3e148] [cursor=pointer]:
+                    - /url: /groups/G0139
+                - cell [ref=f3e149]:
+                  - link "TeamTNT" [ref=f3e150] [cursor=pointer]:
+                    - /url: /groups/G0139
+                - cell [ref=f3e151]:
+                  - paragraph [ref=f3e152]:
+                    - link "TeamTNT" [ref=f3e153] [cursor=pointer]:
+                      - /url: /groups/G0139
+                    - text: has scanned specific lists of target IP addresses.
+                    - generic "Fiser, D. Oliveira, A. (n.d.). Tracking the Activities of TeamTNT A Closer Look at a Cloud-Focused Malicious Actor Group. Retrieved September 22, 2021." [ref=f3e154]:
+                      - superscript [ref=f3e155]:
+                        - link "[4]" [ref=f3e156] [cursor=pointer]:
+                          - /url: https://documents.trendmicro.com/assets/white_papers/wp-tracking-the-activities-of-teamTNT.pdf
+          - heading "Mitigations" [level=2] [ref=f3e157]
+          - table [ref=f3e159]:
+            - rowgroup [ref=f3e160]:
+              - row [ref=f3e161]:
+                - columnheader "ID" [ref=f3e162]
+                - columnheader "Mitigation" [ref=f3e163]
+                - columnheader "Description" [ref=f3e164]
+            - rowgroup [ref=f3e165]:
+              - row [ref=f3e166]:
+                - cell [ref=f3e167]:
+                  - link "M1056" [ref=f3e168] [cursor=pointer]:
+                    - /url: /mitigations/M1056
+                - cell [ref=f3e169]:
+                  - link "Pre-compromise" [ref=f3e170] [cursor=pointer]:
+                    - /url: /mitigations/M1056
+                - cell [ref=f3e171]:
+                  - paragraph [ref=f3e172]: This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls. Efforts should focus on minimizing the amount and sensitivity of data available to external parties.
+          - heading "Detection Strategy" [level=2] [ref=f3e173]
+          - table [ref=f3e175]:
+            - rowgroup [ref=f3e176]:
+              - row [ref=f3e177]:
+                - columnheader "ID" [ref=f3e178]
+                - columnheader "Name" [ref=f3e179]
+                - columnheader "Analytic ID" [ref=f3e180]
+                - columnheader "Analytic Description" [ref=f3e181]
+            - rowgroup [ref=f3e182]:
+              - row [ref=f3e183]:
+                - cell [ref=f3e184]:
+                  - link "DET0817" [ref=f3e185] [cursor=pointer]:
+                    - /url: /detectionstrategies/DET0817
+                - cell [ref=f3e186]:
+                  - link "Detection of Scanning IP Blocks" [ref=f3e187] [cursor=pointer]:
+                    - /url: /detectionstrategies/DET0817
+                - cell [ref=f3e188]:
+                  - link "AN1949" [ref=f3e189] [cursor=pointer]:
+                    - /url: /detectionstrategies/DET0817#AN1949
+                - cell [ref=f3e190]:
+                  - paragraph [ref=f3e191]: Monitoring the content of network traffic can help detect patterns associated with active scanning activities. This can include identifying repeated connection attempts, unusual scanning behaviors, or probing activity targeting multiple IP addresses across a network.Monitor network data for uncommon data flows. Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious.
+          - heading "References" [level=2] [ref=f3e192]
+          - generic [ref=f3e193]:
+            - list [ref=f3e195]:
+              - listitem [ref=f3e196]:
+                - link "Dainotti, A. et al. (2012). Analysis of a “/0” Stealth Scan from a Botnet. Retrieved October 20, 2020." [ref=f3e199] [cursor=pointer]:
+                  - /url: https://www.caida.org/publications/papers/2012/analysis_slash_zero/analysis_slash_zero.pdf
+              - listitem [ref=f3e200]:
+                - link "Anthropic. (2025, November). Disrupting the first reported AI-orchestrated cyber espionage campaign. Retrieved April 20, 2026." [ref=f3e203] [cursor=pointer]:
+                  - /url: https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf
+            - list [ref=f3e205]:
+              - listitem [ref=f3e206]:
+                - link "US Cybersecurity & Infrastructure Security Agency et al. (2024, September 5). Russian Military Cyber Actors Target U.S. and Global Critical Infrastructure. Retrieved September 6, 2024." [ref=f3e209] [cursor=pointer]:
+                  - /url: https://www.cisa.gov/sites/default/files/2024-09/aa24-249a-russian-military-cyber-actors-target-us-and-global-critical-infrastructure.pdf
+              - listitem [ref=f3e210]:
+                - link "Fiser, D. Oliveira, A. (n.d.). Tracking the Activities of TeamTNT A Closer Look at a Cloud-Focused Malicious Actor Group. Retrieved September 22, 2021." [ref=f3e213] [cursor=pointer]:
+                  - /url: https://documents.trendmicro.com/assets/white_papers/wp-tracking-the-activities-of-teamTNT.pdf
+    - contentinfo [ref=f3e215]:
+      - generic [ref=f3e217]:
+        - link "MITRE" [ref=f3e220] [cursor=pointer]:
+          - /url: https://www.mitre.org
+        - generic [ref=f3e222]:
+          - generic [ref=f3e223]:
+            - link "Contact Us" [ref=f3e226] [cursor=pointer]:
+              - /url: /resources/engage-with-attack/contact
+            - link "Terms of Use" [ref=f3e229] [cursor=pointer]:
+              - /url: /resources/legal-and-branding/terms-of-use
+            - link "Privacy Policy" [ref=f3e232] [cursor=pointer]:
+              - /url: /resources/legal-and-branding/privacy
+            - link "Website Changelog" [ref=f3e235] [cursor=pointer]:
+              - /url: /resources/changelog.html
+            - link "Cookie Preferences" [ref=f3e238] [cursor=pointer]:
+              - /url: /resources/legal-and-branding/privacy/#
+          - generic [ref=f3e239]: © 2015 - 2026, The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.
+        - generic [ref=f3e244]:
+          - link "" [ref=f3e245] [cursor=pointer]:
+            - /url: https://x.com/MITREattack
+          - link "" [ref=f3e247] [cursor=pointer]:
+            - /url: https://github.com/mitre-attack

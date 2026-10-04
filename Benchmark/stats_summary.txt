@@ -1,0 +1,6 @@
+Paired exact McNemar tests vs. gpt-oss-20b (base), CyberMetric-10180
+(only questions with identical text in both runs are paired)
+gpt-oss-20b Heretic (reference)        size= 2000  base-only-correct=  29  variant-only-correct=  35  p=0.532
+gpt-oss-20b Heretic (reference)        size=10000  base-only-correct= 176  variant-only-correct= 159  p=0.382
+gpt-oss-20b Heretic (ours)             size= 2000  base-only-correct=  24  variant-only-correct=  32  p=0.350
+gpt-oss-20b Heretic (ours)             size=10000  base-only-correct= 167  variant-only-correct= 161  p=0.783

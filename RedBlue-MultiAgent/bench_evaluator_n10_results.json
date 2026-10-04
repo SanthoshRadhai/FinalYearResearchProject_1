@@ -1,0 +1,92 @@
+[
+  {
+    "case": "A_correct_grounded_claim_full_quote",
+    "expected": [
+      "verified"
+    ],
+    "got": "verified",
+    "correct": true,
+    "latency_s": 3.26
+  },
+  {
+    "case": "B_fabricated_evidence_substring",
+    "expected": [
+      "rejected"
+    ],
+    "got": "rejected",
+    "correct": true,
+    "latency_s": 0.0
+  },
+  {
+    "case": "C_real_excerpt_unsupported_claim",
+    "expected": [
+      "rejected"
+    ],
+    "got": "rejected",
+    "correct": true,
+    "latency_s": 2.15
+  },
+  {
+    "case": "D_dangling_evidence_ref",
+    "expected": [
+      "rejected"
+    ],
+    "got": "rejected",
+    "correct": true,
+    "latency_s": 0.0
+  },
+  {
+    "case": "E_narrow_excerpt_narrow_claim_should_verify",
+    "expected": [
+      "verified"
+    ],
+    "got": "verified",
+    "correct": true,
+    "latency_s": 1.8
+  },
+  {
+    "case": "F_empty_excerpt",
+    "expected": [
+      "rejected"
+    ],
+    "got": "rejected",
+    "correct": true,
+    "latency_s": 0.0
+  },
+  {
+    "case": "G_near_miss_substring_typo",
+    "expected": [
+      "rejected"
+    ],
+    "got": "rejected",
+    "correct": true,
+    "latency_s": 0.0
+  },
+  {
+    "case": "H_claim_understates_severity_still_grounded",
+    "expected": [
+      "verified"
+    ],
+    "got": "verified",
+    "correct": true,
+    "latency_s": 2.59
+  },
+  {
+    "case": "I_claim_about_wrong_cve_same_excerpt",
+    "expected": [
+      "rejected"
+    ],
+    "got": "rejected",
+    "correct": true,
+    "latency_s": 2.12
+  },
+  {
+    "case": "J_verbatim_quote_of_description_only",
+    "expected": [
+      "verified"
+    ],
+    "got": "verified",
+    "correct": true,
+    "latency_s": 2.25
+  }
+]

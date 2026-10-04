@@ -1,0 +1,22 @@
+# T0880: Loss of Safety
+
+
+**ATT&CK ID:** T0880  
+**Domain:** Mitre Ics Attack  
+**Tactic(s):** Impact  
+**Platforms:** None  
+**Reference:** https://attack.mitre.org/techniques/T0880  
+
+## Description
+Adversaries may compromise safety system functions designed to maintain safe operation of a process when unacceptable or dangerous conditions occur. Safety systems are often composed of the same elements as control systems but have the sole purpose of ensuring the process fails in a predetermined safe manner. 
+
+Many unsafe conditions in process control happen too quickly for a human operator to react to. Speed is critical in correcting these conditions to limit serious impacts such as Loss of Control and Property Damage. 
+
+Adversaries may target and disable safety system functions as a prerequisite to subsequent attack execution or to allow for future unsafe conditionals to go unchecked. Detection of a Loss of Safety by operators can result in the shutdown of a process due to strict policies regarding safety systems. This can cause a Loss of Productivity and Revenue and may meet the technical goals of adversaries seeking to cause process disruptions.
+
+## Mitigations
+- M0805: Mechanical Protection Layers
+- M0812: Safety Instrumented Systems
+
+## Known Software Using This Technique
+- S1009: Triton

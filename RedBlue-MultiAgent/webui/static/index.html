@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedBlue-MultiAgent</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>RedBlue-MultiAgent</h1>
+    <span id="status" class="status idle">idle</span>
+  </header>
+
+  <form id="run-form">
+    <input id="objective" type="text" placeholder="Investigate CVE-2024-3400 and tell me if we should be worried." autocomplete="off" />
+    <button id="run-btn" type="submit">Run</button>
+  </form>
+
+  <main>
+    <section id="trace-panel">
+      <h2>Agent Trace</h2>
+      <div id="trace-feed"></div>
+    </section>
+
+    <aside>
+      <section id="findings-panel">
+        <h2>Findings</h2>
+        <div id="findings-feed"><p class="empty">No findings yet.</p></div>
+      </section>
+
+      <section id="answer-panel">
+        <h2>Final Answer</h2>
+        <div id="answer-feed"><p class="empty">Waiting for a run to complete.</p></div>
+      </section>
+    </aside>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

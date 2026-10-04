@@ -1,0 +1,27 @@
+# CWE-1231: Improper Prevention of Lock Bit Modification
+
+**Abstraction:** Base  
+**Status:** Stable  
+**Reference:** https://cwe.mitre.org/data/definitions/1231.html  
+
+## Description
+The product uses a trusted lock bit for restricting access to registers, address regions, or other resources, but the product does not prevent the value of the lock bit from being modified after it has been set.
+
+## Extended Description
+In integrated circuits and hardware intellectual property (IP) cores, device configuration controls are commonly programmed after a device power reset by a trusted firmware or software module (e.g., BIOS/bootloader) and then locked from any further modification. This behavior is commonly implemented using a trusted lock bit. When set, the lock bit disables writes to a protected set of registers or address regions. Design or coding errors in the implementation of the lock bit protection feature may allow the lock bit to be modified or cleared by software after it has been set. Attackers might be able to unlock the system and features that the bit is intended to protect.
+
+## Related Weaknesses
+- ChildOf: CWE-284
+
+## Common Consequences
+- Scope: Access Control; Impact: Modify Memory — Registers protected by lock bit can be modified even when lock is set.
+
+## Potential Mitigations
+- [Architecture and Design, Implementation, Testing] Security lock bit protections must be reviewed for design inconsistency and common weaknesses. Security lock programming flow and lock properties must be tested in pre-silicon and post-silicon testing.
+
+## Detection Methods
+- [Manual Analysis] Set the lock bit. Power cycle the device. Attempt to clear the lock bit. If the information is changed, implement a design fix. Retest. Also, attempt to indirectly clear the lock bit or bypass it.
+
+## Demonstrative Examples (summary)
+- Consider the example design below for a digital thermal sensor that detects overheating of the silicon and triggers system shutdown. The system critical temperature limit (CRITICAL_TEMP_LIMIT) and thermal sensor calibration (TEMP_SENSOR_CALIB) data have to be programmed by firmware, and then the register needs to be locked (TEMP_SENSOR_LOCK).
+- The following example code is a snippet from the register locks inside the buggy OpenPiton SoC of HACK@DAC'21 [REF-1350]. Register locks help prevent SoC peripherals' registers from malicious use of resources. The registers that can potentially leak secret data are locked by register locks.

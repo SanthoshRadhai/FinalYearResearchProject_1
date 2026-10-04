@@ -1,0 +1,1444 @@
+[
+  {
+    "id": "C0041",
+    "stix_id": "campaign--1169ff24-b35f-4d8d-8cf3-643a2834227f",
+    "type": "campaign",
+    "name": "FrostyGoop Incident",
+    "path": "ics/campaigns/C0041__FrostyGoop_Incident.md"
+  },
+  {
+    "id": "C0030",
+    "stix_id": "campaign--45a98f02-852f-49b2-94c0-c63207bebbbf",
+    "type": "campaign",
+    "name": "Triton Safety Instrumented System Attack",
+    "path": "ics/campaigns/C0030__Triton_Safety_Instrumented_System_Attack.md"
+  },
+  {
+    "id": "C0028",
+    "stix_id": "campaign--46421788-b6e1-4256-b351-f8beffd1afba",
+    "type": "campaign",
+    "name": "2015 Ukraine Electric Power Attack",
+    "path": "ics/campaigns/C0028__2015_Ukraine_Electric_Power_Attack.md"
+  },
+  {
+    "id": "C0020",
+    "stix_id": "campaign--70cab19e-1745-425e-b3db-c02cd5ff157a",
+    "type": "campaign",
+    "name": "Maroochy Water Breach",
+    "path": "ics/campaigns/C0020__Maroochy_Water_Breach.md"
+  },
+  {
+    "id": "C0031",
+    "stix_id": "campaign--8fda050f-470d-4401-994e-35c1a6c301de",
+    "type": "campaign",
+    "name": "Unitronics Defacement Campaign",
+    "path": "ics/campaigns/C0031__Unitronics_Defacement_Campaign.md"
+  },
+  {
+    "id": "C0063",
+    "stix_id": "campaign--a6aba167-5ada-4812-9da1-912c0e73335d",
+    "type": "campaign",
+    "name": "2025 Poland Wiper Attacks",
+    "path": "ics/campaigns/C0063__2025_Poland_Wiper_Attacks.md"
+  },
+  {
+    "id": "C0025",
+    "stix_id": "campaign--aa73efef-1418-4dbe-b43c-87a498e97234",
+    "type": "campaign",
+    "name": "2016 Ukraine Electric Power Attack",
+    "path": "ics/campaigns/C0025__2016_Ukraine_Electric_Power_Attack.md"
+  },
+  {
+    "id": "C0034",
+    "stix_id": "campaign--df8eb785-70f8-4300-b444-277ba849083d",
+    "type": "campaign",
+    "name": "2022 Ukraine Electric Power Attack",
+    "path": "ics/campaigns/C0034__2022_Ukraine_Electric_Power_Attack.md"
+  },
+  {
+    "id": "M0948",
+    "stix_id": "course-of-action--059ba11e-e3dc-49aa-84ca-88197f40d4ea",
+    "type": "course-of-action",
+    "name": "Application Isolation and Sandboxing",
+    "path": "ics/mitigations/M0948__Application_Isolation_and_Sandboxing.md"
+  },
+  {
+    "id": "M0937",
+    "stix_id": "course-of-action--11f242bc-3121-438c-84b2-5cbd46a4bb17",
+    "type": "course-of-action",
+    "name": "Filter Network Traffic",
+    "path": "ics/mitigations/M0937__Filter_Network_Traffic.md"
+  },
+  {
+    "id": "M0921",
+    "stix_id": "course-of-action--143b4398-3222-480a-b6a4-e131bc2d3144",
+    "type": "course-of-action",
+    "name": "Restrict Web-Based Content",
+    "path": "ics/mitigations/M0921__Restrict_Web_Based_Content.md"
+  },
+  {
+    "id": "M0818",
+    "stix_id": "course-of-action--1cbcceef-3233-4062-aa86-ec91afe39517",
+    "type": "course-of-action",
+    "name": "Validate Program Inputs",
+    "path": "ics/mitigations/M0818__Validate_Program_Inputs.md"
+  },
+  {
+    "id": "M0930",
+    "stix_id": "course-of-action--1e7ccfc0-94c8-496e-8d27-032120892291",
+    "type": "course-of-action",
+    "name": "Network Segmentation",
+    "path": "ics/mitigations/M0930__Network_Segmentation.md"
+  },
+  {
+    "id": "M0944",
+    "stix_id": "course-of-action--2ab9fc6d-3cf6-4d7b-85f1-3ad6949233b3",
+    "type": "course-of-action",
+    "name": "Restrict Library Loading",
+    "path": "ics/mitigations/M0944__Restrict_Library_Loading.md"
+  },
+  {
+    "id": "M0915",
+    "stix_id": "course-of-action--2f0160b7-e982-49d7-9612-f19b810f1722",
+    "type": "course-of-action",
+    "name": "Active Directory Configuration",
+    "path": "ics/mitigations/M0915__Active_Directory_Configuration.md"
+  },
+  {
+    "id": "M0931",
+    "stix_id": "course-of-action--3172222b-4983-43f7-8983-753ded4f13bc",
+    "type": "course-of-action",
+    "name": "Network Intrusion Prevention",
+    "path": "ics/mitigations/M0931__Network_Intrusion_Prevention.md"
+  },
+  {
+    "id": "M0924",
+    "stix_id": "course-of-action--3222a807-521b-4a1a-aa13-f1cda45734b3",
+    "type": "course-of-action",
+    "name": "Restrict Registry Permissions",
+    "path": "ics/mitigations/M0924__Restrict_Registry_Permissions.md"
+  },
+  {
+    "id": "M0803",
+    "stix_id": "course-of-action--337c4e2a-21a7-4d9a-bfee-9efd6cebf0e5",
+    "type": "course-of-action",
+    "name": "Data Loss Prevention",
+    "path": "ics/mitigations/M0803__Data_Loss_Prevention.md"
+  },
+  {
+    "id": "M0801",
+    "stix_id": "course-of-action--3992ce42-43e9-4bea-b8db-a102ec3ec1e3",
+    "type": "course-of-action",
+    "name": "Access Management",
+    "path": "ics/mitigations/M0801__Access_Management.md"
+  },
+  {
+    "id": "M0816",
+    "stix_id": "course-of-action--469b78dd-a54d-4f7c-8c3b-4a1dd916b433",
+    "type": "course-of-action",
+    "name": "Mitigation Limited or Not Effective",
+    "path": "ics/mitigations/M0816__Mitigation_Limited_or_Not_Effective.md"
+  },
+  {
+    "id": "M0950",
+    "stix_id": "course-of-action--49363b74-d506-4342-bd63-320586ebadb9",
+    "type": "course-of-action",
+    "name": "Exploit Protection",
+    "path": "ics/mitigations/M0950__Exploit_Protection.md"
+  },
+  {
+    "id": "M0935",
+    "stix_id": "course-of-action--49b306c1-a046-42c5-a4d2-30f264ada110",
+    "type": "course-of-action",
+    "name": "Limit Access to Resource Over Network",
+    "path": "ics/mitigations/M0935__Limit_Access_to_Resource_Over_Network.md"
+  },
+  {
+    "id": "M0938",
+    "stix_id": "course-of-action--4fa717d9-cabe-47c8-8cdd-86e9e2e37f30",
+    "type": "course-of-action",
+    "name": "Execution Prevention",
+    "path": "ics/mitigations/M0938__Execution_Prevention.md"
+  },
+  {
+    "id": "M0814",
+    "stix_id": "course-of-action--52c7a1a9-3a78-4528-a44f-cd7b0fa3541a",
+    "type": "course-of-action",
+    "name": "Static Network Configuration",
+    "path": "ics/mitigations/M0814__Static_Network_Configuration.md"
+  },
+  {
+    "id": "M0927",
+    "stix_id": "course-of-action--5d97c693-e054-48ba-a3a3-eaf6942dfb65",
+    "type": "course-of-action",
+    "name": "Password Policies",
+    "path": "ics/mitigations/M0927__Password_Policies.md"
+  },
+  {
+    "id": "M0926",
+    "stix_id": "course-of-action--622fe4d4-0e8e-4d17-9c25-6c9cef1f15d5",
+    "type": "course-of-action",
+    "name": "Privileged Account Management",
+    "path": "ics/mitigations/M0926__Privileged_Account_Management.md"
+  },
+  {
+    "id": "M0804",
+    "stix_id": "course-of-action--66cfe23e-34b6-4583-b178-ed6a412db2b0",
+    "type": "course-of-action",
+    "name": "Human User Authentication",
+    "path": "ics/mitigations/M0804__Human_User_Authentication.md"
+  },
+  {
+    "id": "M0920",
+    "stix_id": "course-of-action--6a02e38a-9629-40c0-8c7d-e98e3470315c",
+    "type": "course-of-action",
+    "name": "SSL/TLS Inspection",
+    "path": "ics/mitigations/M0920__SSL_TLS_Inspection.md"
+  },
+  {
+    "id": "M0945",
+    "stix_id": "course-of-action--71eb7dad-07eb-4bbc-9df0-ac57bf2fba4a",
+    "type": "course-of-action",
+    "name": "Code Signing",
+    "path": "ics/mitigations/M0945__Code_Signing.md"
+  },
+  {
+    "id": "M0813",
+    "stix_id": "course-of-action--72e46e53-e12d-4106-9c70-33241b6ed549",
+    "type": "course-of-action",
+    "name": "Software Process and Device Authentication",
+    "path": "ics/mitigations/M0813__Software_Process_and_Device_Authentication.md"
+  },
+  {
+    "id": "M0808",
+    "stix_id": "course-of-action--7f153c28-e5f1-4764-88fb-eea1d9b0ad4a",
+    "type": "course-of-action",
+    "name": "Encrypt Network Traffic",
+    "path": "ics/mitigations/M0808__Encrypt_Network_Traffic.md"
+  },
+  {
+    "id": "M0936",
+    "stix_id": "course-of-action--86b455f2-fb63-4043-93a8-32a3a7703a02",
+    "type": "course-of-action",
+    "name": "Account Use Policies",
+    "path": "ics/mitigations/M0936__Account_Use_Policies.md"
+  },
+  {
+    "id": "M0913",
+    "stix_id": "course-of-action--8a3aadd0-b5f4-433a-800e-4893e4196bb7",
+    "type": "course-of-action",
+    "name": "Application Developer Guidance",
+    "path": "ics/mitigations/M0913__Application_Developer_Guidance.md"
+  },
+  {
+    "id": "M0946",
+    "stix_id": "course-of-action--8ac1d6e1-b07f-476a-9732-84984ebc2405",
+    "type": "course-of-action",
+    "name": "Boot Integrity",
+    "path": "ics/mitigations/M0946__Boot_Integrity.md"
+  },
+  {
+    "id": "M0805",
+    "stix_id": "course-of-action--8bc4a54e-810c-4600-8b6c-08fa8413a401",
+    "type": "course-of-action",
+    "name": "Mechanical Protection Layers",
+    "path": "ics/mitigations/M0805__Mechanical_Protection_Layers.md"
+  },
+  {
+    "id": "M0951",
+    "stix_id": "course-of-action--97f33c84-8508-45b9-8a1d-cac921828c9e",
+    "type": "course-of-action",
+    "name": "Update Software",
+    "path": "ics/mitigations/M0951__Update_Software.md"
+  },
+  {
+    "id": "M0815",
+    "stix_id": "course-of-action--98aa0d61-fc9d-4b2d-8f18-b25d03549f53",
+    "type": "course-of-action",
+    "name": "Watchdog Timers",
+    "path": "ics/mitigations/M0815__Watchdog_Timers.md"
+  },
+  {
+    "id": "M0809",
+    "stix_id": "course-of-action--99c746d7-a08a-4169-94f9-b8c0dad716fa",
+    "type": "course-of-action",
+    "name": "Operational Information Confidentiality",
+    "path": "ics/mitigations/M0809__Operational_Information_Confidentiality.md"
+  },
+  {
+    "id": "M0928",
+    "stix_id": "course-of-action--9a945a29-5233-4422-a9e3-3e957b0e8bce",
+    "type": "course-of-action",
+    "name": "Operating System Configuration",
+    "path": "ics/mitigations/M0928__Operating_System_Configuration.md"
+  },
+  {
+    "id": "M0934",
+    "stix_id": "course-of-action--9e3adcad-0b8f-4ecc-a2f3-06f607f53bf0",
+    "type": "course-of-action",
+    "name": "Limit Hardware Installation",
+    "path": "ics/mitigations/M0934__Limit_Hardware_Installation.md"
+  },
+  {
+    "id": "M0941",
+    "stix_id": "course-of-action--9f99fcfd-772e-4e63-9d39-e45612e546dc",
+    "type": "course-of-action",
+    "name": "Encrypt Sensitive Information",
+    "path": "ics/mitigations/M0941__Encrypt_Sensitive_Information.md"
+  },
+  {
+    "id": "M0807",
+    "stix_id": "course-of-action--aadac250-bcdc-44e3-a4ae-f52bd0a7a16a",
+    "type": "course-of-action",
+    "name": "Network Allowlists",
+    "path": "ics/mitigations/M0807__Network_Allowlists.md"
+  },
+  {
+    "id": "M0817",
+    "stix_id": "course-of-action--ac8f3492-7fbb-4a0a-b0b4-b75ec676136c",
+    "type": "course-of-action",
+    "name": "Supply Chain Management",
+    "path": "ics/mitigations/M0817__Supply_Chain_Management.md"
+  },
+  {
+    "id": "M0953",
+    "stix_id": "course-of-action--ad12819e-3211-4291-b360-069f280cff0a",
+    "type": "course-of-action",
+    "name": "Data Backup",
+    "path": "ics/mitigations/M0953__Data_Backup.md"
+  },
+  {
+    "id": "M0810",
+    "stix_id": "course-of-action--b11cad63-ef30-4eb8-af0d-6cc46eef3f3e",
+    "type": "course-of-action",
+    "name": "Out-of-Band Communications Channel",
+    "path": "ics/mitigations/M0810__Out_of_Band_Communications_Channel.md"
+  },
+  {
+    "id": "M0947",
+    "stix_id": "course-of-action--bcf91ebc-f316-4e19-b2f6-444e9940c697",
+    "type": "course-of-action",
+    "name": "Audit",
+    "path": "ics/mitigations/M0947__Audit.md"
+  },
+  {
+    "id": "M0802",
+    "stix_id": "course-of-action--c7257b6e-4159-4771-b1f3-2bb93adaecac",
+    "type": "course-of-action",
+    "name": "Communication Authenticity",
+    "path": "ics/mitigations/M0802__Communication_Authenticity.md"
+  },
+  {
+    "id": "M0942",
+    "stix_id": "course-of-action--d0909119-2f71-4923-87db-b649881672d7",
+    "type": "course-of-action",
+    "name": "Disable or Remove Feature or Program",
+    "path": "ics/mitigations/M0942__Disable_or_Remove_Feature_or_Program.md"
+  },
+  {
+    "id": "M0919",
+    "stix_id": "course-of-action--d48b79b2-076d-483e-949c-0d38aa347499",
+    "type": "course-of-action",
+    "name": "Threat Intelligence Program",
+    "path": "ics/mitigations/M0919__Threat_Intelligence_Program.md"
+  },
+  {
+    "id": "M0812",
+    "stix_id": "course-of-action--da44255d-85c5-492c-baf3-ee823d44f848",
+    "type": "course-of-action",
+    "name": "Safety Instrumented Systems",
+    "path": "ics/mitigations/M0812__Safety_Instrumented_Systems.md"
+  },
+  {
+    "id": "M0917",
+    "stix_id": "course-of-action--dc61c280-c29d-44e5-a960-c0dd1623d2ba",
+    "type": "course-of-action",
+    "name": "User Training",
+    "path": "ics/mitigations/M0917__User_Training.md"
+  },
+  {
+    "id": "M0932",
+    "stix_id": "course-of-action--ddf3e568-f065-49e2-9106-42029a28ddbd",
+    "type": "course-of-action",
+    "name": "Multi-factor Authentication",
+    "path": "ics/mitigations/M0932__Multi_factor_Authentication.md"
+  },
+  {
+    "id": "M0916",
+    "stix_id": "course-of-action--de0bc375-50e1-4e26-a342-a8ff8c9d3037",
+    "type": "course-of-action",
+    "name": "Vulnerability Scanning",
+    "path": "ics/mitigations/M0916__Vulnerability_Scanning.md"
+  },
+  {
+    "id": "M0800",
+    "stix_id": "course-of-action--e0d38502-decb-481d-ad8b-b8f0a0c330bd",
+    "type": "course-of-action",
+    "name": "Authorization Enforcement",
+    "path": "ics/mitigations/M0800__Authorization_Enforcement.md"
+  },
+  {
+    "id": "M0918",
+    "stix_id": "course-of-action--e57ebc6d-785f-40c8-adb1-b5b5e09b3b48",
+    "type": "course-of-action",
+    "name": "User Account Management",
+    "path": "ics/mitigations/M0918__User_Account_Management.md"
+  },
+  {
+    "id": "M0811",
+    "stix_id": "course-of-action--f0f5c87a-a58d-440a-b3b5-ca679d98c6dd",
+    "type": "course-of-action",
+    "name": "Redundancy of Service",
+    "path": "ics/mitigations/M0811__Redundancy_of_Service.md"
+  },
+  {
+    "id": "M0922",
+    "stix_id": "course-of-action--f9fcb3ec-6de0-4559-8cd9-ef1c0c7d1971",
+    "type": "course-of-action",
+    "name": "Restrict File and Directory Permissions",
+    "path": "ics/mitigations/M0922__Restrict_File_and_Directory_Permissions.md"
+  },
+  {
+    "id": "M0954",
+    "stix_id": "course-of-action--facb8840-ebe7-49f1-b464-8ef6c8131e21",
+    "type": "course-of-action",
+    "name": "Software Configuration",
+    "path": "ics/mitigations/M0954__Software_Configuration.md"
+  },
+  {
+    "id": "M0949",
+    "stix_id": "course-of-action--faf2b40e-5981-433f-aa46-17458e0026f7",
+    "type": "course-of-action",
+    "name": "Antivirus/Antimalware",
+    "path": "ics/mitigations/M0949__Antivirus_Antimalware.md"
+  },
+  {
+    "id": "M0806",
+    "stix_id": "course-of-action--fce6866f-9a87-4d3e-a73c-f02d8937fe0e",
+    "type": "course-of-action",
+    "name": "Minimize Wireless Signal Propagation",
+    "path": "ics/mitigations/M0806__Minimize_Wireless_Signal_Propagation.md"
+  },
+  {
+    "id": "G0082",
+    "stix_id": "intrusion-set--00f67a77-86a4-4adf-be26-1a54fc713340",
+    "type": "intrusion-set",
+    "name": "APT38",
+    "path": "ics/groups/G0082__APT38.md"
+  },
+  {
+    "id": "G1000",
+    "stix_id": "intrusion-set--190242d7-73fc-4738-af68-20162f7a5aae",
+    "type": "intrusion-set",
+    "name": "ALLANITE",
+    "path": "ics/groups/G1000__ALLANITE.md"
+  },
+  {
+    "id": "G0035",
+    "stix_id": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+    "type": "intrusion-set",
+    "name": "Dragonfly",
+    "path": "ics/groups/G0035__Dragonfly.md"
+  },
+  {
+    "id": "G0037",
+    "stix_id": "intrusion-set--2a7914cf-dff3-428d-ab0f-1014d1c28aeb",
+    "type": "intrusion-set",
+    "name": "FIN6",
+    "path": "ics/groups/G0037__FIN6.md"
+  },
+  {
+    "id": "G0046",
+    "stix_id": "intrusion-set--3753cc21-2dae-4dfb-8481-d004e74502cc",
+    "type": "intrusion-set",
+    "name": "FIN7",
+    "path": "ics/groups/G0046__FIN7.md"
+  },
+  {
+    "id": "G0034",
+    "stix_id": "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+    "type": "intrusion-set",
+    "name": "Sandworm Team",
+    "path": "ics/groups/G0034__Sandworm_Team.md"
+  },
+  {
+    "id": "G0049",
+    "stix_id": "intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d",
+    "type": "intrusion-set",
+    "name": "OilRig",
+    "path": "ics/groups/G0049__OilRig.md"
+  },
+  {
+    "id": "G0088",
+    "stix_id": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+    "type": "intrusion-set",
+    "name": "TEMP.Veles",
+    "path": "ics/groups/G0088__TEMP_Veles.md"
+  },
+  {
+    "id": "G1027",
+    "stix_id": "intrusion-set--a07a367a-146c-45a8-a830-d3d337b9befa",
+    "type": "intrusion-set",
+    "name": "CyberAv3ngers",
+    "path": "ics/groups/G1027__CyberAv3ngers.md"
+  },
+  {
+    "id": "G0115",
+    "stix_id": "intrusion-set--c77c5576-ca19-42ed-a36f-4b4486a84133",
+    "type": "intrusion-set",
+    "name": "GOLD SOUTHFIELD",
+    "path": "ics/groups/G0115__GOLD_SOUTHFIELD.md"
+  },
+  {
+    "id": "G0032",
+    "stix_id": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+    "type": "intrusion-set",
+    "name": "Lazarus Group",
+    "path": "ics/groups/G0032__Lazarus_Group.md"
+  },
+  {
+    "id": "G0102",
+    "stix_id": "intrusion-set--dd2d9ca6-505b-4860-a604-233685b802c7",
+    "type": "intrusion-set",
+    "name": "Wizard Spider",
+    "path": "ics/groups/G0102__Wizard_Spider.md"
+  },
+  {
+    "id": "G1001",
+    "stix_id": "intrusion-set--f29b7c5e-2439-42ad-a86f-9f8984fafae3",
+    "type": "intrusion-set",
+    "name": "HEXANE",
+    "path": "ics/groups/G1001__HEXANE.md"
+  },
+  {
+    "id": "G0064",
+    "stix_id": "intrusion-set--fbd29c89-18ba-4c2d-b792-51c0adee049f",
+    "type": "intrusion-set",
+    "name": "APT33",
+    "path": "ics/groups/G0064__APT33.md"
+  },
+  {
+    "id": "S0605",
+    "stix_id": "malware--00e7d565-9883-4ee5-b642-8fd17fd6a3f5",
+    "type": "malware",
+    "name": "EKANS",
+    "path": "ics/software/S0605__EKANS.md"
+  },
+  {
+    "id": "S0093",
+    "stix_id": "malware--083bb47b-02c8-4423-81a2-f9ef58572974",
+    "type": "malware",
+    "name": "Backdoor.Oldrea",
+    "path": "ics/software/S0093__Backdoor_Oldrea.md"
+  },
+  {
+    "id": "S0603",
+    "stix_id": "malware--088f1d6e-0783-47c6-9923-9c79b2af43d4",
+    "type": "malware",
+    "name": "Stuxnet",
+    "path": "ics/software/S0603__Stuxnet.md"
+  },
+  {
+    "id": "S0606",
+    "stix_id": "malware--2eaa5319-5e1e-4dd7-bbc4-566fced3964a",
+    "type": "malware",
+    "name": "Bad Rabbit",
+    "path": "ics/software/S0606__Bad_Rabbit.md"
+  },
+  {
+    "id": "S1006",
+    "stix_id": "malware--4dcff507-5af8-47ce-964a-8d9569e9ccfe",
+    "type": "malware",
+    "name": "PLC-Blaster",
+    "path": "ics/software/S1006__PLC_Blaster.md"
+  },
+  {
+    "id": "S0089",
+    "stix_id": "malware--54cc1d4f-5c53-4f0e-9ef5-11b4998e82e4",
+    "type": "malware",
+    "name": "BlackEnergy",
+    "path": "ics/software/S0089__BlackEnergy.md"
+  },
+  {
+    "id": "S0368",
+    "stix_id": "malware--5719af9d-6b16-46f9-9b28-fb019541ddbb",
+    "type": "malware",
+    "name": "NotPetya",
+    "path": "ics/software/S0368__NotPetya.md"
+  },
+  {
+    "id": "S0608",
+    "stix_id": "malware--58eddbaf-7416-419a-ad7b-e65b9d4c3b55",
+    "type": "malware",
+    "name": "Conficker",
+    "path": "ics/software/S0608__Conficker.md"
+  },
+  {
+    "id": "S0372",
+    "stix_id": "malware--5af7a825-2d9f-400d-931a-e00eb9e27f48",
+    "type": "malware",
+    "name": "LockerGoga",
+    "path": "ics/software/S0372__LockerGoga.md"
+  },
+  {
+    "id": "S1010",
+    "stix_id": "malware--6108f800-10b8-4090-944e-be579f01263d",
+    "type": "malware",
+    "name": "VPNFilter",
+    "path": "ics/software/S1010__VPNFilter.md"
+  },
+  {
+    "id": "S0038",
+    "stix_id": "malware--68dca94f-c11d-421e-9287-7c501108e18c",
+    "type": "malware",
+    "name": "Duqu",
+    "path": "ics/software/S0038__Duqu.md"
+  },
+  {
+    "id": "S1072",
+    "stix_id": "malware--6a0d0ea9-b2c4-43fe-a552-ac41a3009dc5",
+    "type": "malware",
+    "name": "Industroyer2",
+    "path": "ics/software/S1072__Industroyer2.md"
+  },
+  {
+    "id": "S0366",
+    "stix_id": "malware--75ecdbf1-c2bb-4afc-a3f9-c8da4de8c661",
+    "type": "malware",
+    "name": "WannaCry",
+    "path": "ics/software/S0366__WannaCry.md"
+  },
+  {
+    "id": "S1009",
+    "stix_id": "malware--80099a91-4c86-4bea-9ccb-dac55d61960e",
+    "type": "malware",
+    "name": "Triton",
+    "path": "ics/software/S1009__Triton.md"
+  },
+  {
+    "id": "S1157",
+    "stix_id": "malware--931e2489-8078-4f9f-85b2-a9211950e75b",
+    "type": "malware",
+    "name": "Fuxnet",
+    "path": "ics/software/S1157__Fuxnet.md"
+  },
+  {
+    "id": "S0446",
+    "stix_id": "malware--a020a61c-423f-4195-8c46-ba1d21abba37",
+    "type": "malware",
+    "name": "Ryuk",
+    "path": "ics/software/S0446__Ryuk.md"
+  },
+  {
+    "id": "S1000",
+    "stix_id": "malware--a4a98eab-b691-45d9-8c48-869ef8fefd57",
+    "type": "malware",
+    "name": "ACAD/Medre.A",
+    "path": "ics/software/S1000__ACAD_Medre_A.md"
+  },
+  {
+    "id": "S0496",
+    "stix_id": "malware--ac61f1f9-7bb1-465e-9b8a-c2ce8e88baf5",
+    "type": "malware",
+    "name": "REvil",
+    "path": "ics/software/S0496__REvil.md"
+  },
+  {
+    "id": "S1165",
+    "stix_id": "malware--b34df04a-9d30-4d84-a03f-0d536ee19a05",
+    "type": "malware",
+    "name": "FrostyGoop",
+    "path": "ics/software/S1165__FrostyGoop.md"
+  },
+  {
+    "id": "S1045",
+    "stix_id": "malware--d3aa1058-b1b3-4c29-a3ba-9a9b90ccd93b",
+    "type": "malware",
+    "name": "INCONTROLLER",
+    "path": "ics/software/S1045__INCONTROLLER.md"
+  },
+  {
+    "id": "S0607",
+    "stix_id": "malware--e221eb77-1502-4129-af1d-fe1ad55e7ec6",
+    "type": "malware",
+    "name": "KillDisk",
+    "path": "ics/software/S0607__KillDisk.md"
+  },
+  {
+    "id": "S0604",
+    "stix_id": "malware--e401d4fe-f0c9-44f0-98e6-f93487678808",
+    "type": "malware",
+    "name": "Industroyer",
+    "path": "ics/software/S0604__Industroyer.md"
+  },
+  {
+    "id": "S0143",
+    "stix_id": "malware--ff6840c9-4c87-4d07-bbb6-9f50aa33d498",
+    "type": "malware",
+    "name": "Flame",
+    "path": "ics/software/S0143__Flame.md"
+  },
+  {
+    "id": "T0881",
+    "stix_id": "attack-pattern--063b5b92-5361-481a-9c3f-95492ed9a2d8",
+    "type": "attack-pattern",
+    "name": "Service Stop",
+    "path": "ics/techniques/T0881__Service_Stop.md"
+  },
+  {
+    "id": "T0836",
+    "stix_id": "attack-pattern--097924ce-a9a9-4039-8591-e0deedfb8722",
+    "type": "attack-pattern",
+    "name": "Modify Parameter",
+    "path": "ics/techniques/T0836__Modify_Parameter.md"
+  },
+  {
+    "id": "T0821",
+    "stix_id": "attack-pattern--09a61657-46e1-439e-b3ed-3e4556a78243",
+    "type": "attack-pattern",
+    "name": "Modify Controller Tasking",
+    "path": "ics/techniques/T0821__Modify_Controller_Tasking.md"
+  },
+  {
+    "id": "T0887",
+    "stix_id": "attack-pattern--0fe075d5-beac-4d02-b93e-0f874997db72",
+    "type": "attack-pattern",
+    "name": "Wireless Sniffing",
+    "path": "ics/techniques/T0887__Wireless_Sniffing.md"
+  },
+  {
+    "id": "T0829",
+    "stix_id": "attack-pattern--138979ba-0430-4de6-a128-2fc0b056ba36",
+    "type": "attack-pattern",
+    "name": "Loss of View",
+    "path": "ics/techniques/T0829__Loss_of_View.md"
+  },
+  {
+    "id": "T1691.001",
+    "stix_id": "attack-pattern--15ca2a99-2d3e-457f-b1d7-c52a1d5849c9",
+    "type": "attack-pattern",
+    "name": "Command Message",
+    "path": "ics/techniques/T1691.001__Command_Message.md"
+  },
+  {
+    "id": "T0800",
+    "stix_id": "attack-pattern--19a71d1e-6334-4233-8260-b749cae37953",
+    "type": "attack-pattern",
+    "name": "Activate Firmware Update Mode",
+    "path": "ics/techniques/T0800__Activate_Firmware_Update_Mode.md"
+  },
+  {
+    "id": "T0831",
+    "stix_id": "attack-pattern--1af9e3fd-2bcc-414d-adbd-fe3b95c02ca1",
+    "type": "attack-pattern",
+    "name": "Manipulation of Control",
+    "path": "ics/techniques/T0831__Manipulation_of_Control.md"
+  },
+  {
+    "id": "T0814",
+    "stix_id": "attack-pattern--1b22b676-9347-4c55-9a35-ef0dc653db5b",
+    "type": "attack-pattern",
+    "name": "Denial of Service",
+    "path": "ics/techniques/T0814__Denial_of_Service.md"
+  },
+  {
+    "id": "T0894",
+    "stix_id": "attack-pattern--1c5cf58c-a34a-40d7-82f4-f987cdfc2b91",
+    "type": "attack-pattern",
+    "name": "System Binary Proxy Execution",
+    "path": "ics/techniques/T0894__System_Binary_Proxy_Execution.md"
+  },
+  {
+    "id": "T0807",
+    "stix_id": "attack-pattern--24a9253e-8948-4c98-b751-8e2aee53127c",
+    "type": "attack-pattern",
+    "name": "Command-Line Interface",
+    "path": "ics/techniques/T0807__Command_Line_Interface.md"
+  },
+  {
+    "id": "T0861",
+    "stix_id": "attack-pattern--25852363-5968-4673-b81d-341d5ed90bd1",
+    "type": "attack-pattern",
+    "name": "Point & Tag Identification",
+    "path": "ics/techniques/T0861__Point_Tag_Identification.md"
+  },
+  {
+    "id": "T0816",
+    "stix_id": "attack-pattern--25dfc8ad-bd73-4dfd-84a9-3c3d383f76e9",
+    "type": "attack-pattern",
+    "name": "Device Restart/Shutdown",
+    "path": "ics/techniques/T0816__Device_Restart_Shutdown.md"
+  },
+  {
+    "id": "T0863",
+    "stix_id": "attack-pattern--2736b752-4ec5-4421-a230-8977dea7649c",
+    "type": "attack-pattern",
+    "name": "User Execution",
+    "path": "ics/techniques/T0863__User_Execution.md"
+  },
+  {
+    "id": "T0860",
+    "stix_id": "attack-pattern--2877063e-1851-48d2-bcc6-bc1d2733157e",
+    "type": "attack-pattern",
+    "name": "Wireless Compromise",
+    "path": "ics/techniques/T0860__Wireless_Compromise.md"
+  },
+  {
+    "id": "T0858",
+    "stix_id": "attack-pattern--2883c520-7957-46ca-89bd-dab1ad53b601",
+    "type": "attack-pattern",
+    "name": "Change Operating Mode",
+    "path": "ics/techniques/T0858__Change_Operating_Mode.md"
+  },
+  {
+    "id": "T0878",
+    "stix_id": "attack-pattern--2900bbd8-308a-4274-b074-5b8bde8347bc",
+    "type": "attack-pattern",
+    "name": "Alarm Suppression",
+    "path": "ics/techniques/T0878__Alarm_Suppression.md"
+  },
+  {
+    "id": "T0868",
+    "stix_id": "attack-pattern--2aa406ed-81c3-4c1d-ba83-cfbee5a2847a",
+    "type": "attack-pattern",
+    "name": "Detect Operating Mode",
+    "path": "ics/techniques/T0868__Detect_Operating_Mode.md"
+  },
+  {
+    "id": "T0837",
+    "stix_id": "attack-pattern--2bb4d762-bf4a-4bc3-9318-15cc6a354163",
+    "type": "attack-pattern",
+    "name": "Loss of Protection",
+    "path": "ics/techniques/T0837__Loss_of_Protection.md"
+  },
+  {
+    "id": "T0801",
+    "stix_id": "attack-pattern--2d0d40ad-22fa-4cc8-b264-072557e1364b",
+    "type": "attack-pattern",
+    "name": "Monitor Process State",
+    "path": "ics/techniques/T0801__Monitor_Process_State.md"
+  },
+  {
+    "id": "T0853",
+    "stix_id": "attack-pattern--2dc2b567-8821-49f9-9045-8740f3d0b958",
+    "type": "attack-pattern",
+    "name": "Scripting",
+    "path": "ics/techniques/T0853__Scripting.md"
+  },
+  {
+    "id": "T0888",
+    "stix_id": "attack-pattern--2fedbe69-581f-447d-8a78-32ee7db939a9",
+    "type": "attack-pattern",
+    "name": "Remote System Information Discovery",
+    "path": "ics/techniques/T0888__Remote_System_Information_Discovery.md"
+  },
+  {
+    "id": "T0845",
+    "stix_id": "attack-pattern--3067b85e-271e-4bc5-81ad-ab1a81d411e3",
+    "type": "attack-pattern",
+    "name": "Program Upload",
+    "path": "ics/techniques/T0845__Program_Upload.md"
+  },
+  {
+    "id": "T0819",
+    "stix_id": "attack-pattern--32632a95-6856-47b9-9ab7-fea5cd7dce00",
+    "type": "attack-pattern",
+    "name": "Exploit Public-Facing Application",
+    "path": "ics/techniques/T0819__Exploit_Public_Facing_Application.md"
+  },
+  {
+    "id": "T1691",
+    "stix_id": "attack-pattern--338f4364-2269-4f70-9079-b20384b16628",
+    "type": "attack-pattern",
+    "name": "Block Operational Technology Message",
+    "path": "ics/techniques/T1691__Block_Operational_Technology_Message.md"
+  },
+  {
+    "id": "T0811",
+    "stix_id": "attack-pattern--3405891b-16aa-4bd7-bd7c-733501f9b20f",
+    "type": "attack-pattern",
+    "name": "Data from Information Repositories",
+    "path": "ics/techniques/T0811__Data_from_Information_Repositories.md"
+  },
+  {
+    "id": "T0864",
+    "stix_id": "attack-pattern--35392fb4-a31d-4c6a-b9f2-1c65b7f5e6b9",
+    "type": "attack-pattern",
+    "name": "Transient Cyber Asset",
+    "path": "ics/techniques/T0864__Transient_Cyber_Asset.md"
+  },
+  {
+    "id": "T0873.001",
+    "stix_id": "attack-pattern--354ca909-b54d-4c41-b597-9c296b344a43",
+    "type": "attack-pattern",
+    "name": "Siemens Project File Format",
+    "path": "ics/techniques/T0873.001__Siemens_Project_File_Format.md"
+  },
+  {
+    "id": "T0835",
+    "stix_id": "attack-pattern--36e9f5bc-ac13-4da4-a2f4-01f4877d9004",
+    "type": "attack-pattern",
+    "name": "Manipulate I/O Image",
+    "path": "ics/techniques/T0835__Manipulate_I_O_Image.md"
+  },
+  {
+    "id": "T0842",
+    "stix_id": "attack-pattern--38213338-1aab-479d-949b-c81b66ccca5c",
+    "type": "attack-pattern",
+    "name": "Network Sniffing",
+    "path": "ics/techniques/T0842__Network_Sniffing.md"
+  },
+  {
+    "id": "T0851",
+    "stix_id": "attack-pattern--3b6b9246-43f8-4c69-ad7a-2b11cfe0a0d9",
+    "type": "attack-pattern",
+    "name": "Rootkit",
+    "path": "ics/techniques/T0851__Rootkit.md"
+  },
+  {
+    "id": "T0802",
+    "stix_id": "attack-pattern--3de230d4-3e42-4041-b089-17e1128feded",
+    "type": "attack-pattern",
+    "name": "Automated Collection",
+    "path": "ics/techniques/T0802__Automated_Collection.md"
+  },
+  {
+    "id": "T1694",
+    "stix_id": "attack-pattern--3e9b182e-e493-49e1-9a9b-bd0dfcd34a7c",
+    "type": "attack-pattern",
+    "name": "Insecure Credentials",
+    "path": "ics/techniques/T1694__Insecure_Credentials.md"
+  },
+  {
+    "id": "T1692.001",
+    "stix_id": "attack-pattern--4344d1b8-968b-4697-9ab9-f9abe5f52265",
+    "type": "attack-pattern",
+    "name": "Command Message",
+    "path": "ics/techniques/T1692.001__Command_Message.md"
+  },
+  {
+    "id": "T0809",
+    "stix_id": "attack-pattern--493832d9-cea6-4b63-abe7-9a65a6473675",
+    "type": "attack-pattern",
+    "name": "Data Destruction",
+    "path": "ics/techniques/T0809__Data_Destruction.md"
+  },
+  {
+    "id": "T0832",
+    "stix_id": "attack-pattern--4c2e1408-9d68-4187-8e6b-a77bc52700ec",
+    "type": "attack-pattern",
+    "name": "Manipulation of View",
+    "path": "ics/techniques/T0832__Manipulation_of_View.md"
+  },
+  {
+    "id": "T1692.002",
+    "stix_id": "attack-pattern--527106b3-95a2-4ed2-bf89-db7f0e4d0da0",
+    "type": "attack-pattern",
+    "name": "Reporting Message",
+    "path": "ics/techniques/T1692.002__Reporting_Message.md"
+  },
+  {
+    "id": "T0872",
+    "stix_id": "attack-pattern--53a26eee-1080-4d17-9762-2027d5a1b805",
+    "type": "attack-pattern",
+    "name": "Indicator Removal on Host",
+    "path": "ics/techniques/T0872__Indicator_Removal_on_Host.md"
+  },
+  {
+    "id": "T0877",
+    "stix_id": "attack-pattern--53a48c74-0025-45f4-b04a-baa853df8204",
+    "type": "attack-pattern",
+    "name": "I/O Image",
+    "path": "ics/techniques/T0877__I_O_Image.md"
+  },
+  {
+    "id": "T1695.001",
+    "stix_id": "attack-pattern--55e7e5c1-3760-4451-bae0-e79b29f452c5",
+    "type": "attack-pattern",
+    "name": "Serial COM",
+    "path": "ics/techniques/T1695.001__Serial_COM.md"
+  },
+  {
+    "id": "T1694.001",
+    "stix_id": "attack-pattern--5658ad88-7510-490e-a351-95d50b1bcd91",
+    "type": "attack-pattern",
+    "name": "Default Credentials",
+    "path": "ics/techniques/T1694.001__Default_Credentials.md"
+  },
+  {
+    "id": "T0815",
+    "stix_id": "attack-pattern--56ddc820-6cfb-407f-850b-52c035d123ac",
+    "type": "attack-pattern",
+    "name": "Denial of View",
+    "path": "ics/techniques/T0815__Denial_of_View.md"
+  },
+  {
+    "id": "T0843.003",
+    "stix_id": "attack-pattern--574d5bfb-9a7a-4b28-ab5c-743ac704c135",
+    "type": "attack-pattern",
+    "name": "Program Append",
+    "path": "ics/techniques/T0843.003__Program_Append.md"
+  },
+  {
+    "id": "T0871",
+    "stix_id": "attack-pattern--5a2610f6-9fff-41e1-bc27-575ca20383d4",
+    "type": "attack-pattern",
+    "name": "Execution through API",
+    "path": "ics/techniques/T0871__Execution_through_API.md"
+  },
+  {
+    "id": "T0846.001",
+    "stix_id": "attack-pattern--5d24bb1d-4487-4923-ae3a-8e679092ac7a",
+    "type": "attack-pattern",
+    "name": "Port Scan",
+    "path": "ics/techniques/T0846.001__Port_Scan.md"
+  },
+  {
+    "id": "T0862",
+    "stix_id": "attack-pattern--5e0f75da-e108-4688-a6de-a4f07cc2cbe3",
+    "type": "attack-pattern",
+    "name": "Supply Chain Compromise",
+    "path": "ics/techniques/T0862__Supply_Chain_Compromise.md"
+  },
+  {
+    "id": "T0880",
+    "stix_id": "attack-pattern--5fa00fdd-4a55-4191-94a0-564181d7fec2",
+    "type": "attack-pattern",
+    "name": "Loss of Safety",
+    "path": "ics/techniques/T0880__Loss_of_Safety.md"
+  },
+  {
+    "id": "T1695.002",
+    "stix_id": "attack-pattern--6008c1f0-1b68-4614-8f5b-a547436b8855",
+    "type": "attack-pattern",
+    "name": "Ethernet",
+    "path": "ics/techniques/T1695.002__Ethernet.md"
+  },
+  {
+    "id": "T0828",
+    "stix_id": "attack-pattern--63b6942d-8359-4506-bfb3-cf87aa8120ee",
+    "type": "attack-pattern",
+    "name": "Loss of Productivity and Revenue",
+    "path": "ics/techniques/T0828__Loss_of_Productivity_and_Revenue.md"
+  },
+  {
+    "id": "T0865",
+    "stix_id": "attack-pattern--648f995e-9c3a-41e4-aeee-98bb41037426",
+    "type": "attack-pattern",
+    "name": "Spearphishing Attachment",
+    "path": "ics/techniques/T0865__Spearphishing_Attachment.md"
+  },
+  {
+    "id": "T0846.003",
+    "stix_id": "attack-pattern--64bbc1b2-101f-4322-af1d-0c9cc25cef91",
+    "type": "attack-pattern",
+    "name": "Multicast Discovery",
+    "path": "ics/techniques/T0846.003__Multicast_Discovery.md"
+  },
+  {
+    "id": "T1693.001",
+    "stix_id": "attack-pattern--68a9324d-a524-4766-a899-a026f68a33df",
+    "type": "attack-pattern",
+    "name": "System Firmware",
+    "path": "ics/techniques/T1693.001__System_Firmware.md"
+  },
+  {
+    "id": "T1694.002",
+    "stix_id": "attack-pattern--6b335943-c3af-430e-a135-ab09623bdc20",
+    "type": "attack-pattern",
+    "name": "Hardcoded Credentials",
+    "path": "ics/techniques/T1694.002__Hardcoded_Credentials.md"
+  },
+  {
+    "id": "T1695.003",
+    "stix_id": "attack-pattern--71f2d49e-65dd-4fb6-a4cc-0d2b19d427fa",
+    "type": "attack-pattern",
+    "name": "Wi-Fi",
+    "path": "ics/techniques/T1695.003__Wi_Fi.md"
+  },
+  {
+    "id": "T1693.002",
+    "stix_id": "attack-pattern--75587e49-ab7e-44df-9549-faeb1da57f39",
+    "type": "attack-pattern",
+    "name": "Module Firmware",
+    "path": "ics/techniques/T1693.002__Module_Firmware.md"
+  },
+  {
+    "id": "T0843.001",
+    "stix_id": "attack-pattern--77015a55-eef8-4f71-a071-b152f82ec1ef",
+    "type": "attack-pattern",
+    "name": "Download All",
+    "path": "ics/techniques/T0843.001__Download_All.md"
+  },
+  {
+    "id": "T0895",
+    "stix_id": "attack-pattern--77d9c726-b53e-481d-8bcc-1068aebfbb9d",
+    "type": "attack-pattern",
+    "name": "Autorun Image",
+    "path": "ics/techniques/T0895__Autorun_Image.md"
+  },
+  {
+    "id": "T0817",
+    "stix_id": "attack-pattern--7830cfcf-b268-4ac0-a69e-73c6affbae9a",
+    "type": "attack-pattern",
+    "name": "Drive-by Compromise",
+    "path": "ics/techniques/T0817__Drive_by_Compromise.md"
+  },
+  {
+    "id": "T1691.002",
+    "stix_id": "attack-pattern--7866bb5f-98ee-45c2-984c-8a328c5176b2",
+    "type": "attack-pattern",
+    "name": "Reporting Message",
+    "path": "ics/techniques/T1691.002__Reporting_Message.md"
+  },
+  {
+    "id": "T1693",
+    "stix_id": "attack-pattern--7b4c0e19-a9b0-4a74-a196-b38c07b79f20",
+    "type": "attack-pattern",
+    "name": "Modify Firmware",
+    "path": "ics/techniques/T1693__Modify_Firmware.md"
+  },
+  {
+    "id": "T0879",
+    "stix_id": "attack-pattern--83ebd22f-b401-4d59-8219-2294172cf916",
+    "type": "attack-pattern",
+    "name": "Damage to Property",
+    "path": "ics/techniques/T0879__Damage_to_Property.md"
+  },
+  {
+    "id": "T0866",
+    "stix_id": "attack-pattern--85a45294-08f1-4539-bf00-7da08aa7b0ee",
+    "type": "attack-pattern",
+    "name": "Exploitation of Remote Services",
+    "path": "ics/techniques/T0866__Exploitation_of_Remote_Services.md"
+  },
+  {
+    "id": "T0822",
+    "stix_id": "attack-pattern--8d2f3bab-507c-4424-b58b-edc977bd215c",
+    "type": "attack-pattern",
+    "name": "External Remote Services",
+    "path": "ics/techniques/T0822__External_Remote_Services.md"
+  },
+  {
+    "id": "T0806",
+    "stix_id": "attack-pattern--8e7089d3-fba2-44f8-94a8-9a79c53920c4",
+    "type": "attack-pattern",
+    "name": "Brute Force I/O",
+    "path": "ics/techniques/T0806__Brute_Force_I_O.md"
+  },
+  {
+    "id": "T0830",
+    "stix_id": "attack-pattern--9a505987-ab05-4f46-a9a6-6441442eec3b",
+    "type": "attack-pattern",
+    "name": "Adversary-in-the-Middle",
+    "path": "ics/techniques/T0830__Adversary_in_the_Middle.md"
+  },
+  {
+    "id": "T0820",
+    "stix_id": "attack-pattern--9f947a1c-3860-48a8-8af0-a2dfa3efde03",
+    "type": "attack-pattern",
+    "name": "Exploitation for Evasion",
+    "path": "ics/techniques/T0820__Exploitation_for_Evasion.md"
+  },
+  {
+    "id": "T0827",
+    "stix_id": "attack-pattern--a81696ef-c106-482c-8f80-59c30f2569fb",
+    "type": "attack-pattern",
+    "name": "Loss of Control",
+    "path": "ics/techniques/T0827__Loss_of_Control.md"
+  },
+  {
+    "id": "T0874",
+    "stix_id": "attack-pattern--ab390887-afc0-4715-826d-b1b167d522ae",
+    "type": "attack-pattern",
+    "name": "Hooking",
+    "path": "ics/techniques/T0874__Hooking.md"
+  },
+  {
+    "id": "T0823",
+    "stix_id": "attack-pattern--b0628bfc-5376-4a38-9182-f324501cb4cf",
+    "type": "attack-pattern",
+    "name": "Graphical User Interface",
+    "path": "ics/techniques/T0823__Graphical_User_Interface.md"
+  },
+  {
+    "id": "T0848",
+    "stix_id": "attack-pattern--b14395bd-5419-4ef4-9bd8-696936f509bb",
+    "type": "attack-pattern",
+    "name": "Rogue Master",
+    "path": "ics/techniques/T0848__Rogue_Master.md"
+  },
+  {
+    "id": "T0834",
+    "stix_id": "attack-pattern--b52870cc-83f3-473c-b895-72d91751030b",
+    "type": "attack-pattern",
+    "name": "Native API",
+    "path": "ics/techniques/T0834__Native_API.md"
+  },
+  {
+    "id": "T0826",
+    "stix_id": "attack-pattern--b5b9bacb-97f2-4249-b804-47fd44de1f95",
+    "type": "attack-pattern",
+    "name": "Loss of Availability",
+    "path": "ics/techniques/T0826__Loss_of_Availability.md"
+  },
+  {
+    "id": "T0882",
+    "stix_id": "attack-pattern--b7e13ee8-182c-4f19-92a4-a88d7d855d54",
+    "type": "attack-pattern",
+    "name": "Theft of Operational Information",
+    "path": "ics/techniques/T0882__Theft_of_Operational_Information.md"
+  },
+  {
+    "id": "T0849",
+    "stix_id": "attack-pattern--ba203963-3182-41ac-af14-7e7ebc83cd61",
+    "type": "attack-pattern",
+    "name": "Masquerading",
+    "path": "ics/techniques/T0849__Masquerading.md"
+  },
+  {
+    "id": "T0843",
+    "stix_id": "attack-pattern--be69c571-d746-4b1f-bdd0-c0c9817e9068",
+    "type": "attack-pattern",
+    "name": "Program Download",
+    "path": "ics/techniques/T0843__Program_Download.md"
+  },
+  {
+    "id": "T0847",
+    "stix_id": "attack-pattern--c267bbee-bb59-47fe-85e0-3ed210337c21",
+    "type": "attack-pattern",
+    "name": "Replication Through Removable Media",
+    "path": "ics/techniques/T0847__Replication_Through_Removable_Media.md"
+  },
+  {
+    "id": "T0846.002",
+    "stix_id": "attack-pattern--c55f0be5-044e-4577-8095-65b37680d28c",
+    "type": "attack-pattern",
+    "name": "Broadcast Discovery",
+    "path": "ics/techniques/T0846.002__Broadcast_Discovery.md"
+  },
+  {
+    "id": "T0852",
+    "stix_id": "attack-pattern--c5e3cdbc-0387-4be9-8f83-ff5c0865f377",
+    "type": "attack-pattern",
+    "name": "Screen Capture",
+    "path": "ics/techniques/T0852__Screen_Capture.md"
+  },
+  {
+    "id": "T0859",
+    "stix_id": "attack-pattern--cd2c76a4-5e23-4ca5-9c40-d5e0604f7101",
+    "type": "attack-pattern",
+    "name": "Valid Accounts",
+    "path": "ics/techniques/T0859__Valid_Accounts.md"
+  },
+  {
+    "id": "T0890",
+    "stix_id": "attack-pattern--cfe68e93-ce94-4c0f-a57d-3aa72cedd618",
+    "type": "attack-pattern",
+    "name": "Exploitation for Privilege Escalation",
+    "path": "ics/techniques/T0890__Exploitation_for_Privilege_Escalation.md"
+  },
+  {
+    "id": "T0846",
+    "stix_id": "attack-pattern--d5a69cfb-fc2a-46cb-99eb-74b236db5061",
+    "type": "attack-pattern",
+    "name": "Remote System Discovery",
+    "path": "ics/techniques/T0846__Remote_System_Discovery.md"
+  },
+  {
+    "id": "T0884",
+    "stix_id": "attack-pattern--d67adac8-e3b9-44f9-9e6d-6c2a7d69dbe4",
+    "type": "attack-pattern",
+    "name": "Connection Proxy",
+    "path": "ics/techniques/T0884__Connection_Proxy.md"
+  },
+  {
+    "id": "T0843.002",
+    "stix_id": "attack-pattern--d85a6ee9-820c-4adf-8a64-2392ee70c83c",
+    "type": "attack-pattern",
+    "name": "Online Edit",
+    "path": "ics/techniques/T0843.002__Online_Edit.md"
+  },
+  {
+    "id": "T0869",
+    "stix_id": "attack-pattern--e076cca8-2f08-45c9-aff7-ea5ac798b387",
+    "type": "attack-pattern",
+    "name": "Standard Application Layer Protocol",
+    "path": "ics/techniques/T0869__Standard_Application_Layer_Protocol.md"
+  },
+  {
+    "id": "T1692",
+    "stix_id": "attack-pattern--e17cdc00-8b58-4e5f-9d50-4cad1592c4c3",
+    "type": "attack-pattern",
+    "name": "Unauthorized Message",
+    "path": "ics/techniques/T1692__Unauthorized_Message.md"
+  },
+  {
+    "id": "T0886",
+    "stix_id": "attack-pattern--e1f9cdd2-9511-4fca-90d7-f3e92cfdd0bf",
+    "type": "attack-pattern",
+    "name": "Remote Services",
+    "path": "ics/techniques/T0886__Remote_Services.md"
+  },
+  {
+    "id": "T0813",
+    "stix_id": "attack-pattern--e33c7ecc-5a38-497f-beb2-a9a2049a4c20",
+    "type": "attack-pattern",
+    "name": "Denial of Control",
+    "path": "ics/techniques/T0813__Denial_of_Control.md"
+  },
+  {
+    "id": "T0838",
+    "stix_id": "attack-pattern--e5de767e-f513-41cd-aa15-33f6ce5fbf92",
+    "type": "attack-pattern",
+    "name": "Modify Alarm Settings",
+    "path": "ics/techniques/T0838__Modify_Alarm_Settings.md"
+  },
+  {
+    "id": "T0885",
+    "stix_id": "attack-pattern--e6c31185-8040-4267-83d3-b217b8a92f07",
+    "type": "attack-pattern",
+    "name": "Commonly Used Port",
+    "path": "ics/techniques/T0885__Commonly_Used_Port.md"
+  },
+  {
+    "id": "T0873",
+    "stix_id": "attack-pattern--e72425f8-9ae6-41d3-bfdb-e1b865e60722",
+    "type": "attack-pattern",
+    "name": "Project File Infection",
+    "path": "ics/techniques/T0873__Project_File_Infection.md"
+  },
+  {
+    "id": "T0840",
+    "stix_id": "attack-pattern--ea0c980c-5cf0-43a7-a049-59c4c207566e",
+    "type": "attack-pattern",
+    "name": "Network Connection Enumeration",
+    "path": "ics/techniques/T0840__Network_Connection_Enumeration.md"
+  },
+  {
+    "id": "T0867",
+    "stix_id": "attack-pattern--ead7bd34-186e-4c79-9a4d-b65bcce6ed9d",
+    "type": "attack-pattern",
+    "name": "Lateral Tool Transfer",
+    "path": "ics/techniques/T0867__Lateral_Tool_Transfer.md"
+  },
+  {
+    "id": "T0883",
+    "stix_id": "attack-pattern--f8df6b57-14bc-425f-9a91-6f59f6799307",
+    "type": "attack-pattern",
+    "name": "Internet Accessible Device",
+    "path": "ics/techniques/T0883__Internet_Accessible_Device.md"
+  },
+  {
+    "id": "T0893",
+    "stix_id": "attack-pattern--fa3aa267-da22-4bdd-961f-03223322a8d5",
+    "type": "attack-pattern",
+    "name": "Data from Local System",
+    "path": "ics/techniques/T0893__Data_from_Local_System.md"
+  },
+  {
+    "id": "T0892",
+    "stix_id": "attack-pattern--fab8fc7d-f27f-4fbb-9de6-44740aade05f",
+    "type": "attack-pattern",
+    "name": "Change Credential",
+    "path": "ics/techniques/T0892__Change_Credential.md"
+  },
+  {
+    "id": "T1695",
+    "stix_id": "attack-pattern--fbb67c2d-37c3-49ee-86e3-bf234cc48ca9",
+    "type": "attack-pattern",
+    "name": "Block Communications",
+    "path": "ics/techniques/T1695__Block_Communications.md"
+  },
+  {
+    "id": "T0889",
+    "stix_id": "attack-pattern--fc5fda7e-6b2c-4457-b036-759896a2efa2",
+    "type": "attack-pattern",
+    "name": "Modify Program",
+    "path": "ics/techniques/T0889__Modify_Program.md"
+  },
+  {
+    "id": "TA0107",
+    "stix_id": "x-mitre-tactic--298fe907-7931-4fd2-8131-2814dd493134",
+    "type": "x-mitre-tactic",
+    "name": "Inhibit Response Function",
+    "path": "ics/tactics/TA0107__Inhibit_Response_Function.md"
+  },
+  {
+    "id": "TA0111",
+    "stix_id": "x-mitre-tactic--33752ae7-f875-4f43-bdb6-d8d02d341046",
+    "type": "x-mitre-tactic",
+    "name": "Privilege Escalation",
+    "path": "ics/tactics/TA0111__Privilege_Escalation.md"
+  },
+  {
+    "id": "TA0109",
+    "stix_id": "x-mitre-tactic--51c25a9e-8615-40c0-8afd-1da578847924",
+    "type": "x-mitre-tactic",
+    "name": "Lateral Movement",
+    "path": "ics/tactics/TA0109__Lateral_Movement.md"
+  },
+  {
+    "id": "TA0102",
+    "stix_id": "x-mitre-tactic--696af733-728e-49d7-8261-75fdc590f453",
+    "type": "x-mitre-tactic",
+    "name": "Discovery",
+    "path": "ics/tactics/TA0102__Discovery.md"
+  },
+  {
+    "id": "TA0108",
+    "stix_id": "x-mitre-tactic--69da72d2-f550-41c5-ab9e-e8255707f28a",
+    "type": "x-mitre-tactic",
+    "name": "Initial Access",
+    "path": "ics/tactics/TA0108__Initial_Access.md"
+  },
+  {
+    "id": "TA0105",
+    "stix_id": "x-mitre-tactic--77542f83-70d0-40c2-8a9d-ad2eb8b00279",
+    "type": "x-mitre-tactic",
+    "name": "Impact",
+    "path": "ics/tactics/TA0105__Impact.md"
+  },
+  {
+    "id": "TA0110",
+    "stix_id": "x-mitre-tactic--78f1d2ae-a579-44c4-8fc5-3e1775c73fac",
+    "type": "x-mitre-tactic",
+    "name": "Persistence",
+    "path": "ics/tactics/TA0110__Persistence.md"
+  },
+  {
+    "id": "TA0104",
+    "stix_id": "x-mitre-tactic--93bf9a8e-b14c-4587-b6d5-9efc7c12eb45",
+    "type": "x-mitre-tactic",
+    "name": "Execution",
+    "path": "ics/tactics/TA0104__Execution.md"
+  },
+  {
+    "id": "TA0101",
+    "stix_id": "x-mitre-tactic--97c8ff73-bd14-4b6c-ac32-3d91d2c41e3f",
+    "type": "x-mitre-tactic",
+    "name": "Command and Control",
+    "path": "ics/tactics/TA0101__Command_and_Control.md"
+  },
+  {
+    "id": "TA0100",
+    "stix_id": "x-mitre-tactic--b2a67b1e-913c-46f6-b219-048a90560bb9",
+    "type": "x-mitre-tactic",
+    "name": "Collection",
+    "path": "ics/tactics/TA0100__Collection.md"
+  },
+  {
+    "id": "TA0103",
+    "stix_id": "x-mitre-tactic--ddf70682-f3ce-479c-a9a4-7eadf9bfead7",
+    "type": "x-mitre-tactic",
+    "name": "Evasion",
+    "path": "ics/tactics/TA0103__Evasion.md"
+  },
+  {
+    "id": "TA0106",
+    "stix_id": "x-mitre-tactic--ff048b6c-b872-4218-b68c-3735ebd1f024",
+    "type": "x-mitre-tactic",
+    "name": "Impair Process Control",
+    "path": "ics/tactics/TA0106__Impair_Process_Control.md"
+  }
+]

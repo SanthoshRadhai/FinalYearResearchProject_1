@@ -1,0 +1,50 @@
+[
+  {
+    "case": "A_two_consecutive_malformed_trips_breaker",
+    "expected": "aborts on 2nd",
+    "breaker_fired": true,
+    "correct": true
+  },
+  {
+    "case": "B_single_malformed_does_not_trip",
+    "expected": "does not abort yet",
+    "aborted": false,
+    "correct": true
+  },
+  {
+    "case": "C_streak_resets_after_clean_call",
+    "expected": "does not abort (streak was reset)",
+    "aborted": false,
+    "correct": true
+  },
+  {
+    "case": "D_harmony_sanitizer_strips_content",
+    "expected": "tokens stripped",
+    "cleaned": true,
+    "correct": true
+  },
+  {
+    "case": "E_harmony_sanitizer_strips_tool_name",
+    "expected": "tool name cleaned",
+    "cleaned": true,
+    "correct": true
+  },
+  {
+    "case": "F_clean_message_no_false_positive",
+    "expected": "no changes ({})",
+    "got_empty_update": true,
+    "correct": true
+  },
+  {
+    "case": "G_ref_redirect_triggers_for_browser_agent",
+    "expected": "redirected to browser_snapshot",
+    "redirected": true,
+    "correct": true
+  },
+  {
+    "case": "H_ref_redirect_scoped_off_for_non_browser_agent",
+    "expected": "NOT redirected (feature correctly scoped off)",
+    "redirected": false,
+    "correct": true
+  }
+]

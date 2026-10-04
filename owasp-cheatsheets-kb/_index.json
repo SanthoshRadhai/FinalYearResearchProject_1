@@ -1,0 +1,734 @@
+[
+  {
+    "id": "AI-Powered_Advertising_Systems_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "AI-Powered Advertising Systems Security Cheat Sheet",
+    "path": "cheatsheets/AI-Powered_Advertising_Systems_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "AI_Agent_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "AI Agent Security Cheat Sheet",
+    "path": "cheatsheets/AI_Agent_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "AJAX_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "AJAX Security Cheat Sheet",
+    "path": "cheatsheets/AJAX_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "AML_Sanctions_AI_Agent_Payments_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "AML Sanctions AI Agent Payments Cheat Sheet",
+    "path": "cheatsheets/AML_Sanctions_AI_Agent_Payments_Cheat_Sheet.md"
+  },
+  {
+    "id": "Abuse_Case_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Abuse Case Cheat Sheet",
+    "path": "cheatsheets/Abuse_Case_Cheat_Sheet.md"
+  },
+  {
+    "id": "Access_Control_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Access Control Cheat Sheet",
+    "path": "cheatsheets/Access_Control_Cheat_Sheet.md"
+  },
+  {
+    "id": "Attack_Surface_Analysis_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Attack Surface Analysis Cheat Sheet",
+    "path": "cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.md"
+  },
+  {
+    "id": "Authentication_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Authentication Cheat Sheet",
+    "path": "cheatsheets/Authentication_Cheat_Sheet.md"
+  },
+  {
+    "id": "Authorization_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Authorization Cheat Sheet",
+    "path": "cheatsheets/Authorization_Cheat_Sheet.md"
+  },
+  {
+    "id": "Authorization_Regression_Testing_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Authorization Regression Testing Cheat Sheet",
+    "path": "cheatsheets/Authorization_Regression_Testing_Cheat_Sheet.md"
+  },
+  {
+    "id": "Authorization_Testing_Automation_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Authorization Testing Automation Cheat Sheet",
+    "path": "cheatsheets/Authorization_Testing_Automation_Cheat_Sheet.md"
+  },
+  {
+    "id": "Automotive_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Automotive Security Cheat Sheet",
+    "path": "cheatsheets/Automotive_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Bean_Validation_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Bean Validation Cheat Sheet",
+    "path": "cheatsheets/Bean_Validation_Cheat_Sheet.md"
+  },
+  {
+    "id": "Bot_Management_and_Anti-Automation_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Bot Management and Anti-Automation Cheat Sheet",
+    "path": "cheatsheets/Bot_Management_and_Anti-Automation_Cheat_Sheet.md"
+  },
+  {
+    "id": "Browser_Extension_Vulnerabilities_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Browser Extension Vulnerabilities Cheat Sheet",
+    "path": "cheatsheets/Browser_Extension_Vulnerabilities_Cheat_Sheet.md"
+  },
+  {
+    "id": "Business_Logic_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Business Logic Security Cheat Sheet",
+    "path": "cheatsheets/Business_Logic_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "C-Based_Toolchain_Hardening_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "C-Based Toolchain Hardening Cheat Sheet",
+    "path": "cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.md"
+  },
+  {
+    "id": "CI_CD_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "CI CD Security Cheat Sheet",
+    "path": "cheatsheets/CI_CD_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Choosing_and_Using_Security_Questions_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Choosing and Using Security Questions Cheat Sheet",
+    "path": "cheatsheets/Choosing_and_Using_Security_Questions_Cheat_Sheet.md"
+  },
+  {
+    "id": "Clickjacking_Defense_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Clickjacking Defense Cheat Sheet",
+    "path": "cheatsheets/Clickjacking_Defense_Cheat_Sheet.md"
+  },
+  {
+    "id": "Content_Security_Policy_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Content Security Policy Cheat Sheet",
+    "path": "cheatsheets/Content_Security_Policy_Cheat_Sheet.md"
+  },
+  {
+    "id": "Cookie_Theft_Mitigation_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Cookie Theft Mitigation Cheat Sheet",
+    "path": "cheatsheets/Cookie_Theft_Mitigation_Cheat_Sheet.md"
+  },
+  {
+    "id": "Credential_Stuffing_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Credential Stuffing Prevention Cheat Sheet",
+    "path": "cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "Cross-Site_Request_Forgery_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Cross-Site Request Forgery Prevention Cheat Sheet",
+    "path": "cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "Cross_Site_Scripting_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Cross Site Scripting Prevention Cheat Sheet",
+    "path": "cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "Cryptographic_Storage_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Cryptographic Storage Cheat Sheet",
+    "path": "cheatsheets/Cryptographic_Storage_Cheat_Sheet.md"
+  },
+  {
+    "id": "DOM_Clobbering_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "DOM Clobbering Prevention Cheat Sheet",
+    "path": "cheatsheets/DOM_Clobbering_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "DOM_based_XSS_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "DOM based XSS Prevention Cheat Sheet",
+    "path": "cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "Database_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Database Security Cheat Sheet",
+    "path": "cheatsheets/Database_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Denial_of_Service_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Denial of Service Cheat Sheet",
+    "path": "cheatsheets/Denial_of_Service_Cheat_Sheet.md"
+  },
+  {
+    "id": "Dependency_Graph_SBOM_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Dependency Graph SBOM Cheat Sheet",
+    "path": "cheatsheets/Dependency_Graph_SBOM_Cheat_Sheet.md"
+  },
+  {
+    "id": "Deserialization_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Deserialization Cheat Sheet",
+    "path": "cheatsheets/Deserialization_Cheat_Sheet.md"
+  },
+  {
+    "id": "Django_REST_Framework_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Django REST Framework Cheat Sheet",
+    "path": "cheatsheets/Django_REST_Framework_Cheat_Sheet.md"
+  },
+  {
+    "id": "Django_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Django Security Cheat Sheet",
+    "path": "cheatsheets/Django_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Docker_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Docker Security Cheat Sheet",
+    "path": "cheatsheets/Docker_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "DotNet_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "DotNet Security Cheat Sheet",
+    "path": "cheatsheets/DotNet_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Drone_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Drone Security Cheat Sheet",
+    "path": "cheatsheets/Drone_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Email_Validation_and_Verification_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Email Validation and Verification Cheat Sheet",
+    "path": "cheatsheets/Email_Validation_and_Verification_Cheat_Sheet.md"
+  },
+  {
+    "id": "Error_Handling_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Error Handling Cheat Sheet",
+    "path": "cheatsheets/Error_Handling_Cheat_Sheet.md"
+  },
+  {
+    "id": "File_Upload_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "File Upload Cheat Sheet",
+    "path": "cheatsheets/File_Upload_Cheat_Sheet.md"
+  },
+  {
+    "id": "Forgot_Password_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Forgot Password Cheat Sheet",
+    "path": "cheatsheets/Forgot_Password_Cheat_Sheet.md"
+  },
+  {
+    "id": "GitHub_Actions_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "GitHub Actions Security Cheat Sheet",
+    "path": "cheatsheets/GitHub_Actions_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "GraphQL_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "GraphQL Cheat Sheet",
+    "path": "cheatsheets/GraphQL_Cheat_Sheet.md"
+  },
+  {
+    "id": "HTML5_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "HTML5 Security Cheat Sheet",
+    "path": "cheatsheets/HTML5_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "HTTP_Headers_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "HTTP Headers Cheat Sheet",
+    "path": "cheatsheets/HTTP_Headers_Cheat_Sheet.md"
+  },
+  {
+    "id": "HTTP_Strict_Transport_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "HTTP Strict Transport Security Cheat Sheet",
+    "path": "cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Infrastructure_as_Code_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Infrastructure as Code Security Cheat Sheet",
+    "path": "cheatsheets/Infrastructure_as_Code_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Injection_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Injection Prevention Cheat Sheet",
+    "path": "cheatsheets/Injection_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "Injection_Prevention_in_Java_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Injection Prevention in Java Cheat Sheet",
+    "path": "cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.md"
+  },
+  {
+    "id": "Input_Validation_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Input Validation Cheat Sheet",
+    "path": "cheatsheets/Input_Validation_Cheat_Sheet.md"
+  },
+  {
+    "id": "Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Insecure Direct Object Reference Prevention Cheat Sheet",
+    "path": "cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "JAAS_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "JAAS Cheat Sheet",
+    "path": "cheatsheets/JAAS_Cheat_Sheet.md"
+  },
+  {
+    "id": "JSON_Web_Token_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "JSON Web Token Cheat Sheet",
+    "path": "cheatsheets/JSON_Web_Token_Cheat_Sheet.md"
+  },
+  {
+    "id": "Java_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Java Security Cheat Sheet",
+    "path": "cheatsheets/Java_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Key_Management_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Key Management Cheat Sheet",
+    "path": "cheatsheets/Key_Management_Cheat_Sheet.md"
+  },
+  {
+    "id": "Kubernetes_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Kubernetes Security Cheat Sheet",
+    "path": "cheatsheets/Kubernetes_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "LDAP_Injection_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "LDAP Injection Prevention Cheat Sheet",
+    "path": "cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "LLM_Prompt_Injection_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "LLM Prompt Injection Prevention Cheat Sheet",
+    "path": "cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "Laravel_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Laravel Cheat Sheet",
+    "path": "cheatsheets/Laravel_Cheat_Sheet.md"
+  },
+  {
+    "id": "Legacy_Application_Management_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Legacy Application Management Cheat Sheet",
+    "path": "cheatsheets/Legacy_Application_Management_Cheat_Sheet.md"
+  },
+  {
+    "id": "Logging_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Logging Cheat Sheet",
+    "path": "cheatsheets/Logging_Cheat_Sheet.md"
+  },
+  {
+    "id": "Logging_Vocabulary_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Logging Vocabulary Cheat Sheet",
+    "path": "cheatsheets/Logging_Vocabulary_Cheat_Sheet.md"
+  },
+  {
+    "id": "MCP_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "MCP Security Cheat Sheet",
+    "path": "cheatsheets/MCP_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Mass_Assignment_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Mass Assignment Cheat Sheet",
+    "path": "cheatsheets/Mass_Assignment_Cheat_Sheet.md"
+  },
+  {
+    "id": "Microservices_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Microservices Security Cheat Sheet",
+    "path": "cheatsheets/Microservices_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Microservices_based_Security_Arch_Doc_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Microservices based Security Arch Doc Cheat Sheet",
+    "path": "cheatsheets/Microservices_based_Security_Arch_Doc_Cheat_Sheet.md"
+  },
+  {
+    "id": "Mobile_Application_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Mobile Application Security Cheat Sheet",
+    "path": "cheatsheets/Mobile_Application_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Multi_Tenant_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Multi Tenant Security Cheat Sheet",
+    "path": "cheatsheets/Multi_Tenant_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Multifactor_Authentication_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Multifactor Authentication Cheat Sheet",
+    "path": "cheatsheets/Multifactor_Authentication_Cheat_Sheet.md"
+  },
+  {
+    "id": "NPM_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "NPM Security Cheat Sheet",
+    "path": "cheatsheets/NPM_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Network_Segmentation_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Network Segmentation Cheat Sheet",
+    "path": "cheatsheets/Network_Segmentation_Cheat_Sheet.md"
+  },
+  {
+    "id": "Nextjs_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Nextjs Security Cheat Sheet",
+    "path": "cheatsheets/Nextjs_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "NoSQL_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "NoSQL Security Cheat Sheet",
+    "path": "cheatsheets/NoSQL_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "NodeJS_Docker_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "NodeJS Docker Cheat Sheet",
+    "path": "cheatsheets/NodeJS_Docker_Cheat_Sheet.md"
+  },
+  {
+    "id": "Nodejs_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Nodejs Security Cheat Sheet",
+    "path": "cheatsheets/Nodejs_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "OAuth2_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "OAuth2 Cheat Sheet",
+    "path": "cheatsheets/OAuth2_Cheat_Sheet.md"
+  },
+  {
+    "id": "OS_Command_Injection_Defense_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "OS Command Injection Defense Cheat Sheet",
+    "path": "cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.md"
+  },
+  {
+    "id": "PHP_Configuration_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "PHP Configuration Cheat Sheet",
+    "path": "cheatsheets/PHP_Configuration_Cheat_Sheet.md"
+  },
+  {
+    "id": "Password_Storage_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Password Storage Cheat Sheet",
+    "path": "cheatsheets/Password_Storage_Cheat_Sheet.md"
+  },
+  {
+    "id": "Pinning_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Pinning Cheat Sheet",
+    "path": "cheatsheets/Pinning_Cheat_Sheet.md"
+  },
+  {
+    "id": "Prototype_Pollution_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Prototype Pollution Prevention Cheat Sheet",
+    "path": "cheatsheets/Prototype_Pollution_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "Query_Parameterization_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Query Parameterization Cheat Sheet",
+    "path": "cheatsheets/Query_Parameterization_Cheat_Sheet.md"
+  },
+  {
+    "id": "RAG_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "RAG Security Cheat Sheet",
+    "path": "cheatsheets/RAG_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "REST_Assessment_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "REST Assessment Cheat Sheet",
+    "path": "cheatsheets/REST_Assessment_Cheat_Sheet.md"
+  },
+  {
+    "id": "REST_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "REST Security Cheat Sheet",
+    "path": "cheatsheets/REST_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Ruby_on_Rails_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Ruby on Rails Cheat Sheet",
+    "path": "cheatsheets/Ruby_on_Rails_Cheat_Sheet.md"
+  },
+  {
+    "id": "SAML_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "SAML Security Cheat Sheet",
+    "path": "cheatsheets/SAML_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "SQL_Injection_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "SQL Injection Prevention Cheat Sheet",
+    "path": "cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "Secrets_Management_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Secrets Management Cheat Sheet",
+    "path": "cheatsheets/Secrets_Management_Cheat_Sheet.md"
+  },
+  {
+    "id": "Secure_AI_Model_Ops_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Secure AI Model Ops Cheat Sheet",
+    "path": "cheatsheets/Secure_AI_Model_Ops_Cheat_Sheet.md"
+  },
+  {
+    "id": "Secure_Cloud_Architecture_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Secure Cloud Architecture Cheat Sheet",
+    "path": "cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet.md"
+  },
+  {
+    "id": "Secure_Code_Review_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Secure Code Review Cheat Sheet",
+    "path": "cheatsheets/Secure_Code_Review_Cheat_Sheet.md"
+  },
+  {
+    "id": "Secure_Coding_with_AI_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Secure Coding with AI Cheat Sheet",
+    "path": "cheatsheets/Secure_Coding_with_AI_Cheat_Sheet.md"
+  },
+  {
+    "id": "Secure_Product_Design_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Secure Product Design Cheat Sheet",
+    "path": "cheatsheets/Secure_Product_Design_Cheat_Sheet.md"
+  },
+  {
+    "id": "Securing_Cascading_Style_Sheets_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Securing Cascading Style Sheets Cheat Sheet",
+    "path": "cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet.md"
+  },
+  {
+    "id": "Security_Terminology_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Security Terminology Cheat Sheet",
+    "path": "cheatsheets/Security_Terminology_Cheat_Sheet.md"
+  },
+  {
+    "id": "Server_Side_Request_Forgery_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Server Side Request Forgery Prevention Cheat Sheet",
+    "path": "cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "Serverless_FaaS_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Serverless FaaS Security Cheat Sheet",
+    "path": "cheatsheets/Serverless_FaaS_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Session_Management_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Session Management Cheat Sheet",
+    "path": "cheatsheets/Session_Management_Cheat_Sheet.md"
+  },
+  {
+    "id": "Software_Supply_Chain_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Software Supply Chain Security Cheat Sheet",
+    "path": "cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Subdomain_Takeover_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Subdomain Takeover Prevention Cheat Sheet",
+    "path": "cheatsheets/Subdomain_Takeover_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "Symfony_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Symfony Cheat Sheet",
+    "path": "cheatsheets/Symfony_Cheat_Sheet.md"
+  },
+  {
+    "id": "TLS_Cipher_String_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "TLS Cipher String Cheat Sheet",
+    "path": "cheatsheets/TLS_Cipher_String_Cheat_Sheet.md"
+  },
+  {
+    "id": "Third_Party_Javascript_Management_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Third Party Javascript Management Cheat Sheet",
+    "path": "cheatsheets/Third_Party_Javascript_Management_Cheat_Sheet.md"
+  },
+  {
+    "id": "Third_Party_Payment_Gateway_Integration_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Third Party Payment Gateway Integration Cheat Sheet",
+    "path": "cheatsheets/Third_Party_Payment_Gateway_Integration_Cheat_Sheet.md"
+  },
+  {
+    "id": "Threat_Modeling_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Threat Modeling Cheat Sheet",
+    "path": "cheatsheets/Threat_Modeling_Cheat_Sheet.md"
+  },
+  {
+    "id": "Transaction_Authorization_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Transaction Authorization Cheat Sheet",
+    "path": "cheatsheets/Transaction_Authorization_Cheat_Sheet.md"
+  },
+  {
+    "id": "Transport_Layer_Protection_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Transport Layer Protection Cheat Sheet",
+    "path": "cheatsheets/Transport_Layer_Protection_Cheat_Sheet.md"
+  },
+  {
+    "id": "Transport_Layer_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Transport Layer Security Cheat Sheet",
+    "path": "cheatsheets/Transport_Layer_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Unvalidated_Redirects_and_Forwards_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Unvalidated Redirects and Forwards Cheat Sheet",
+    "path": "cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.md"
+  },
+  {
+    "id": "User_Privacy_Protection_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "User Privacy Protection Cheat Sheet",
+    "path": "cheatsheets/User_Privacy_Protection_Cheat_Sheet.md"
+  },
+  {
+    "id": "Virtual_Patching_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Virtual Patching Cheat Sheet",
+    "path": "cheatsheets/Virtual_Patching_Cheat_Sheet.md"
+  },
+  {
+    "id": "Vulnerability_Disclosure_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Vulnerability Disclosure Cheat Sheet",
+    "path": "cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.md"
+  },
+  {
+    "id": "Vulnerable_Dependency_Management_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Vulnerable Dependency Management Cheat Sheet",
+    "path": "cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.md"
+  },
+  {
+    "id": "WebSocket_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "WebSocket Security Cheat Sheet",
+    "path": "cheatsheets/WebSocket_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "Web_Service_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Web Service Security Cheat Sheet",
+    "path": "cheatsheets/Web_Service_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "XML_External_Entity_Prevention_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "XML External Entity Prevention Cheat Sheet",
+    "path": "cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.md"
+  },
+  {
+    "id": "XML_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "XML Security Cheat Sheet",
+    "path": "cheatsheets/XML_Security_Cheat_Sheet.md"
+  },
+  {
+    "id": "XSS_Filter_Evasion_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "XSS Filter Evasion Cheat Sheet",
+    "path": "cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.md"
+  },
+  {
+    "id": "XS_Leaks_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "XS Leaks Cheat Sheet",
+    "path": "cheatsheets/XS_Leaks_Cheat_Sheet.md"
+  },
+  {
+    "id": "Zero_Trust_Architecture_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "Zero Trust Architecture Cheat Sheet",
+    "path": "cheatsheets/Zero_Trust_Architecture_Cheat_Sheet.md"
+  },
+  {
+    "id": "gRPC_Security_Cheat_Sheet",
+    "type": "cheatsheet",
+    "name": "gRPC Security Cheat Sheet",
+    "path": "cheatsheets/gRPC_Security_Cheat_Sheet.md"
+  }
+]

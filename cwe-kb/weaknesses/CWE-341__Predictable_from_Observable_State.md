@@ -1,0 +1,25 @@
+# CWE-341: Predictable from Observable State
+
+**Abstraction:** Base  
+**Status:** Draft  
+**Reference:** https://cwe.mitre.org/data/definitions/341.html  
+
+## Description
+A number or object is predictable based on observations that the attacker can make about the state of the system or network, such as time, process ID, etc.
+
+## Related Weaknesses
+- ChildOf: CWE-340
+
+## Common Consequences
+- Scope: Other; Impact: Varies by Context — This weakness could be exploited by an attacker in a number ways depending on the context. If a predictable number is used to generate IDs or keys that are used within protection mechanisms, then an attacker could gain unauthorized access to the system. If predictable filenames are used for storing sensitive information, then an attacker might gain access to the system and may be able to gain access to the information in the file.
+
+## Potential Mitigations
+- [Implementation] Increase the entropy used to seed a PRNG.
+- [Architecture and Design, Requirements] Use products or modules that conform to FIPS 140-2 [REF-267] to avoid obvious entropy problems. Consult FIPS 140-2 Annex C ("Approved Random Number Generators").
+- [Implementation] Use a PRNG that periodically re-seeds itself using input from high-quality sources, such as hardware devices with high entropy. However, do not re-seed too frequently, or else the entropy source might block.
+
+## Detection Methods
+- [Automated Static Analysis] Automated static analysis, commonly referred to as Static Application Security Testing (SAST), can find some instances of this weakness by analyzing source code (or binary/compiled code) without having to execute it. Typically, this is done by building a model of data flow and control flow, then searching for potentially-vulnerable patterns that connect "sources" (origins of input) with "sinks" (destinations where the data interacts with external components, a lower layer such as the OS, etc.)
+
+## Demonstrative Examples (summary)
+- This code generates a unique random identifier for a user's session.

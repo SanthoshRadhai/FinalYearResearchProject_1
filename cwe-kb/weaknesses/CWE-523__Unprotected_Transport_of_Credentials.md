@@ -1,0 +1,21 @@
+# CWE-523: Unprotected Transport of Credentials
+
+**Abstraction:** Base  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/523.html  
+
+## Description
+Login pages do not use adequate measures to protect the user name and password while they are in transit from the client to the server.
+
+## Related Weaknesses
+- ChildOf: CWE-522
+- CanAlsoBe: CWE-319
+
+## Common Consequences
+- Scope: Access Control; Impact: Gain Privileges or Assume Identity
+
+## Potential Mitigations
+- [Operation, System Configuration] Enforce SSL use for the login page or any page used to transmit user credentials or other sensitive information. Even if the entire site does not use SSL, it MUST use SSL for login. Additionally, to help prevent phishing attacks, make sure that SSL serves the login page. SSL allows the user to verify the identity of the server to which they are connecting. If the SSL serves login page, the user can be certain they are talking to the proper end system. A phishing attack would typically redirect a user to a site that does not have a valid trusted server certificate issued from an authorized supplier.
+
+## Detection Methods
+- [Automated Static Analysis] Automated static analysis, commonly referred to as Static Application Security Testing (SAST), can find some instances of this weakness by analyzing source code (or binary/compiled code) without having to execute it. Typically, this is done by building a model of data flow and control flow, then searching for potentially-vulnerable patterns that connect "sources" (origins of input) with "sinks" (destinations where the data interacts with external components, a lower layer such as the OS, etc.)

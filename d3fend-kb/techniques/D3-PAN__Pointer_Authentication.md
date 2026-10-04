@@ -1,0 +1,30 @@
+# D3-PAN: Pointer Authentication
+
+**Reference:** https://d3fend.mitre.org/technique/D3-PAN/  
+
+## Definition
+Comparing the cryptographic hash or derivative of a pointer's value to an expected value.
+
+## Parent Class(es)
+- Application Hardening
+
+## Relationships
+- **authenticates:** Pointer
+- **kb-reference:** Reference - Pointer Authentication on ARMv8.3
+- **kb-reference:** Reference - Pointer Authentication Project Zero
+
+## Knowledge Base Article
+## How It Works
+
+Pointer Authentication (frequently referred to as PAC, although the technique is properly Pointer Authentication) is a security feature to provide protection against attackers with memory read/write access.  A Pointer Authentication Code (PAC) is a cryptographic hash or derivative computed on the value of a pointer and some additional context information which can then provide a cryptographically strong guarantee about the likelihood that a pointer has been tampered with by an attacker.
+
+Although pointers are 64 bits, most systems have a substantially smaller virtual address space, leaving unused bits in pointers that can store the value of the PAC, this can be done to reduce memory space requirements. One implementation is in ARMv8.3-A.  A PAC is computed over the 64-bit pointer value and a 64-bit context value.  Instructions are introduced to deal with pointers: one category to compute and insert the PAC into a pointer, another category to verify the pointer and invalidate the pointer if the PAC does not check, and a third category to remove the pointer and restore the original value without verifying.
+
+The ARM standard specifies a cryptographic algorithm called QARMA-64 (designed by Qualcomm) to compute the signature, although this algorithm is not required.  The architecture provides for five secret 128-bit Pointer Authentication keys: two for instruction pointers, two for data pointers, and a general key for signing larger blocks of data.
+
+## Considerations
+
+In the ARM implementation, the mechanisms above for manipulating PACS are provided, but it is up to the code developer to manage the keys for the cryptographic algorithm.
+
+
+A known potential limitation of PACs concerns signing gadgets. Under certain circumstances PACs can be bypassed by forcing the system to run a signing gadget which will allow the signing of arbitrary pointers to occur.

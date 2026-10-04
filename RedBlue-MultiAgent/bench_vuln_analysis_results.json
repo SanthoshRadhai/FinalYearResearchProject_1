@@ -1,0 +1,42 @@
+[
+  {
+    "trial": 1,
+    "ok": true,
+    "latency_s": 4.93,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | **10.0** |\n| Severity | **Critical** |\n| Vector | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H |\n\n**Priority Assessment**\n\n- **Critical severity** with a maximum ba",
+    "evidence_excerpt": "{'version': '3.x', 'base_score': Decimal('10.0'), 'severity': 'Critical', 'vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H'}"
+  },
+  {
+    "trial": 2,
+    "ok": true,
+    "latency_s": 4.26,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | **9.8** |\n| Severity | **Critical** |\n| Vector | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n\n**Priority Assessment**\n\n- **High Impact**: The vulnerability allow",
+    "evidence_excerpt": "{'version': '3.x', 'base_score': Decimal('9.8'), 'severity': 'Critical', 'vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H'}"
+  },
+  {
+    "trial": 3,
+    "ok": true,
+    "latency_s": 5.23,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| **Version** | 3.x |\n| **Base Score** | **10.0** |\n| **Severity** | **Critical** |\n| **Vector** | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H |\n\n**Priority Assessment**\n\n- **Critical severity (10",
+    "evidence_excerpt": "{'version': '3.x', 'base_score': Decimal('10.0'), 'severity': 'Critical', 'vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H'}"
+  },
+  {
+    "trial": 4,
+    "ok": true,
+    "latency_s": 4.85,
+    "tool_calls": 1,
+    "claim": "**CVSS Analysis**\n\n| Field | Value |\n|-------|-------|\n| Vector | `CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H` |\n| Version | 3.x |\n| Base Score | **9.8** |\n| Severity | **Critical** |\n\n**Priority Assessment**\n\n- **Critical severity** and a **9.8 ba",
+    "evidence_excerpt": "{'version': '3.x', 'base_score': Decimal('9.8'), 'severity': 'Critical', 'vector': 'CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H'}"
+  },
+  {
+    "trial": 5,
+    "ok": true,
+    "latency_s": 5.99,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| Version | 2.0 |\n| Base Score | 5.0 |\n| Severity | Medium |\n| Vector | CVSS:2.0/AV:N/AC:L/Au:N/C:P/I:N/A:N |\n\n**Priority Assessment**\n\n- **Severity**: The CVSS base score of **5.0 (Medium)** indic",
+    "evidence_excerpt": "{'version': '2.0', 'base_score': Decimal('5.0'), 'severity': 'Medium', 'vector': 'CVSS:2.0/AV:N/AC:L/Au:N/C:P/I:N/A:N'}"
+  }
+]

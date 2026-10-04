@@ -1,0 +1,185 @@
+# T1113: Screen Capture
+
+
+**ATT&CK ID:** T1113  
+**Domain:** Mitre Attack  
+**Tactic(s):** Collection  
+**Platforms:** Linux, macOS, Windows  
+**Reference:** https://attack.mitre.org/techniques/T1113  
+
+## Description
+Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as <code>CopyFromScreen</code>, <code>xwd</code>, or <code>screencapture</code>.(Citation: CopyFromScreen .NET)(Citation: Antiquated Mac Malware)
+
+## Known Threat Groups Using This Technique
+- G0007: APT28
+- G0087: APT39
+- G1044: APT42
+- G0060: BRONZE BUTLER
+- G0070: Dark Caracal
+- G0035: Dragonfly
+- G0046: FIN7
+- G0115: GOLD SOUTHFIELD
+- G0047: Gamaredon Group
+- G0043: Group5
+- G0094: Kimsuky
+- G0059: Magic Hound
+- G1019: MoustachedBouncer
+- G0069: MuddyWater
+- G0049: OilRig
+- G0091: Silence
+- G1055: VOID MANTICORE
+- G1017: Volt Typhoon
+- G1035: Winter Vivern
+
+## Known Software Using This Technique
+- S0331: Agent Tesla
+- S0622: AppleSeed
+- S0456: Aria-body
+- S9031: AshTag
+- S1087: AsyncRAT
+- S0438: Attor
+- S0344: Azorult
+- S1081: BADHATCH
+- S0128: BADNEWS
+- S0017: BISCUIT
+- S0657: BLUELIGHT
+- S0337: BadPatch
+- S0234: Bandook
+- S0089: BlackEnergy
+- S1063: Brute Ratel C4
+- S1149: CHIMNEYSWEEP
+- S0023: CHOPSTICK
+- S0454: Cadelspy
+- S0351: Cannon
+- S0030: Carbanak
+- S0484: Carberp
+- S0348: Cardinal RAT
+- S0261: Catchamas
+- S0631: Chaes
+- S0674: CharmPower
+- S0667: Chrommme
+- S0660: Clambling
+- S0154: Cobalt Strike
+- S0338: Cobian RAT
+- S0591: ConnectWise
+- S0050: CosmicDuke
+- S0115: Crimson
+- S0235: CrossRAT
+- S1153: Cuckoo Stealer
+- S0213: DOGCALL
+- S1159: DUSTTRAP
+- S0187: Daserf
+- S0021: Derusbi
+- S0062: DustySky
+- S0593: ECCENTRICBANDWAGON
+- S0363: Empire
+- S0152: EvilGrab
+- S0182: FinFisher
+- S0143: Flame
+- S0381: FlawedAmmyy
+- S0277: FruitFly
+- S1044: FunnyDream
+- S0417: GRIFFON
+- S0151: HALFBAKED
+- S9007: HTTPTroy
+- S1229: Havoc
+- S0431: HotCroissant
+- S0203: Hydraq
+- S0398: HyperBro
+- S0260: InvisiMole
+- S0044: JHUHUGIT
+- S0163: Janicab
+- S0271: KEYMARBLE
+- S0356: KONNI
+- S0088: Kasidet
+- S0265: Kazuar
+- S0387: KeyBoy
+- S0437: Kivars
+- S9020: LODEINFO
+- S1185: LightSpy
+- S0680: LitePower
+- S0681: Lizar
+- S0582: LookBack
+- S1213: Lumma Stealer
+- S1142: LunarMail
+- S1016: MacMa
+- S0282: MacSpy
+- S0409: Machete
+- S1060: Mafalda
+- S1156: Manjusaka
+- S0652: MarkiRAT
+- S0167: Matryoshka
+- S0455: Metamorfo
+- S0339: Micropsia
+- S1122: Mispadu
+- S0198: NETWIRE
+- S1107: NKAbuse
+- S1090: NightClub
+- S0644: ObliqueRAT
+- S0340: Octopus
+- S0216: POORAIM
+- S0223: POWERSTATS
+- S0184: POWRUNER
+- S1050: PcShare
+- S0643: Peppy
+- S0013: PlugX
+- S0428: PoetRAT
+- S0194: PowerSploit
+- S0113: Prikormka
+- S0279: Proton
+- S0147: Pteranodon
+- S0192: Pupy
+- S1209: Quick Assist
+- S0686: QuietSieve
+- S0662: RCSession
+- S0495: RDAT
+- S0240: ROKRAT
+- S0148: RTM
+- S1148: Raccoon Stealer
+- S0629: RainyDay
+- S0458: Ramsay
+- S0153: RedLeaves
+- S1240: RedLine Stealer
+- S0332: Remcos
+- S0375: Remexi
+- S0592: RemoteUtilities
+- S0379: Revenge RAT
+- S0270: RogueRobin
+- S0090: Rover
+- S0217: SHUTTERSPEED
+- S0692: SILENTTRINITY
+- S0533: SLOTHFULMEDIA
+- S0649: SMOKEDHAM
+- S1064: SVCReady
+- S0546: SharpStage
+- S0633: Sliver
+- S0273: Socksbot
+- S0380: StoneDrill
+- S1034: StrifeWater
+- S0663: SysUpdate
+- S0098: T9000
+- S1239: TONESHELL
+- S1201: TRANSLATEXT
+- S0199: TURNEDUP
+- S0467: TajMahal
+- S0004: TinyZBot
+- S0094: Trojan.Karagany
+- S1196: Troll Stealer
+- S0647: Turian
+- S0275: UPPERCUT
+- S0386: Ursnif
+- S0257: VERMIN
+- S0476: Valak
+- S1065: Woody RAT
+- S0161: XAgentOSX
+- S0658: XCSSET
+- S1207: XLoader
+- S0086: ZLib
+- S0251: Zebrocy
+- S0330: Zeus Panda
+- S0412: ZxShell
+- S0032: gh0st RAT
+- S0283: jRAT
+- S1059: metaMain
+- S0385: njRAT
+- S0248: yty

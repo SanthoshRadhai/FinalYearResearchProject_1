@@ -1,0 +1,20 @@
+# T0835: Manipulate I/O Image
+
+
+**ATT&CK ID:** T0835  
+**Domain:** Mitre Ics Attack  
+**Tactic(s):** Inhibit Response Function  
+**Platforms:** None  
+**Reference:** https://attack.mitre.org/techniques/T0835  
+
+## Description
+Adversaries may manipulate the I/O image of PLCs through various means to prevent them from functioning as expected. Methods of I/O image manipulation may include overriding the I/O table via direct memory manipulation or using the override function used for testing PLC programs. (Citation: Dr. Kelvin T. Erickson December 2010) During the scan cycle, a PLC reads the status of all inputs and stores them in an image table. (Citation: Nanjundaiah, Vaidyanath) The image table is the PLCs internal storage location where values of inputs/outputs for one scan are stored while it executes the user program. After the PLC has solved the entire logic program, it updates the output image table. The contents of this output image table are written to the corresponding output points in I/O Modules. 
+
+One of the unique characteristics of PLCs is their ability to override the status of a physical discrete input or to override the logic driving a physical output coil and force the output to a desired status.
+
+## Mitigations
+- M0816: Mitigation Limited or Not Effective
+
+## Known Software Using This Technique
+- S1006: PLC-Blaster
+- S0603: Stuxnet

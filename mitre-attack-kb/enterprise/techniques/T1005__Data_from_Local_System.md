@@ -1,0 +1,235 @@
+# T1005: Data from Local System
+
+
+**ATT&CK ID:** T1005  
+**Domain:** Mitre Attack  
+**Tactic(s):** Collection  
+**Platforms:** ESXi, Linux, macOS, Network Devices, Windows  
+**Reference:** https://attack.mitre.org/techniques/T1005  
+
+## Description
+Adversaries may search local system sources, such as file systems, configuration files, local databases, virtual machine files, or process memory, to find files of interest and sensitive data prior to Exfiltration.
+
+Adversaries may do this using a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059), such as [cmd](https://attack.mitre.org/software/S0106) as well as a [Network Device CLI](https://attack.mitre.org/techniques/T1059/008), which have functionality to interact with the file system to gather information.(Citation: show_run_config_cmd_cisco) Adversaries may also use [Automated Collection](https://attack.mitre.org/techniques/T1119) on the local system.
+
+## Mitigations
+- M1057: Data Loss Prevention
+
+## Known Threat Groups Using This Technique
+- G0006: APT1
+- G0007: APT28
+- G0016: APT29
+- G0022: APT3
+- G0067: APT37
+- G0082: APT38
+- G0087: APT39
+- G0096: APT41
+- G1030: Agrius
+- G0138: Andariel
+- G0143: Aquatic Panda
+- G0001: Axiom
+- G0060: BRONZE BUTLER
+- G1012: CURIUM
+- G0070: Dark Caracal
+- G0035: Dragonfly
+- G1003: Ember Bear
+- G1016: FIN13
+- G0037: FIN6
+- G0046: FIN7
+- G0117: Fox Kitten
+- G0093: GALLIUM
+- G0047: Gamaredon Group
+- G0125: HAFNIUM
+- G0100: Inception
+- G0004: Ke3chang
+- G0094: Kimsuky
+- G1004: LAPSUS$
+- G0032: Lazarus Group
+- G1014: LuminousMoth
+- G0059: Magic Hound
+- G1054: MirrorFace
+- G0049: OilRig
+- G0040: Patchwork
+- G1039: RedCurl
+- G0034: Sandworm Team
+- G0038: Stealth Falcon
+- G1056: TeamPCP
+- G0027: Threat Group-3390
+- G1022: ToddyCat
+- G0010: Turla
+- G1055: VOID MANTICORE
+- G1017: Volt Typhoon
+- G0124: Windigo
+- G0102: Wizard Spider
+- G0045: menuPass
+
+## Known Software Using This Technique
+- S1028: Action RAT
+- S1025: Amadey
+- S0622: AppleSeed
+- S1029: AuTo Stealer
+- S0642: BADFLICK
+- S0128: BADNEWS
+- S0520: BLINDINGCAN
+- S9015: BRICKSTORM
+- S0337: BadPatch
+- S0234: Bandook
+- S0239: Bankshot
+- S0534: Bazar
+- S1246: BeaverTail
+- S0268: Bisonal
+- S0564: BlackMould
+- S0651: BoxCaon
+- S1063: Brute Ratel C4
+- S1039: Bumblebee
+- S1224: CASTLETAP
+- S1149: CHIMNEYSWEEP
+- S0274: Calisto
+- S0572: Caterpillar WebShell
+- S0674: CharmPower
+- S0020: China Chopper
+- S0667: Chrommme
+- S0660: Clambling
+- S0154: Cobalt Strike
+- S0492: CookieMiner
+- S0050: CosmicDuke
+- S1023: CreepyDrive
+- S0115: Crimson
+- S0538: Crutch
+- S0498: Cryptoistic
+- S0687: Cyclops Blink
+- S0694: DRATzarus
+- S1159: DUSTTRAP
+- S1014: DanBot
+- S1111: DarkGate
+- S0673: DarkWatchman
+- S1021: DnsSystem
+- S0502: Drovorub
+- S0567: Dtrack
+- S0634: EnvyScout
+- S0036: FLASHFLOOD
+- S0512: FatDuke
+- S0696: Flagpro
+- S0381: FlawedAmmyy
+- S0661: FoggyWeb
+- S0193: Forfiles
+- S0503: FrameworkPOS
+- S1044: FunnyDream
+- S0666: Gelsemium
+- S9010: GlassWorm
+- S0477: Goopy
+- S0237: GravityRAT
+- S0690: Green Lambert
+- S0632: GrimAgent
+- S1229: Havoc
+- S9023: HiddenFace
+- S0009: Hikit
+- S0203: Hydraq
+- S1132: IPsec Helper
+- S1022: IceApple
+- S0260: InvisiMole
+- S1245: InvisibleFerret
+- S0015: Ixeshe
+- S0526: KGH_SPY
+- S0356: KONNI
+- S1075: KOPILUWAK
+- S0265: Kazuar
+- S1020: Kevin
+- S0250: Koadic
+- S9035: LAMEHUG
+- S9020: LODEINFO
+- S1160: Latrodectus
+- S0395: LightNeuron
+- S0211: Linfo
+- S1101: LoFiSe
+- S0500: MCMD
+- S1016: MacMa
+- S0409: Machete
+- S1060: Mafalda
+- S0652: MarkiRAT
+- S1146: MgBot
+- S1015: Milan
+- S0084: Mis-Type
+- S0083: Misdat
+- S0079: MobileOrder
+- S1026: Mongall
+- S1131: NPPSPY
+- S0630: Nebulae
+- S0691: Neoichor
+- S1090: NightClub
+- S0352: OSX_OCEANLOTUS.D
+- S0340: Octopus
+- S0594: Out1
+- S1017: OutSteel
+- S0598: P.A.S. Webshell
+- S0223: POWERSTATS
+- S0197: PUNCHTRACK
+- S0208: Pasam
+- S1050: PcShare
+- S1102: Pcexter
+- S0517: Pillowmint
+- S0048: PinchDuke
+- S1031: PingPull
+- S0012: PoisonIvy
+- S1012: PowerLess
+- S0194: PowerSploit
+- S0238: Proxysvc
+- S0650: QakBot
+- S0262: QuasarRAT
+- S0686: QuietSieve
+- S1113: RAPIDPULSE
+- S0662: RCSession
+- S0240: ROKRAT
+- S1148: Raccoon Stealer
+- S0629: RainyDay
+- S0458: Ramsay
+- S0169: RawPOS
+- S1240: RedLine Stealer
+- S0448: Rising Sun
+- S0090: Rover
+- S0461: SDBbot
+- S1110: SLIGHTPULSE
+- S0533: SLOTHFULMEDIA
+- S9024: SPAWNCHIMERA
+- S1037: STARWHALE
+- S0559: SUNBURST
+- S1064: SVCReady
+- S1018: Saint Bot
+- S1099: Samurai
+- S1085: Sardonic
+- S1019: Shark
+- S1089: SharpDisco
+- S0444: ShimRat
+- S0610: SideTwist
+- S0615: SombRAT
+- S0646: SpicyOmelette
+- S1200: StealBit
+- S1034: StrifeWater
+- S0663: SysUpdate
+- S0011: Taidoor
+- S0467: TajMahal
+- S0665: ThreatNeedle
+- S0668: TinyTurla
+- S0671: Tomiris
+- S0266: TrickBot
+- S1196: Troll Stealer
+- S9009: TruffleHog
+- S0275: UPPERCUT
+- S0452: USBferry
+- S0022: Uroburos
+- S0386: Ursnif
+- S0670: WarzoneRAT
+- S0515: WellMail
+- S0514: WellMess
+- S0645: Wevtutil
+- S1065: Woody RAT
+- S0658: XCSSET
+- S0672: Zox
+- S0412: ZxShell
+- S1013: ZxxZ
+- S1043: ccf32
+- S0404: esentutl
+- S1059: metaMain
+- S0385: njRAT
+- S0653: xCaon
+- S0248: yty

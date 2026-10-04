@@ -1,0 +1,183 @@
+[
+  {
+    "trial": 1,
+    "objective": "Investigate CVE-2024-3400 and tell me if we should be worried.",
+    "ok": true,
+    "latency_s": 13.07,
+    "node_visits": [
+      "safety",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator"
+    ],
+    "n_node_visits": 5,
+    "n_findings": 1,
+    "n_verified": 1,
+    "halted": false,
+    "verified_claims": [
+      "**CVE\u20112024\u20113400 \u2013 Palo\u202fAlto Networks GlobalProtect**\n\n* **Impact** \u2013 Unauthenticated command\u2011injection that allows arbitrary code execution with **root privileges** on affected PAN\u2011OS firewalls.  \n* *"
+    ]
+  },
+  {
+    "trial": 2,
+    "objective": "Investigate CVE-2026-9862 and tell me if we should be worried.",
+    "ok": true,
+    "latency_s": 14.87,
+    "node_visits": [
+      "safety",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator"
+    ],
+    "n_node_visits": 5,
+    "n_findings": 1,
+    "n_verified": 1,
+    "halted": false,
+    "verified_claims": [
+      "**CVE\u20112026\u20119862 \u2013 Fortra Core Privileged Access Manager (BoKS)**  \n- **Vulnerability**: OS command\u2011injection in the `boks_autoregisterd` service.  \n- **Impact**: A remote attacker with network access "
+    ]
+  },
+  {
+    "trial": 3,
+    "objective": "Look up CVE-2021-44228 (Log4Shell) and assess its severity.",
+    "ok": true,
+    "latency_s": 70.04,
+    "node_visits": [
+      "safety",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator"
+    ],
+    "n_node_visits": 11,
+    "n_findings": 3,
+    "n_verified": 0,
+    "halted": false,
+    "verified_claims": []
+  },
+  {
+    "trial": 4,
+    "objective": "Investigate CVE-2023-4863 (the WebP heap overflow) and tell me if we should be worried.",
+    "ok": true,
+    "latency_s": 44.69,
+    "node_visits": [
+      "safety",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator"
+    ],
+    "n_node_visits": 8,
+    "n_findings": 2,
+    "n_verified": 1,
+    "halted": false,
+    "verified_claims": [
+      "**CVE\u20112023\u20114863 \u2013 WebP heap overflow**\n\n* **Affected software**:  \n  * Google Chrome (prior to 116.0.5845.187)  \n  * libwebp (up to version\u202f1.3.2)\n\n* **Vulnerability**: A crafted HTML page can trigger"
+    ]
+  },
+  {
+    "trial": 5,
+    "objective": "Look up CVE-2020-1472 (Zerologon) and assess its severity.",
+    "ok": true,
+    "latency_s": 52.63,
+    "node_visits": [
+      "safety",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator"
+    ],
+    "n_node_visits": 11,
+    "n_findings": 3,
+    "n_verified": 0,
+    "halted": false,
+    "verified_claims": []
+  },
+  {
+    "trial": 6,
+    "objective": "Investigate CVE-2017-5638 (the Apache Struts RCE) and tell me if we should be worried.",
+    "ok": true,
+    "latency_s": 48.8,
+    "node_visits": [
+      "safety",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator"
+    ],
+    "n_node_visits": 11,
+    "n_findings": 3,
+    "n_verified": 1,
+    "halted": false,
+    "verified_claims": [
+      "**CVE\u20112017\u20115638 \u2013 Apache Struts 2 Remote Code Execution**\n\n* **What it is** \u2013 A critical flaw in the Jakarta Multipart parser of Apache Struts\u202f2 (versions 2.3.x\u202f<\u202f2.3.32 and 2.5.x\u202f<\u202f2.5.10.1). An atta"
+    ]
+  },
+  {
+    "trial": 7,
+    "objective": "Look up CVE-2019-0708 (BlueKeep) and assess its severity.",
+    "ok": true,
+    "latency_s": 17.75,
+    "node_visits": [
+      "safety",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator"
+    ],
+    "n_node_visits": 5,
+    "n_findings": 1,
+    "n_verified": 1,
+    "halted": false,
+    "verified_claims": [
+      "**CVE\u20112019\u20110708 (BlueKeep)**  \n- **Description**: Remote code execution vulnerability in Microsoft Remote Desktop Services (formerly Terminal Services) that allows an unauthenticated attacker to send "
+    ]
+  },
+  {
+    "trial": 8,
+    "objective": "Investigate CVE-2022-30190 (Follina) and tell me if we should be worried.",
+    "ok": true,
+    "latency_s": 71.42,
+    "node_visits": [
+      "safety",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator",
+      "recon",
+      "evaluator",
+      "orchestrator"
+    ],
+    "n_node_visits": 11,
+    "n_findings": 3,
+    "n_verified": 0,
+    "halted": false,
+    "verified_claims": []
+  }
+]

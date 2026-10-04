@@ -1,0 +1,30 @@
+# CWE-350: Reliance on Reverse DNS Resolution for a Security-Critical Action
+
+**Abstraction:** Variant  
+**Status:** Draft  
+**Reference:** https://cwe.mitre.org/data/definitions/350.html  
+
+## Description
+The product performs reverse DNS resolution on an IP address to obtain the hostname and make a security decision, but it does not properly ensure that the IP address is truly associated with the hostname.
+
+## Extended Description
+Since DNS names can be easily spoofed or misreported, and it may be difficult for the product to detect if a trusted DNS server has been compromised, DNS names do not constitute a valid authentication mechanism. When the product performs a reverse DNS resolution for an IP address, if an attacker controls the DNS server for that IP address, then the attacker can cause the server to return an arbitrary hostname. As a result, the attacker may be able to bypass authentication, cause the wrong hostname to be recorded in log files to hide activities, or perform other attacks. Attackers can spoof DNS names by either (1) compromising a DNS server and modifying its records (sometimes called DNS cache poisoning), or (2) having legitimate control over a DNS server associated with their IP address.
+
+## Related Weaknesses
+- ChildOf: CWE-290
+- ChildOf: CWE-807
+- CanPrecede: CWE-923
+
+## Common Consequences
+- Scope: Access Control; Impact: Gain Privileges or Assume Identity, Bypass Protection Mechanism — Malicious users can fake authentication information by providing false DNS information.
+
+## Potential Mitigations
+- [Architecture and Design] Use other means of identity verification that cannot be simply spoofed. Possibilities include a username/password or certificate.
+- [Implementation] Perform proper forward and reverse DNS lookups to detect DNS spoofing.
+
+## Detection Methods
+- [Automated Static Analysis] Automated static analysis, commonly referred to as Static Application Security Testing (SAST), can find some instances of this weakness by analyzing source code (or binary/compiled code) without having to execute it. Typically, this is done by building a model of data flow and control flow, then searching for potentially-vulnerable patterns that connect "sources" (origins of input) with "sinks" (destinations where the data interacts with external components, a lower layer such as the OS, etc.)
+
+## Demonstrative Examples (summary)
+- The following code samples use a DNS lookup in order to decide whether or not an inbound request is from a trusted host. If an attacker can poison the DNS cache, they can gain trusted status.
+- In these examples, a connection is established if a request is made by a trusted host.

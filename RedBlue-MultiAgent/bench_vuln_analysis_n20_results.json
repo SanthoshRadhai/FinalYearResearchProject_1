@@ -1,0 +1,182 @@
+[
+  {
+    "trial": 1,
+    "label": "CVE-2024-3400",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 3.96,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| **Version** | 3.x |\n| **Base Score** | **10.0** |\n| **Severity** | **Critical** |\n| **Vector** | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H |\n\n"
+  },
+  {
+    "trial": 2,
+    "label": "CVE-2026-9862",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 4.84,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | **9.8** |\n| Severity | **Critical** |\n| Vector | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n\n**Priority Assess"
+  },
+  {
+    "trial": 3,
+    "label": "CVE-2021-44228 (Log4Shell)",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 5.34,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS Data**\n\n| Field | Value |\n|-------|-------|\n| **Version** | 3.x |\n| **Base Score** | **10.0** |\n| **Severity** | **Critical** |\n| **Vector** | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:"
+  },
+  {
+    "trial": 4,
+    "label": "CVE-2017-0144 (EternalBlue)",
+    "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 4.14,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS data**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | **9.8** |\n| Severity | **Critical** |\n| Vector | CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n\n**Priority a"
+  },
+  {
+    "trial": 5,
+    "label": "CVE-2014-0160 (Heartbleed)",
+    "vector": "CVSS:2.0/AV:N/AC:L/Au:N/C:P/I:N/A:N",
+    "ok": true,
+    "latency_s": 6.1,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| Version | 2.0 |\n| Base Score | 5.0 |\n| Severity | Medium |\n| Vector | CVSS:2.0/AV:N/AC:L/Au:N/C:P/I:N/A:N |\n\n**Priority Assessment**\n\n- **Severit"
+  },
+  {
+    "trial": 6,
+    "label": "CVE-2017-5638 (Apache Struts)",
+    "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 2.87,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| **Version** | 3.x |\n| **Base Score** | 9.8 |\n| **Severity** | Critical |\n| **Vector** | CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n\n**Priorit"
+  },
+  {
+    "trial": 7,
+    "label": "CVE-2019-0708 (BlueKeep)",
+    "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 6.09,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS Data**\n\n| Field | Value |\n|-------|-------|\n| **Version** | 3.x |\n| **Base Score** | 9.8 |\n| **Severity** | Critical |\n| **Vector** | CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n\n**Pr"
+  },
+  {
+    "trial": 8,
+    "label": "CVE-2020-1472 (Zerologon)",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 6.34,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | **10.0** |\n| Severity | **Critical** |\n| Vector | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H |\n\n**Priority Asses"
+  },
+  {
+    "trial": 9,
+    "label": "CVE-2022-30190 (Follina)",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 8.5,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | **8.8** |\n| Severity | **High** |\n| Vector | CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H |\n\n**Priority Assessment"
+  },
+  {
+    "trial": 10,
+    "label": "CVE-2023-4863 (WebP heap overflow)",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 5.33,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| **Version** | 3.x |\n| **Base Score** | 8.8 |\n| **Severity** | High |\n| **Vector** | CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H |\n\n**Priority As"
+  },
+  {
+    "trial": 11,
+    "label": "CVE-2022-22965 (Spring4Shell)",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 6.19,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS Data**\n\n| Field | Value |\n|-------|-------|\n| **Version** | 3.x |\n| **Base Score** | 9.8 |\n| **Severity** | Critical |\n| **Vector** | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n\n**Pr"
+  },
+  {
+    "trial": 12,
+    "label": "CVE-2021-34527 (PrintNightmare)",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 3.72,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS Data**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | **8.8** |\n| Severity | **High** |\n| Vector | CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H |\n\n**Priority Asses"
+  },
+  {
+    "trial": 13,
+    "label": "CVE-2019-11510 (Pulse Secure)",
+    "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "ok": true,
+    "latency_s": 10.97,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS data**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | 7.5 |\n| Severity | **High** |\n| Vector | CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N |\n\n**Priority assessmen"
+  },
+  {
+    "trial": 14,
+    "label": "CVE-2020-0601 (CurveBall)",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "ok": true,
+    "latency_s": 3.55,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS data**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | **9.1** |\n| Severity | **Critical** |\n| Vector | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N |\n\n**Priority a"
+  },
+  {
+    "trial": 15,
+    "label": "CVE-2018-13379 (Fortinet SSL VPN)",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "ok": true,
+    "latency_s": 3.49,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | 7.5 |\n| Severity | **High** |\n| Vector | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N |\n\n**Priority Assessment**\n\n"
+  },
+  {
+    "trial": 16,
+    "label": "CVE-2016-10033 (PHPMailer)",
+    "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 2.84,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| Version | 3.x |\n| Base Score | 9.8 |\n| Severity | **Critical** |\n| Vector | CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n\n**Priority Assessment"
+  },
+  {
+    "trial": 17,
+    "label": "CVE-2015-1635 (HTTP.sys)",
+    "vector": "CVSS:2.0/AV:N/AC:L/Au:N/C:C/I:C/A:C",
+    "ok": true,
+    "latency_s": 3.41,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS Data**\n\n| Field | Value |\n|-------|-------|\n| Version | 2.0 |\n| Base Score | 10.0 |\n| Severity | High |\n| Vector | CVSS:2.0/AV:N/AC:L/Au:N/C:C/I:C/A:C |\n\n**Priority Assessment**\n\n- **Cri"
+  },
+  {
+    "trial": 18,
+    "label": "CVE-2013-3900 (WinVerifyTrust)",
+    "vector": "CVSS:2.0/AV:N/AC:M/Au:N/C:N/I:P/A:N",
+    "ok": true,
+    "latency_s": 3.67,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS**\n\n| Field | Value |\n|-------|-------|\n| Version | 2.0 |\n| Base Score | **4.3** |\n| Severity | **Medium** |\n| Vector | CVSS:2.0/AV:N/AC:M/Au:N/C:N/I:P/A:N |\n\n**Priority Assessment**\n\n- *"
+  },
+  {
+    "trial": 19,
+    "label": "CVE-2021-26855 (ProxyLogon)",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "ok": true,
+    "latency_s": 3.46,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS Data**\n\n| Field | Value |\n|-------|-------|\n| **Version** | 3.x |\n| **Base Score** | **10.0** |\n| **Severity** | **Critical** |\n| **Vector** | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:"
+  },
+  {
+    "trial": 20,
+    "label": "Synthetic CVSS v4.0 test vector",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "ok": true,
+    "latency_s": 4.07,
+    "tool_calls": 1,
+    "claim": "**Parsed CVSS v4.0**\n\n| Field | Value |\n|-------|-------|\n| **Version** | 4.0 |\n| **Base Score** | **9.3** |\n| **Severity** | **Critical** |\n| **Vector** | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/"
+  }
+]

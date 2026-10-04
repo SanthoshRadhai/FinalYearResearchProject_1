@@ -1,0 +1,8 @@
+# CWE-216: DEPRECATED: Containment Errors (Container Errors)
+
+**Abstraction:** Class  
+**Status:** Deprecated  
+**Reference:** https://cwe.mitre.org/data/definitions/216.html  
+
+## Description
+This entry has been deprecated, as it was not effective as a weakness and was structured more like a category. In addition, the name is inappropriate, since the "container" term is widely understood by developers in different ways than originally intended by PLOVER, the original source for this entry.

@@ -1,0 +1,50 @@
+
+===== condition: all  (150 completed of 150 runs, 0 errors) =====
+answer rate (>=1 accepted claim)     : 148/150 = 98.7% [95.3, 99.6]
+accepted claims correct              : 148/148 = 100.0% [97.5, 100.0]
+accepted claims INCORRECT (false acc): 0/148 = 0.0% [0.0, 2.5]
+accepted claims no checkable fact    : 0/148 = 0.0% [0.0, 2.5]
+precision among checkable accepted   : 148/148 = 100.0% [97.5, 100.0]
+displayed answer correct / incorrect : 150/150 = 100.0% [97.5, 100.0] / 0/150 = 0.0% [0.0, 2.5]
+latency s: mean 12.4, median 10.6, max 44.6
+finding-level (claim status x decision):
+   correct            verified  148   rejected   20
+   incorrect          verified    0   rejected    1
+   no_checkable_fact  verified    0   rejected    0
+false reject rate (correct claims rejected): 20/168 = 11.9% [7.8, 17.7]
+  of which stated facts absent from the excerpt (provenance rejects): 20/20
+false accept rate (incorrect claims verified): 0/1 = 0.0% [0.0, 79.3]
+
+===== condition: off  (149 completed of 150 runs, 1 errors) =====
+answer rate (>=1 accepted claim)     : 149/149 = 100.0% [97.5, 100.0]
+accepted claims correct              : 148/149 = 99.3% [96.3, 99.9]
+accepted claims INCORRECT (false acc): 1/149 = 0.7% [0.1, 3.7]
+accepted claims no checkable fact    : 0/149 = 0.0% [0.0, 2.5]
+precision among checkable accepted   : 148/149 = 99.3% [96.3, 99.9]
+displayed answer correct / incorrect : 148/149 = 99.3% [96.3, 99.9] / 1/149 = 0.7% [0.1, 3.7]
+latency s: mean 9.9, median 8.0, max 46.4
+finding-level (claim status x decision):
+   correct            verified  148   rejected    0
+   incorrect          verified    1   rejected    0
+   no_checkable_fact  verified    0   rejected    0
+false reject rate (correct claims rejected): 0/148 = 0.0% [0.0, 2.5]
+  of which stated facts absent from the excerpt (provenance rejects): 0/0
+false accept rate (incorrect claims verified): 1/1 = 100.0% [20.7, 100.0]
+
+===== condition: on  (149 completed of 150 runs, 1 errors) =====
+answer rate (>=1 accepted claim)     : 17/149 = 11.4% [7.2, 17.5]
+accepted claims correct              : 17/17 = 100.0% [81.6, 100.0]
+accepted claims INCORRECT (false acc): 0/17 = 0.0% [0.0, 18.4]
+accepted claims no checkable fact    : 0/17 = 0.0% [0.0, 18.4]
+precision among checkable accepted   : 17/17 = 100.0% [81.6, 100.0]
+displayed answer correct / incorrect : 149/149 = 100.0% [97.5, 100.0] / 0/149 = 0.0% [0.0, 2.5]
+latency s: mean 37.2, median 29.8, max 127.0
+finding-level (claim status x decision):
+   correct            verified   17   rejected  416
+   incorrect          verified    0   rejected    0
+   no_checkable_fact  verified    0   rejected    0
+false reject rate (correct claims rejected): 416/433 = 96.1% [93.8, 97.5]
+  of which stated facts absent from the excerpt (provenance rejects): 416/416
+false accept rate (incorrect claims verified): n/a (0 of 0)
+
+Wrote g4_summary.json

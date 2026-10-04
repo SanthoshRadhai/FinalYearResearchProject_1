@@ -1,0 +1,299 @@
+# T1016: System Network Configuration Discovery
+
+
+**ATT&CK ID:** T1016  
+**Domain:** Mitre Attack  
+**Tactic(s):** Discovery  
+**Platforms:** ESXi, Linux, macOS, Network Devices, Windows  
+**Reference:** https://attack.mitre.org/techniques/T1016  
+
+## Description
+Adversaries may look for details about the network configuration and settings, such as IP and/or MAC addresses, of systems they access or through information discovery of remote systems. Several operating system administration utilities exist that can be used to gather this information. Examples include [Arp](https://attack.mitre.org/software/S0099), [ipconfig](https://attack.mitre.org/software/S0100)/[ifconfig](https://attack.mitre.org/software/S0101), [nbtstat](https://attack.mitre.org/software/S0102), and [route](https://attack.mitre.org/software/S0103).
+
+Adversaries may also leverage a [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) on network devices to gather information about configurations and settings, such as IP addresses of configured interfaces and static/dynamic routes (e.g. <code>show ip route</code>, <code>show ip interface</code>).(Citation: US-CERT-TA18-106A)(Citation: Mandiant APT41 Global Intrusion ) On ESXi, adversaries may leverage esxcli to gather network configuration information. For example, the command `esxcli network nic list` will retrieve the MAC address, while `esxcli network ip interface ipv4 get` will retrieve the local IPv4 address.(Citation: Trellix Rnasomhouse 2024)
+
+Adversaries may use the information from [System Network Configuration Discovery](https://attack.mitre.org/techniques/T1016) during automated discovery to shape follow-on behaviors, including determining certain access within the target network and what actions to do next.
+
+## Sub-techniques
+- T1016.001: Internet Connection Discovery
+- T1016.002: Wi-Fi Discovery
+
+## Known Threat Groups Using This Technique
+- G0006: APT1
+- G0073: APT19
+- G0022: APT3
+- G0050: APT32
+- G0096: APT41
+- G1044: APT42
+- G1043: BlackByte
+- G0114: Chimera
+- G0012: Darkhotel
+- G0035: Dragonfly
+- G1006: Earth Lusca
+- G1016: FIN13
+- G0093: GALLIUM
+- G0125: HAFNIUM
+- G1001: HEXANE
+- G0126: Higaisa
+- G0004: Ke3chang
+- G0094: Kimsuky
+- G0032: Lazarus Group
+- G0030: Lotus Blossom
+- G0059: Magic Hound
+- G1051: Medusa Group
+- G1054: MirrorFace
+- G1036: Moonstone Sleet
+- G1009: Moses Staff
+- G0069: MuddyWater
+- G0129: Mustang Panda
+- G0019: Naikon
+- G0049: OilRig
+- G1040: Play
+- G1015: Scattered Spider
+- G1057: ShinyHunters
+- G1008: SideCopy
+- G0121: Sidewinder
+- G0038: Stealth Falcon
+- G0139: TeamTNT
+- G0027: Threat Group-3390
+- G0081: Tropic Trooper
+- G0010: Turla
+- G1017: Volt Typhoon
+- G0102: Wizard Spider
+- G0128: ZIRCONIUM
+- G0018: admin@338
+- G0045: menuPass
+
+## Known Software Using This Technique
+- S1028: Action RAT
+- S0552: AdFind
+- S0331: Agent Tesla
+- S0092: Agent.btz
+- S1025: Amadey
+- S0504: Anchor
+- S0622: AppleSeed
+- S0456: Aria-body
+- S0099: Arp
+- S0373: Astaroth
+- S1087: AsyncRAT
+- S0640: Avaddon
+- S0473: Avenger
+- S0344: Azorult
+- S0245: BADCALL
+- S0642: BADFLICK
+- S0520: BLINDINGCAN
+- S0657: BLUELIGHT
+- S1184: BOLDMOVE
+- S0414: BabyShark
+- S0093: Backdoor.Oldrea
+- S0234: Bandook
+- S0534: Bazar
+- S0268: Bisonal
+- S0089: BlackEnergy
+- S0486: Bonadan
+- S0651: BoxCaon
+- S0252: Brave Prince
+- S0274: Calisto
+- S9042: CanisterWorm
+- S0335: Carbon
+- S0261: Catchamas
+- S0572: Caterpillar WebShell
+- S0674: CharmPower
+- S0667: Chrommme
+- S0660: Clambling
+- S0154: Cobalt Strike
+- S0244: Comnie
+- S0575: Conti
+- S0488: CrackMapExec
+- S1024: CreepySnail
+- S0115: Crimson
+- S0625: Cuba
+- S0687: Cyclops Blink
+- S1052: DEADEYE
+- S1159: DUSTTRAP
+- S0354: Denis
+- S0659: Diavol
+- S0567: Dtrack
+- S0038: Duqu
+- S0024: Dyre
+- S0605: EKANS
+- S0081: Elise
+- S0082: Emissary
+- S0363: Empire
+- S0091: Epic
+- S0569: Explosive
+- S0181: FALLCHILL
+- S0267: FELIXROOT
+- S0512: FatDuke
+- S0171: Felismus
+- S0696: Flagpro
+- S1044: FunnyDream
+- S0049: GeminiDuke
+- S0588: GoldMax
+- S1198: Gomir
+- S1138: Gootloader
+- S0531: Grandoreiro
+- S0237: GravityRAT
+- S0690: Green Lambert
+- S0632: GrimAgent
+- S1229: Havoc
+- S1249: HexEval Loader
+- S0431: HotCroissant
+- S0203: Hydraq
+- S1022: IceApple
+- S0483: IcedID
+- S0604: Industroyer
+- S0260: InvisiMole
+- S1245: InvisibleFerret
+- S0015: Ixeshe
+- S1203: J-magic
+- S0044: JHUHUGIT
+- S0201: JPIN
+- S0271: KEYMARBLE
+- S0356: KONNI
+- S1075: KOPILUWAK
+- S0265: Kazuar
+- S0487: Kessel
+- S1020: Kevin
+- S0387: KeyBoy
+- S0250: Koadic
+- S0641: Kobalos
+- S0236: Kwampirs
+- S9035: LAMEHUG
+- S9020: LODEINFO
+- S1160: Latrodectus
+- S0395: LightNeuron
+- S0513: LiteDuke
+- S0681: Lizar
+- S0447: Lokibot
+- S0451: LoudMiner
+- S0532: Lucifer
+- S1143: LunarLoader
+- S1141: LunarWeb
+- S1016: MacMa
+- S0409: Machete
+- S1060: Mafalda
+- S1182: MagicRAT
+- S1156: Manjusaka
+- S1015: Milan
+- S9043: Mini Shai-Hulud
+- S0084: Mis-Type
+- S0149: MoonWind
+- S0284: More_eggs
+- S0256: Mosquito
+- S0590: NBTscan
+- S0198: NETWIRE
+- S1106: NGLite
+- S0353: NOKKI
+- S0205: Naid
+- S0228: NanHaiShu
+- S0336: NanoCore
+- S0691: Neoichor
+- S1147: Nightdoor
+- S1100: Ninja
+- S0359: Nltest
+- S0165: OSInfo
+- S0352: OSX_OCEANLOTUS.D
+- S0346: OceanSalt
+- S0340: Octopus
+- S0439: Okrum
+- S0365: Olympic Destroyer
+- S0229: Orz
+- S0254: PLAINTEE
+- S0223: POWERSTATS
+- S0184: POWRUNER
+- S1228: PUBLOAD
+- S0556: Pay2Key
+- S1050: PcShare
+- S0587: Penquin
+- S1145: Pikabot
+- S1031: PingPull
+- S0501: PipeMon
+- S0124: Pisloader
+- S0013: PlugX
+- S0378: PoshC2
+- S0139: PowerDuke
+- S0441: PowerShower
+- S0113: Prikormka
+- S0238: Proxysvc
+- S0192: Pupy
+- S0583: Pysa
+- S0269: QUADAGENT
+- S1076: QUIETCANARY
+- S0650: QakBot
+- S1242: Qilin
+- S0262: QuasarRAT
+- S0241: RATANKBA
+- S0458: Ramsay
+- S0172: Reaver
+- S0153: RedLeaves
+- S1240: RedLine Stealer
+- S0125: Remsec
+- S0379: Revenge RAT
+- S0433: Rifdoor
+- S0448: Rising Sun
+- S0270: RogueRobin
+- S1073: Royal
+- S0446: Ryuk
+- S0085: S-Type
+- S0461: SDBbot
+- S0450: SHARPSTATS
+- S1037: STARWHALE
+- S0559: SUNBURST
+- S1210: Sagerunex
+- S1018: Saint Bot
+- S1085: Sardonic
+- S0596: ShadowPad
+- S0140: Shamoon
+- S0445: ShimRatReporter
+- S1178: ShrinkLocker
+- S0589: Sibot
+- S0610: SideTwist
+- S0633: Sliver
+- S1035: Small Sieve
+- S1124: SocGholish
+- S0516: SoreFang
+- S0374: SpeakUp
+- S0646: SpicyOmelette
+- S1030: Squirrelwaffle
+- S0491: StrongPity
+- S0603: Stuxnet
+- S0018: Sykipot
+- S0060: Sys10
+- S0663: SysUpdate
+- S0098: T9000
+- S0436: TSCookie
+- S0011: Taidoor
+- S0467: TajMahal
+- S9041: TeamPCP Cloud Stealer
+- S0678: Torisma
+- S0266: TrickBot
+- S0094: Trojan.Karagany
+- S1196: Troll Stealer
+- S0647: Turian
+- S0275: UPPERCUT
+- S0452: USBferry
+- S0130: Unknown Logger
+- S0257: VERMIN
+- S0476: Valak
+- S0180: Volgmer
+- S0366: WannaCry
+- S0515: WellMail
+- S0514: WellMess
+- S1065: Woody RAT
+- S1248: XORIndex Loader
+- S0341: Xbash
+- S0251: Zebrocy
+- S0230: ZeroT
+- S1204: cd00r
+- S0472: down_new
+- S9003: evilginx2
+- S0278: iKitten
+- S0101: ifconfig
+- S0100: ipconfig
+- S0283: jRAT
+- S0102: nbtstat
+- S0103: route
+- S0653: xCaon
+- S0248: yty
+- S0350: zwShell

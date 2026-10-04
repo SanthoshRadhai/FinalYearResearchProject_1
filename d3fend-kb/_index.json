@@ -1,0 +1,1670 @@
+[
+  {
+    "id": "Harden",
+    "type": "tactic",
+    "name": "Harden",
+    "path": "tactics/Harden.md"
+  },
+  {
+    "id": "Detect",
+    "type": "tactic",
+    "name": "Detect",
+    "path": "tactics/Detect.md"
+  },
+  {
+    "id": "Isolate",
+    "type": "tactic",
+    "name": "Isolate",
+    "path": "tactics/Isolate.md"
+  },
+  {
+    "id": "Deceive",
+    "type": "tactic",
+    "name": "Deceive",
+    "path": "tactics/Deceive.md"
+  },
+  {
+    "id": "Evict",
+    "type": "tactic",
+    "name": "Evict",
+    "path": "tactics/Evict.md"
+  },
+  {
+    "id": "Restore",
+    "type": "tactic",
+    "name": "Restore",
+    "path": "tactics/Restore.md"
+  },
+  {
+    "id": "D3-ARMA",
+    "type": "technique",
+    "name": "ARMA Model",
+    "path": "techniques/D3-ARMA__ARMA_Model.md"
+  },
+  {
+    "id": "D3-AMED",
+    "type": "technique",
+    "name": "Access Mediation",
+    "path": "techniques/D3-AMED__Access_Mediation.md"
+  },
+  {
+    "id": "D3-AM",
+    "type": "technique",
+    "name": "Access Modeling",
+    "path": "techniques/D3-AM__Access_Modeling.md"
+  },
+  {
+    "id": "D3-APA",
+    "type": "technique",
+    "name": "Access Policy Administration",
+    "path": "techniques/D3-APA__Access_Policy_Administration.md"
+  },
+  {
+    "id": "D3-AL",
+    "type": "technique",
+    "name": "Account Locking",
+    "path": "techniques/D3-AL__Account_Locking.md"
+  },
+  {
+    "id": "D3-ACA",
+    "type": "technique",
+    "name": "Active Certificate Analysis",
+    "path": "techniques/D3-ACA__Active_Certificate_Analysis.md"
+  },
+  {
+    "id": "D3-ALLM",
+    "type": "technique",
+    "name": "Active Logical Link Mapping",
+    "path": "techniques/D3-ALLM__Active_Logical_Link_Mapping.md"
+  },
+  {
+    "id": "D3-APLM",
+    "type": "technique",
+    "name": "Active Physical Link Mapping",
+    "path": "techniques/D3-APLM__Active_Physical_Link_Mapping.md"
+  },
+  {
+    "id": "D3-ANAA",
+    "type": "technique",
+    "name": "Administrative Network Activity Analysis",
+    "path": "techniques/D3-ANAA__Administrative_Network_Activity_Analysis.md"
+  },
+  {
+    "id": "D3-AA",
+    "type": "technique",
+    "name": "Agent Authentication",
+    "path": "techniques/D3-AA__Agent_Authentication.md"
+  },
+  {
+    "id": "D3-ABPI",
+    "type": "technique",
+    "name": "Application-based Process Isolation",
+    "path": "techniques/D3-ABPI__Application_based_Process_Isolation.md"
+  },
+  {
+    "id": "D3-ACH",
+    "type": "technique",
+    "name": "Application Configuration Hardening",
+    "path": "techniques/D3-ACH__Application_Configuration_Hardening.md"
+  },
+  {
+    "id": "D3-AEM",
+    "type": "technique",
+    "name": "Application Exception Monitoring",
+    "path": "techniques/D3-AEM__Application_Exception_Monitoring.md"
+  },
+  {
+    "id": "D3-AH",
+    "type": "technique",
+    "name": "Application Hardening",
+    "path": "techniques/D3-AH__Application_Hardening.md"
+  },
+  {
+    "id": "D3-APM",
+    "type": "technique",
+    "name": "Application Performance Monitoring",
+    "path": "techniques/D3-APM__Application_Performance_Monitoring.md"
+  },
+  {
+    "id": "D3-APCA",
+    "type": "technique",
+    "name": "Application Protocol Command Analysis",
+    "path": "techniques/D3-APCA__Application_Protocol_Command_Analysis.md"
+  },
+  {
+    "id": "D3-AI",
+    "type": "technique",
+    "name": "Asset Inventory",
+    "path": "techniques/D3-AI__Asset_Inventory.md"
+  },
+  {
+    "id": "D3-AVE",
+    "type": "technique",
+    "name": "Asset Vulnerability Enumeration",
+    "path": "techniques/D3-AVE__Asset_Vulnerability_Enumeration.md"
+  },
+  {
+    "id": "D3-ANCI",
+    "type": "technique",
+    "name": "Authentication Cache Invalidation",
+    "path": "techniques/D3-ANCI__Authentication_Cache_Invalidation.md"
+  },
+  {
+    "id": "D3-ANET",
+    "type": "technique",
+    "name": "Authentication Event Thresholding",
+    "path": "techniques/D3-ANET__Authentication_Event_Thresholding.md"
+  },
+  {
+    "id": "D3-AZET",
+    "type": "technique",
+    "name": "Authorization Event Thresholding",
+    "path": "techniques/D3-AZET__Authorization_Event_Thresholding.md"
+  },
+  {
+    "id": "D3-BAN",
+    "type": "technique",
+    "name": "Biometric Authentication",
+    "path": "techniques/D3-BAN__Biometric_Authentication.md"
+  },
+  {
+    "id": "D3-BA",
+    "type": "technique",
+    "name": "Bootloader Authentication",
+    "path": "techniques/D3-BA__Bootloader_Authentication.md"
+  },
+  {
+    "id": "D3-BDI",
+    "type": "technique",
+    "name": "Broadcast Domain Isolation",
+    "path": "techniques/D3-BDI__Broadcast_Domain_Isolation.md"
+  },
+  {
+    "id": "D3-BMA",
+    "type": "technique",
+    "name": "Bus Message Authentication",
+    "path": "techniques/D3-BMA__Bus_Message_Authentication.md"
+  },
+  {
+    "id": "D3-BSE",
+    "type": "technique",
+    "name": "Byte Sequence Emulation",
+    "path": "techniques/D3-BSE__Byte_Sequence_Emulation.md"
+  },
+  {
+    "id": "D3-CBAN",
+    "type": "technique",
+    "name": "Certificate-based Authentication",
+    "path": "techniques/D3-CBAN__Certificate_based_Authentication.md"
+  },
+  {
+    "id": "D3-CA",
+    "type": "technique",
+    "name": "Certificate Analysis",
+    "path": "techniques/D3-CA__Certificate_Analysis.md"
+  },
+  {
+    "id": "D3-CP",
+    "type": "technique",
+    "name": "Certificate Pinning",
+    "path": "techniques/D3-CP__Certificate_Pinning.md"
+  },
+  {
+    "id": "D3-CERO",
+    "type": "technique",
+    "name": "Certificate Rotation",
+    "path": "techniques/D3-CERO__Certificate_Rotation.md"
+  },
+  {
+    "id": "D3-CDP",
+    "type": "technique",
+    "name": "Change Default Password",
+    "path": "techniques/D3-CDP__Change_Default_Password.md"
+  },
+  {
+    "id": "D3-CSPP",
+    "type": "technique",
+    "name": "Client-server Payload Profiling",
+    "path": "techniques/D3-CSPP__Client_server_Payload_Profiling.md"
+  },
+  {
+    "id": "D3-CI",
+    "type": "technique",
+    "name": "Configuration Inventory",
+    "path": "techniques/D3-CI__Configuration_Inventory.md"
+  },
+  {
+    "id": "D3-CHN",
+    "type": "technique",
+    "name": "Connected Honeynet",
+    "path": "techniques/D3-CHN__Connected_Honeynet.md"
+  },
+  {
+    "id": "D3-CAA",
+    "type": "technique",
+    "name": "Connection Attempt Analysis",
+    "path": "techniques/D3-CAA__Connection_Attempt_Analysis.md"
+  },
+  {
+    "id": "D3-CIA",
+    "type": "technique",
+    "name": "Container Image Analysis",
+    "path": "techniques/D3-CIA__Container_Image_Analysis.md"
+  },
+  {
+    "id": "D3-CNE",
+    "type": "technique",
+    "name": "Content Excision",
+    "path": "techniques/D3-CNE__Content_Excision.md"
+  },
+  {
+    "id": "D3-CF",
+    "type": "technique",
+    "name": "Content Filtering",
+    "path": "techniques/D3-CF__Content_Filtering.md"
+  },
+  {
+    "id": "D3-CFC",
+    "type": "technique",
+    "name": "Content Format Conversion",
+    "path": "techniques/D3-CFC__Content_Format_Conversion.md"
+  },
+  {
+    "id": "D3-CM",
+    "type": "technique",
+    "name": "Content Modification",
+    "path": "techniques/D3-CM__Content_Modification.md"
+  },
+  {
+    "id": "D3-CQ",
+    "type": "technique",
+    "name": "Content Quarantine",
+    "path": "techniques/D3-CQ__Content_Quarantine.md"
+  },
+  {
+    "id": "D3-CNR",
+    "type": "technique",
+    "name": "Content Rebuild",
+    "path": "techniques/D3-CNR__Content_Rebuild.md"
+  },
+  {
+    "id": "D3-CNS",
+    "type": "technique",
+    "name": "Content Substitution",
+    "path": "techniques/D3-CNS__Content_Substitution.md"
+  },
+  {
+    "id": "D3-CV",
+    "type": "technique",
+    "name": "Content Validation",
+    "path": "techniques/D3-CV__Content_Validation.md"
+  },
+  {
+    "id": "D3-CFI",
+    "type": "technique",
+    "name": "Control Flow Integrity",
+    "path": "techniques/D3-CFI__Control_Flow_Integrity.md"
+  },
+  {
+    "id": "D3-CCSA",
+    "type": "technique",
+    "name": "Credential Compromise Scope Analysis",
+    "path": "techniques/D3-CCSA__Credential_Compromise_Scope_Analysis.md"
+  },
+  {
+    "id": "D3-CE",
+    "type": "technique",
+    "name": "Credential Eviction",
+    "path": "techniques/D3-CE__Credential_Eviction.md"
+  },
+  {
+    "id": "D3-CH",
+    "type": "technique",
+    "name": "Credential Hardening",
+    "path": "techniques/D3-CH__Credential_Hardening.md"
+  },
+  {
+    "id": "D3-CR",
+    "type": "technique",
+    "name": "Credential Revocation",
+    "path": "techniques/D3-CR__Credential_Revocation.md"
+  },
+  {
+    "id": "D3-CRO",
+    "type": "technique",
+    "name": "Credential Rotation",
+    "path": "techniques/D3-CRO__Credential_Rotation.md"
+  },
+  {
+    "id": "D3-CS",
+    "type": "technique",
+    "name": "Credential Scrubbing",
+    "path": "techniques/D3-CS__Credential_Scrubbing.md"
+  },
+  {
+    "id": "D3-CTS",
+    "type": "technique",
+    "name": "Credential Transmission Scoping",
+    "path": "techniques/D3-CTS__Credential_Transmission_Scoping.md"
+  },
+  {
+    "id": "D3-DNSAL",
+    "type": "technique",
+    "name": "DNS Allowlisting",
+    "path": "techniques/D3-DNSAL__DNS_Allowlisting.md"
+  },
+  {
+    "id": "D3-DNSCE",
+    "type": "technique",
+    "name": "DNS Cache Eviction",
+    "path": "techniques/D3-DNSCE__DNS_Cache_Eviction.md"
+  },
+  {
+    "id": "D3-DNSDL",
+    "type": "technique",
+    "name": "DNS Denylisting",
+    "path": "techniques/D3-DNSDL__DNS_Denylisting.md"
+  },
+  {
+    "id": "D3-DNSTA",
+    "type": "technique",
+    "name": "DNS Traffic Analysis",
+    "path": "techniques/D3-DNSTA__DNS_Traffic_Analysis.md"
+  },
+  {
+    "id": "D3-DEM",
+    "type": "technique",
+    "name": "Data Exchange Mapping",
+    "path": "techniques/D3-DEM__Data_Exchange_Mapping.md"
+  },
+  {
+    "id": "D3-DI",
+    "type": "technique",
+    "name": "Data Inventory",
+    "path": "techniques/D3-DI__Data_Inventory.md"
+  },
+  {
+    "id": "D3-DQSA",
+    "type": "technique",
+    "name": "Database Query String Analysis",
+    "path": "techniques/D3-DQSA__Database_Query_String_Analysis.md"
+  },
+  {
+    "id": "D3-DCE",
+    "type": "technique",
+    "name": "Dead Code Elimination",
+    "path": "techniques/D3-DCE__Dead_Code_Elimination.md"
+  },
+  {
+    "id": "D3-DE",
+    "type": "technique",
+    "name": "Decoy Environment",
+    "path": "techniques/D3-DE__Decoy_Environment.md"
+  },
+  {
+    "id": "D3-DF",
+    "type": "technique",
+    "name": "Decoy File",
+    "path": "techniques/D3-DF__Decoy_File.md"
+  },
+  {
+    "id": "D3-DNR",
+    "type": "technique",
+    "name": "Decoy Network Resource",
+    "path": "techniques/D3-DNR__Decoy_Network_Resource.md"
+  },
+  {
+    "id": "D3-DO",
+    "type": "technique",
+    "name": "Decoy Object",
+    "path": "techniques/D3-DO__Decoy_Object.md"
+  },
+  {
+    "id": "D3-DP",
+    "type": "technique",
+    "name": "Decoy Persona",
+    "path": "techniques/D3-DP__Decoy_Persona.md"
+  },
+  {
+    "id": "D3-DPR",
+    "type": "technique",
+    "name": "Decoy Public Release",
+    "path": "techniques/D3-DPR__Decoy_Public_Release.md"
+  },
+  {
+    "id": "D3-DST",
+    "type": "technique",
+    "name": "Decoy Session Token",
+    "path": "techniques/D3-DST__Decoy_Session_Token.md"
+  },
+  {
+    "id": "D3-DUC",
+    "type": "technique",
+    "name": "Decoy User Credential",
+    "path": "techniques/D3-DUC__Decoy_User_Credential.md"
+  },
+  {
+    "id": "D3-DPLM",
+    "type": "technique",
+    "name": "Direct Physical Link Mapping",
+    "path": "techniques/D3-DPLM__Direct_Physical_Link_Mapping.md"
+  },
+  {
+    "id": "D3-DNL",
+    "type": "technique",
+    "name": "Directional Network Link",
+    "path": "techniques/D3-DNL__Directional_Network_Link.md"
+  },
+  {
+    "id": "D3-DRA",
+    "type": "technique",
+    "name": "Disable Remote Access",
+    "path": "techniques/D3-DRA__Disable_Remote_Access.md"
+  },
+  {
+    "id": "D3-DENCR",
+    "type": "technique",
+    "name": "Disk Encryption",
+    "path": "techniques/D3-DENCR__Disk_Encryption.md"
+  },
+  {
+    "id": "D3-DKE",
+    "type": "technique",
+    "name": "Disk Erasure",
+    "path": "techniques/D3-DKE__Disk_Erasure.md"
+  },
+  {
+    "id": "D3-DKF",
+    "type": "technique",
+    "name": "Disk Formatting",
+    "path": "techniques/D3-DKF__Disk_Formatting.md"
+  },
+  {
+    "id": "D3-DKP",
+    "type": "technique",
+    "name": "Disk Partitioning",
+    "path": "techniques/D3-DKP__Disk_Partitioning.md"
+  },
+  {
+    "id": "D3-DAM",
+    "type": "technique",
+    "name": "Domain Account Monitoring",
+    "path": "techniques/D3-DAM__Domain_Account_Monitoring.md"
+  },
+  {
+    "id": "D3-DLV",
+    "type": "technique",
+    "name": "Domain Logic Validation",
+    "path": "techniques/D3-DLV__Domain_Logic_Validation.md"
+  },
+  {
+    "id": "D3-DNRA",
+    "type": "technique",
+    "name": "Domain Name Reputation Analysis",
+    "path": "techniques/D3-DNRA__Domain_Name_Reputation_Analysis.md"
+  },
+  {
+    "id": "D3-DRT",
+    "type": "technique",
+    "name": "Domain Registration Takedown",
+    "path": "techniques/D3-DRT__Domain_Registration_Takedown.md"
+  },
+  {
+    "id": "D3-DTP",
+    "type": "technique",
+    "name": "Domain Trust Policy",
+    "path": "techniques/D3-DTP__Domain_Trust_Policy.md"
+  },
+  {
+    "id": "D3-DLIC",
+    "type": "technique",
+    "name": "Driver Load Integrity Checking",
+    "path": "techniques/D3-DLIC__Driver_Load_Integrity_Checking.md"
+  },
+  {
+    "id": "D3-DA",
+    "type": "technique",
+    "name": "Dynamic Analysis",
+    "path": "techniques/D3-DA__Dynamic_Analysis.md"
+  },
+  {
+    "id": "D3-EMH",
+    "type": "technique",
+    "name": "Electromagnetic Radiation Hardening",
+    "path": "techniques/D3-EMH__Electromagnetic_Radiation_Hardening.md"
+  },
+  {
+    "id": "D3-ELM",
+    "type": "technique",
+    "name": "Electronic Lock Monitoring",
+    "path": "techniques/D3-ELM__Electronic_Lock_Monitoring.md"
+  },
+  {
+    "id": "D3-EF",
+    "type": "technique",
+    "name": "Email Filtering",
+    "path": "techniques/D3-EF__Email_Filtering.md"
+  },
+  {
+    "id": "D3-ER",
+    "type": "technique",
+    "name": "Email Removal",
+    "path": "techniques/D3-ER__Email_Removal.md"
+  },
+  {
+    "id": "D3-EFA",
+    "type": "technique",
+    "name": "Emulated File Analysis",
+    "path": "techniques/D3-EFA__Emulated_File_Analysis.md"
+  },
+  {
+    "id": "D3-ET",
+    "type": "technique",
+    "name": "Encrypted Tunnels",
+    "path": "techniques/D3-ET__Encrypted_Tunnels.md"
+  },
+  {
+    "id": "D3-EBWSAM",
+    "type": "technique",
+    "name": "Endpoint-based Web Server Access Mediation",
+    "path": "techniques/D3-EBWSAM__Endpoint_based_Web_Server_Access_Mediation.md"
+  },
+  {
+    "id": "D3-EHB",
+    "type": "technique",
+    "name": "Endpoint Health Beacon",
+    "path": "techniques/D3-EHB__Endpoint_Health_Beacon.md"
+  },
+  {
+    "id": "D3-EHPV",
+    "type": "technique",
+    "name": "Exception Handler Pointer Validation",
+    "path": "techniques/D3-EHPV__Exception_Handler_Pointer_Validation.md"
+  },
+  {
+    "id": "D3-EAL",
+    "type": "technique",
+    "name": "Executable Allowlisting",
+    "path": "techniques/D3-EAL__Executable_Allowlisting.md"
+  },
+  {
+    "id": "D3-EDL",
+    "type": "technique",
+    "name": "Executable Denylisting",
+    "path": "techniques/D3-EDL__Executable_Denylisting.md"
+  },
+  {
+    "id": "D3-EI",
+    "type": "technique",
+    "name": "Execution Isolation",
+    "path": "techniques/D3-EI__Execution_Isolation.md"
+  },
+  {
+    "id": "D3-FAPA",
+    "type": "technique",
+    "name": "File Access Pattern Analysis",
+    "path": "techniques/D3-FAPA__File_Access_Pattern_Analysis.md"
+  },
+  {
+    "id": "D3-FA",
+    "type": "technique",
+    "name": "File Analysis",
+    "path": "techniques/D3-FA__File_Analysis.md"
+  },
+  {
+    "id": "D3-FC",
+    "type": "technique",
+    "name": "File Carving",
+    "path": "techniques/D3-FC__File_Carving.md"
+  },
+  {
+    "id": "D3-FCOA",
+    "type": "technique",
+    "name": "File Content Analysis",
+    "path": "techniques/D3-FCOA__File_Content_Analysis.md"
+  },
+  {
+    "id": "D3-FCDC",
+    "type": "technique",
+    "name": "File Content Decompression Checking",
+    "path": "techniques/D3-FCDC__File_Content_Decompression_Checking.md"
+  },
+  {
+    "id": "D3-FCR",
+    "type": "technique",
+    "name": "File Content Rules",
+    "path": "techniques/D3-FCR__File_Content_Rules.md"
+  },
+  {
+    "id": "D3-FCA",
+    "type": "technique",
+    "name": "File Creation Analysis",
+    "path": "techniques/D3-FCA__File_Creation_Analysis.md"
+  },
+  {
+    "id": "D3-FE",
+    "type": "technique",
+    "name": "File Encryption",
+    "path": "techniques/D3-FE__File_Encryption.md"
+  },
+  {
+    "id": "D3-FEV",
+    "type": "technique",
+    "name": "File Eviction",
+    "path": "techniques/D3-FEV__File_Eviction.md"
+  },
+  {
+    "id": "D3-FFV",
+    "type": "technique",
+    "name": "File Format Verification",
+    "path": "techniques/D3-FFV__File_Format_Verification.md"
+  },
+  {
+    "id": "D3-FHRA",
+    "type": "technique",
+    "name": "File Hash Reputation Analysis",
+    "path": "techniques/D3-FHRA__File_Hash_Reputation_Analysis.md"
+  },
+  {
+    "id": "D3-FH",
+    "type": "technique",
+    "name": "File Hashing",
+    "path": "techniques/D3-FH__File_Hashing.md"
+  },
+  {
+    "id": "D3-FIM",
+    "type": "technique",
+    "name": "File Integrity Monitoring",
+    "path": "techniques/D3-FIM__File_Integrity_Monitoring.md"
+  },
+  {
+    "id": "D3-FISV",
+    "type": "technique",
+    "name": "File Internal Structure Verification",
+    "path": "techniques/D3-FISV__File_Internal_Structure_Verification.md"
+  },
+  {
+    "id": "D3-FMBV",
+    "type": "technique",
+    "name": "File Magic Byte Verification",
+    "path": "techniques/D3-FMBV__File_Magic_Byte_Verification.md"
+  },
+  {
+    "id": "D3-FMCV",
+    "type": "technique",
+    "name": "File Metadata Consistency Validation",
+    "path": "techniques/D3-FMCV__File_Metadata_Consistency_Validation.md"
+  },
+  {
+    "id": "D3-FMVV",
+    "type": "technique",
+    "name": "File Metadata Value Verification",
+    "path": "techniques/D3-FMVV__File_Metadata_Value_Verification.md"
+  },
+  {
+    "id": "D3-FBA",
+    "type": "technique",
+    "name": "Firmware Behavior Analysis",
+    "path": "techniques/D3-FBA__Firmware_Behavior_Analysis.md"
+  },
+  {
+    "id": "D3-FEMC",
+    "type": "technique",
+    "name": "Firmware Embedded Monitoring Code",
+    "path": "techniques/D3-FEMC__Firmware_Embedded_Monitoring_Code.md"
+  },
+  {
+    "id": "D3-FV",
+    "type": "technique",
+    "name": "Firmware Verification",
+    "path": "techniques/D3-FV__Firmware_Verification.md"
+  },
+  {
+    "id": "D3-FRDDL",
+    "type": "technique",
+    "name": "Forward Resolution Domain Denylisting",
+    "path": "techniques/D3-FRDDL__Forward_Resolution_Domain_Denylisting.md"
+  },
+  {
+    "id": "D3-FRIDL",
+    "type": "technique",
+    "name": "Forward Resolution IP Denylisting",
+    "path": "techniques/D3-FRIDL__Forward_Resolution_IP_Denylisting.md"
+  },
+  {
+    "id": "D3-HBPI",
+    "type": "technique",
+    "name": "Hardware-based Process Isolation",
+    "path": "techniques/D3-HBPI__Hardware_based_Process_Isolation.md"
+  },
+  {
+    "id": "D3-HBWP",
+    "type": "technique",
+    "name": "Hardware-based Write Protection",
+    "path": "techniques/D3-HBWP__Hardware_based_Write_Protection.md"
+  },
+  {
+    "id": "D3-HCI",
+    "type": "technique",
+    "name": "Hardware Component Inventory",
+    "path": "techniques/D3-HCI__Hardware_Component_Inventory.md"
+  },
+  {
+    "id": "D3-HDDL",
+    "type": "technique",
+    "name": "Hierarchical Domain Denylisting",
+    "path": "techniques/D3-HDDL__Hierarchical_Domain_Denylisting.md"
+  },
+  {
+    "id": "D3-HDL",
+    "type": "technique",
+    "name": "Homoglyph Denylisting",
+    "path": "techniques/D3-HDL__Homoglyph_Denylisting.md"
+  },
+  {
+    "id": "D3-HD",
+    "type": "technique",
+    "name": "Homoglyph Detection",
+    "path": "techniques/D3-HD__Homoglyph_Detection.md"
+  },
+  {
+    "id": "D3-HR",
+    "type": "technique",
+    "name": "Host Reboot",
+    "path": "techniques/D3-HR__Host_Reboot.md"
+  },
+  {
+    "id": "D3-HS",
+    "type": "technique",
+    "name": "Host Shutdown",
+    "path": "techniques/D3-HS__Host_Shutdown.md"
+  },
+  {
+    "id": "D3-IOPR",
+    "type": "technique",
+    "name": "IO Port Restriction",
+    "path": "techniques/D3-IOPR__IO_Port_Restriction.md"
+  },
+  {
+    "id": "D3-IPCTA",
+    "type": "technique",
+    "name": "IPC Traffic Analysis",
+    "path": "techniques/D3-IPCTA__IPC_Traffic_Analysis.md"
+  },
+  {
+    "id": "D3-IPRA",
+    "type": "technique",
+    "name": "IP Reputation Analysis",
+    "path": "techniques/D3-IPRA__IP_Reputation_Analysis.md"
+  },
+  {
+    "id": "D3-IAA",
+    "type": "technique",
+    "name": "Identifier Activity Analysis",
+    "path": "techniques/D3-IAA__Identifier_Activity_Analysis.md"
+  },
+  {
+    "id": "D3-ID",
+    "type": "technique",
+    "name": "Identifier Analysis",
+    "path": "techniques/D3-ID__Identifier_Analysis.md"
+  },
+  {
+    "id": "D3-IRA",
+    "type": "technique",
+    "name": "Identifier Reputation Analysis",
+    "path": "techniques/D3-IRA__Identifier_Reputation_Analysis.md"
+  },
+  {
+    "id": "D3-ISVA",
+    "type": "technique",
+    "name": "Inbound Session Volume Analysis",
+    "path": "techniques/D3-ISVA__Inbound_Session_Volume_Analysis.md"
+  },
+  {
+    "id": "D3-ITF",
+    "type": "technique",
+    "name": "Inbound Traffic Filtering",
+    "path": "techniques/D3-ITF__Inbound_Traffic_Filtering.md"
+  },
+  {
+    "id": "D3-IBCA",
+    "type": "technique",
+    "name": "Indirect Branch Call Analysis",
+    "path": "techniques/D3-IBCA__Indirect_Branch_Call_Analysis.md"
+  },
+  {
+    "id": "D3-IDA",
+    "type": "technique",
+    "name": "Input Device Analysis",
+    "path": "techniques/D3-IDA__Input_Device_Analysis.md"
+  },
+  {
+    "id": "D3-IRV",
+    "type": "technique",
+    "name": "Integer Range Validation",
+    "path": "techniques/D3-IRV__Integer_Range_Validation.md"
+  },
+  {
+    "id": "D3-IHN",
+    "type": "technique",
+    "name": "Integrated Honeynet",
+    "path": "techniques/D3-IHN__Integrated_Honeynet.md"
+  },
+  {
+    "id": "D3-JFAPA",
+    "type": "technique",
+    "name": "Job Function Access Pattern Analysis",
+    "path": "techniques/D3-JFAPA__Job_Function_Access_Pattern_Analysis.md"
+  },
+  {
+    "id": "D3-KBPI",
+    "type": "technique",
+    "name": "Kernel-based Process Isolation",
+    "path": "techniques/D3-KBPI__Kernel_based_Process_Isolation.md"
+  },
+  {
+    "id": "D3-LAMED",
+    "type": "technique",
+    "name": "LAN Access Mediation",
+    "path": "techniques/D3-LAMED__LAN_Access_Mediation.md"
+  },
+  {
+    "id": "D3-LAM",
+    "type": "technique",
+    "name": "Local Account Monitoring",
+    "path": "techniques/D3-LAM__Local_Account_Monitoring.md"
+  },
+  {
+    "id": "D3-LFAM",
+    "type": "technique",
+    "name": "Local File Access Mediation",
+    "path": "techniques/D3-LFAM__Local_File_Access_Mediation.md"
+  },
+  {
+    "id": "D3-LFP",
+    "type": "technique",
+    "name": "Local File Permissions",
+    "path": "techniques/D3-LFP__Local_File_Permissions.md"
+  },
+  {
+    "id": "D3-LLM",
+    "type": "technique",
+    "name": "Logical Link Mapping",
+    "path": "techniques/D3-LLM__Logical_Link_Mapping.md"
+  },
+  {
+    "id": "D3-MBSV",
+    "type": "technique",
+    "name": "Memory Block Start Validation",
+    "path": "techniques/D3-MBSV__Memory_Block_Start_Validation.md"
+  },
+  {
+    "id": "D3-MBT",
+    "type": "technique",
+    "name": "Memory Boundary Tracking",
+    "path": "techniques/D3-MBT__Memory_Boundary_Tracking.md"
+  },
+  {
+    "id": "D3-MA",
+    "type": "technique",
+    "name": "Message Analysis",
+    "path": "techniques/D3-MA__Message_Analysis.md"
+  },
+  {
+    "id": "D3-MAN",
+    "type": "technique",
+    "name": "Message Authentication",
+    "path": "techniques/D3-MAN__Message_Authentication.md"
+  },
+  {
+    "id": "D3-MENCR",
+    "type": "technique",
+    "name": "Message Encryption",
+    "path": "techniques/D3-MENCR__Message_Encryption.md"
+  },
+  {
+    "id": "D3-MH",
+    "type": "technique",
+    "name": "Message Hardening",
+    "path": "techniques/D3-MH__Message_Hardening.md"
+  },
+  {
+    "id": "D3-MSM",
+    "type": "technique",
+    "name": "Motion Sensor Monitoring",
+    "path": "techniques/D3-MSM__Motion_Sensor_Monitoring.md"
+  },
+  {
+    "id": "D3-MFA",
+    "type": "technique",
+    "name": "Multi-factor Authentication",
+    "path": "techniques/D3-MFA__Multi_factor_Authentication.md"
+  },
+  {
+    "id": "D3-NAM",
+    "type": "technique",
+    "name": "Network Access Mediation",
+    "path": "techniques/D3-NAM__Network_Access_Mediation.md"
+  },
+  {
+    "id": "D3-NI",
+    "type": "technique",
+    "name": "Network Isolation",
+    "path": "techniques/D3-NI__Network_Isolation.md"
+  },
+  {
+    "id": "D3-NM",
+    "type": "technique",
+    "name": "Network Mapping",
+    "path": "techniques/D3-NM__Network_Mapping.md"
+  },
+  {
+    "id": "D3-NNI",
+    "type": "technique",
+    "name": "Network Node Inventory",
+    "path": "techniques/D3-NNI__Network_Node_Inventory.md"
+  },
+  {
+    "id": "D3-NRAM",
+    "type": "technique",
+    "name": "Network Resource Access Mediation",
+    "path": "techniques/D3-NRAM__Network_Resource_Access_Mediation.md"
+  },
+  {
+    "id": "D3-NTA",
+    "type": "technique",
+    "name": "Network Traffic Analysis",
+    "path": "techniques/D3-NTA__Network_Traffic_Analysis.md"
+  },
+  {
+    "id": "D3-NTCD",
+    "type": "technique",
+    "name": "Network Traffic Community Deviation",
+    "path": "techniques/D3-NTCD__Network_Traffic_Community_Deviation.md"
+  },
+  {
+    "id": "D3-NTF",
+    "type": "technique",
+    "name": "Network Traffic Filtering",
+    "path": "techniques/D3-NTF__Network_Traffic_Filtering.md"
+  },
+  {
+    "id": "D3-NTPM",
+    "type": "technique",
+    "name": "Network Traffic Policy Mapping",
+    "path": "techniques/D3-NTPM__Network_Traffic_Policy_Mapping.md"
+  },
+  {
+    "id": "D3-NTSA",
+    "type": "technique",
+    "name": "Network Traffic Signature Analysis",
+    "path": "techniques/D3-NTSA__Network_Traffic_Signature_Analysis.md"
+  },
+  {
+    "id": "D3-NVA",
+    "type": "technique",
+    "name": "Network Vulnerability Assessment",
+    "path": "techniques/D3-NVA__Network_Vulnerability_Assessment.md"
+  },
+  {
+    "id": "D3-NPC",
+    "type": "technique",
+    "name": "Null Pointer Checking",
+    "path": "techniques/D3-NPC__Null_Pointer_Checking.md"
+  },
+  {
+    "id": "D3-OVAR",
+    "type": "technique",
+    "name": "OT Variable Access Restriction",
+    "path": "techniques/D3-OVAR__OT_Variable_Access_Restriction.md"
+  },
+  {
+    "id": "D3-OE",
+    "type": "technique",
+    "name": "Object Eviction",
+    "path": "techniques/D3-OE__Object_Eviction.md"
+  },
+  {
+    "id": "D3-OTP",
+    "type": "technique",
+    "name": "One-time Password",
+    "path": "techniques/D3-OTP__One_time_Password.md"
+  },
+  {
+    "id": "D3-OMM",
+    "type": "technique",
+    "name": "Operating Mode Monitoring",
+    "path": "techniques/D3-OMM__Operating_Mode_Monitoring.md"
+  },
+  {
+    "id": "D3-OPR",
+    "type": "technique",
+    "name": "Operating Mode Restriction",
+    "path": "techniques/D3-OPR__Operating_Mode_Restriction.md"
+  },
+  {
+    "id": "D3-OSM",
+    "type": "technique",
+    "name": "Operating System Monitoring",
+    "path": "techniques/D3-OSM__Operating_System_Monitoring.md"
+  },
+  {
+    "id": "D3-OAM",
+    "type": "technique",
+    "name": "Operational Activity Mapping",
+    "path": "techniques/D3-OAM__Operational_Activity_Mapping.md"
+  },
+  {
+    "id": "D3-ODM",
+    "type": "technique",
+    "name": "Operational Dependency Mapping",
+    "path": "techniques/D3-ODM__Operational_Dependency_Mapping.md"
+  },
+  {
+    "id": "D3-OLV",
+    "type": "technique",
+    "name": "Operational Logic Validation",
+    "path": "techniques/D3-OLV__Operational_Logic_Validation.md"
+  },
+  {
+    "id": "D3-OPM",
+    "type": "technique",
+    "name": "Operational Process Monitoring",
+    "path": "techniques/D3-OPM__Operational_Process_Monitoring.md"
+  },
+  {
+    "id": "D3-ORA",
+    "type": "technique",
+    "name": "Operational Risk Assessment",
+    "path": "techniques/D3-ORA__Operational_Risk_Assessment.md"
+  },
+  {
+    "id": "D3-OM",
+    "type": "technique",
+    "name": "Organization Mapping",
+    "path": "techniques/D3-OM__Organization_Mapping.md"
+  },
+  {
+    "id": "D3-OTF",
+    "type": "technique",
+    "name": "Outbound Traffic Filtering",
+    "path": "techniques/D3-OTF__Outbound_Traffic_Filtering.md"
+  },
+  {
+    "id": "D3-PCA",
+    "type": "technique",
+    "name": "Passive Certificate Analysis",
+    "path": "techniques/D3-PCA__Passive_Certificate_Analysis.md"
+  },
+  {
+    "id": "D3-PLLM",
+    "type": "technique",
+    "name": "Passive Logical Link Mapping",
+    "path": "techniques/D3-PLLM__Passive_Logical_Link_Mapping.md"
+  },
+  {
+    "id": "D3-PWA",
+    "type": "technique",
+    "name": "Password Authentication",
+    "path": "techniques/D3-PWA__Password_Authentication.md"
+  },
+  {
+    "id": "D3-PR",
+    "type": "technique",
+    "name": "Password Rotation",
+    "path": "techniques/D3-PR__Password_Rotation.md"
+  },
+  {
+    "id": "D3-PHDURA",
+    "type": "technique",
+    "name": "Per Host Download-Upload Ratio Analysis",
+    "path": "techniques/D3-PHDURA__Per_Host_Download_Upload_Ratio_Analysis.md"
+  },
+  {
+    "id": "D3-PFV",
+    "type": "technique",
+    "name": "Peripheral Firmware Verification",
+    "path": "techniques/D3-PFV__Peripheral_Firmware_Verification.md"
+  },
+  {
+    "id": "D3-PAM",
+    "type": "technique",
+    "name": "Physical Access Mediation",
+    "path": "techniques/D3-PAM__Physical_Access_Mediation.md"
+  },
+  {
+    "id": "D3-PHAM",
+    "type": "technique",
+    "name": "Physical Access Monitoring",
+    "path": "techniques/D3-PHAM__Physical_Access_Monitoring.md"
+  },
+  {
+    "id": "D3-PEH",
+    "type": "technique",
+    "name": "Physical Enclosure Hardening",
+    "path": "techniques/D3-PEH__Physical_Enclosure_Hardening.md"
+  },
+  {
+    "id": "D3-PLM",
+    "type": "technique",
+    "name": "Physical Link Mapping",
+    "path": "techniques/D3-PLM__Physical_Link_Mapping.md"
+  },
+  {
+    "id": "D3-EPL",
+    "type": "technique",
+    "name": "Physical Locking",
+    "path": "techniques/D3-EPL__Physical_Locking.md"
+  },
+  {
+    "id": "D3-PH",
+    "type": "technique",
+    "name": "Platform Hardening",
+    "path": "techniques/D3-PH__Platform_Hardening.md"
+  },
+  {
+    "id": "D3-PM",
+    "type": "technique",
+    "name": "Platform Monitoring",
+    "path": "techniques/D3-PM__Platform_Monitoring.md"
+  },
+  {
+    "id": "D3-PUM",
+    "type": "technique",
+    "name": "Platform Uptime Monitoring",
+    "path": "techniques/D3-PUM__Platform_Uptime_Monitoring.md"
+  },
+  {
+    "id": "D3-PAN",
+    "type": "technique",
+    "name": "Pointer Authentication",
+    "path": "techniques/D3-PAN__Pointer_Authentication.md"
+  },
+  {
+    "id": "D3-PV",
+    "type": "technique",
+    "name": "Pointer Validation",
+    "path": "techniques/D3-PV__Pointer_Validation.md"
+  },
+  {
+    "id": "D3-PA",
+    "type": "technique",
+    "name": "Process Analysis",
+    "path": "techniques/D3-PA__Process_Analysis.md"
+  },
+  {
+    "id": "D3-PCSV",
+    "type": "technique",
+    "name": "Process Code Segment Verification",
+    "path": "techniques/D3-PCSV__Process_Code_Segment_Verification.md"
+  },
+  {
+    "id": "D3-PE",
+    "type": "technique",
+    "name": "Process Eviction",
+    "path": "techniques/D3-PE__Process_Eviction.md"
+  },
+  {
+    "id": "D3-PLA",
+    "type": "technique",
+    "name": "Process Lineage Analysis",
+    "path": "techniques/D3-PLA__Process_Lineage_Analysis.md"
+  },
+  {
+    "id": "D3-PSEP",
+    "type": "technique",
+    "name": "Process Segment Execution Prevention",
+    "path": "techniques/D3-PSEP__Process_Segment_Execution_Prevention.md"
+  },
+  {
+    "id": "D3-PSMD",
+    "type": "technique",
+    "name": "Process Self-Modification Detection",
+    "path": "techniques/D3-PSMD__Process_Self_Modification_Detection.md"
+  },
+  {
+    "id": "D3-PSA",
+    "type": "technique",
+    "name": "Process Spawn Analysis",
+    "path": "techniques/D3-PSA__Process_Spawn_Analysis.md"
+  },
+  {
+    "id": "D3-PS",
+    "type": "technique",
+    "name": "Process Suspension",
+    "path": "techniques/D3-PS__Process_Suspension.md"
+  },
+  {
+    "id": "D3-PT",
+    "type": "technique",
+    "name": "Process Termination",
+    "path": "techniques/D3-PT__Process_Termination.md"
+  },
+  {
+    "id": "D3-PMAD",
+    "type": "technique",
+    "name": "Protocol Metadata Anomaly Detection",
+    "path": "techniques/D3-PMAD__Protocol_Metadata_Anomaly_Detection.md"
+  },
+  {
+    "id": "D3-PSM",
+    "type": "technique",
+    "name": "Proximity Sensor Monitoring",
+    "path": "techniques/D3-PSM__Proximity_Sensor_Monitoring.md"
+  },
+  {
+    "id": "D3-PBWSAM",
+    "type": "technique",
+    "name": "Proxy-based Web Server Access Mediation",
+    "path": "techniques/D3-PBWSAM__Proxy_based_Web_Server_Access_Mediation.md"
+  },
+  {
+    "id": "D3-RFS",
+    "type": "technique",
+    "name": "RF Shielding",
+    "path": "techniques/D3-RFS__RF_Shielding.md"
+  },
+  {
+    "id": "D3-RTA",
+    "type": "technique",
+    "name": "RPC Traffic Analysis",
+    "path": "techniques/D3-RTA__RPC_Traffic_Analysis.md"
+  },
+  {
+    "id": "D3-RH",
+    "type": "technique",
+    "name": "Radiation Hardening",
+    "path": "techniques/D3-RH__Radiation_Hardening.md"
+  },
+  {
+    "id": "D3-RN",
+    "type": "technique",
+    "name": "Reference Nullification",
+    "path": "techniques/D3-RN__Reference_Nullification.md"
+  },
+  {
+    "id": "D3-RKD",
+    "type": "technique",
+    "name": "Registry Key Deletion",
+    "path": "techniques/D3-RKD__Registry_Key_Deletion.md"
+  },
+  {
+    "id": "D3-RIC",
+    "type": "technique",
+    "name": "Reissue Credential",
+    "path": "techniques/D3-RIC__Reissue_Credential.md"
+  },
+  {
+    "id": "D3-RPA",
+    "type": "technique",
+    "name": "Relay Pattern Analysis",
+    "path": "techniques/D3-RPA__Relay_Pattern_Analysis.md"
+  },
+  {
+    "id": "D3-RFAM",
+    "type": "technique",
+    "name": "Remote File Access Mediation",
+    "path": "techniques/D3-RFAM__Remote_File_Access_Mediation.md"
+  },
+  {
+    "id": "D3-RFUM",
+    "type": "technique",
+    "name": "Remote Firmware Update Monitoring",
+    "path": "techniques/D3-RFUM__Remote_Firmware_Update_Monitoring.md"
+  },
+  {
+    "id": "D3-RTSD",
+    "type": "technique",
+    "name": "Remote Terminal Session Detection",
+    "path": "techniques/D3-RTSD__Remote_Terminal_Session_Detection.md"
+  },
+  {
+    "id": "D3-RAPA",
+    "type": "technique",
+    "name": "Resource Access Pattern Analysis",
+    "path": "techniques/D3-RAPA__Resource_Access_Pattern_Analysis.md"
+  },
+  {
+    "id": "D3-RA",
+    "type": "technique",
+    "name": "Restore Access",
+    "path": "techniques/D3-RA__Restore_Access.md"
+  },
+  {
+    "id": "D3-RC",
+    "type": "technique",
+    "name": "Restore Configuration",
+    "path": "techniques/D3-RC__Restore_Configuration.md"
+  },
+  {
+    "id": "D3-RD",
+    "type": "technique",
+    "name": "Restore Database",
+    "path": "techniques/D3-RD__Restore_Database.md"
+  },
+  {
+    "id": "D3-RDI",
+    "type": "technique",
+    "name": "Restore Disk Image",
+    "path": "techniques/D3-RDI__Restore_Disk_Image.md"
+  },
+  {
+    "id": "D3-RE",
+    "type": "technique",
+    "name": "Restore Email",
+    "path": "techniques/D3-RE__Restore_Email.md"
+  },
+  {
+    "id": "D3-RF",
+    "type": "technique",
+    "name": "Restore File",
+    "path": "techniques/D3-RF__Restore_File.md"
+  },
+  {
+    "id": "D3-RNA",
+    "type": "technique",
+    "name": "Restore Network Access",
+    "path": "techniques/D3-RNA__Restore_Network_Access.md"
+  },
+  {
+    "id": "D3-RO",
+    "type": "technique",
+    "name": "Restore Object",
+    "path": "techniques/D3-RO__Restore_Object.md"
+  },
+  {
+    "id": "D3-RS",
+    "type": "technique",
+    "name": "Restore Software",
+    "path": "techniques/D3-RS__Restore_Software.md"
+  },
+  {
+    "id": "D3-RUAA",
+    "type": "technique",
+    "name": "Restore User Account Access",
+    "path": "techniques/D3-RUAA__Restore_User_Account_Access.md"
+  },
+  {
+    "id": "D3-RRID",
+    "type": "technique",
+    "name": "Reverse Resolution IP Denylisting",
+    "path": "techniques/D3-RRID__Reverse_Resolution_IP_Denylisting.md"
+  },
+  {
+    "id": "D3-RAM",
+    "type": "technique",
+    "name": "Routing Access Mediation",
+    "path": "techniques/D3-RAM__Routing_Access_Mediation.md"
+  },
+  {
+    "id": "D3-SJA",
+    "type": "technique",
+    "name": "Scheduled Job Analysis",
+    "path": "techniques/D3-SJA__Scheduled_Job_Analysis.md"
+  },
+  {
+    "id": "D3-SEA",
+    "type": "technique",
+    "name": "Script Execution Analysis",
+    "path": "techniques/D3-SEA__Script_Execution_Analysis.md"
+  },
+  {
+    "id": "D3-SAOR",
+    "type": "technique",
+    "name": "Segment Address Offset Randomization",
+    "path": "techniques/D3-SAOR__Segment_Address_Offset_Randomization.md"
+  },
+  {
+    "id": "D3-SMRA",
+    "type": "technique",
+    "name": "Sender MTA Reputation Analysis",
+    "path": "techniques/D3-SMRA__Sender_MTA_Reputation_Analysis.md"
+  },
+  {
+    "id": "D3-SRA",
+    "type": "technique",
+    "name": "Sender Reputation Analysis",
+    "path": "techniques/D3-SRA__Sender_Reputation_Analysis.md"
+  },
+  {
+    "id": "D3-SBV",
+    "type": "technique",
+    "name": "Service Binary Verification",
+    "path": "techniques/D3-SBV__Service_Binary_Verification.md"
+  },
+  {
+    "id": "D3-SVCDM",
+    "type": "technique",
+    "name": "Service Dependency Mapping",
+    "path": "techniques/D3-SVCDM__Service_Dependency_Mapping.md"
+  },
+  {
+    "id": "D3-SDA",
+    "type": "technique",
+    "name": "Session Duration Analysis",
+    "path": "techniques/D3-SDA__Session_Duration_Analysis.md"
+  },
+  {
+    "id": "D3-ST",
+    "type": "technique",
+    "name": "Session Termination",
+    "path": "techniques/D3-ST__Session_Termination.md"
+  },
+  {
+    "id": "D3-SSC",
+    "type": "technique",
+    "name": "Shadow Stack Comparisons",
+    "path": "techniques/D3-SSC__Shadow_Stack_Comparisons.md"
+  },
+  {
+    "id": "D3-SWI",
+    "type": "technique",
+    "name": "Software Inventory",
+    "path": "techniques/D3-SWI__Software_Inventory.md"
+  },
+  {
+    "id": "D3-SU",
+    "type": "technique",
+    "name": "Software Update",
+    "path": "techniques/D3-SU__Software_Update.md"
+  },
+  {
+    "id": "D3-SCH",
+    "type": "technique",
+    "name": "Source Code Hardening",
+    "path": "techniques/D3-SCH__Source_Code_Hardening.md"
+  },
+  {
+    "id": "D3-SFCV",
+    "type": "technique",
+    "name": "Stack Frame Canary Validation",
+    "path": "techniques/D3-SFCV__Stack_Frame_Canary_Validation.md"
+  },
+  {
+    "id": "D3-SHN",
+    "type": "technique",
+    "name": "Standalone Honeynet",
+    "path": "techniques/D3-SHN__Standalone_Honeynet.md"
+  },
+  {
+    "id": "D3-SPP",
+    "type": "technique",
+    "name": "Strong Password Policy",
+    "path": "techniques/D3-SPP__Strong_Password_Policy.md"
+  },
+  {
+    "id": "D3-SCA",
+    "type": "technique",
+    "name": "System Call Analysis",
+    "path": "techniques/D3-SCA__System_Call_Analysis.md"
+  },
+  {
+    "id": "D3-SCF",
+    "type": "technique",
+    "name": "System Call Filtering",
+    "path": "techniques/D3-SCF__System_Call_Filtering.md"
+  },
+  {
+    "id": "D3-SCP",
+    "type": "technique",
+    "name": "System Configuration Permissions",
+    "path": "techniques/D3-SCP__System_Configuration_Permissions.md"
+  },
+  {
+    "id": "D3-SDM",
+    "type": "technique",
+    "name": "System Daemon Monitoring",
+    "path": "techniques/D3-SDM__System_Daemon_Monitoring.md"
+  },
+  {
+    "id": "D3-SYSDM",
+    "type": "technique",
+    "name": "System Dependency Mapping",
+    "path": "techniques/D3-SYSDM__System_Dependency_Mapping.md"
+  },
+  {
+    "id": "D3-SFA",
+    "type": "technique",
+    "name": "System File Analysis",
+    "path": "techniques/D3-SFA__System_File_Analysis.md"
+  },
+  {
+    "id": "D3-SFV",
+    "type": "technique",
+    "name": "System Firmware Verification",
+    "path": "techniques/D3-SFV__System_Firmware_Verification.md"
+  },
+  {
+    "id": "D3-SICA",
+    "type": "technique",
+    "name": "System Init Config Analysis",
+    "path": "techniques/D3-SICA__System_Init_Config_Analysis.md"
+  },
+  {
+    "id": "D3-SYSM",
+    "type": "technique",
+    "name": "System Mapping",
+    "path": "techniques/D3-SYSM__System_Mapping.md"
+  },
+  {
+    "id": "D3-SYSVA",
+    "type": "technique",
+    "name": "System Vulnerability Assessment",
+    "path": "techniques/D3-SYSVA__System_Vulnerability_Assessment.md"
+  },
+  {
+    "id": "D3-TBI",
+    "type": "technique",
+    "name": "TPM Boot Integrity",
+    "path": "techniques/D3-TBI__TPM_Boot_Integrity.md"
+  },
+  {
+    "id": "D3-TBA",
+    "type": "technique",
+    "name": "Token-based Authentication",
+    "path": "techniques/D3-TBA__Token_based_Authentication.md"
+  },
+  {
+    "id": "D3-TB",
+    "type": "technique",
+    "name": "Token Binding",
+    "path": "techniques/D3-TB__Token_Binding.md"
+  },
+  {
+    "id": "D3-TAAN",
+    "type": "technique",
+    "name": "Transfer Agent Authentication",
+    "path": "techniques/D3-TAAN__Transfer_Agent_Authentication.md"
+  },
+  {
+    "id": "D3-TL",
+    "type": "technique",
+    "name": "Trusted Library",
+    "path": "techniques/D3-TL__Trusted_Library.md"
+  },
+  {
+    "id": "D3-UA",
+    "type": "technique",
+    "name": "URL Analysis",
+    "path": "techniques/D3-UA__URL_Analysis.md"
+  },
+  {
+    "id": "D3-URA",
+    "type": "technique",
+    "name": "URL Reputation Analysis",
+    "path": "techniques/D3-URA__URL_Reputation_Analysis.md"
+  },
+  {
+    "id": "D3-ULA",
+    "type": "technique",
+    "name": "Unlock Account",
+    "path": "techniques/D3-ULA__Unlock_Account.md"
+  },
+  {
+    "id": "D3-UAP",
+    "type": "technique",
+    "name": "User Account Permissions",
+    "path": "techniques/D3-UAP__User_Account_Permissions.md"
+  },
+  {
+    "id": "D3-UBA",
+    "type": "technique",
+    "name": "User Behavior Analysis",
+    "path": "techniques/D3-UBA__User_Behavior_Analysis.md"
+  },
+  {
+    "id": "D3-UDTA",
+    "type": "technique",
+    "name": "User Data Transfer Analysis",
+    "path": "techniques/D3-UDTA__User_Data_Transfer_Analysis.md"
+  },
+  {
+    "id": "D3-UGLPA",
+    "type": "technique",
+    "name": "User Geolocation Logon Pattern Analysis",
+    "path": "techniques/D3-UGLPA__User_Geolocation_Logon_Pattern_Analysis.md"
+  },
+  {
+    "id": "D3-UGPH",
+    "type": "technique",
+    "name": "User Group Permissions",
+    "path": "techniques/D3-UGPH__User_Group_Permissions.md"
+  },
+  {
+    "id": "D3-USICA",
+    "type": "technique",
+    "name": "User Session Init Config Analysis",
+    "path": "techniques/D3-USICA__User_Session_Init_Config_Analysis.md"
+  },
+  {
+    "id": "D3-VI",
+    "type": "technique",
+    "name": "Variable Initialization",
+    "path": "techniques/D3-VI__Variable_Initialization.md"
+  },
+  {
+    "id": "D3-VTV",
+    "type": "technique",
+    "name": "Variable Type Validation",
+    "path": "techniques/D3-VTV__Variable_Type_Validation.md"
+  },
+  {
+    "id": "D3-VS",
+    "type": "technique",
+    "name": "Video Surveillance",
+    "path": "techniques/D3-VS__Video_Surveillance.md"
+  },
+  {
+    "id": "D3-WSAM",
+    "type": "technique",
+    "name": "Web Session Access Mediation",
+    "path": "techniques/D3-WSAM__Web_Session_Access_Mediation.md"
+  },
+  {
+    "id": "D3-WSAA",
+    "type": "technique",
+    "name": "Web Session Activity Analysis",
+    "path": "techniques/D3-WSAA__Web_Session_Activity_Analysis.md"
+  }
+]

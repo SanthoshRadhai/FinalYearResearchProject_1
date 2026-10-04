@@ -1,0 +1,212 @@
+# T1041: Exfiltration Over C2 Channel
+
+
+**ATT&CK ID:** T1041  
+**Domain:** Mitre Attack  
+**Tactic(s):** Exfiltration  
+**Platforms:** ESXi, Linux, macOS, Windows  
+**Reference:** https://attack.mitre.org/techniques/T1041  
+
+## Description
+Adversaries may steal data by exfiltrating it over an existing command and control channel. Stolen data is encoded into the normal communications channel using the same protocol as command and control communications.
+
+## Mitigations
+- M1031: Network Intrusion Prevention
+- M1057: Data Loss Prevention
+
+## Known Threat Groups Using This Technique
+- G0022: APT3
+- G0050: APT32
+- G0087: APT39
+- G1030: Agrius
+- G1043: BlackByte
+- G1012: CURIUM
+- G0114: Chimera
+- G0142: Confucius
+- G1052: Contagious Interview
+- G0093: GALLIUM
+- G0047: Gamaredon Group
+- G0126: Higaisa
+- G0004: Ke3chang
+- G0094: Kimsuky
+- G0032: Lazarus Group
+- G0065: Leviathan
+- G1014: LuminousMoth
+- G0069: MuddyWater
+- G0129: Mustang Panda
+- G0034: Sandworm Team
+- G1015: Scattered Spider
+- G0038: Stealth Falcon
+- G1055: VOID MANTICORE
+- G0090: WIRTE
+- G1035: Winter Vivern
+- G0102: Wizard Spider
+- G0128: ZIRCONIUM
+
+## Known Software Using This Technique
+- S0045: ADVSTORESHELL
+- S1025: Amadey
+- S0584: AppleJeus
+- S0622: AppleSeed
+- S9031: AshTag
+- S0373: Astaroth
+- S0438: Attor
+- S1029: AuTo Stealer
+- S0031: BACKSPACE
+- S1081: BADHATCH
+- S0520: BLINDINGCAN
+- S0657: BLUELIGHT
+- S9015: BRICKSTORM
+- S0234: Bandook
+- S0239: Bankshot
+- S1246: BeaverTail
+- S0268: Bisonal
+- S0651: BoxCaon
+- S1039: Bumblebee
+- S1149: CHIMNEYSWEEP
+- S0077: CallMe
+- S0351: Cannon
+- S0484: Carberp
+- S0572: Caterpillar WebShell
+- S0674: CharmPower
+- S0667: Chrommme
+- S1024: CreepySnail
+- S0115: Crimson
+- S0538: Crutch
+- S1153: Cuckoo Stealer
+- S0687: Cyclops Blink
+- S1159: DUSTTRAP
+- S1111: DarkGate
+- S1021: DnsSystem
+- S0600: Doki
+- S0502: Drovorub
+- S0062: DustySky
+- S0024: Dyre
+- S0568: EVILNUM
+- S0377: Ebury
+- S0367: Emotet
+- S0363: Empire
+- S0696: Flagpro
+- S0381: FlawedAmmyy
+- S0661: FoggyWeb
+- S1044: FunnyDream
+- S0588: GoldMax
+- S0493: GoldenSpy
+- S0477: Goopy
+- S0531: Grandoreiro
+- S0632: GrimAgent
+- S0391: HAWKBALL
+- S0376: HOPLIGHT
+- S9007: HTTPTroy
+- S1249: HexEval Loader
+- S0431: HotCroissant
+- S1132: IPsec Helper
+- S1022: IceApple
+- S0434: Imminent Monitor
+- S0604: Industroyer
+- S1245: InvisibleFerret
+- S0526: KGH_SPY
+- S0356: KONNI
+- S1075: KOPILUWAK
+- S0487: Kessel
+- S1020: Kevin
+- S9035: LAMEHUG
+- S9020: LODEINFO
+- S1160: Latrodectus
+- S0395: LightNeuron
+- S1185: LightSpy
+- S1186: Line Dancer
+- S1188: Line Runner
+- S0680: LitePower
+- S0447: Lokibot
+- S1213: Lumma Stealer
+- S1142: LunarMail
+- S1016: MacMa
+- S0409: Machete
+- S1060: Mafalda
+- S1182: MagicRAT
+- S1169: Mango
+- S1156: Manjusaka
+- S0652: MarkiRAT
+- S0459: MechaFlounder
+- S0455: Metamorfo
+- S9043: Mini Shai-Hulud
+- S0084: Mis-Type
+- S0083: Misdat
+- S1122: Mispadu
+- S0079: MobileOrder
+- S1026: Mongall
+- S9032: MuddyViper
+- S0034: NETEAGLE
+- S1090: NightClub
+- S1170: ODAgent
+- S0340: Octopus
+- S1172: OilBooster
+- S0439: Okrum
+- S0264: OopsIE
+- S1017: OutSteel
+- S9014: PHASEJAM
+- S1050: PcShare
+- S0587: Penquin
+- S1145: Pikabot
+- S1031: PingPull
+- S0013: PlugX
+- S0428: PoetRAT
+- S1173: PowerExchange
+- S0441: PowerShower
+- S0238: Proxysvc
+- S0078: Psylo
+- S0147: Pteranodon
+- S0192: Pupy
+- S0650: QakBot
+- S0495: RDAT
+- S0496: REvil
+- S0240: ROKRAT
+- S1148: Raccoon Stealer
+- S1240: RedLine Stealer
+- S0375: Remexi
+- S0448: Rising Sun
+- S1078: RotaJakiro
+- S0085: S-Type
+- S0461: SDBbot
+- S0692: SILENTTRINITY
+- S0533: SLOTHFULMEDIA
+- S0649: SMOKEDHAM
+- S1037: STARWHALE
+- S1042: SUGARDUMP
+- S1064: SVCReady
+- S1210: Sagerunex
+- S9008: Shai-Hulud
+- S1019: Shark
+- S1089: SharpDisco
+- S0445: ShimRatReporter
+- S1178: ShrinkLocker
+- S0610: SideTwist
+- S0633: Sliver
+- S1166: Solar
+- S0615: SombRAT
+- S0543: Spark
+- S1030: Squirrelwaffle
+- S1183: StrelaStealer
+- S1034: StrifeWater
+- S0491: StrongPity
+- S0603: Stuxnet
+- S0663: SysUpdate
+- S1201: TRANSLATEXT
+- S0467: TajMahal
+- S9041: TeamPCP Cloud Stealer
+- S0595: ThiefQuest
+- S0671: Tomiris
+- S0678: Torisma
+- S0266: TrickBot
+- S1196: Troll Stealer
+- S0386: Ursnif
+- S0476: Valak
+- S0670: WarzoneRAT
+- S1065: Woody RAT
+- S0658: XCSSET
+- S1248: XORIndex Loader
+- S0086: ZLib
+- S0251: Zebrocy
+- S1059: metaMain
+- S0385: njRAT

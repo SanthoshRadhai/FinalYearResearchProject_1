@@ -1,0 +1,26 @@
+# CWE-621: Variable Extraction Error
+
+**Abstraction:** Variant  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/621.html  
+
+## Description
+The product uses external input to determine the names of variables into which information is extracted, without verifying that the names of the specified variables are valid. This could cause the program to overwrite unintended variables.
+
+## Extended Description
+For example, in PHP, extraction can be used to provide functionality similar to register_globals, a dangerous functionality that is frequently disabled in production systems. Calling extract() or import_request_variables() without the proper arguments could allow arbitrary global variables to be overwritten, including superglobals. Similar functionality is possible in other interpreted languages, including custom languages.
+
+## Related Weaknesses
+- ChildOf: CWE-914
+- CanPrecede: CWE-471
+
+## Common Consequences
+- Scope: Integrity; Impact: Modify Application Data — An attacker could modify sensitive data or program variables.
+
+## Potential Mitigations
+- [Implementation] Use allowlists of variable names that can be extracted.
+- [Implementation] Consider refactoring your code to avoid extraction routines altogether.
+- [Implementation] In PHP, call extract() with options such as EXTR_SKIP and EXTR_PREFIX_ALL; call import_request_variables() with a prefix argument. Note that these capabilities are not present in all PHP versions.
+
+## Demonstrative Examples (summary)
+- This code uses the credentials sent in a POST request to login a user.

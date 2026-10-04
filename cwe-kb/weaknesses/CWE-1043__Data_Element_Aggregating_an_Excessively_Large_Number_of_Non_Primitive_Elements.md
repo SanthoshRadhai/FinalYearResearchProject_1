@@ -1,0 +1,17 @@
+# CWE-1043: Data Element Aggregating an Excessively Large Number of Non-Primitive Elements
+
+**Abstraction:** Base  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/1043.html  
+
+## Description
+The product uses a data element that has an excessively large number of sub-elements with non-primitive data types such as structures or aggregated objects.
+
+## Extended Description
+While the interpretation of "excessively large" may vary for each product or developer, CISQ recommends a default of 5 sub-elements.
+
+## Related Weaknesses
+- ChildOf: CWE-1093
+
+## Common Consequences
+- Scope: Other; Impact: Reduce Performance — This issue can make the product perform more slowly. If the relevant code is reachable by an attacker, then this performance problem might introduce a vulnerability.

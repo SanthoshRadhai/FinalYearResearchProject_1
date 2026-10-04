@@ -1,0 +1,124 @@
+# TA0003: Persistence
+
+**Type:** Tactic  
+**Reference:** https://attack.mitre.org/tactics/TA0003  
+
+## Description
+The adversary is trying to maintain their foothold.
+
+Persistence consists of techniques that adversaries use to keep access to systems across restarts, changed credentials, and other interruptions that could cut off their access. Techniques used for persistence include any access, action, or configuration changes that let them maintain their foothold on systems, such as replacing or hijacking legitimate code or adding startup code.
+
+## Techniques in This Tactic
+- T1037: Boot or Logon Initialization Scripts
+- T1037.001: Logon Script (Windows)
+- T1037.002: Login Hook
+- T1037.003: Network Logon Script
+- T1037.004: RC Scripts
+- T1037.005: Startup Items
+- T1053: Scheduled Task/Job
+- T1053.002: At
+- T1053.003: Cron
+- T1053.005: Scheduled Task
+- T1053.006: Systemd Timers
+- T1053.007: Container Orchestration Job
+- T1078: Valid Accounts
+- T1078.001: Default Accounts
+- T1078.002: Domain Accounts
+- T1078.003: Local Accounts
+- T1078.004: Cloud Accounts
+- T1098: Account Manipulation
+- T1098.001: Additional Cloud Credentials
+- T1098.002: Additional Email Delegate Permissions
+- T1098.003: Additional Cloud Roles
+- T1098.004: SSH Authorized Keys
+- T1098.005: Device Registration
+- T1098.006: Additional Container Cluster Roles
+- T1098.007: Additional Local or Domain Groups
+- T1112: Modify Registry
+- T1133: External Remote Services
+- T1136: Create Account
+- T1136.001: Local Account
+- T1136.002: Domain Account
+- T1136.003: Cloud Account
+- T1137: Office Application Startup
+- T1137.001: Office Template Macros
+- T1137.002: Office Test
+- T1137.003: Outlook Forms
+- T1137.004: Outlook Home Page
+- T1137.005: Outlook Rules
+- T1137.006: Add-ins
+- T1176: Software Extensions
+- T1176.001: Browser Extensions
+- T1176.002: IDE Extensions
+- T1197: BITS Jobs
+- T1205: Traffic Signaling
+- T1205.001: Port Knocking
+- T1205.002: Socket Filters
+- T1505: Server Software Component
+- T1505.001: SQL Stored Procedures
+- T1505.002: Transport Agent
+- T1505.003: Web Shell
+- T1505.004: IIS Components
+- T1505.005: Terminal Services DLL
+- T1505.006: vSphere Installation Bundles
+- T1525: Implant Internal Image
+- T1542: Pre-OS Boot
+- T1542.001: System Firmware
+- T1542.002: Component Firmware
+- T1542.003: Bootkit
+- T1542.004: ROMMONkit
+- T1542.005: TFTP Boot
+- T1543: Create or Modify System Process
+- T1543.001: Launch Agent
+- T1543.002: Systemd Service
+- T1543.003: Windows Service
+- T1543.004: Launch Daemon
+- T1543.005: Container Service
+- T1546: Event Triggered Execution
+- T1546.001: Change Default File Association
+- T1546.002: Screensaver
+- T1546.003: Windows Management Instrumentation Event Subscription
+- T1546.004: Unix Shell Configuration Modification
+- T1546.005: Trap
+- T1546.006: LC_LOAD_DYLIB Addition
+- T1546.007: Netsh Helper DLL
+- T1546.008: Accessibility Features
+- T1546.009: AppCert DLLs
+- T1546.010: AppInit DLLs
+- T1546.011: Application Shimming
+- T1546.012: Image File Execution Options Injection
+- T1546.013: PowerShell Profile
+- T1546.014: Emond
+- T1546.015: Component Object Model Hijacking
+- T1546.016: Installer Packages
+- T1546.017: Udev Rules
+- T1546.018: Python Startup Hooks
+- T1547: Boot or Logon Autostart Execution
+- T1547.001: Registry Run Keys / Startup Folder
+- T1547.002: Authentication Package
+- T1547.003: Time Providers
+- T1547.004: Winlogon Helper DLL
+- T1547.005: Security Support Provider
+- T1547.006: Kernel Modules and Extensions
+- T1547.007: Re-opened Applications
+- T1547.008: LSASS Driver
+- T1547.009: Shortcut Modification
+- T1547.010: Port Monitors
+- T1547.012: Print Processors
+- T1547.013: XDG Autostart Entries
+- T1547.014: Active Setup
+- T1547.015: Login Items
+- T1554: Compromise Host Software Binary
+- T1556: Modify Authentication Process
+- T1556.001: Domain Controller Authentication
+- T1556.002: Password Filter DLL
+- T1556.003: Pluggable Authentication Modules
+- T1556.004: Network Device Authentication
+- T1556.005: Reversible Encryption
+- T1556.006: Multi-Factor Authentication
+- T1556.007: Hybrid Identity
+- T1556.008: Network Provider DLL
+- T1556.009: Conditional Access Policies
+- T1653: Power Settings
+- T1668: Exclusive Control
+- T1671: Cloud Application Integration

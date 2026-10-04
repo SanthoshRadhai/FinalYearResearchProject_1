@@ -1,0 +1,14 @@
+# CWE-1090: Method Containing Access of a Member Element from Another Class
+
+**Abstraction:** Base  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/1090.html  
+
+## Description
+A method for a class performs an operation that directly accesses a member element from another class.
+
+## Related Weaknesses
+- ChildOf: CWE-1061
+
+## Common Consequences
+- Scope: Other; Impact: Reduce Maintainability, Increase Analytical Complexity — This issue suggests poor encapsulation and makes it more difficult to understand and maintain the product, which indirectly affects security by making it more difficult or time-consuming to find and/or fix vulnerabilities. It also might make it easier to introduce vulnerabilities.

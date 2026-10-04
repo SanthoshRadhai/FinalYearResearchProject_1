@@ -1,0 +1,17 @@
+# M1009: Encrypt Network Traffic
+
+**Type:** course-of-action  
+**Reference:** https://attack.mitre.org/mitigations/M1009  
+
+## Description
+Application developers should encrypt all of their application network traffic using the Transport Layer Security (TLS) protocol to ensure protection of sensitive data and deter network-based attacks. If desired, application developers could perform message-based encryption of data before passing it for TLS encryption.
+
+iOS's App Transport Security feature can be used to help ensure that all application network traffic is appropriately protected. Apple intends to mandate use of App Transport Security  (Citation: TechCrunch-ATS) for all apps in the Apple App Store unless appropriate justification is given.
+
+Android's Network Security Configuration feature similarly can be used by app developers to help ensure that all of their application network traffic is appropriately protected  (Citation: Android-NetworkSecurityConfig).
+
+Use of Virtual Private Network (VPN) tunnels, e.g. using the IPsec protocol, can help mitigate some types of network attacks as well.
+
+## Techniques Mitigated
+- T1422.001: Internet Connection Discovery
+- T1638: Adversary-in-the-Middle

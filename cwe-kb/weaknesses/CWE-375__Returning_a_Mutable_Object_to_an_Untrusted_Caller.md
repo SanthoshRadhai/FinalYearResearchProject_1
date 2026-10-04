@@ -1,0 +1,24 @@
+# CWE-375: Returning a Mutable Object to an Untrusted Caller
+
+**Abstraction:** Base  
+**Status:** Draft  
+**Reference:** https://cwe.mitre.org/data/definitions/375.html  
+
+## Description
+Sending non-cloned mutable data as a return value may result in that data being altered or deleted by the calling function.
+
+## Extended Description
+In situations where functions return references to mutable data, it is possible that the external code which called the function may make changes to the data sent. If this data was not previously cloned, the class will then be using modified data which may violate assumptions about its internal state.
+
+## Related Weaknesses
+- ChildOf: CWE-668
+
+## Common Consequences
+- Scope: Access Control, Integrity; Impact: Modify Memory — Potentially data could be tampered with by another function which should not have been tampered with.
+
+## Potential Mitigations
+- [Implementation] Declare returned data which should not be altered as constant or immutable.
+- [Implementation] Clone all mutable data before returning references to it. This is the preferred mitigation. This way, regardless of what changes are made to the data, a valid copy is retained for use by the class.
+
+## Demonstrative Examples (summary)
+- This class has a private list of patients, but provides a way to see the list :

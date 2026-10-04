@@ -1,0 +1,25 @@
+# CWE-645: Overly Restrictive Account Lockout Mechanism
+
+**Abstraction:** Base  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/645.html  
+
+## Description
+The product contains an account lockout protection mechanism, but the mechanism is too restrictive and can be triggered too easily, which allows attackers to deny service to legitimate users by causing their accounts to be locked out.
+
+## Extended Description
+Account lockout is a security feature often present in applications as a countermeasure to the brute force attack on the password based authentication mechanism of the system. After a certain number of failed login attempts, the users' account may be disabled for a certain period of time or until it is unlocked by an administrator. Other security events may also possibly trigger account lockout. However, an attacker may use this very security feature to deny service to legitimate system users. It is therefore important to ensure that the account lockout security mechanism is not overly restrictive.
+
+## Related Weaknesses
+- ChildOf: CWE-287
+
+## Common Consequences
+- Scope: Availability; Impact: DoS: Resource Consumption (Other) — Users could be locked out of accounts.
+
+## Potential Mitigations
+- [Architecture and Design] Implement more intelligent password throttling mechanisms such as those which take IP address into account, in addition to the login name.
+- [Architecture and Design] Implement a lockout timeout that grows as the number of incorrect login attempts goes up, eventually resulting in a complete lockout.
+- [Architecture and Design] Consider alternatives to account lockout that would still be effective against password brute force attacks, such as presenting the user machine with a puzzle to solve (makes it do some computation).
+
+## Demonstrative Examples (summary)
+- A famous example of this type of weakness being exploited is the eBay attack. eBay always displays the user id of the highest bidder. In the final minutes of the auction, one of the bidders could try to log in as the highest bidder three times. After three incorrect log in attempts, eBay password throttling would kick in and lock out the highest bidder's account for some time. An attacker could then make their own bid and their victim would not have a chance to place the counter bid because they would be locked out. Thus an attacker could win the auction.

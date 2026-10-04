@@ -1,0 +1,165 @@
+[
+  {
+    "trial": 1,
+    "objective": "What is CVE-2024-3400 and is it linked to any known threat actor campaign?",
+    "expectation": "kb_only",
+    "note": "Covered by cisa-kev-kb + mitre-attack-kb (campaign C0048)",
+    "ok": true,
+    "latency_s": 19.53,
+    "tool_calls": [
+      "search_knowledge_base"
+    ],
+    "used_kb": true,
+    "used_browser": false,
+    "used_lookup_cve": false,
+    "claim": "**CVE\u20112024\u20113400**\n\n| Item | Detail |\n|------|--------|\n| **Vendor/Project** | Palo\u202fAlto\u202fNetworks \u2013 PAN\u2011OS |\n| **Affected component** | GlobalProtect feature |\n| **Vulnerability type** | Unauthenticated command\u2011injection (CWE\u201120, CWE\u201177) |\n| **Severity** | CVSS v3.1 base score 9.8 (Critical) |\n| **De"
+  },
+  {
+    "trial": 2,
+    "objective": "What is MITRE ATT&CK technique T1595.001 and how can it be detected or mitigated?",
+    "expectation": "kb_only",
+    "note": "Covered by mitre-attack-kb (technique detection/mitigation fields)",
+    "ok": true,
+    "latency_s": 33.65,
+    "tool_calls": [
+      "search_knowledge_base",
+      "browser_navigate",
+      "browser_find",
+      "browser_find"
+    ],
+    "used_kb": true,
+    "used_browser": true,
+    "used_lookup_cve": false,
+    "claim": "**MITRE ATT&CK technique T1595.001 \u2013 \u201cScanning IP Blocks\u201d**\n\n| Item | Details |\n|------|---------|\n| **Parent technique** | T1595 \u2013 Active Scanning |\n| **Tactic** | Reconnaissance |\n| **Platforms** | PRE (pre\u2011compromise) |\n| **Description** | Adversaries probe a range of IP addresses (e.g., a /24 bl"
+  },
+  {
+    "trial": 3,
+    "objective": "What is CWE-79 and what's a standard mitigation for it?",
+    "expectation": "kb_only",
+    "note": "Covered by cwe-kb + owasp-cheatsheets-kb",
+    "ok": true,
+    "latency_s": 49.67,
+    "tool_calls": [
+      "search_knowledge_base",
+      "search_knowledge_base",
+      "browser_navigate",
+      "browser_snapshot",
+      "browser_find",
+      "browser_find",
+      "browser_find",
+      "browser_find",
+      "search_knowledge_base",
+      "browser_find"
+    ],
+    "used_kb": true,
+    "used_browser": true,
+    "used_lookup_cve": false,
+    "claim": "**CWE\u201179 \u2013 Improper Neutralization of Input During Web Page Generation (Cross\u2011Site Scripting)**  \n*Definition:* The product fails to properly neutralize or incorrectly neutralizes user\u2011controlled input before it is included in a web page that is served to other users. This allows an attacker to inje"
+  },
+  {
+    "trial": 4,
+    "objective": "Is CVE-2021-44228 (Log4Shell) listed in the CISA Known Exploited Vulnerabilities catalog, and what's the remediation due date?",
+    "expectation": "kb_only",
+    "note": "Covered by cisa-kev-kb directly",
+    "ok": true,
+    "latency_s": 6.15,
+    "tool_calls": [
+      "search_knowledge_base"
+    ],
+    "used_kb": true,
+    "used_browser": false,
+    "used_lookup_cve": false,
+    "claim": "**CVE\u20112021\u201144228 (Log4Shell)** is listed in the CISA Known Exploited Vulnerabilities (KEV) catalog.  \n- **Remediation Due Date:** **2021\u201112\u201124**\u3010search_knowledge_base\u3011."
+  },
+  {
+    "trial": 5,
+    "objective": "What is CAPEC-66 and which CWE weakness does it relate to?",
+    "expectation": "kb_only",
+    "note": "Covered by capec-kb (Related Weaknesses section)",
+    "ok": true,
+    "latency_s": 8.38,
+    "tool_calls": [
+      "search_knowledge_base",
+      "search_knowledge_base",
+      "search_knowledge_base"
+    ],
+    "used_kb": true,
+    "used_browser": false,
+    "used_lookup_cve": false,
+    "claim": "**CAPEC\u201166**  \n- **Name:** SQL Injection  \n- **Description:** An attacker supplies crafted input that is incorporated into a database query, causing the query to perform unintended actions (e.g., data exfiltration, privilege escalation).  \n- **Related CWE:** **CWE\u201189 \u2013 Improper Neutralization of Spe"
+  },
+  {
+    "trial": 6,
+    "objective": "What is the current exploitation status of CVE-2026-90829 right now?",
+    "expectation": "needs_fallback",
+    "note": "Likely absent from the static KEV/KB snapshot (dated 2026-09-22) -- should fall back to lookup_cve or report not-found rather than guess",
+    "ok": true,
+    "latency_s": 54.26,
+    "tool_calls": [
+      "search_knowledge_base",
+      "search_knowledge_base",
+      "lookup_cve",
+      "search_knowledge_base",
+      "search_knowledge_base",
+      "browser_navigate",
+      "browser_snapshot",
+      "browser_find",
+      "browser_snapshot",
+      "browser_take_screenshot",
+      "browser_snapshot",
+      "browser_snapshot",
+      "browser_snapshot",
+      "browser_snapshot",
+      "browser_snapshot",
+      "browser_take_screenshot",
+      "browser_find",
+      "browser_snapshot",
+      "browser_evaluate"
+    ],
+    "used_kb": true,
+    "used_browser": true,
+    "used_lookup_cve": true,
+    "claim": "**Current exploitation status of CVE\u20112026\u201190829**\n\n* The NVD entry for CVE\u20112026\u201190829 states that **an exploit has been made available to the public** and that it \u201ccould be used for attacks.\u201d  \n* The vulnerability requires a **local attack** (the exploit must be launched on the affected system).  \n*"
+  },
+  {
+    "trial": 7,
+    "objective": "What are today's top cybersecurity news headlines?",
+    "expectation": "needs_fallback",
+    "note": "No static KB has live/current-events data -- must use the browser or explicitly say it can't answer",
+    "ok": true,
+    "latency_s": 184.23,
+    "tool_calls": [
+      "browser_navigate",
+      "browser_navigate",
+      "browser_navigate",
+      "browser_navigate",
+      "browser_find",
+      "browser_find",
+      "browser_find",
+      "browser_navigate",
+      "browser_find",
+      "browser_navigate",
+      "browser_navigate",
+      "browser_find"
+    ],
+    "used_kb": false,
+    "used_browser": true,
+    "used_lookup_cve": false,
+    "claim": "**Top cybersecurity headlines for today (Sept\u202f22\u202f2026)**  \n(From the Google\u202fNews RSS feed for \u201ccybersecurity news\u201d \u2013\u202fhttps://news.google.com/rss/search?q=cybersecurity+news)\n\n| # | Headline | Source |\n|---|----------|--------|\n| 1 | Anthropic launches Claude\u202fOpus\u202f5.5 with stricter safeguards for cyb"
+  },
+  {
+    "trial": 8,
+    "objective": "What is CVE-2024-3400's exact CVSS score according to NVD?",
+    "expectation": "needs_fallback",
+    "note": "cisa-kev-kb's schema has no CVSS score field (see cisa-kev-kb/build_kb.py) -- correct behavior is lookup_cve, not confidently citing a KB hit for a field it doesn't contain",
+    "ok": true,
+    "latency_s": 8.54,
+    "tool_calls": [
+      "lookup_cve"
+    ],
+    "used_kb": false,
+    "used_browser": false,
+    "used_lookup_cve": true,
+    "claim": "CVE\u20112024\u20113400 has a **base CVSS score of 10.0** (CVSS\u202f3.1) according to the NVD record.  \n\nSource: NVD lookup for CVE\u20112024\u20113400."
+  }
+]

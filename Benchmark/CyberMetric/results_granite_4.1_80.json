@@ -1,0 +1,568 @@
+{
+  "model": ".",
+  "accuracy": 96.25,
+  "correct": 77,
+  "total": 80,
+  "results": [
+    {
+      "question": "What is the primary requirement for an Random Bit Generator's (RBG) output to be used for generating cryptographic keys?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "ANSWER: B"
+    },
+    {
+      "question": "In cryptography, what is the purpose of using a key-derivation function (KDF)?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "What is the primary purpose of segmentation in the context of PCI DSS?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "ANSWER: B"
+    },
+    {
+      "question": "What is the purpose of using strong cryptography to protect cardholder data during transmission over open, public networks?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "What is the purpose of periodic reviews of user accounts and access privileges?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "Which of the following is a purpose of having synchronized system clocks?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "To determine the purpose of having synchronized system clocks, let's analyze each option:\n\nA) **To compare log files from different systems**  \n   - Synchronized clocks ensure that timestamps in log files from different systems are consistent, making it easier to correlate events across systems. This is a primary reason for synchronizing clocks.\n\nB) **To accelerate system performance**  \n   - While synchronized clocks can help with certain time-sensitive operations, they are not primarily intended to accelerate overall system performance.\n\nC) **To standardize file naming conventions**  \n   - File naming conventions are unrelated to system clock synchronization. Clock synchronization does not affect how files are named.\n\nD) **To reduce power consumption**  \n   - Synchronizing clocks does not directly impact power consumption. In fact, maintaining synchronization might require additional processing, potentially increasing power usage slightly.\n\nThe most appropriate purpose among the given options is **A) To compare log files from different systems**.\n\nANSWER: A"
+    },
+    {
+      "question": "What is physical security?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "What does the abbreviation 'SDK' stand for in the context of software security?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "What is the main purpose of multi-factor authentication in cybersecurity?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "What is the primary objective of a Web Application Firewall (WAF) in cybersecurity?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "What is the purpose of periodically changing passwords or passphrases?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "The purpose of periodically changing passwords or passphrases is primarily to reduce the window of opportunity for an attacker who may have obtained a user's credentials. By changing the password regularly, any compromised password becomes invalid sooner, limiting the time an unauthorized user can exploit it. Therefore, the correct answer is:\n\nANSWER: D"
+    },
+    {
+      "question": "Which of the following defines the entity\u2019s security objectives and principles?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "What is the focus of a security audit or vulnerability assessment?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "Which of the following is a mechanism for managing digital certificates through a system of trust?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "Which protocol is used to create a secure environment in a wireless network?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "ANSWER: B"
+    },
+    {
+      "question": "Which design concept limits access to systems from outside users while protecting users and systems inside the LAN?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "The design concept that limits access to systems from outside users while protecting users and systems inside the LAN is a **Demilitarized Zone (DMZ)**. A DMZ is a separate network segment that acts as a buffer zone between the public internet and the private internal network (LAN), allowing controlled access to external users while keeping the internal network secure.\n\nANSWER: A"
+    },
+    {
+      "question": "What is the process of making an operating system secure from attack called?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "Which mechanism is used by PKI to allow immediate verification of a certificate's validity?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "Which of the following is a major security problem with FTP?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "Which of the following creates a fixed-length output from a variable-length input?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "All of the listed cryptographic hash functions\u2014MD5, SHA-1, and SHA-3\u2014produce a fixed-length output regardless of the length of the input data. Therefore, the correct answer is:\n\nANSWER: D"
+    },
+    {
+      "question": "What is the purpose of a service-level agreement (SLA) in the context of business continuity?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "What does the Address Resolution Protocol (ARP) do in a network?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "The Address Resolution Protocol (ARP) is responsible for mapping IP addresses to their corresponding MAC (Media Access Control) addresses on a local network. Therefore, the correct answer is:\n\nANSWER: C"
+    },
+    {
+      "question": "In the OSI model, which layer consists of the physical media and infrastructure of networks?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "The OSI model layer that deals with the physical media and infrastructure of networks is the **Physical** layer.\n\nTherefore, the correct answer is:\n\nANSWER: D"
+    },
+    {
+      "question": "In binary representation, what is the result of the bitwise XOR operation between 110101 and 101010",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "To solve the problem, we need to perform a bitwise XOR operation on the binary numbers 110101 and 101010.\n\nStep 1: Write the binary numbers one below the other, aligning the bits:\n\n```\n  110101\n^ 101010\n```\n\nStep 2: Perform the XOR operation bit by bit. Recall that XOR (exclusive OR) outputs 1 when the bits are different and 0 when they are the same.\n\n- First bit: 1 XOR 1 = 0\n- Second bit: 1 XOR 0 = 1\n- Third bit: 0 XOR 1 = 1\n- Fourth bit: 1 XOR 0 = 1\n- Fifth bit: 0 XOR 1 = 1\n- Sixth bit: 1 XOR 0 = 1\n\nStep 3: Combine the results of each bit operation to form the final binary number:\n\n```\n  110101\n^ 101010\n--------\n  011111\n```\n\nThe result of the bitwise XOR operation is 011111.\n\nNow, we compare this result with the given options:\n\n- A) 011111\n- B) 100111\n- C) 0\n- D) 111111\n\nThe correct option is A) 011111.\n\nANSWER: A"
+    },
+    {
+      "question": "What is the proper sequence of the TCP three-way-handshake?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "The TCP three-way handshake involves the following sequence of messages:\n\n1. **SYN** (Synchronize): The client sends a SYN packet to the server to initiate a connection.\n2. **SYN-ACK** (Synchronize-Acknowledgment): The server responds with a SYN-ACK packet, acknowledging the client's SYN and sending its own SYN.\n3. **ACK** (Acknowledgment): The client sends an ACK packet back to the server, completing the handshake and confirming that both parties are ready to exchange data.\n\nThus, the correct sequence is **SYN \u2192 SYN-ACK \u2192 ACK**.\n\n**Correct option:** B) SYN, SYN-ACK, ACK\n\nANSWER: B"
+    },
+    {
+      "question": "Which topology has built-in redundancy because of its many client connections?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "How can Google hacking be valuable in a cybersecurity investigation?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "What is the role of the three-way handshake in establishing a TCP connection?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "The three-way handshake in TCP (Transmission Control Protocol) is a process used to establish a reliable connection between a client and a server. It involves three steps:\n\n1. **SYN (Synchronize) Packet**: The client sends a SYN packet to the server to request the establishment of a connection. This packet includes an initial sequence number (ISN) chosen by the client.\n\n2. **SYN-ACK (Synchronize-Acknowledge) Packet**: Upon receiving the SYN packet, the server responds with a SYN-ACK packet. This packet acknowledges the client's request (ACK part) and sends its own SYN packet, including the server's ISN.\n\n3. **ACK (Acknowledge) Packet**: Finally, the client sends an ACK packet back to the server, acknowledging the server's SYN packet. At this point, the connection is fully established, and both parties are ready to exchange data.\n\nEach of these steps corresponds to one of the options provided:\n\n- **A) To request the establishment of a connection** \u2013 This is the role of the initial SYN packet.\n- **B) To acknowledge the request for connection** \u2013 This is the role of the SYN-ACK packet.\n- **C) To complete the establishment of a connection** \u2013 This is the role of the final ACK packet.\n\nTherefore, the three-way handshake collectively performs all of these roles.\n\n**ANSWER: D**"
+    },
+    {
+      "question": "Which best describes a vulnerability scan?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "What is Tor used for?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "What is the maximum number of IP addresses in an IPv6 subnet?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "To determine the maximum number of IP addresses in an IPv6 subnet, we need to understand the structure of an IPv6 address and how subnetting works.\n\n1. **IPv6 Address Structure**: An IPv6 address is 128 bits long, divided into eight 16-bit hexadecimal blocks (e.g., `2001:0db8:85a3:0000:0000:8a2e:0370:7334`).\n\n2. **Subnetting in IPv6**: When you define a subnet, you specify a prefix length (similar to the subnet mask in IPv4). The prefix length indicates how many of the 128 bits are used for the network portion of the address. The remaining bits are used for host addresses within that subnet.\n\n3. **Calculating Host Addresses**: The number of possible host addresses in a subnet is determined by the bits available for host addresses, which is `128 - prefix_length`. Each of these bits can be either 0 or 1, so the number of host addresses is `2^(128 - prefix_length)`.\n\n4. **Maximum Subnet Size**: The largest possible subnet in IPv6 occurs when the prefix length is 0, meaning all 128 bits are used for the network portion. This leaves `128 - 0 = 128` bits for host addresses, resulting in `2^128` possible host addresses. However, in practice, the maximum subnet size is often considered to be when the prefix length is 64, leaving 64 bits for host addresses, which is `2^64` possible addresses. But the question asks for the maximum number of IP addresses in an IPv6 subnet, which is theoretically `2^128` when no bits are allocated for hosts.\n\n5. **Interpreting the Options**:\n   - **A) 6 bit**: This is far too small to represent an IPv6 subnet.\n   - **B) 32 bit**: This does not relate to the IPv6 subnet size.\n   - **C) 6*16 bit**: This equals 96 bits, which is not the maximum subnet size.\n   - **D) 8*16 bit**: This equals 128 bits, which corresponds to the full IPv6 address length, implying no bits are left for host addresses, thus representing the maximum possible subnet size.\n\nGiven the options, **D) 8*16 bit** (128 bits) is the correct choice because it represents the full IPv6 address length, which is the theoretical maximum for a subnet when no bits are allocated for host addresses.\n\nANSWER: D"
+    },
+    {
+      "question": "Which of the following is a characteristic of a worm?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "A worm is known for its ability to self-replicate and spread independently without requiring user interaction. Therefore, the correct characteristic among the given options is:\n\nANSWER: B"
+    },
+    {
+      "question": "What common tool can be used for launching an ARP poisoning attack?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "What technology is used to verify information as it is entered into a web application, preventing database manipulation and buffer overflows?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "Which type of firewall analyzes the status of traffic?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "What is the purpose of the Crossover Error Rate (CER) in evaluating biometric devices",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "The Crossover Error Rate (CER) is defined as the point on the Receiver Operating Characteristic (ROC) curve where the False Acceptance Rate (FAR) equals the False Rejection Rate (FRR). It is used to compare the overall performance of biometric systems, especially when evaluating similar biometric devices from different vendors or different models from the same vendor. Therefore, the correct answer is:\n\nANSWER: B"
+    },
+    {
+      "question": "What is the primary purpose of a padded cell system in relation to intrusion detection?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "What is the primary goal of penetration testing?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "What is the primary purpose of RADIUS and TACACS in a network environment?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "Which symmetric encryption scheme is recommended for use in SRTP?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "What is the essential requirement for the security of the Discrete Logarithm Integrated Encryption Scheme (DLIES) to be maintained?",
+      "correct_answer": "C",
+      "llm_answer": "A",
+      "correct": false,
+      "raw_response": "To determine the essential requirement for the security of the Discrete Logarithm Integrated Encryption Scheme (DLIES), we need to consider the underlying cryptographic assumptions and the security parameters typically recommended for discrete logarithm-based schemes.\n\n1. **Option A: The order \\( q \\) of the base point \\( P \\) should be at least \\( q \\geq 1024 \\).**\n   - The security of DLIES relies on the difficulty of the discrete logarithm problem (DLP) in a group where the order of the generator \\( P \\) is large. A common guideline is that the order \\( q \\) should be large enough to resist known attacks, typically requiring \\( q \\) to be at least 1024 bits for adequate security against current computational capabilities.\n\n2. **Option B: Randomly choose two primes \\( p \\) and \\( q \\) such that \\( p \\cdot q > 2048 \\) bits.**\n   - This option is not directly relevant to DLIES. DLIES does not involve the product of two primes in the same way that RSA does. Instead, it uses a single elliptic curve group where the security is based on the hardness of the DLP in that group. The condition \\( p \\cdot q > 2048 \\) bits pertains more to RSA key generation than to DLIES.\n\n3. **Option C: The length of the prime number \\( p \\) should be at least 3000 bits.**\n   - While a large prime \\( p \\) is important for the security of elliptic curve cryptography, the specific requirement of 3000 bits is overly stringent for DLIES. Current standards suggest that a 256-bit elliptic curve (which implies a large prime \\( p \\) of around 256 bits) provides sufficient security for DLIES. A 3000-bit prime would be excessive and unnecessary for maintaining security.\n\n4. **Option D: All of the above.**\n   - Given the analysis above, only Option A is directly relevant and essential for the security of DLIES. Options B and C are either irrelevant or overly stringent.\n\nTherefore, the correct answer is **Option A**.\n\nANSWER: A"
+    },
+    {
+      "question": "Which document provides the recommendation for elliptic curve cryptography?",
+      "correct_answer": "D",
+      "llm_answer": "C",
+      "correct": false,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "What is an essential requirement for the internal state of deterministic random number generators?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "To determine the essential requirement for the internal state of deterministic random number generators (DRNGs), let's analyze each option:\n\nA) **Protection against readout and manipulation**  \n   - DRNGs rely on an internal state that must remain secret to ensure unpredictability. If an attacker can read or manipulate this state, the generator's output can be compromised. Therefore, protecting the internal state from unauthorized access and tampering is crucial.\n\nB) **Constant reseeding requirement**  \n   - While reseeding can enhance security by periodically refreshing the internal state, it is not an *essential* requirement for all DRNGs. Some DRNGs are designed to operate securely without frequent reseeding, especially if they are well-designed and the initial seed is sufficiently random.\n\nC) **Dependence on reliable physical resources**  \n   - DRNGs are deterministic, meaning they do not inherently depend on physical randomness sources like thermal noise or radioactive decay. They are typically based on algorithms and mathematical functions. Thus, reliance on physical resources is not essential for their internal state.\n\nD) **Regular update of entropy sources**  \n   - This requirement is more relevant to non-deterministic random number generators (NRNGs) that draw entropy from physical processes. DRNGs, being deterministic, do not require regular updates of entropy sources.\n\nGiven this analysis, the essential requirement for the internal state of deterministic random number generators is **Protection against readout and manipulation**.\n\nANSWER: A"
+    },
+    {
+      "question": "Which federal government agency has responsibility for ensuring the security of government computer systems that are not used to process sensitive and/or classified information?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "The National Institute of Standards and Technology (NIST) is primarily responsible for developing and promoting policies, standards, and guidelines to enhance the security and privacy of information systems, including those that do not process sensitive or classified information. Therefore, the correct answer is:\n\nANSWER: C"
+    },
+    {
+      "question": "What is the purpose of implementing monitoring systems?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "To determine the correct answer, let's analyze each option in the context of the purpose of implementing monitoring systems:\n\nA) Monitoring the configuration and configuration change of devices: This is a specific aspect of monitoring, focusing on tracking changes to device settings. While important, it is not the overarching purpose of monitoring systems.\n\nB) Ensuring availability and functionality of systems: Monitoring systems are primarily designed to observe the performance, uptime, and operational status of systems and networks. This directly aligns with the core purpose of monitoring: to ensure that systems are available and functioning as expected.\n\nC) Recording access to information by means of system and security logging: This describes a specific function of monitoring, particularly related to security logging and auditing. While monitoring systems do often include logging capabilities, this is a subset of their broader purpose.\n\nD) Protection from compromising radiation: This option is unrelated to the typical objectives of monitoring systems in IT and cybersecurity contexts. Monitoring systems do not primarily address physical threats like radiation.\n\nGiven this analysis, the most comprehensive and accurate description of the primary purpose of implementing monitoring systems is:\n\n**Ensuring availability and functionality of systems.**\n\nTherefore, the correct answer is:\n\nANSWER: B"
+    },
+    {
+      "question": "Which principle of cybersecurity focuses on ensuring that data is accurate and trustworthy?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "The principle of cybersecurity that focuses on ensuring that data is accurate and trustworthy is **Integrity**. Integrity ensures that data is not altered or tampered with in an unauthorized manner, maintaining its accuracy and reliability over its lifecycle.\n\nTherefore, the correct answer is:\n\nANSWER: D"
+    },
+    {
+      "question": "What is the primary goal of the Transport Layer Security (TLS) protocol?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "If you were to see the subnet mask 255.255.248.0, what CIDR notation (prefix) would you use to indicate the same thing?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "To determine the CIDR notation for the subnet mask 255.255.248.0, we need to count the number of consecutive 1-bits in the binary representation of the subnet mask.\n\n1. Convert each octet of the subnet mask to binary:\n   - 255 in binary is 11111111\n   - 255 in binary is 11111111\n   - 248 in binary is 11111000\n   - 0 in binary is 00000000\n\n2. Combine the binary octets:\n   - 255.255.248.0 in binary is 11111111.11111111.11111000.00000000\n\n3. Count the number of consecutive 1-bits from the left:\n   - The first two octets (255.255) contribute 16 bits of 1s.\n   - The third octet (248) contributes 5 more bits of 1s (11111).\n   - Total number of 1-bits = 16 + 5 = 21.\n\nTherefore, the CIDR notation is /21.\n\nANSWER: C"
+    },
+    {
+      "question": "Which of the following is NOT one of the five disaster recovery plan testing types?",
+      "correct_answer": "C",
+      "llm_answer": "B",
+      "correct": false,
+      "raw_response": "The five standard disaster recovery plan testing types are typically:\n\n1. **Tabletop Exercise** - A discussion-based simulation where participants walk through a disaster scenario without actually executing any actions.\n2. **Walkthrough (or Dry Run)** - A simulated execution of the disaster recovery plan without a full-scale interruption.\n3. **Parallel Test** - A test where the recovery site operates in parallel with the primary site, but data is not actually transferred.\n4. **Simulation (or Partial Test)** - A more realistic test where some components of the plan are executed, but not all.\n5. **Full Interruption (or Full Test)** - A complete shutdown of the primary site with all recovery procedures executed.\n\nGiven these types, the option that is **NOT** one of the five disaster recovery plan testing types is:\n\n- **B) Checklist** - A checklist is a tool used to verify that tasks are completed, but it is not a formal testing type.\n\nTherefore, the correct answer is:\n\nANSWER: B"
+    },
+    {
+      "question": "What would be the result of sending the string AAAAAAAAAAAAAAAAA into a variable that has been allocated space for 8 bytes?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "The string \"AAAAAAAAAAAAAAAA\" is 18 characters long, while the allocated variable space is only 8 bytes. Sending this string into the variable will exceed the allocated buffer size, causing the extra characters to overwrite adjacent memory locations. This behavior is characteristic of a **buffer overflow**.\n\nTherefore, the correct answer is:\n\nANSWER: C"
+    },
+    {
+      "question": "Which of the following is NOT a form of computer/network surveillance?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "How would you calculate risk?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "To calculate risk, the standard approach is to multiply the probability of an event occurring by the magnitude of its potential loss. This gives a measure of expected loss, which is the most common definition of risk in many fields, including security, finance, and project management.\n\nTherefore, the correct formula among the options provided is:\n\nD) Probability * loss\n\nANSWER: D"
+    },
+    {
+      "question": "What is the common share name used for interprocess communication?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "ANSWER: B"
+    },
+    {
+      "question": "Which port is commonly used by SMB when operating over TCP without NetBIOS?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "Which of the following is an example of a strong password?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "A strong password typically includes a mix of uppercase and lowercase letters, numbers, and special characters, and is sufficiently long. Let's evaluate each option:\n\n- **A) Password123456**: This password uses a common word (\"password\") followed by a sequence of numbers. It lacks uppercase letters and special characters, making it relatively weak.\n- **B) ME_Fgh4_al445!A**: This password includes a mix of uppercase letters, lowercase letters, numbers, and special characters, and is of adequate length. It meets the criteria for a strong password.\n- **C) Qwerty!**: While it includes a special character and is slightly longer than a typical word, it still uses a common keyboard sequence (\"Qwerty\") and lacks sufficient complexity.\n- **D) 123456**: This is a purely numeric sequence and is one of the weakest possible passwords, as it is easily guessable.\n\nBased on the evaluation, the strongest option is **B) ME_Fgh4_al445!A**.\n\nANSWER: B"
+    },
+    {
+      "question": "Which access control model would be found in a firewall?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "A firewall primarily implements **rule-based access control**. It enforces security policies by examining network traffic against a set of predefined rules that specify which connections are allowed or denied.\n\nTherefore, the correct answer is:\n\nANSWER: D"
+    },
+    {
+      "question": "What is the preferred encryption option for sending large amounts of data?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "For sending large amounts of data, the preferred encryption option is typically **Symmetric encryption** because it is faster and more efficient for bulk data encryption compared to asymmetric methods, which are computationally more intensive. Symmetric encryption uses the same key for both encryption and decryption, making it suitable for high-volume data transfers.\n\nANSWER: A"
+    },
+    {
+      "question": "Which of the following is an example of a hashing algorithm?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "Which RAID level is not fault tolerant?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "RAID 0 is not fault tolerant because it stripes data across multiple disks without any redundancy. If one disk fails, all data is lost.\n\nANSWER: B"
+    },
+    {
+      "question": "How many keys exist in a public/private key pair?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "A public/private key pair consists of exactly two keys: one public key and one private key. Therefore, the correct answer is:\n\nANSWER: B"
+    },
+    {
+      "question": "What is the primary goal of an Information Security Governance strategy?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "The primary goal of an Information Security Governance strategy is to establish a framework that ensures the organization's information security aligns with its overall objectives and risk appetite, and to secure the necessary commitment and support from senior management to implement and maintain effective security measures. While the other options are important aspects of information security, they are secondary to obtaining top-level support and direction.\n\nTherefore, the correct answer is:\n\nANSWER: B"
+    },
+    {
+      "question": "What is the process of hiding text within an image called?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "ANSWER: B"
+    },
+    {
+      "question": "What attack involves inserting an unauthorized person in the communication path between two users to intercept and modify packets?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "Who is responsible for implementing the planning, budgeting, and performance of the organization's information security components?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "The Chief Information Security Officer (CISO) is typically responsible for overseeing the planning, budgeting, and performance of an organization's information security components. Therefore, the correct answer is:\n\nANSWER: B"
+    },
+    {
+      "question": "The primary responsibility of the information security steering committee is:",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "The primary responsibility of the information security steering committee is to provide strategic direction and oversee the performance of the information security program. This involves setting goals, priorities, and ensuring that the organization's information security initiatives align with its overall objectives, as well as monitoring the effectiveness and progress of these initiatives.\n\nTherefore, the correct answer is:\n\nANSWER: B"
+    },
+    {
+      "question": "According to NIST guidelines, what is a recommended practice for creating a strong password?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "What is the purpose of continuously improving cybersecurity guidelines and their application notes?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "ANSWER: B"
+    },
+    {
+      "question": "What does DDoS stand for?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "ANSWER: B"
+    },
+    {
+      "question": "Which is not a common wireless network authentication mechanism?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "Which technique aims to identify changes in normal routines by examining patterns of a user's activity?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "ANSWER: B"
+    },
+    {
+      "question": "What is the primary purpose of conducting a risk analysis in cybersecurity?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "What is the primary advantage of using UDP over TCP?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "The primary advantage of using UDP over TCP is the speed of data transfer, as UDP does not provide reliability or error recovery mechanisms that TCP does. Therefore, the correct answer is:\n\nANSWER: C"
+    },
+    {
+      "question": "What does the CIA triad in cryptography emphasize?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "The CIA triad in cryptography stands for **Confidentiality, Integrity, and Availability**. These are the three fundamental goals of information security.\n\n- **Confidentiality** ensures that information is accessible only to those authorized to have access.\n- **Integrity** ensures that the information is accurate and has not been tampered with.\n- **Availability** ensures that information is accessible to authorized users when needed.\n\nTherefore, the correct option is **B**.\n\nANSWER: B"
+    },
+    {
+      "question": "Which nmap command is used to perform a TCP SYN scan, also known as a half-open scan, to determine which ports are open on a target system?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "correct": true,
+      "raw_response": "ANSWER: D"
+    },
+    {
+      "question": "What is the primary purpose of business continuity plans?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "The primary purpose of business continuity plans is to ensure that an organization can continue its critical operations during and after a disruptive event. This involves preparing for various types of disruptions, including natural disasters, cyberattacks, supply chain failures, and other unforeseen incidents. The goal is to minimize downtime, protect employees and assets, and maintain essential business functions to preserve the organization's reputation and financial stability.\n\n- **Option A** (To recover from natural disasters) is a specific aspect of business continuity planning but not the overarching primary purpose.\n- **Option B** (To conduct regular audits of the organization's security systems) pertains more to risk management and compliance activities rather than continuity.\n- **Option C** (To minimize the effects of a disruptive event on a company) directly captures the essence of business continuity planning: reducing the impact and ensuring resilience.\n- **Option D** (To increase the cost associated with a disruptive event) is contrary to the objective of business continuity planning, which aims to reduce costs and impacts.\n\nTherefore, the correct answer is:\n\nANSWER: C"
+    },
+    {
+      "question": "Which DoS attack sends large amounts of ICMP Echo traffic to a broadcast IP address with a spoofed source address of a victim?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "The described attack involves sending large amounts of ICMP Echo (ping) traffic to a broadcast IP address with a spoofed source address of a victim, which is characteristic of a **Smurf attack**. \n\nTherefore, the correct answer is:\n\nANSWER: A"
+    },
+    {
+      "question": "Which of the following tools is commonly used for network packet analysis and troubleshooting?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    },
+    {
+      "question": "In the context of encrypting data for secure communication, which encryption algorithm is typically preferred for its speed and efficiency?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "correct": true,
+      "raw_response": "ANSWER: B"
+    },
+    {
+      "question": "What is the purpose of NOP sleds in buffer overflow exploits?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "correct": true,
+      "raw_response": "ANSWER: C"
+    },
+    {
+      "question": "Which security feature can help prevent buffer overflow attacks by marking certain memory regions as non-executable?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "correct": true,
+      "raw_response": "ANSWER: A"
+    }
+  ]
+}

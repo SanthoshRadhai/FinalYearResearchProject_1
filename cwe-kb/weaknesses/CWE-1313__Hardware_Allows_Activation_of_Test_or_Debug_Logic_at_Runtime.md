@@ -1,0 +1,22 @@
+# CWE-1313: Hardware Allows Activation of Test or Debug Logic at Runtime
+
+**Abstraction:** Base  
+**Status:** Draft  
+**Reference:** https://cwe.mitre.org/data/definitions/1313.html  
+
+## Description
+During runtime, the hardware allows for test or debug logic (feature) to be activated, which allows for changing the state of the hardware. This feature can alter the intended behavior of the system and allow for alteration and leakage of sensitive data by an adversary.
+
+## Extended Description
+An adversary can take advantage of test or debug logic that is made accessible through the hardware during normal operation to modify the intended behavior of the system. For example, an accessible Test/debug mode may allow read/write access to any system data. Using error injection (a common test/debug feature) during a transmit/receive operation on a bus, data may be modified to produce an unintended message. Similarly, confidentiality could be compromised by such features allowing access to secrets.
+
+## Related Weaknesses
+- ChildOf: CWE-284
+
+## Common Consequences
+- Scope: Confidentiality, Integrity, Availability; Impact: Modify Memory, Read Memory, DoS: Crash, Exit, or Restart, DoS: Instability, DoS: Resource Consumption (CPU), DoS: Resource Consumption (Memory), DoS: Resource Consumption (Other), Execute Unauthorized Code or Commands, Gain Privileges or Assume Identity, Bypass Protection Mechanism, Alter Execution Logic, Quality Degradation, Unexpected State, Reduce Performance, Reduce Reliability
+
+## Potential Mitigations
+- [Architecture and Design] Insert restrictions on when the hardware's test or debug features can be activated. For example, during normal operating modes, the hardware's privileged modes that allow access to such features cannot be activated. Configuring the hardware to only enter a test or debug mode within a window of opportunity such as during boot or configuration stage. The result is disablement of such test/debug features and associated modes during normal runtime operations.
+- [Implementation] Insert restrictions on when the hardware's test or debug features can be activated. For example, during normal operating modes, the hardware's privileged modes that allow access to such features cannot be activated. Configuring the hardware to only enter a test or debug mode within a window of opportunity such as during boot or configuration stage. The result is disablement of such test/debug features and associated modes during normal runtime operations.
+- [Integration] Insert restrictions on when the hardware's test or debug features can be activated. For example, during normal operating modes, the hardware's privileged modes that allow access to such features cannot be activated. Configuring the hardware to only enter a test or debug mode within a window of opportunity such as during boot or configuration stage. The result is disablement of such test/debug features and associated modes during normal runtime operations.

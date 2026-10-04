@@ -1,0 +1,29 @@
+# T1414: Clipboard Data
+
+
+**ATT&CK ID:** T1414  
+**Domain:** Mitre Mobile Attack  
+**Tactic(s):** Collection, Credential Access  
+**Platforms:** Android, iOS  
+**Reference:** https://attack.mitre.org/techniques/T1414  
+
+## Description
+Adversaries may abuse clipboard manager APIs to obtain sensitive information copied to the device clipboard. For example, passwords being copied and pasted from a password manager application could be captured by a malicious application installed on the device.(Citation: Fahl-Clipboard) 
+
+ 
+
+On Android, applications can use the `ClipboardManager.OnPrimaryClipChangedListener()` API to register as a listener and monitor the clipboard for changes. However, starting in Android 10, this can only be used if the application is in the foreground, or is set as the device’s default input method editor (IME).(Citation: Github Capture Clipboard 2019)(Citation: Android 10 Privacy Changes) 
+
+ 
+
+On iOS, this can be accomplished by accessing the `UIPasteboard.general.string` field. However, starting in iOS 14, upon accessing the clipboard, the user will be shown a system notification if the accessed text originated in a different application. For example, if the user copies the text of an iMessage from the Messages application, the notification will read “application_name has pasted from Messages” when the text was pasted in a different application.(Citation: UIPPasteboard)
+
+## Mitigations
+- M1006: Use Recent OS Version
+
+## Known Software Using This Technique
+- S1079: BOULDSPY
+- S0421: GolfSpy
+- S0295: RCSAndroid
+- S1241: RatMilad
+- S0297: XcodeGhost

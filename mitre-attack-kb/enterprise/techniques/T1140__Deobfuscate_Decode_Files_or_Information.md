@@ -1,0 +1,358 @@
+# T1140: Deobfuscate/Decode Files or Information
+
+
+**ATT&CK ID:** T1140  
+**Domain:** Mitre Attack  
+**Tactic(s):** Stealth  
+**Platforms:** ESXi, Linux, macOS, Windows  
+**Reference:** https://attack.mitre.org/techniques/T1140  
+
+## Description
+Adversaries may use [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027) to hide artifacts of an intrusion from analysis. They may require separate mechanisms to decode or deobfuscate that information depending on how they intend to use it. Methods for doing that include built-in functionality of malware or by using utilities present on the system.
+
+One such example is the use of [certutil](https://attack.mitre.org/software/S0160) to decode a remote access tool portable executable file that has been hidden inside a certificate file.(Citation: Malwarebytes Targeted Attack against Saudi Arabia) Another example is using the Windows <code>copy /b</code> or <code>type</code> command to reassemble binary fragments into a malicious payload.(Citation: Carbon Black Obfuscation Sept 2016)(Citation: Sentinel One Tainted Love 2023)
+
+Sometimes a user's action may be required to open it for deobfuscation or decryption as part of [User Execution](https://attack.mitre.org/techniques/T1204). The user may also be required to input a password to open a password protected compressed/encrypted file that was provided by the adversary.(Citation: Volexity PowerDuke November 2016)
+
+## Known Threat Groups Using This Technique
+- G0073: APT19
+- G0007: APT28
+- G0082: APT38
+- G0087: APT39
+- G1030: Agrius
+- G0060: BRONZE BUTLER
+- G1043: BlackByte
+- G1021: Cinnamon Tempest
+- G0012: Darkhotel
+- G1006: Earth Lusca
+- G1016: FIN13
+- G0046: FIN7
+- G0047: Gamaredon Group
+- G0078: Gorgon Group
+- G0126: Higaisa
+- G0004: Ke3chang
+- G0094: Kimsuky
+- G0032: Lazarus Group
+- G0065: Leviathan
+- G1026: Malteiro
+- G0021: Molerats
+- G1036: Moonstone Sleet
+- G0069: MuddyWater
+- G0129: Mustang Panda
+- G0049: OilRig
+- G0106: Rocke
+- G0034: Sandworm Team
+- G1046: Storm-1811
+- G0092: TA505
+- G0139: TeamTNT
+- G0027: Threat Group-3390
+- G0081: Tropic Trooper
+- G0010: Turla
+- G1017: Volt Typhoon
+- G0090: WIRTE
+- G1035: Winter Vivern
+- G0128: ZIRCONIUM
+- G0045: menuPass
+
+## Known Software Using This Technique
+- S0469: ABK
+- S9027: ANELLDR
+- S1028: Action RAT
+- S0331: Agent Tesla
+- S1025: Amadey
+- S1133: Apostle
+- S0584: AppleJeus
+- S0622: AppleSeed
+- S0456: Aria-body
+- S9031: AshTag
+- S0373: Astaroth
+- S0347: AuditCred
+- S0640: Avaddon
+- S0473: Avenger
+- S1053: AvosLocker
+- S0344: Azorult
+- S0642: BADFLICK
+- S0470: BBK
+- S0127: BBSRAT
+- S0520: BLINDINGCAN
+- S1226: BOOKWORM
+- S0415: BOOSTWRITE
+- S9015: BRICKSTORM
+- S9011: BRUSHFIRE
+- S1118: BUSHWALK
+- S0638: Babuk
+- S0414: BabyShark
+- S0475: BackConfig
+- S0234: Bandook
+- S0239: Bankshot
+- S0534: Bazar
+- S0574: BendyBear
+- S0268: Bisonal
+- S1180: BlackByte Ransomware
+- S0635: BoomBox
+- S1063: Brute Ratel C4
+- S1039: Bumblebee
+- S0482: Bundlore
+- S1224: CASTLETAP
+- S1149: CHIMNEYSWEEP
+- S1236: CLAIMLOADER
+- S1105: COATHANGER
+- S9016: Caminho
+- S9042: CanisterWorm
+- S0335: Carbon
+- S0348: Cardinal RAT
+- S0631: Chaes
+- S0674: CharmPower
+- S1041: Chinoxy
+- S0667: Chrommme
+- S0660: Clambling
+- S0611: Clop
+- S0154: Cobalt Strike
+- S0369: CoinTicker
+- S0126: ComRAT
+- S0575: Conti
+- S0492: CookieMiner
+- S1235: CorKLOG
+- S0614: CostaBricks
+- S0115: Crimson
+- S1153: Cuckoo Stealer
+- S0687: Cyclops Blink
+- S0255: DDKONG
+- S1052: DEADEYE
+- S1134: DEADWOOD
+- S9021: DOWNIISSA
+- S1158: DUSTPAN
+- S1159: DUSTTRAP
+- S1014: DanBot
+- S1111: DarkGate
+- S1066: DarkTortilla
+- S0673: DarkWatchman
+- S0354: Denis
+- S0547: DropBook
+- S0502: Drovorub
+- S0567: Dtrack
+- S0024: Dyre
+- S0377: Ebury
+- S0624: Ecipekac
+- S0554: Egregor
+- S1247: Embargo
+- S0367: Emotet
+- S0634: EnvyScout
+- S0401: Exaramel for Linux
+- S1179: Exbyte
+- S0361: Expand
+- S0618: FIVEHANDS
+- S1120: FRAMESTING
+- S0628: FYAnti
+- S0512: FatDuke
+- S0182: FinFisher
+- S0355: Final1stspy
+- S0661: FoggyWeb
+- S9033: Fooder
+- S1117: GLASSTOKEN
+- S0666: Gelsemium
+- S9010: GlassWorm
+- S0588: GoldMax
+- S0477: Goopy
+- S1138: Gootloader
+- S0531: Grandoreiro
+- S0690: Green Lambert
+- S0632: GrimAgent
+- S9007: HTTPTroy
+- S1097: HUI Loader
+- S0499: Hancitor
+- S9018: HeartCrypt
+- S0697: HermeticWiper
+- S1249: HexEval Loader
+- S1027: Heyoka Backdoor
+- S9023: HiddenFace
+- S0394: HiddenWasp
+- S0601: Hildegard
+- S0398: HyperBro
+- S1139: INC Ransomware
+- S0189: ISMInjector
+- S1022: IceApple
+- S0434: Imminent Monitor
+- S0604: Industroyer
+- S0260: InvisiMole
+- S1245: InvisibleFerret
+- S0581: IronNetInjector
+- S9029: IronWind
+- S1051: KEYPLUG
+- S0526: KGH_SPY
+- S0669: KOCTOPUS
+- S0356: KONNI
+- S1190: Kapeka
+- S0585: Kerrdown
+- S0487: Kessel
+- S0641: Kobalos
+- S0236: Kwampirs
+- S9035: LAMEHUG
+- S1119: LIGHTWIRE
+- S9036: LP-Notes
+- S1160: Latrodectus
+- S0395: LightNeuron
+- S1186: Line Dancer
+- S0513: LiteDuke
+- S0681: Lizar
+- S1199: LockBit 2.0
+- S1202: LockBit 3.0
+- S0447: Lokibot
+- S0582: LookBack
+- S0532: Lucifer
+- S1213: Lumma Stealer
+- S1143: LunarLoader
+- S1142: LunarMail
+- S1141: LunarWeb
+- S0443: MESSAGETAP
+- S1221: MOPSLED
+- S1016: MacMa
+- S0409: Machete
+- S1060: Mafalda
+- S1182: MagicRAT
+- S1244: Medusa Ransomware
+- S0576: MegaCortex
+- S0455: Metamorfo
+- S9043: Mini Shai-Hulud
+- S0280: MirageFox
+- S1122: Mispadu
+- S1026: Mongall
+- S0284: More_eggs
+- S1047: Mori
+- S9032: MuddyViper
+- S0353: NOKKI
+- S9025: NOOPLDR
+- S0637: NativeZone
+- S0457: Netwalker
+- S1147: Nightdoor
+- S1100: Ninja
+- S1170: ODAgent
+- S0402: OSX/Shlayer
+- S0352: OSX_OCEANLOTUS.D
+- S1172: OilBooster
+- S0439: Okrum
+- S0052: OnionDuke
+- S0264: OopsIE
+- S0598: P.A.S. Webshell
+- S9014: PHASEJAM
+- S9028: PHPsert
+- S1123: PITSTOP
+- S0223: POWERSTATS
+- S0613: PS1
+- S1228: PUBLOAD
+- S0196: PUNCHBUGGY
+- S1050: PcShare
+- S1145: Pikabot
+- S0517: Pillowmint
+- S1031: PingPull
+- S0501: PipeMon
+- S0013: PlugX
+- S0428: PoetRAT
+- S0518: PolyglotDuke
+- S1046: PowGoop
+- S1173: PowerExchange
+- S1012: PowerLess
+- S0279: Proton
+- S0147: Pteranodon
+- S9019: PureCrypter
+- S1032: PyDCrypt
+- S0269: QUADAGENT
+- S1076: QUIETCANARY
+- S0650: QakBot
+- S1113: RAPIDPULSE
+- S0495: RDAT
+- S1219: REPTILE
+- S0496: REvil
+- S0258: RGDoor
+- S1222: RIFLESPINE
+- S1150: ROADSWEEP
+- S9026: ROAMINGHOUSE
+- S0240: ROKRAT
+- S1148: Raccoon Stealer
+- S0565: Raindrop
+- S0629: RainyDay
+- S0458: Ramsay
+- S1212: RansomHub
+- S1130: Raspberry Robin
+- S1240: RedLine Stealer
+- S0511: RegDuke
+- S0375: Remexi
+- S0448: Rising Sun
+- S0270: RogueRobin
+- S1078: RotaJakiro
+- S9037: RustyWater
+- S0461: SDBbot
+- S1110: SLIGHTPULSE
+- S9024: SPAWNCHIMERA
+- S0390: SQLRat
+- S1112: STEADYPULSE
+- S0562: SUNSPOT
+- S1210: Sagerunex
+- S1018: Saint Bot
+- S1168: SampleCheck5000
+- S1085: Sardonic
+- S0596: ShadowPad
+- S0140: Shamoon
+- S1019: Shark
+- S0546: SharpStage
+- S0444: ShimRat
+- S0589: Sibot
+- S0610: SideTwist
+- S0623: Siloscape
+- S0468: Skidmap
+- S0226: Smoke Loader
+- S1086: Snip3
+- S0615: SombRAT
+- S0516: SoreFang
+- S0543: Spark
+- S1140: Spica
+- S1232: SplatDropper
+- S1030: Squirrelwaffle
+- S1227: StarProxy
+- S0188: Starloader
+- S1200: StealBit
+- S1183: StrelaStealer
+- S0603: Stuxnet
+- S0663: SysUpdate
+- S9001: SystemBC
+- S0560: TEARDROP
+- S1223: THINCRUST
+- S1239: TONESHELL
+- S0436: TSCookie
+- S0263: TYPEFRAME
+- S0011: Taidoor
+- S9041: TeamPCP Cloud Stealer
+- S0665: ThreatNeedle
+- S0678: Torisma
+- S0266: TrickBot
+- S9034: Tsundere Botnet
+- S0647: Turian
+- S1164: UPSTYLE
+- S0022: Uroburos
+- S0386: Ursnif
+- S0257: VERMIN
+- S0476: Valak
+- S0636: VaporRage
+- S0180: Volgmer
+- S1115: WIREFIRE
+- S0670: WarzoneRAT
+- S0612: WastedLocker
+- S0579: Waterbear
+- S0515: WellMail
+- S0514: WellMess
+- S0689: WhisperGate
+- S0466: WindTail
+- S0430: Winnti for Linux
+- S0141: Winnti for Windows
+- S1065: Woody RAT
+- S1207: XLoader
+- S1248: XORIndex Loader
+- S0388: YAHOYAH
+- S0251: Zebrocy
+- S0230: ZeroT
+- S0330: Zeus Panda
+- S1013: ZxxZ
+- S0160: certutil
+- S0032: gh0st RAT
+- S1059: metaMain
+- S0653: xCaon

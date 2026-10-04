@@ -1,0 +1,14 @@
+# S0232: HOMEFRY
+
+**Type:** malware  
+**Reference:** https://attack.mitre.org/software/S0232  
+**Aliases:** HOMEFRY  
+**Platforms:** Windows  
+
+## Description
+[HOMEFRY](https://attack.mitre.org/software/S0232) is a 64-bit Windows password dumper/cracker that has previously been used in conjunction with other [Leviathan](https://attack.mitre.org/groups/G0065) backdoors. (Citation: FireEye Periscope March 2018)
+
+## Techniques Used
+- T1003: OS Credential Dumping
+- T1027.013: Encrypted/Encoded File
+- T1059.003: Windows Command Shell

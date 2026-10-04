@@ -1,0 +1,12 @@
+langchain
+langchain-openai
+langchain-mcp-adapters
+langgraph
+mcp
+httpx
+cvss
+pydantic
+rank_bm25
+fastapi
+uvicorn
+python-multipart

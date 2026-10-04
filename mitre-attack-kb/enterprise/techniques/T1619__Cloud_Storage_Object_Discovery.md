@@ -1,0 +1,24 @@
+# T1619: Cloud Storage Object Discovery
+
+
+**ATT&CK ID:** T1619  
+**Domain:** Mitre Attack  
+**Tactic(s):** Discovery  
+**Platforms:** IaaS  
+**Reference:** https://attack.mitre.org/techniques/T1619  
+
+## Description
+Adversaries may enumerate objects in cloud storage infrastructure. Adversaries may use this information during automated discovery to shape follow-on behaviors, including requesting all or specific objects from cloud storage.  Similar to [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) on a local host, after identifying available storage services (i.e. [Cloud Infrastructure Discovery](https://attack.mitre.org/techniques/T1580)) adversaries may access the contents/objects stored in cloud infrastructure.
+
+Cloud service providers offer APIs allowing users to enumerate objects stored within cloud storage. Examples include ListObjectsV2 in AWS (Citation: ListObjectsV2) and List Blobs in Azure(Citation: List Blobs) .
+
+## Mitigations
+- M1018: User Account Management
+
+## Known Threat Groups Using This Technique
+- G1057: ShinyHunters
+
+## Known Software Using This Technique
+- S1091: Pacu
+- S0683: Peirates
+- S9009: TruffleHog

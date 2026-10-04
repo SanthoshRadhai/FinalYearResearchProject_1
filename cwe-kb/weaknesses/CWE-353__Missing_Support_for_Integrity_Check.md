@@ -1,0 +1,26 @@
+# CWE-353: Missing Support for Integrity Check
+
+**Abstraction:** Base  
+**Status:** Draft  
+**Reference:** https://cwe.mitre.org/data/definitions/353.html  
+
+## Description
+The product uses a transmission protocol that does not include a mechanism for verifying the integrity of the data during transmission, such as a checksum.
+
+## Extended Description
+If integrity check values or "checksums" are omitted from a protocol, there is no way of determining if data has been corrupted in transmission. The lack of checksum functionality in a protocol removes the first application-level check of data that can be used. The end-to-end philosophy of checks states that integrity checks should be performed at the lowest level that they can be completely implemented. Excluding further sanity checks and input validation performed by applications, the protocol's checksum is the most important level of checksum, since it can be performed more completely than at any previous level and takes into account entire messages, as opposed to single packets.
+
+## Related Weaknesses
+- ChildOf: CWE-345
+- PeerOf: CWE-354
+
+## Common Consequences
+- Scope: Integrity, Other; Impact: Other — Data that is parsed and used may be corrupted.
+- Scope: Non-Repudiation, Other; Impact: Hide Activities, Other — Without a checksum it is impossible to determine if any changes have been made to the data after it was sent.
+
+## Potential Mitigations
+- [Architecture and Design] Add an appropriately sized checksum to the protocol, ensuring that data received may be simply validated before it is parsed and used.
+- [Implementation] Ensure that the checksums present in the protocol design are properly implemented and added to each message before it is sent.
+
+## Demonstrative Examples (summary)
+- In this example, a request packet is received, and privileged information is sent to the requester:

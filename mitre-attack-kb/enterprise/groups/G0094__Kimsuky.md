@@ -1,0 +1,144 @@
+# G0094: Kimsuky
+
+**Type:** intrusion-set  
+**Reference:** https://attack.mitre.org/groups/G0094  
+**Aliases:** Kimsuky, Black Banshee, Velvet Chollima, Emerald Sleet, THALLIUM, APT43, TA427, Springtail, Earth Kumiho, PatheticSlug  
+
+## Description
+[Kimsuky](https://attack.mitre.org/groups/G0094) is a Democratic People's Republic of Korea (DPRK)-based cyber espionage group that has been active since at least 2012. The group initially targeted South Korean government agencies, think tanks, and subject-matter experts in various fields. Its operations expanded to include the United Nations and organizations in the government, education, business services, and manufacturing sectors across the United States, Japan, Russia, and Europe. [Kimsuky](https://attack.mitre.org/groups/G0094) has focused collection on foreign policy and national security issues tied to the Korean Peninsula, nuclear policy, and sanctions. [Kimsuky](https://attack.mitre.org/groups/G0094) operations have overlapped with those of other North Korean state-sponsored cyber espionage actors as a result of ad hoc collaborations or other limited resource sharing.(Citation: EST Kimsuky April 2019)(Citation: Cybereason Kimsuky November 2020)(Citation: Malwarebytes Kimsuky June 2021)(Citation: CISA AA20-301A Kimsuky)(Citation: Mandiant APT43 March 2024)(Citation: Proofpoint TA427 April 2024) 
+
+[Kimsuky](https://attack.mitre.org/groups/G0094) was assessed to be responsible for the 2014 Korea Hydro & Nuclear Power Co. compromise; other notable campaigns include Operation STOLEN PENCIL (2018), Operation Kabar Cobra (2019), and Operation Smoke Screen (2019).(Citation: Netscout Stolen Pencil Dec 2018)(Citation: EST Kimsuky SmokeScreen April 2019)(Citation: AhnLab Kimsuky Kabar Cobra Feb 2019) In 2023, [Kimsuky](https://attack.mitre.org/groups/G0094) was observed using commercial large language models (LLMs) to assist with vulnerability research, scripting, social engineering and reconnaissance.(Citation: MSFT-AI)
+
+DPRK threat actor cluster boundaries overlap in open source reporting, with some security researchers consolidating all attributed North Korean state-sponsored cyber activity under [Lazarus Group](https://attack.mitre.org/groups/G0032), rather than tracking operationally distinct subgroups.
+
+## Techniques Used
+- T1003.001: LSASS Memory
+- T1005: Data from Local System
+- T1007: System Service Discovery
+- T1012: Query Registry
+- T1016: System Network Configuration Discovery
+- T1020: Automated Exfiltration
+- T1021.001: Remote Desktop Protocol
+- T1027: Obfuscated Files or Information
+- T1027.001: Binary Padding
+- T1027.002: Software Packing
+- T1027.007: Dynamic API Resolution
+- T1027.010: Command Obfuscation
+- T1027.012: LNK Icon Smuggling
+- T1027.013: Encrypted/Encoded File
+- T1027.015: Compression
+- T1027.016: Junk Code Insertion
+- T1033: System Owner/User Discovery
+- T1036.004: Masquerade Task or Service
+- T1036.005: Match Legitimate Resource Name or Location
+- T1036.007: Double File Extension
+- T1040: Network Sniffing
+- T1041: Exfiltration Over C2 Channel
+- T1053.005: Scheduled Task
+- T1055: Process Injection
+- T1055.001: Dynamic-link Library Injection
+- T1055.012: Process Hollowing
+- T1056.001: Keylogging
+- T1056.003: Web Portal Capture
+- T1057: Process Discovery
+- T1059.001: PowerShell
+- T1059.003: Windows Command Shell
+- T1059.005: Visual Basic
+- T1059.006: Python
+- T1059.007: JavaScript
+- T1070.004: File Deletion
+- T1070.006: Timestomp
+- T1071.001: Web Protocols
+- T1071.002: File Transfer Protocols
+- T1071.003: Mail Protocols
+- T1074.001: Local Data Staging
+- T1078.003: Local Accounts
+- T1082: System Information Discovery
+- T1083: File and Directory Discovery
+- T1098.007: Additional Local or Domain Groups
+- T1102.001: Dead Drop Resolver
+- T1102.002: Bidirectional Communication
+- T1105: Ingress Tool Transfer
+- T1106: Native API
+- T1111: Multi-Factor Authentication Interception
+- T1112: Modify Registry
+- T1113: Screen Capture
+- T1114.002: Remote Email Collection
+- T1114.003: Email Forwarding Rule
+- T1115: Clipboard Data
+- T1124: System Time Discovery
+- T1132.002: Non-Standard Encoding
+- T1133: External Remote Services
+- T1136.001: Local Account
+- T1140: Deobfuscate/Decode Files or Information
+- T1176.001: Browser Extensions
+- T1185: Browser Session Hijacking
+- T1190: Exploit Public-Facing Application
+- T1204.001: Malicious Link
+- T1204.002: Malicious File
+- T1204.004: Malicious Copy and Paste
+- T1205: Traffic Signaling
+- T1217: Browser Information Discovery
+- T1218.005: Mshta
+- T1218.010: Regsvr32
+- T1218.011: Rundll32
+- T1219.002: Remote Desktop Software
+- T1480.002: Mutual Exclusion
+- T1489: Service Stop
+- T1497.001: System Checks
+- T1505.003: Web Shell
+- T1518.001: Security Software Discovery
+- T1534: Internal Spearphishing
+- T1539: Steal Web Session Cookie
+- T1543.003: Windows Service
+- T1546.001: Change Default File Association
+- T1547.001: Registry Run Keys / Startup Folder
+- T1550.002: Pass the Hash
+- T1552.001: Credentials In Files
+- T1552.004: Private Keys
+- T1553.002: Code Signing
+- T1555.003: Credentials from Web Browsers
+- T1557: Adversary-in-the-Middle
+- T1559.001: Component Object Model
+- T1560.001: Archive via Utility
+- T1560.003: Archive via Custom Method
+- T1564.002: Hidden Users
+- T1564.003: Hidden Window
+- T1564.011: Ignore Process Interrupts
+- T1566: Phishing
+- T1566.001: Spearphishing Attachment
+- T1566.002: Spearphishing Link
+- T1567.002: Exfiltration to Cloud Storage
+- T1568: Dynamic Resolution
+- T1583: Acquire Infrastructure
+- T1583.001: Domains
+- T1583.004: Server
+- T1583.006: Web Services
+- T1584.001: Domains
+- T1585: Establish Accounts
+- T1585.001: Social Media Accounts
+- T1585.002: Email Accounts
+- T1586.002: Email Accounts
+- T1587: Develop Capabilities
+- T1587.001: Malware
+- T1588.002: Tool
+- T1588.003: Code Signing Certificates
+- T1588.005: Exploits
+- T1589.002: Email Addresses
+- T1589.003: Employee Names
+- T1591: Gather Victim Org Information
+- T1593.001: Social Media
+- T1593.002: Search Engines
+- T1594: Search Victim-Owned Websites
+- T1596: Search Open Technical Databases
+- T1598: Phishing for Information
+- T1598.003: Spearphishing Link
+- T1608.001: Upload Malware
+- T1620: Reflective Code Loading
+- T1657: Financial Theft
+- T1678: Delay Execution
+- T1680: Local Storage Discovery
+- T1682: Query Public AI Services
+- T1684.001: Impersonation
+- T1685: Disable or Modify Tools
+- T1686: Disable or Modify System Firewall

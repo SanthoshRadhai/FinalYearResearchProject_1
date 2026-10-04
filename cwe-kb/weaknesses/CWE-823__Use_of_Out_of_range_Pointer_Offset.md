@@ -1,0 +1,27 @@
+# CWE-823: Use of Out-of-range Pointer Offset
+
+**Abstraction:** Base  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/823.html  
+
+## Description
+The product performs pointer arithmetic on a valid pointer, but it uses an offset that can point outside of the intended range of valid memory locations for the resulting pointer.
+
+## Extended Description
+While a pointer can contain a reference to any arbitrary memory location, a program typically only intends to use the pointer to access limited portions of memory, such as contiguous memory used to access an individual array. Programs may use offsets in order to access fields or sub-elements stored within structured data. The offset might be out-of-range if it comes from an untrusted source, is the result of an incorrect calculation, or occurs because of another error. If an attacker can control or influence the offset so that it points outside of the intended boundaries of the structure, then the attacker may be able to read or write to memory locations that are used elsewhere in the product. As a result, the attack might change the state of the product as accessed through program variables, cause a crash or instable behavior, and possibly lead to code execution.
+
+## Related Weaknesses
+- ChildOf: CWE-119
+- ChildOf: CWE-119
+- ChildOf: CWE-119
+- CanPrecede: CWE-125
+- CanPrecede: CWE-787
+
+## Common Consequences
+- Scope: Confidentiality; Impact: Read Memory — If the untrusted pointer is used in a read operation, an attacker might be able to read sensitive portions of memory.
+- Scope: Availability; Impact: DoS: Crash, Exit, or Restart — If the untrusted pointer references a memory location that is not accessible to the program, or points to a location that is "malformed" or larger than expected by a read or write operation, the application may terminate unexpectedly.
+- Scope: Integrity, Confidentiality, Availability; Impact: Execute Unauthorized Code or Commands, Modify Memory — If the untrusted pointer is used in a function call, or points to unexpected data in a write operation, then code execution may be possible.
+
+## Detection Methods
+- [Automated Static Analysis] Automated static analysis, commonly referred to as Static Application Security Testing (SAST), can find some instances of this weakness by analyzing source code (or binary/compiled code) without having to execute it. Typically, this is done by building a model of data flow and control flow, then searching for potentially-vulnerable patterns that connect "sources" (origins of input) with "sinks" (destinations where the data interacts with external components, a lower layer such as the OS, etc.)
+- [Automated Dynamic Analysis] Use tools that are integrated during compilation to insert runtime error-checking mechanisms related to memory safety errors, such as AddressSanitizer (ASan) for C/C++ [REF-1518].

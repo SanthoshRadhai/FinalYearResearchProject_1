@@ -1,0 +1,73 @@
+<mxfile host="Electron" agent="claude-code">
+  <diagram name="Implemented Agents StateGraph" id="stategraph-implemented">
+    <mxGraphModel dx="1500" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="legend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;verticalAlign=top;fontStyle=1;align=left;spacingLeft=6;fontSize=22;" value="Legend" vertex="1">
+          <mxGeometry height="262" width="390" x="26" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_se" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=22;fillColor=#d5e8d4;strokeColor=#82b366" value="START / END" vertex="1">
+          <mxGeometry height="44" width="364" x="39" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_ctl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;fillColor=#fff2cc;strokeColor=#d6b656" value="Control agent (Safety, Orchestrator)" vertex="1">
+          <mxGeometry height="47" width="364" x="39" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_red" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;fillColor=#f8cecc;strokeColor=#b85450" value="Red-team specialist" vertex="1">
+          <mxGeometry height="47" width="364" x="39" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_eval" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;fillColor=#e1d5e7;strokeColor=#9673a6" value="Evaluator (evidence grounding)" vertex="1">
+          <mxGeometry height="47" width="364" x="39" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="n_start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=22;fillColor=#d5e8d4;strokeColor=#82b366fontStyle=1;" value="START" vertex="1">
+          <mxGeometry height="52" width="160" x="620" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_safety" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;fillColor=#ffe6cc;strokeColor=#d79b00" value="Safety / Guardrail Agent&#10;(deterministic scope check - no LLM)" vertex="1">
+          <mxGeometry height="91" width="390" x="505" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="n_orch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;fillColor=#fff2cc;strokeColor=#d6b656fontStyle=1;" value="Orchestrator&#10;(LLM router - no tools)" vertex="1">
+          <mxGeometry height="91" width="390" x="505" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="n_recon" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;fillColor=#f8cecc;strokeColor=#b85450" value="Recon Agent&#10;browser MCP + lookup_cve +&#10;search_knowledge_base (RAG)" vertex="1">
+          <mxGeometry height="117" width="440" x="160" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="n_vuln" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;fillColor=#f8cecc;strokeColor=#b85450" value="Vulnerability Analysis Agent&#10;parse_cvss_vector +&#10;lookup_attack_technique" vertex="1">
+          <mxGeometry height="117" width="440" x="800" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="n_eval" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;fillColor=#e1d5e7;strokeColor=#9673a6fontStyle=1;" value="Evaluator&#10;substring check + LLM judgment&#10;-&gt; verified_findings" vertex="1">
+          <mxGeometry height="117" width="460" x="470" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="n_end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=22;fillColor=#d5e8d4;strokeColor=#82b366fontStyle=1;" value="END" vertex="1">
+          <mxGeometry height="52" width="160" x="620" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="e_start_safety" edge="1" parent="1" source="n_start" target="n_safety" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;fontSize=20;">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="e_safety_orch" edge="1" parent="1" source="n_safety" target="n_orch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;fontSize=20;">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="e_orch_recon" edge="1" parent="1" source="n_orch" target="n_recon" value="route: recon" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;fontSize=20;exitX=0.25;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="e_orch_vuln" edge="1" parent="1" source="n_orch" target="n_vuln" value="route: vuln" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;fontSize=20;exitX=0.75;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="e_recon_eval" edge="1" parent="1" source="n_recon" target="n_eval" value="Finding" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;fontSize=20;strokeColor=#9673a6;exitX=0.5;exitY=1;entryX=0.25;entryY=0;">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="e_vuln_eval" edge="1" parent="1" source="n_vuln" target="n_eval" value="Finding" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;fontSize=20;strokeColor=#9673a6;exitX=0.5;exitY=1;entryX=0.75;entryY=0;">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="e_eval_end" edge="1" parent="1" source="n_eval" target="n_end" value="verified answer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;fontSize=20;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="e_eval_orch" edge="1" parent="1" source="n_eval" target="n_orch" value="unverified -&gt; re-route" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;fontSize=20;strokeColor=#9673a6;exitX=0;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="60" y="788" /><mxPoint x="60" y="345" /></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="e_orch_end" edge="1" parent="1" source="n_orch" target="n_end" value="stall limit (3 unproductive repeats) -&gt; force end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;fontSize=20;strokeColor=#b85450;dashed=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1330" y="345" /><mxPoint x="1330" y="986" /></Array></mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

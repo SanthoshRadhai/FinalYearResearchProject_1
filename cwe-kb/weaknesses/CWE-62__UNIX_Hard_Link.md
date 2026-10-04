@@ -1,0 +1,20 @@
+# CWE-62: UNIX Hard Link
+
+**Abstraction:** Variant  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/62.html  
+
+## Description
+The product, when opening a file or directory, does not sufficiently account for when the name is associated with a hard link to a target that is outside of the intended control sphere. This could allow an attacker to cause the product to operate on unauthorized files.
+
+## Extended Description
+Failure for a system to check for hard links can result in vulnerability to different types of attacks. For example, an attacker can escalate their privileges if a file used by a privileged program is replaced with a hard link to a sensitive file (e.g. /etc/passwd). When the process opens the file, the attacker can assume the privileges of that process.
+
+## Related Weaknesses
+- ChildOf: CWE-59
+
+## Common Consequences
+- Scope: Confidentiality, Integrity; Impact: Read Files or Directories, Modify Files or Directories
+
+## Potential Mitigations
+- [Architecture and Design] Follow the principle of least privilege when assigning access rights to entities in a software system. Denying access to a file can prevent an attacker from replacing that file with a link to a sensitive file. Ensure good compartmentalization in the system to provide protected areas that can be trusted.

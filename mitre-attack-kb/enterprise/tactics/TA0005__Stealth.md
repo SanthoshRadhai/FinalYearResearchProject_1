@@ -1,0 +1,159 @@
+# TA0005: Stealth
+
+**Type:** Tactic  
+**Reference:** https://attack.mitre.org/tactics/TA0005  
+
+## Description
+The adversary is trying to hide and conceal their actions, appearing as normal behavior.
+
+Stealth consists of techniques that reduce the likelihood of detection by blending in with legitimate activity or minimizing observable signals. These techniques are characterized by concealment behaviors, such as avoiding, obfuscating, or mimicking normal operations, without modifying security controls or compromising collection and monitoring feeds. The goal is to remain indistinguishable from benign activity while leaving defensive systems intact.
+
+## Techniques in This Tactic
+- T1006: Direct Volume Access
+- T1014: Rootkit
+- T1027: Obfuscated Files or Information
+- T1027.001: Binary Padding
+- T1027.002: Software Packing
+- T1027.003: Steganography
+- T1027.004: Compile After Delivery
+- T1027.005: Indicator Removal from Tools
+- T1027.006: HTML Smuggling
+- T1027.007: Dynamic API Resolution
+- T1027.008: Stripped Payloads
+- T1027.009: Embedded Payloads
+- T1027.010: Command Obfuscation
+- T1027.011: Fileless Storage
+- T1027.012: LNK Icon Smuggling
+- T1027.013: Encrypted/Encoded File
+- T1027.014: Polymorphic Code
+- T1027.015: Compression
+- T1027.016: Junk Code Insertion
+- T1027.017: SVG Smuggling
+- T1027.018: Invisible Unicode
+- T1036: Masquerading
+- T1036.001: Invalid Code Signature
+- T1036.002: Right-to-Left Override
+- T1036.003: Rename Legitimate Utilities
+- T1036.004: Masquerade Task or Service
+- T1036.005: Match Legitimate Resource Name or Location
+- T1036.006: Space after Filename
+- T1036.007: Double File Extension
+- T1036.008: Masquerade File Type
+- T1036.009: Break Process Trees
+- T1036.010: Masquerade Account Name
+- T1036.011: Overwrite Process Arguments
+- T1036.012: Browser Fingerprint
+- T1055: Process Injection
+- T1055.001: Dynamic-link Library Injection
+- T1055.002: Portable Executable Injection
+- T1055.003: Thread Execution Hijacking
+- T1055.004: Asynchronous Procedure Call
+- T1055.005: Thread Local Storage
+- T1055.008: Ptrace System Calls
+- T1055.009: Proc Memory
+- T1055.011: Extra Window Memory Injection
+- T1055.012: Process Hollowing
+- T1055.013: Process Doppelgänging
+- T1055.014: VDSO Hijacking
+- T1055.015: ListPlanting
+- T1070: Indicator Removal
+- T1070.003: Clear Command History
+- T1070.004: File Deletion
+- T1070.005: Network Share Connection Removal
+- T1070.006: Timestomp
+- T1070.007: Clear Network Connection History and Configurations
+- T1070.008: Clear Mailbox Data
+- T1070.009: Clear Persistence
+- T1070.010: Relocate Malware
+- T1078: Valid Accounts
+- T1078.001: Default Accounts
+- T1078.002: Domain Accounts
+- T1078.003: Local Accounts
+- T1078.004: Cloud Accounts
+- T1127: Trusted Developer Utilities Proxy Execution
+- T1127.001: MSBuild
+- T1127.002: ClickOnce
+- T1127.003: JamPlus
+- T1134: Access Token Manipulation
+- T1134.001: Token Impersonation/Theft
+- T1134.002: Create Process with Token
+- T1134.003: Make and Impersonate Token
+- T1134.004: Parent PID Spoofing
+- T1134.005: SID-History Injection
+- T1140: Deobfuscate/Decode Files or Information
+- T1197: BITS Jobs
+- T1202: Indirect Command Execution
+- T1205: Traffic Signaling
+- T1205.001: Port Knocking
+- T1205.002: Socket Filters
+- T1211: Exploitation for Stealth
+- T1216: System Script Proxy Execution
+- T1216.001: PubPrn
+- T1216.002: SyncAppvPublishingServer
+- T1218: System Binary Proxy Execution
+- T1218.001: Compiled HTML File
+- T1218.002: Control Panel
+- T1218.003: CMSTP
+- T1218.004: InstallUtil
+- T1218.005: Mshta
+- T1218.007: Msiexec
+- T1218.008: Odbcconf
+- T1218.009: Regsvcs/Regasm
+- T1218.010: Regsvr32
+- T1218.011: Rundll32
+- T1218.012: Verclsid
+- T1218.013: Mavinject
+- T1218.014: MMC
+- T1218.015: Electron Applications
+- T1220: XSL Script Processing
+- T1221: Template Injection
+- T1480: Execution Guardrails
+- T1480.001: Environmental Keying
+- T1480.002: Mutual Exclusion
+- T1497: Virtualization/Sandbox Evasion
+- T1497.001: System Checks
+- T1497.002: User Activity Based Checks
+- T1497.003: Time Based Checks
+- T1535: Unused/Unsupported Cloud Regions
+- T1542: Pre-OS Boot
+- T1542.001: System Firmware
+- T1542.002: Component Firmware
+- T1542.003: Bootkit
+- T1542.004: ROMMONkit
+- T1542.005: TFTP Boot
+- T1564: Hide Artifacts
+- T1564.001: Hidden Files and Directories
+- T1564.002: Hidden Users
+- T1564.003: Hidden Window
+- T1564.004: NTFS File Attributes
+- T1564.005: Hidden File System
+- T1564.006: Run Virtual Instance
+- T1564.007: VBA Stomping
+- T1564.008: Email Hiding Rules
+- T1564.009: Resource Forking
+- T1564.010: Process Argument Spoofing
+- T1564.011: Ignore Process Interrupts
+- T1564.012: File/Path Exclusions
+- T1564.013: Bind Mounts
+- T1564.014: Extended Attributes
+- T1574: Hijack Execution Flow
+- T1574.001: DLL
+- T1574.004: Dylib Hijacking
+- T1574.005: Executable Installer File Permissions Weakness
+- T1574.006: Dynamic Linker Hijacking
+- T1574.007: Path Interception by PATH Environment Variable
+- T1574.008: Path Interception by Search Order Hijacking
+- T1574.009: Path Interception by Unquoted Path
+- T1574.010: Services File Permissions Weakness
+- T1574.011: Services Registry Permissions Weakness
+- T1574.012: COR_PROFILER
+- T1574.013: KernelCallbackTable
+- T1574.014: AppDomainManager
+- T1612: Build Image on Host
+- T1620: Reflective Code Loading
+- T1622: Debugger Evasion
+- T1678: Delay Execution
+- T1679: Selective Exclusion
+- T1684: Social Engineering
+- T1684.001: Impersonation
+- T1684.002: Email Spoofing

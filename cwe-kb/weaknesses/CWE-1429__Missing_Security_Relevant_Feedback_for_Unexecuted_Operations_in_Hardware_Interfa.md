@@ -1,0 +1,32 @@
+# CWE-1429: Missing Security-Relevant Feedback for Unexecuted Operations in Hardware Interface
+
+**Abstraction:** Base  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/1429.html  
+
+## Description
+The product has a hardware interface that silently discards operations in situations for which feedback would be security-relevant, such as the timely detection of failures or attacks.
+
+## Extended Description
+While some systems intentionally withhold feedback as a security measure, this approach must be strictly controlled to ensure it does not obscure operational failures that require prompt detection and remediation. Without these essential confirmations, failures go undetected, increasing the risk of data loss, security vulnerabilities, and overall system instability. Even when withholding feedback is an intentional part of a security policy designed, for example, to prevent attackers from gleaning sensitive internal details, the absence of expected feedback becomes a critical weakness when it masks operational failures that require prompt detection and remediation. For instance, certain encryption algorithms always return ciphertext regardless of errors to prevent attackers from gaining insight into internal state details. However, if such an algorithm fails to generate the expected ciphertext and provides no error feedback, the system cannot distinguish between a legitimate output and a malfunction. This can lead to undetected cryptographic failures, potentially compromising data security and system reliability. Without proper notification, a critical failure might remain hidden, undermining both the reliability and security of the process. Therefore, this weakness captures issues across various hardware interfaces where operations are discarded without any feedback, error handling, or logging. Such omissions can lead to data loss, security vulnerabilities, and system instability, with potential impacts ranging from minor to catastrophic. For some kinds of hardware products, some errors may be correctly identified and subsequently discarded, and the lack of feedback may have been an intentional design decision. However, this could result in a weakness if system operators or other authorized entities are not provided feedback about security-critical operations or failures that could prevent the operators from detecting and responding to an attack. For example: In a System-on-Chip (SoC) platform, write operations to reserved memory addresses might be correctly identified as invalid and subsequently discarded. However, if no feedback is provided to system operators, they may misinterpret the device's state, failing to recognize conditions that could lead to broader failures or security vulnerabilities. For example, if an attacker attempts unauthorized writes to protected regions, the system may silently discard these writes without alerting security mechanisms. This lack of feedback could obscure intrusion attempts or misconfigurations, increasing the risk of unnoticed system compromise Microcontroller Interrupt Systems: When interrupts are silently ignored due to priority conflicts or internal errors without notifying higher-level control, it becomes challenging to diagnose system failures or detect potential security breaches in a timely manner. Network Interface Controllers: Dropping packets - perhaps due to buffer overflows - without any error feedback can not only cause data loss but may also contribute to exploitable timing discrepancies that reveal sensitive internal processing details.
+
+## Related Weaknesses
+- ChildOf: CWE-223
+- PeerOf: CWE-392
+
+## Common Consequences
+- Scope: Confidentiality; Impact: Read Memory, Read Files or Directories — Critical data may be exposed if operations are unexecuted or discarded silently, allowing attackers to exploit the lack of feedback.
+- Scope: Integrity; Impact: Modify Memory, Modify Files or Directories — Operations may proceed based on incorrect assumptions, potentially causing data corruption or incorrect system behavior. In integrity-sensitive contexts, failing to signal that an operation did not occur as expected can mask errors that disrupt data consistency. Without feedback, the mitigation measures that should ensure updates have been performed cannot be verified, leaving the system vulnerable to both accidental and malicious data alterations.
+- Scope: Availability; Impact: DoS: Resource Consumption (Memory), DoS: Crash, Exit, or Restart — Unhandled discarded operations can lead to resource exhaustion, triggering system crashes or denial of service. For availability, consistent feedback is crucial. Without proper notification of discarded operations, administrators or other authorized entities might miss early warning signs of resource imbalances. This delayed detection could allow a DoS condition to develop, compromising the system's ability to serve legitimate requests and maintain continuous operations.
+
+## Potential Mitigations
+- [Architecture and Design] Incorporate logging and feedback mechanisms during the design phase to ensure proper handling of discarded operations.
+- [Implementation] Developers should ensure that every critical operation includes proper logging or error feedback mechanisms.
+
+## Detection Methods
+- [Automated Static Analysis - Source Code] Scans code for missing error handling or feedback mechanisms.
+- [Manual Static Analysis - Source Code] Experts manually inspect the code for unhandled operations.
+
+## Demonstrative Examples (summary)
+- This code creates an interrupt handler. If the interrupt's priority is lower than the currently active one, the interrupt is discarded without any feedback, perhaps due to resource constraints.
+- Consider a SoC design with these component IPs: IP 1. Execution Core <--> IP 2 SoC Fabric (NoC, tile etc. ) <--> IP 3 Memory Controller <--> External/ internal memory. The Core executes operations that trigger transactions that traverse the HW fabric links to read/write to the final memory module. There can be unexpected errors in each link. For adding reliability and redundance, features like ECCs are used in these transactions. Error correction capabilities have to define how many error bits can be detected and which errors can be corrected, and which are uncorrectable errors. In design, often the severity level and response on different errors is allowed to be configured by system firmware modules like BIOS.

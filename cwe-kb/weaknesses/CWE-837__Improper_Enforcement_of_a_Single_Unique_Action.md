@@ -1,0 +1,17 @@
+# CWE-837: Improper Enforcement of a Single, Unique Action
+
+**Abstraction:** Base  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/837.html  
+
+## Description
+The product requires that an actor should only be able to perform an action once, or to have only one unique action, but the product does not enforce or improperly enforces this restriction.
+
+## Extended Description
+In various applications, a user is only expected to perform a certain action once, such as voting, requesting a refund, or making a purchase. When this restriction is not enforced, sometimes this can have security implications. For example, in a voting application, an attacker could attempt to "stuff the ballot box" by voting multiple times. If these votes are counted separately, then the attacker could directly affect who wins the vote. This could have significant business impact depending on the purpose of the product.
+
+## Related Weaknesses
+- ChildOf: CWE-799
+
+## Common Consequences
+- Scope: Other; Impact: Varies by Context — An attacker might be able to gain advantage over other users by performing the action multiple times, or affect the correctness of the product.

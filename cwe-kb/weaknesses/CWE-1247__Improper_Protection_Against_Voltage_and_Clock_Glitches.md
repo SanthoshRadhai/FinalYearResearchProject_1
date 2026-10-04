@@ -1,0 +1,29 @@
+# CWE-1247: Improper Protection Against Voltage and Clock Glitches
+
+**Abstraction:** Base  
+**Status:** Stable  
+**Reference:** https://cwe.mitre.org/data/definitions/1247.html  
+
+## Description
+The device does not contain or contains incorrectly implemented circuitry or sensors to detect and mitigate voltage and clock glitches and protect sensitive information or software contained on the device.
+
+## Extended Description
+A device might support features such as secure boot which are supplemented with hardware and firmware support. This involves establishing a chain of trust, starting with an immutable root of trust by checking the signature of the next stage (culminating with the OS and runtime software) against a golden value before transferring control. The intermediate stages typically set up the system in a secure state by configuring several access control settings. Similarly, security logic for exercising a debug or testing interface may be implemented in hardware, firmware, or both. A device needs to guard against fault attacks such as voltage glitches and clock glitches that an attacker may employ in an attempt to compromise the system.
+
+## Related Weaknesses
+- ChildOf: CWE-1384
+
+## Common Consequences
+- Scope: Confidentiality, Integrity, Availability, Access Control; Impact: Gain Privileges or Assume Identity, Bypass Protection Mechanism, Read Memory, Modify Memory, Execute Unauthorized Code or Commands
+
+## Potential Mitigations
+- [Architecture and Design, Implementation] At the circuit-level, using Tunable Replica Circuits (TRCs) or special flip-flops such as Razor flip-flops helps mitigate glitch attacks. Working at the SoC or platform base, level sensors may be implemented to detect glitches. Implementing redundancy in security-sensitive code (e.g., where checks are performed)also can help with mitigation of glitch attacks.
+
+## Detection Methods
+- [Manual Analysis] Put the processor in an infinite loop, which is then followed by instructions that should not ever be executed, since the loop is not expected to exit. After the loop, toggle an I/O bit (for oscilloscope monitoring purposes), print a console message, and reenter the loop. Note that to ensure that the loop exit is actually captured, many NOP instructions should be coded after the loop branch instruction and before the I/O bit toggle and the print statement. Margining the clock consists of varying the clock frequency until an anomaly occurs. This could be a continuous frequency change or it could be a single cycle. The single cycle method is described here. For every 1000th clock pulse, the clock cycle is shortened by 10 percent. If no effect is observed, the width is shortened by 20%. This process is continued in 10% increments up to and including 50%. Note that the cycle time may be increased as well, down to seconds per cycle. Separately, the voltage is margined. Note that the voltage could be increased or decreased. Increasing the voltage has limits, as the circuitry may not be able to withstand a drastically increased voltage. This process starts with a 5% reduction of the DC supply to the CPU chip for 5 millisecond repeated at 1KHz. If this has no effect, the process is repeated, but a 10% reduction is used. This process is repeated at 10% increments down to a 50% reduction. If no effects are observed at 5 millisecond, the whole process is repeated using a 10 millisecond pulse. If no effects are observed, the process is repeated in 10 millisecond increments out to 100 millisecond pulses. While these are suggested starting points for testing circuitry for weaknesses, the limits may need to be pushed further at the risk of device damage. See [REF-1217] for descriptions of Smart Card attacks against a clock (section 14.6.2) and using a voltage glitch (section 15.5.3).
+- [Dynamic Analysis with Manual Results Interpretation] During the implementation phase where actual hardware is available, specialized hardware tools and apparatus such as ChipWhisperer may be used to check if the platform is indeed susceptible to voltage and clock glitching attacks.
+- [Architecture or Design Review] Review if the protections against glitching merely transfer the attack target. For example, suppose a critical authentication routine that an attacker would want to bypass is given the protection of modifying certain artifacts from within that specific routine (so that if the routine is bypassed, one can examine the artifacts and figure out that an attack must have happened). However, if the attacker has the ability to bypass the critical authentication routine, they might also have the ability to bypass the other protection routine that checks the artifacts. Basically, depending on these kind of protections is akin to resorting to "Security by Obscurity".
+- [Architecture or Design Review] Many SoCs come equipped with a built-in Dynamic Voltage and Frequency Scaling (DVFS) that can control the voltage and clocks via software alone. However, there have been demonstrated attacks (like Plundervolt and CLKSCREW) that target this DVFS [REF-1081] [REF-1082]. During the design and implementation phases, one needs to check if the interface to this power management feature is available from unprivileged SW (CWE-1256), which would make the attack very easy.
+
+## Demonstrative Examples (summary)
+- Below is a representative snippet of C code that is part of the secure-boot flow. A signature of the runtime-firmware image is calculated and compared against a golden value. If the signatures match, the bootloader loads runtime firmware. If there is no match, an error halt occurs. If the underlying hardware executing this code does not contain any circuitry or sensors to detect voltage or clock glitches, an attacker might launch a fault-injection attack right when the signature check is happening (at the location marked with the comment), causing a bypass of the signature-checking process.

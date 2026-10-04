@@ -1,0 +1,10 @@
+langchain
+langchain-openai
+langchain-mcp-adapters
+langgraph
+langgraph-checkpoint-sqlite
+mcp
+gradio
+httpx
+cvss
+rank_bm25

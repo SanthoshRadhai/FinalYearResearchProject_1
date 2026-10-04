@@ -1,0 +1,50 @@
+{
+  "all": {
+    "runs": 150,
+    "completed": 150,
+    "answered": 148,
+    "accepted_status": {
+      "correct": 148
+    },
+    "displayed_status": {
+      "correct": 150
+    },
+    "finding_table": {
+      "correct|verified": 148,
+      "correct|rejected": 20,
+      "incorrect|rejected": 1
+    }
+  },
+  "off": {
+    "runs": 150,
+    "completed": 149,
+    "answered": 149,
+    "accepted_status": {
+      "correct": 148,
+      "incorrect": 1
+    },
+    "displayed_status": {
+      "correct": 148,
+      "incorrect": 1
+    },
+    "finding_table": {
+      "correct|verified": 148,
+      "incorrect|verified": 1
+    }
+  },
+  "on": {
+    "runs": 150,
+    "completed": 149,
+    "answered": 17,
+    "accepted_status": {
+      "correct": 17
+    },
+    "displayed_status": {
+      "correct": 149
+    },
+    "finding_table": {
+      "correct|rejected": 416,
+      "correct|verified": 17
+    }
+  }
+}

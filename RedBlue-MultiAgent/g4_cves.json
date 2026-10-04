@@ -1,0 +1,2349 @@
+{
+  "seed": 42,
+  "built": "2026-10-04T15:58:08",
+  "kev_catalog_version": "2026.09.22",
+  "excluded_dev_cves": [
+    "CVE-2014-0160",
+    "CVE-2017-0144",
+    "CVE-2017-5638",
+    "CVE-2019-0708",
+    "CVE-2020-1472",
+    "CVE-2021-44228",
+    "CVE-2022-30190",
+    "CVE-2023-4863",
+    "CVE-2024-3400",
+    "CVE-2026-90829",
+    "CVE-2026-9862"
+  ],
+  "n_eval": 50,
+  "cves": [
+    {
+      "cve_id": "CVE-2026-34197",
+      "published": "2026-04-07T09:16:20.967",
+      "vuln_status": "Analyzed",
+      "description": "Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.\n\nApache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including\nBrokerService.addNetworkConnector(String) and BrokerService.addConnector(String).\n\nAn authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport's brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext.\nBecause Spring's ResourceXmlApplicationContext instantiates all singleton beans before the BrokerService validates the configuration, arbitrary code execution occurs on the broker's JVM through bean factory methods such as Runtime.exec().\n\n\n\nThis issue affects Apache ActiveMQ Broker: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ All: before 5.19.4, from 6.0.0 before 6.2.3; Apache ActiveMQ: before 5.19.4, from 6.0.0 before 6.2.3.\n\n\n\nUsers are recommended to upgrade to version 5.19.4 or 6.2.3, which fixes the issue",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-34197', 'description': \"Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.\\n\\nApache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including\\nBrokerService.addNetworkConnector(String) and BrokerService.addConnector(String).\\n\\nAn authenticated attacker can invoke these operations with a crafted discovery URI that triggers the VM transport's brokerConfig parameter to load a remote Spring XML application context using ResourceXmlApplicationContext.\\nBecause Spring's ResourceXmlApplicationContext instantiates all singleton beans befor",
+      "nvd_kev_date": "2026-04-16",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2017-12234",
+      "published": "2017-09-29T01:34:48.857",
+      "vuln_status": "Analyzed",
+      "description": "Multiple vulnerabilities in the implementation of the Common Industrial Protocol (CIP) feature in Cisco IOS 12.4 through 15.6 could allow an unauthenticated, remote attacker to cause an affected device to reload, resulting in a denial of service (DoS) condition. The vulnerabilities are due to the improper parsing of crafted CIP packets destined to an affected device. An attacker could exploit these vulnerabilities by sending crafted CIP packets to be processed by an affected device. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a DoS condition. Cisco Bug IDs: CSCvc43709.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2017-12234', 'description': 'Multiple vulnerabilities in the implementation of the Common Industrial Protocol (CIP) feature in Cisco IOS 12.4 through 15.6 could allow an unauthenticated, remote attacker to cause an affected device to reload, resulting in a denial of service (DoS) condition. The vulnerabilities are due to the improper parsing of crafted CIP packets destined to an affected device. An attacker could exploit these vulnerabilities by sending crafted CIP packets to be processed by an affected device. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a DoS condition. Cisco Bug IDs: CSCvc43709.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H', 'cvss_version': '3.1', 'base_score': 7.5, 'severity': 'HIGH",
+      "nvd_kev_date": "2022-03-03",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2017-1000486",
+      "published": "2018-01-03T20:29:00.643",
+      "vuln_status": "Analyzed",
+      "description": "Primetek Primefaces 5.x is vulnerable to a weak encryption flaw resulting in remote code execution",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2017-1000486', 'description': 'Primetek Primefaces 5.x is vulnerable to a weak encryption flaw resulting in remote code execution', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['http://blog.mindedsecurity.com/2016/02/rce-in-oracle-netbeans-opensource.html', 'https://cryptosense.com/weak-encryption-flaw-in-primefaces/', 'https://github.com/primefaces/primefaces/issues/1152', 'https://www.exploit-db.com/exploits/43733/', 'http://blog.mindedsecurity.com/2016/02/rce-in-oracle-netbeans-opensource.html', 'https://cryptosense.com/weak-encryption-flaw-in-primefaces/', 'https://github.com/primefaces/primefaces/issues/1152', 'https://www.exploit-db.com/exploits/43733/', 'https://www.cis",
+      "nvd_kev_date": "2022-01-10",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2023-36847",
+      "published": "2023-08-17T20:15:10.553",
+      "vuln_status": "Analyzed",
+      "description": "A Missing Authentication for Critical Function vulnerability in Juniper Networks Junos OS on EX Series allows an unauthenticated, network-based attacker to cause limited impact to the file system integrity.\n\n\n\n\n\nWith a specific request to installAppPackage.php that doesn't require authentication an attacker is able to upload arbitrary files via J-Web, leading to a loss of \n\nintegrity\n\nfor a certain \n\npart of the file system, which may allow chaining to other vulnerabilities.\n\n\nThis issue affects Juniper Networks Junos OS on EX Series:\n\n\n\n  *  All versions prior to 20.4R3-S8;\n  *  21.1 versions 21.1R1 and later;\n  *  21.2 versions prior to 21.2R3-S6;\n  *  21.3 versions \n\nprior to \n\n 21.3R3-S5;\n  *  21.4 versions \n\nprior to \n\n21.4R3-S4;\n  *  22.1 versions \n\nprior to \n\n22.1R3-S3;\n  *  22.2 versions \n\nprior to \n\n22.2R3-S1;\n  *  22.3 versions \n\nprior to \n\n22.3R2-S2, 22.3R3;\n  *  22.4 versions \n\nprior to \n\n22.4R2-S1, 22.4R3.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+          "source": "sirt@juniper.net",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2023-36847', 'description': \"A Missing Authentication for Critical Function vulnerability in Juniper Networks Junos OS on EX Series allows an unauthenticated, network-based attacker to cause limited impact to the file system integrity.\\n\\n\\n\\n\\n\\nWith a specific request to installAppPackage.php that doesn't require authentication an attacker is able to upload arbitrary files via J-Web, leading to a loss of \\n\\nintegrity\\n\\nfor a certain \\n\\npart of the file system, which may allow chaining to other vulnerabilities.\\n\\n\\nThis issue affects Juniper Networks Junos OS on EX Series:\\n\\n\\n\\n  *  All versions prior to 20.4R3-S8;\\n  *  21.1 versions 21.1R1 and later;\\n  *  21.2 versions prior to 21.2R3-S6;\\n  *  21.3 versions \\n\\nprior to \\n\\n 21.3R3-S5;\\n  *  21.4 versions \\n\\npri",
+      "nvd_kev_date": "2023-11-13",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2024-1086",
+      "published": "2024-01-31T13:15:10.827",
+      "vuln_status": "Analyzed",
+      "description": "A use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\n\n\nThe nft_verdict_init() function allows positive values as drop error within the hook verdict, and hence the nf_hook_slow() function can cause a double free vulnerability when NF_DROP is issued with a drop error which resembles NF_ACCEPT.\n\n\n\nWe recommend upgrading past commit f342de4e2f33e0e39165d8639387aa6c19dff660.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "cve-coordination@google.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2024-1086', 'description': \"A use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\\n\\n\\n\\nThe nft_verdict_init() function allows positive values as drop error within the hook verdict, and hence the nf_hook_slow() function can cause a double free vulnerability when NF_DROP is issued with a drop error which resembles NF_ACCEPT.\\n\\n\\n\\nWe recommend upgrading past commit f342de4e2f33e0e39165d8639387aa6c19dff660.\", 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.8, 'severity': 'HIGH', 'references': ['http://www.openwall.com/lists/oss-security/2024/04/10/22', 'http://www.openwall.com/lists/oss-security/2024/04/10/23', 'http://www.openwall.com/",
+      "nvd_kev_date": "2024-05-30",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2014-1776",
+      "published": "2014-04-27T10:55:03.340",
+      "vuln_status": "Analyzed",
+      "description": "Use-after-free vulnerability in Microsoft Internet Explorer 6 through 11 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via vectors related to the CMarkup::IsConnectedToPrimaryMarkup function, as exploited in the wild in April 2014.  NOTE: this issue originally emphasized VGX.DLL, but Microsoft clarified that \"VGX.DLL does not contain the vulnerable code leveraged in this exploit. Disabling VGX.DLL is an exploit-specific workaround that provides an immediate, effective workaround to help block known attacks.\"",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 10.0,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2014-1776', 'description': 'Use-after-free vulnerability in Microsoft Internet Explorer 6 through 11 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via vectors related to the CMarkup::IsConnectedToPrimaryMarkup function, as exploited in the wild in April 2014.  NOTE: this issue originally emphasized VGX.DLL, but Microsoft clarified that \"VGX.DLL does not contain the vulnerable code leveraged in this exploit. Disabling VGX.DLL is an exploit-specific workaround that provides an immediate, effective workaround to help block known attacks.\"', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['http://blogs.technet.com/b/srd/archive/201",
+      "nvd_kev_date": "2022-01-28",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2018-4939",
+      "published": "2018-05-19T17:29:01.480",
+      "vuln_status": "Analyzed",
+      "description": "Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Deserialization of Untrusted Data vulnerability. Successful exploitation could lead to arbitrary code execution.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 10.0,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2018-4939', 'description': 'Adobe ColdFusion Update 5 and earlier versions, ColdFusion 11 Update 13 and earlier versions have an exploitable Deserialization of Untrusted Data vulnerability. Successful exploitation could lead to arbitrary code execution.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['http://www.securityfocus.com/bid/103718', 'https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html', 'http://www.securityfocus.com/bid/103718', 'https://helpx.adobe.com/security/products/coldfusion/apsb18-14.html', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-4939']}",
+      "nvd_kev_date": "2021-11-03",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2024-57728",
+      "published": "2025-01-15T23:15:09.777",
+      "vuln_status": "Analyzed",
+      "description": "SimpleHelp remote support software v5.5.7 and before allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited to execute arbitrary code on the host in the context of the SimpleHelp server user.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.2,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.2,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2024-57728', 'description': 'SimpleHelp remote support software v5.5.7 and before allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited to execute arbitrary code on the host in the context of the SimpleHelp server user.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.2, 'severity': 'HIGH', 'references': ['https://simple-help.com/kb---security-vulnerabilities-01-2025#security-vulnerabilities-in-simplehelp-5-5-7-and-earlier', 'https://www.horizon3.ai/attack-research/disclosures/critical-vulnerabilities-in-simplehelp-remote-support-software/', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-57728', 'h",
+      "nvd_kev_date": "2026-04-24",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2015-7755",
+      "published": "2015-12-19T14:59:01.453",
+      "vuln_status": "Analyzed",
+      "description": "Juniper ScreenOS 6.2.0r15 through 6.2.0r18, 6.3.0r12 before 6.3.0r12b, 6.3.0r13 before 6.3.0r13b, 6.3.0r14 before 6.3.0r14b, 6.3.0r15 before 6.3.0r15b, 6.3.0r16 before 6.3.0r16b, 6.3.0r17 before 6.3.0r17b, 6.3.0r18 before 6.3.0r18b, 6.3.0r19 before 6.3.0r19b, and 6.3.0r20 before 6.3.0r21 allows remote attackers to obtain administrative access by entering an unspecified password during a (1) SSH or (2) TELNET session.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 10.0,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2015-7755', 'description': 'Juniper ScreenOS 6.2.0r15 through 6.2.0r18, 6.3.0r12 before 6.3.0r12b, 6.3.0r13 before 6.3.0r13b, 6.3.0r14 before 6.3.0r14b, 6.3.0r15 before 6.3.0r15b, 6.3.0r16 before 6.3.0r16b, 6.3.0r17 before 6.3.0r17b, 6.3.0r18 before 6.3.0r18b, 6.3.0r19 before 6.3.0r19b, and 6.3.0r20 before 6.3.0r21 allows remote attackers to obtain administrative access by entering an unspecified password during a (1) SSH or (2) TELNET session.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['http://arstechnica.com/security/2015/12/unauthorized-code-in-juniper-firewalls-decrypts-encrypted-vpn-traffic/', 'http://kb.juniper.net/InfoCenter/index?page=content&id=JSA10713', 'http://",
+      "nvd_kev_date": "2025-10-02",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2025-35939",
+      "published": "2025-05-07T23:15:54.103",
+      "vuln_status": "Analyzed",
+      "description": "Craft CMS stores arbitrary content provided by unauthenticated users in session files. This content could be accessed and executed, possibly using an independent vulnerability. Craft CMS redirects requests that require authentication to the login page and generates a session file on the server at '/var/lib/php/sessions'. Such session files are named 'sess_[session_value]', where '[session_value]' is provided to the client in a 'Set-Cookie' response header. Craft CMS stores the return URL requested by the client without sanitizing parameters. Consequently, an unauthenticated client can introduce arbitrary values, such as PHP code, to a known local file location on the server. Craft CMS versions 5.7.5 and 4.15.3 have been released to address this issue.",
+      "scores": [
+        {
+          "metric": "cvssMetricV40",
+          "score": 6.9,
+          "severity": "MEDIUM",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+          "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-35939', 'description': \"Craft CMS stores arbitrary content provided by unauthenticated users in session files. This content could be accessed and executed, possibly using an independent vulnerability. Craft CMS redirects requests that require authentication to the login page and generates a session file on the server at '/var/lib/php/sessions'. Such session files are named 'sess_[session_value]', where '[session_value]' is provided to the client in a 'Set-Cookie' response header. Craft CMS stores the return URL requested by the client without sanitizing parameters. Consequently, an unauthenticated client can introduce arbitrary values, such as PHP code, to a known local file location on the server. Craft CMS versions 5.7.5 and 4.15.3 have been released to address this ",
+      "nvd_kev_date": "2025-06-02",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2024-43468",
+      "published": "2024-10-08T18:15:09.537",
+      "vuln_status": "Analyzed",
+      "description": "Microsoft Configuration Manager Remote Code Execution Vulnerability",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "secure@microsoft.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2024-43468', 'description': 'Microsoft Configuration Manager Remote Code Execution Vulnerability', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43468', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-43468']}",
+      "nvd_kev_date": "2026-02-12",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2018-8589",
+      "published": "2018-11-14T01:29:02.067",
+      "vuln_status": "Analyzed",
+      "description": "An elevation of privilege vulnerability exists when Windows improperly handles calls to Win32k.sys, aka \"Windows Win32k Elevation of Privilege Vulnerability.\" This affects Windows Server 2008, Windows 7, Windows Server 2008 R2.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 7.2,
+          "severity": "HIGH",
+          "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2018-8589', 'description': 'An elevation of privilege vulnerability exists when Windows improperly handles calls to Win32k.sys, aka \"Windows Win32k Elevation of Privilege Vulnerability.\" This affects Windows Server 2008, Windows 7, Windows Server 2008 R2.', 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.8, 'severity': 'HIGH', 'references': ['http://www.securityfocus.com/bid/105796', 'http://www.securitytracker.com/id/1042140', 'https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8589', 'http://www.securityfocus.com/bid/105796', 'http://www.securitytracker.com/id/1042140', 'https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8589', 'https://www.cisa.gov/known-exploited-vuln",
+      "nvd_kev_date": "2022-05-23",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2021-28310",
+      "published": "2021-04-13T20:15:16.267",
+      "vuln_status": "Analyzed",
+      "description": "Win32k Elevation of Privilege Vulnerability",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "secure@microsoft.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 4.6,
+          "severity": "MEDIUM",
+          "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2021-28310', 'description': 'Win32k Elevation of Privilege Vulnerability', 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.8, 'severity': 'HIGH', 'references': ['https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-28310', 'https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-28310', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-28310']}",
+      "nvd_kev_date": "2021-11-03",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2022-27593",
+      "published": "2022-09-08T11:15:19.503",
+      "vuln_status": "Analyzed",
+      "description": "An externally controlled reference to a resource vulnerability has been reported to affect QNAP NAS running Photo Station. If exploited, This could allow an attacker to modify system files. We have already fixed the vulnerability in the following versions: QTS 5.0.1: Photo Station 6.1.2 and later QTS 5.0.0/4.5.x: Photo Station 6.0.22 and later QTS 4.3.6: Photo Station 5.7.18 and later QTS 4.3.3: Photo Station 5.4.15 and later QTS 4.2.6: Photo Station 5.2.14 and later",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 10.0,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:H/A:H",
+          "source": "security@qnapsecurity.com.tw",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.1,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-27593', 'description': 'An externally controlled reference to a resource vulnerability has been reported to affect QNAP NAS running Photo Station. If exploited, This could allow an attacker to modify system files. We have already fixed the vulnerability in the following versions: QTS 5.0.1: Photo Station 6.1.2 and later QTS 5.0.0/4.5.x: Photo Station 6.0.22 and later QTS 4.3.6: Photo Station 5.7.18 and later QTS 4.3.3: Photo Station 5.4.15 and later QTS 4.2.6: Photo Station 5.2.14 and later', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:H/A:H', 'cvss_version': '3.1', 'base_score': 10.0, 'severity': 'CRITICAL', 'references': ['https://www.qnap.com/en/security-advisory/qsa-22-24', 'https://www.qnap.com/en/security-advisory/qsa-22-24', 'https://www.cisa.gov/know",
+      "nvd_kev_date": "2022-09-08",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2020-16010",
+      "published": "2020-11-03T03:15:15.603",
+      "vuln_status": "Analyzed",
+      "description": "Heap buffer overflow in UI in Google Chrome on Android prior to 86.0.4240.185 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.6,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.6,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 6.8,
+          "severity": "MEDIUM",
+          "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2020-16010', 'description': 'Heap buffer overflow in UI in Google Chrome on Android prior to 86.0.4240.185 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.6, 'severity': 'CRITICAL', 'references': ['https://chromereleases.googleblog.com/2020/11/chrome-for-android-update.html', 'https://crbug.com/1144368', 'https://chromereleases.googleblog.com/2020/11/chrome-for-android-update.html', 'https://crbug.com/1144368', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-16010']}",
+      "nvd_kev_date": "2021-11-03",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-21525",
+      "published": "2026-02-10T18:16:34.930",
+      "vuln_status": "Analyzed",
+      "description": "Null pointer dereference in Windows Remote Access Connection Manager allows an unauthorized attacker to deny service locally.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.2,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "source": "secure@microsoft.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-21525', 'description': 'Null pointer dereference in Windows Remote Access Connection Manager allows an unauthorized attacker to deny service locally.', 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H', 'cvss_version': '3.1', 'base_score': 6.2, 'severity': 'MEDIUM', 'references': ['https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21525', 'https://www.vicarius.io/vsociety/posts/cve-2026-21525-detection-script-dos-vulnerability-in-windows-remote-access-connection-manager', 'https://www.vicarius.io/vsociety/posts/cve-2026-21525-mitigation-script-dos-vulnerability-in-windows-remote-access-connection-manager', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21525']}",
+      "nvd_kev_date": "2026-02-10",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2024-5274",
+      "published": "2024-05-28T15:15:10.443",
+      "vuln_status": "Analyzed",
+      "description": "Type Confusion in V8 in Google Chrome prior to 125.0.6422.112 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.6,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.3,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2024-5274', 'description': 'Type Confusion in V8 in Google Chrome prior to 125.0.6422.112 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.6, 'severity': 'CRITICAL', 'references': ['https://chromereleases.googleblog.com/2024/05/stable-channel-update-for-desktop_23.html', 'https://issues.chromium.org/issues/341663589', 'https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AVC3FNI7HZLVSRIFBVUSBHI233DZYBKP/', 'https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T6IBUYVPD4MIFQNNYBGAPI5MOECWXXOB/', 'https://chromer",
+      "nvd_kev_date": "2024-05-28",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-28318",
+      "published": "2026-06-04T15:16:50.407",
+      "vuln_status": "Analyzed",
+      "description": "SolarWinds Serv-U is susceptible to specially crafted POST requests that crash the Serv-U service without authentication using Content-Encoding: deflate. Mitigation steps are provided to secure customer environments in the SolarWinds Trust Center if you are unable to deploy the update",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "source": "psirt@solarwinds.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-28318', 'description': 'SolarWinds Serv-U is susceptible to specially crafted POST requests that crash the Serv-U service without authentication using Content-Encoding: deflate. Mitigation steps are provided to secure customer environments in the SolarWinds Trust Center if you are unable to deploy the update', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H', 'cvss_version': '3.1', 'base_score': 7.5, 'severity': 'HIGH', 'references': ['https://documentation.solarwinds.com/en/success_center/servu/content/release_notes/servu_15-5-4-hotfix-1_release_notes.htm', 'https://www.solarwinds.com/trust-center/security-advisories/CVE-2026-28318', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-28318']}",
+      "nvd_kev_date": "2026-06-05",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2018-14634",
+      "published": "2018-09-25T21:29:00.390",
+      "vuln_status": "Analyzed",
+      "description": "An integer overflow flaw was found in the Linux kernel's create_elf_tables() function. An unprivileged local user with access to SUID (or otherwise privileged) binary could use this flaw to escalate their privileges on the system. Kernel versions 2.6.x, 3.10.x and 4.14.x are believed to be vulnerable.",
+      "scores": [
+        {
+          "metric": "cvssMetricV30",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "secalert@redhat.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV30",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 7.2,
+          "severity": "HIGH",
+          "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2018-14634', 'description': \"An integer overflow flaw was found in the Linux kernel's create_elf_tables() function. An unprivileged local user with access to SUID (or otherwise privileged) binary could use this flaw to escalate their privileges on the system. Kernel versions 2.6.x, 3.10.x and 4.14.x are believed to be vulnerable.\", 'cvss_vector': 'CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.0', 'base_score': 7.8, 'severity': 'HIGH', 'references': ['http://www.openwall.com/lists/oss-security/2021/07/20/2', 'http://www.securityfocus.com/bid/105407', 'https://access.redhat.com/errata/RHSA-2018:2748', 'https://access.redhat.com/errata/RHSA-2018:2763', 'https://access.redhat.com/errata/RHSA-2018:2846', 'https://access.redhat.com/errata/RHSA-2018:2924', 'htt",
+      "nvd_kev_date": "2026-01-26",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2023-50224",
+      "published": "2024-05-03T03:16:10.833",
+      "vuln_status": "Analyzed",
+      "description": "TP-Link TL-WR841N dropbearpwd Improper Authentication Information Disclosure Vulnerability. This vulnerability allows network-adjacent attackers to disclose sensitive information on affected installations of TP-Link TL-WR841N routers. Authentication is not required to exploit this vulnerability. The specific flaw exists within the httpd service, which listens on TCP port 80 by default. The issue results from improper authentication. An attacker can leverage this vulnerability to disclose stored credentials, leading to further compromise. Was ZDI-CAN-19899.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "source": "zdi-disclosures@trendmicro.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2023-50224', 'description': 'TP-Link TL-WR841N dropbearpwd Improper Authentication Information Disclosure Vulnerability. This vulnerability allows network-adjacent attackers to disclose sensitive information on affected installations of TP-Link TL-WR841N routers. Authentication is not required to exploit this vulnerability. The specific flaw exists within the httpd service, which listens on TCP port 80 by default. The issue results from improper authentication. An attacker can leverage this vulnerability to disclose stored credentials, leading to further compromise. Was ZDI-CAN-19899.', 'cvss_vector': 'CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N', 'cvss_version': '3.1', 'base_score': 6.5, 'severity': 'MEDIUM', 'references': ['https://www.tp-link.com/en/support/download/tl-",
+      "nvd_kev_date": "2025-09-03",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2022-26258",
+      "published": "2022-03-28T00:15:07.813",
+      "vuln_status": "Analyzed",
+      "description": "D-Link DIR-820L 1.05B03 was discovered to contain remote command execution (RCE) vulnerability via HTTP POST to get set ccp.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-26258', 'description': 'D-Link DIR-820L 1.05B03 was discovered to contain remote command execution (RCE) vulnerability via HTTP POST to get set ccp.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['https://github.com/skyedai910/Vuln/tree/master/DIR-820L/command_execution_0', 'https://github.com/zhizhuoshuma/cve_info_data/blob/ccaed4b94ba762eb8a8e003bfa762a7754b8182e/Vuln/Vuln/DIR-820L/command_execution_0/README.md', 'https://www.dlink.com/en/security-bulletin/', 'https://github.com/skyedai910/Vuln/tree/master/DIR-820L/command_execution_0', 'https://github.com/zhizhuoshuma/cve_info_data/blob/ccaed4b94ba762eb8a8e003bfa762a7754b8182e/Vuln/Vuln/DIR-820L/command_execution_0/REA",
+      "nvd_kev_date": "2022-09-08",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2023-24955",
+      "published": "2023-05-09T18:15:13.317",
+      "vuln_status": "Analyzed",
+      "description": "Microsoft SharePoint Server Remote Code Execution Vulnerability",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.2,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "source": "secure@microsoft.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2023-24955', 'description': 'Microsoft SharePoint Server Remote Code Execution Vulnerability', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.2, 'severity': 'HIGH', 'references': ['https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24955', 'https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24955', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-24955']}",
+      "nvd_kev_date": "2024-03-26",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2011-3544",
+      "published": "2011-10-19T21:55:01.097",
+      "vuln_status": "Analyzed",
+      "description": "Unspecified vulnerability in the Java Runtime Environment component in Oracle Java SE JDK and JRE 7 and 6 Update 27 and earlier allows remote untrusted Java Web Start applications and untrusted Java applets to affect confidentiality, integrity, and availability via unknown vectors related to Scripting.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 10.0,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2011-3544', 'description': 'Unspecified vulnerability in the Java Runtime Environment component in Oracle Java SE JDK and JRE 7 and 6 Update 27 and earlier allows remote untrusted Java Web Start applications and untrusted Java applets to affect confidentiality, integrity, and availability via unknown vectors related to Scripting.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['http://lists.opensuse.org/opensuse-security-announce/2012-01/msg00049.html', 'http://marc.info/?l=bugtraq&m=132750579901589&w=2', 'http://marc.info/?l=bugtraq&m=134254866602253&w=2', 'http://marc.info/?l=bugtraq&m=134254957702612&w=2', 'http://rhn.redhat.com/errata/RHSA-2013-1455.html', 'http://secunia.c",
+      "nvd_kev_date": "2022-03-03",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2026-82329",
+      "published": "2026-08-28T20:20:21.293",
+      "vuln_status": "Analyzed",
+      "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "reefs@jfrog.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-82329', 'description': 'JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['https://docs.jfrog.com/releases/docs/artifactory-self-managed-releases', 'https://docs.jfrog.com/releases/docs/jfrog-security-advisories', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-82329']}",
+      "nvd_kev_date": "2026-09-02",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2021-20090",
+      "published": "2021-04-29T15:15:10.630",
+      "vuln_status": "Analyzed",
+      "description": "A path traversal vulnerability in the web interfaces of Buffalo WSR-2533DHPL2 firmware version <= 1.02 and WSR-2533DHP3 firmware version <= 1.24 could allow unauthenticated remote attackers to bypass authentication.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2021-20090', 'description': 'A path traversal vulnerability in the web interfaces of Buffalo WSR-2533DHPL2 firmware version <= 1.02 and WSR-2533DHP3 firmware version <= 1.24 could allow unauthenticated remote attackers to bypass authentication.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['https://www.kb.cert.org/vuls/id/914124', 'https://www.secpod.com/blog/arcadyan-based-routers-and-modems-under-active-exploitation/', 'https://www.tenable.com/security/research/tra-2021-13', 'https://www.kb.cert.org/vuls/id/914124', 'https://www.secpod.com/blog/arcadyan-based-routers-and-modems-under-active-exploitation/', 'https://www.tenable.com/security/research/tra-2021-13', 'https://ww",
+      "nvd_kev_date": "2021-11-03",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2021-21985",
+      "published": "2021-05-26T15:15:07.937",
+      "vuln_status": "Analyzed",
+      "description": "The vSphere Client (HTML5) contains a remote code execution vulnerability due to lack of input validation in the Virtual SAN Health Check plug-in which is enabled by default in vCenter Server. A malicious actor with network access to port 443 may exploit this issue to execute commands with unrestricted privileges on the underlying operating system that hosts vCenter Server.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 10.0,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2021-21985', 'description': 'The vSphere Client (HTML5) contains a remote code execution vulnerability due to lack of input validation in the Virtual SAN Health Check plug-in which is enabled by default in vCenter Server. A malicious actor with network access to port 443 may exploit this issue to execute commands with unrestricted privileges on the underlying operating system that hosts vCenter Server.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['http://packetstormsecurity.com/files/162812/VMware-Security-Advisory-2021-0010.html', 'http://packetstormsecurity.com/files/163487/VMware-vCenter-Server-Virtual-SAN-Health-Check-Remote-Code-Execution.html', 'https://www.vmware.com/",
+      "nvd_kev_date": "2021-11-03",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2015-2546",
+      "published": "2015-09-09T00:59:53.207",
+      "vuln_status": "Analyzed",
+      "description": "The kernel-mode driver in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT Gold and 8.1, and Windows 10 allows local users to gain privileges via a crafted application, aka \"Win32k Memory Corruption Elevation of Privilege Vulnerability,\" a different vulnerability than CVE-2015-2511, CVE-2015-2517, and CVE-2015-2518.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.2,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 6.9,
+          "severity": "MEDIUM",
+          "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2015-2546', 'description': 'The kernel-mode driver in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT Gold and 8.1, and Windows 10 allows local users to gain privileges via a crafted application, aka \"Win32k Memory Corruption Elevation of Privilege Vulnerability,\" a different vulnerability than CVE-2015-2511, CVE-2015-2517, and CVE-2015-2518.', 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 8.2, 'severity': 'HIGH', 'references': ['http://www.securityfocus.com/bid/76608', 'http://www.securitytracker.com/id/1033485', 'https://docs.microsoft.com/en-us/security-updates/securitybulletins/2015/ms15-097', 'http://www.securityfocus",
+      "nvd_kev_date": "2022-03-15",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2024-29824",
+      "published": "2024-05-31T18:15:11.177",
+      "vuln_status": "Analyzed",
+      "description": "An unspecified SQL Injection vulnerability in Core server of Ivanti EPM 2022 SU5 and prior allows an unauthenticated attacker within the same network to execute arbitrary code.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV30",
+          "score": 9.6,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "source": "support@hackerone.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2024-29824', 'description': 'An unspecified SQL Injection vulnerability in Core server of Ivanti EPM 2022 SU5 and prior allows an unauthenticated attacker within the same network to execute arbitrary code.', 'cvss_vector': 'CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 8.8, 'severity': 'HIGH', 'references': ['https://forums.ivanti.com/s/article/Security-Advisory-May-2024', 'https://forums.ivanti.com/s/article/Security-Advisory-May-2024', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-29824']}",
+      "nvd_kev_date": "2024-10-02",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2022-0995",
+      "published": "2022-03-25T19:15:10.520",
+      "vuln_status": "Analyzed",
+      "description": "An out-of-bounds (OOB) memory write flaw was found in the Linux kernel\u2019s watch_queue event notification subsystem. This flaw can overwrite parts of the kernel state, potentially allowing a local user to gain privileged access or cause a denial of service on the system.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 7.2,
+          "severity": "HIGH",
+          "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-0995', 'description': 'An out-of-bounds (OOB) memory write flaw was found in the Linux kernel\u2019s watch_queue event notification subsystem. This flaw can overwrite parts of the kernel state, potentially allowing a local user to gain privileged access or cause a denial of service on the system.', 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.8, 'severity': 'HIGH', 'references': ['http://packetstormsecurity.com/files/166770/Linux-watch_queue-Filter-Out-Of-Bounds-Write.html', 'http://packetstormsecurity.com/files/166815/Watch-Queue-Out-Of-Bounds-Write.html', 'https://bugzilla.redhat.com/show_bug.cgi?id=2063786', 'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=93ce93587d36493f2f86921fa7992",
+      "nvd_kev_date": "2026-08-26",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2020-4428",
+      "published": "2020-05-07T20:15:12.673",
+      "vuln_status": "Analyzed",
+      "description": "IBM Data Risk Manager 2.0.1, 2.0.2, 2.0.3, and 2.0.4 could allow a remote authenticated attacker to execute arbitrary commands on the system. IBM X-Force ID: 180533.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.1,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV30",
+          "score": 9.1,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+          "source": "psirt@us.ibm.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 9.0,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2020-4428', 'description': 'IBM Data Risk Manager 2.0.1, 2.0.2, 2.0.3, and 2.0.4 could allow a remote authenticated attacker to execute arbitrary commands on the system. IBM X-Force ID: 180533.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.1, 'severity': 'CRITICAL', 'references': ['https://exchange.xforce.ibmcloud.com/vulnerabilities/180533', 'https://www.ibm.com/support/pages/node/6206875', 'http://seclists.org/fulldisclosure/2024/Nov/0', 'http://seclists.org/fulldisclosure/2024/Nov/1', 'https://exchange.xforce.ibmcloud.com/vulnerabilities/180533', 'https://www.ibm.com/support/pages/node/6206875', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-4428']}",
+      "nvd_kev_date": "2021-11-03",
+      "in_kev": true,
+      "pool": "kev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2026-83415",
+      "published": "2026-09-15T20:18:49.903",
+      "vuln_status": "Analyzed",
+      "description": "Vulnerability in the Oracle Coherence product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Difficult to exploit vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Coherence.  Successful attacks of this vulnerability can result in takeover of Oracle Coherence. CVSS 3.1 Base Score 7.5 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "secalert_us@oracle.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-83415', 'description': 'Vulnerability in the Oracle Coherence product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Difficult to exploit vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Coherence.  Successful attacks of this vulnerability can result in takeover of Oracle Coherence. CVSS 3.1 Base Score 7.5 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H).', 'cvss_vector': 'CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.5, 'severity': 'HIGH', 'references': ['https://www.oracle.com/security-alerts/cspusep2026.html']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2025-8467",
+      "published": "2025-08-02T11:15:25.450",
+      "vuln_status": "Analyzed",
+      "description": "A vulnerability was found in code-projects Wazifa System 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /controllers/regcontrol.php. The manipulation of the argument Username leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+      "scores": [
+        {
+          "metric": "cvssMetricV40",
+          "score": 5.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.3,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-8467', 'description': 'A vulnerability was found in code-projects Wazifa System 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /controllers/regcontrol.php. The manipulation of the argument Username leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.', 'cvss_vector': 'CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X', 'cvss_version': '4.0', 'base_score': 5.5, 'severity': 'MEDIUM', 'references': ['https://code-projects.org/', 'https://github.com/wllovemy/cve/issues/12', 'https://vuldb.com/?ctiid.318517', 'https://vu",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2025-38350",
+      "published": "2025-07-19T07:15:22.043",
+      "vuln_status": "Modified",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: Always pass notifications when child class becomes empty\n\nCertain classful qdiscs may invoke their classes' dequeue handler on an\nenqueue operation. This may unexpectedly empty the child qdisc and thus\nmake an in-flight class passive via qlen_notify(). Most qdiscs do not\nexpect such behaviour at this point in time and may re-activate the\nclass eventually anyways which will lead to a use-after-free.\n\nThe referenced fix commit attempted to fix this behavior for the HFSC\ncase by moving the backlog accounting around, though this turned out to\nbe incomplete since the parent's parent may run into the issue too.\nThe following reproducer demonstrates this use-after-free:\n\n    tc qdisc add dev lo root handle 1: drr\n    tc filter add dev lo parent 1: basic classid 1:1\n    tc class add dev lo parent 1: classid 1:1 drr\n    tc qdisc add dev lo parent 1:1 handle 2: hfsc def 1\n    tc class add dev lo parent 2: classid 2:1 hfsc rt m1 8 d 1 m2 0\n    tc qdisc add dev lo parent 2:1 handle 3: netem\n    tc qdisc add dev lo parent 3:1 handle 4: blackhole\n\n    echo 1 | socat -u STDIN UDP4-DATAGRAM:127.0.0.1:8888\n    tc class delete dev lo classid 1:1\n    echo 1 | socat -u STDIN UDP4-DATAGRAM:127.0.0.1:8888\n\nSince backlog accounting issues leading to a use-after-frees on stale\nclass pointers is a recurring pattern at this point, this patch takes\na different approach. Instead of trying to fix the accounting, the patch\nensures that qdisc_tree_reduce_backlog always calls qlen_notify when\nthe child qdisc is empty. This solves the problem because deletion of\nqdiscs always involves a call to qdisc_reset() and / or\nqdisc_purge_queue() which ultimately resets its qlen to 0 thus causing\nthe following qdisc_tree_reduce_backlog() to report to the parent. Note\nthat this may call qlen_notify on passive classes multiple times. This\nis not a problem after the recent patch series that made all the\nclassful qdiscs qlen_notify() handlers idempotent.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-38350', 'description': \"In the Linux kernel, the following vulnerability has been resolved:\\n\\nnet/sched: Always pass notifications when child class becomes empty\\n\\nCertain classful qdiscs may invoke their classes' dequeue handler on an\\nenqueue operation. This may unexpectedly empty the child qdisc and thus\\nmake an in-flight class passive via qlen_notify(). Most qdiscs do not\\nexpect such behaviour at this point in time and may re-activate the\\nclass eventually anyways which will lead to a use-after-free.\\n\\nThe referenced fix commit attempted to fix this behavior for the HFSC\\ncase by moving the backlog accounting around, though this turned out to\\nbe incomplete since the parent's parent may run into the issue too.\\nThe following reproducer demonstrates this use-af",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2022-3300",
+      "published": "2022-10-25T17:15:56.923",
+      "vuln_status": "Modified",
+      "description": "The Form Maker by 10Web WordPress plugin before 1.15.6 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.2,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.2,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-3300', 'description': 'The Form Maker by 10Web WordPress plugin before 1.15.6 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.2, 'severity': 'HIGH', 'references': ['https://wpscan.com/vulnerability/ddc9ed69-d942-4fad-bbf4-1be3b86460d9', 'https://wpscan.com/vulnerability/ddc9ed69-d942-4fad-bbf4-1be3b86460d9']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2025-60162",
+      "published": "2025-09-26T09:15:45.657",
+      "vuln_status": "Deferred",
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PickPlugins Job Board Manager job-board-manager allows DOM-Based XSS.This issue affects Job Board Manager: from n/a through <= 2.1.61.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+          "source": "audit@patchstack.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-60162', 'description': \"Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PickPlugins Job Board Manager job-board-manager allows DOM-Based XSS.This issue affects Job Board Manager: from n/a through <= 2.1.61.\", 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L', 'cvss_version': '3.1', 'base_score': 6.5, 'severity': 'MEDIUM', 'references': ['https://patchstack.com/database/Wordpress/Plugin/job-board-manager/vulnerability/wordpress-job-board-manager-plugin-2-1-61-cross-site-scripting-xss-vulnerability?_s_id=cve']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2022-31206",
+      "published": "2022-07-26T22:15:11.400",
+      "vuln_status": "Modified",
+      "description": "The Omron SYSMAC Nx product family PLCs (NJ series, NY series, NX series, and PMAC series) through 2022-005-18 lack cryptographic authentication. These PLCs are programmed using the SYMAC Studio engineering software (which compiles IEC 61131-3 conformant POU code to native machine code for execution by the PLC's runtime). The resulting machine code is executed by a runtime, typically controlled by a real-time operating system. The logic that is downloaded to the PLC does not seem to be cryptographically authenticated, allowing an attacker to manipulate transmitted object code to the PLC and execute arbitrary machine code on the processor of the PLC's CPU module in the context of the runtime. In the case of at least the NJ series, an RTOS and hardware combination is used that would potentially allow for memory protection and privilege separation and thus limit the impact of code execution. However, it was not confirmed whether these sufficiently segment the runtime from the rest of the RTOS.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-31206', 'description': \"The Omron SYSMAC Nx product family PLCs (NJ series, NY series, NX series, and PMAC series) through 2022-005-18 lack cryptographic authentication. These PLCs are programmed using the SYMAC Studio engineering software (which compiles IEC 61131-3 conformant POU code to native machine code for execution by the PLC's runtime). The resulting machine code is executed by a runtime, typically controlled by a real-time operating system. The logic that is downloaded to the PLC does not seem to be cryptographically authenticated, allowing an attacker to manipulate transmitted object code to the PLC and execute arbitrary machine code on the processor of the PLC's CPU module in the context of the runtime. In the case of at least the NJ series, an RTOS and har",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2022-34414",
+      "published": "2023-03-16T12:15:10.500",
+      "vuln_status": "Modified",
+      "description": "\nDell PowerEdge BIOS and Dell Precision BIOS contain an Improper SMM communication buffer verification vulnerability. A local malicious user with high Privileges may potentially exploit this vulnerability to perform arbitrary code execution or cause denial of service.\n\n",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+          "source": "security_alert@emc.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.7,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-34414', 'description': '\\nDell PowerEdge BIOS and Dell Precision BIOS contain an Improper SMM communication buffer verification vulnerability. A local malicious user with high Privileges may potentially exploit this vulnerability to perform arbitrary code execution or cause denial of service.\\n\\n', 'cvss_vector': 'CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.5, 'severity': 'HIGH', 'references': ['https://www.dell.com/support/kbdoc/en-us/000206296/dsa-2022-204-dell-poweredge-improper-smm-communication-buffer-verification-vulnerability', 'https://www.dell.com/support/kbdoc/en-us/000206296/dsa-2022-204-dell-poweredge-improper-smm-communication-buffer-verification-vulnerability']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-43322",
+      "published": "2026-05-08T14:16:40.810",
+      "vuln_status": "Analyzed",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: hci_sync: Fix UAF in le_read_features_complete\n\nThis fixes the following backtrace caused by hci_conn being freed\nbefore le_read_features_complete but after\nhci_le_read_remote_features_sync so hci_conn_del -> hci_cmd_sync_dequeue\nis not able to prevent it:\n\n==================================================================\nBUG: KASAN: slab-use-after-free in instrument_atomic_read_write include/linux/instrumented.h:96 [inline]\nBUG: KASAN: slab-use-after-free in atomic_dec_and_test include/linux/atomic/atomic-instrumented.h:1383 [inline]\nBUG: KASAN: slab-use-after-free in hci_conn_drop include/net/bluetooth/hci_core.h:1688 [inline]\nBUG: KASAN: slab-use-after-free in le_read_features_complete+0x5b/0x340 net/bluetooth/hci_sync.c:7344\nWrite of size 4 at addr ffff8880796b0010 by task kworker/u9:0/52\n\nCPU: 0 UID: 0 PID: 52 Comm: kworker/u9:0 Not tainted syzkaller #0 PREEMPT(full)\nHardware name: Google Google Compute Engine/Google Compute Engine, BIOS Google 10/25/2025\nWorkqueue: hci0 hci_cmd_sync_work\nCall Trace:\n <TASK>\n __dump_stack lib/dump_stack.c:94 [inline]\n dump_stack_lvl+0x116/0x1f0 lib/dump_stack.c:120\n print_address_description mm/kasan/report.c:378 [inline]\n print_report+0xcd/0x630 mm/kasan/report.c:482\n kasan_report+0xe0/0x110 mm/kasan/report.c:595\n check_region_inline mm/kasan/generic.c:194 [inline]\n kasan_check_range+0x100/0x1b0 mm/kasan/generic.c:200\n instrument_atomic_read_write include/linux/instrumented.h:96 [inline]\n atomic_dec_and_test include/linux/atomic/atomic-instrumented.h:1383 [inline]\n hci_conn_drop include/net/bluetooth/hci_core.h:1688 [inline]\n le_read_features_complete+0x5b/0x340 net/bluetooth/hci_sync.c:7344\n hci_cmd_sync_work+0x1ff/0x430 net/bluetooth/hci_sync.c:334\n process_one_work+0x9ba/0x1b20 kernel/workqueue.c:3257\n process_scheduled_works kernel/workqueue.c:3340 [inline]\n worker_thread+0x6c8/0xf10 kernel/workqueue.c:3421\n kthread+0x3c5/0x780 kernel/kthread.c:463\n ret_from_fork+0x983/0xb10 arch/x86/kernel/process.c:158\n ret_from_fork_asm+0x1a/0x30 arch/x86/entry/entry_64.S:246\n </TASK>\n\nAllocated by task 5932:\n kasan_save_stack+0x33/0x60 mm/kasan/common.c:56\n kasan_save_track+0x14/0x30 mm/kasan/common.c:77\n poison_kmalloc_redzone mm/kasan/common.c:400 [inline]\n __kasan_kmalloc+0xaa/0xb0 mm/kasan/common.c:417\n kmalloc_noprof include/linux/slab.h:957 [inline]\n kzalloc_noprof include/linux/slab.h:1094 [inline]\n __hci_conn_add+0xf8/0x1c70 net/bluetooth/hci_conn.c:963\n hci_conn_add_unset+0x76/0x100 net/bluetooth/hci_conn.c:1084\n le_conn_complete_evt+0x639/0x1f20 net/bluetooth/hci_event.c:5714\n hci_le_enh_conn_complete_evt+0x23d/0x380 net/bluetooth/hci_event.c:5861\n hci_le_meta_evt+0x357/0x5e0 net/bluetooth/hci_event.c:7408\n hci_event_func net/bluetooth/hci_event.c:7716 [inline]\n hci_event_packet+0x685/0x11c0 net/bluetooth/hci_event.c:7773\n hci_rx_work+0x2c9/0xeb0 net/bluetooth/hci_core.c:4076\n process_one_work+0x9ba/0x1b20 kernel/workqueue.c:3257\n process_scheduled_works kernel/workqueue.c:3340 [inline]\n worker_thread+0x6c8/0xf10 kernel/workqueue.c:3421\n kthread+0x3c5/0x780 kernel/kthread.c:463\n ret_from_fork+0x983/0xb10 arch/x86/kernel/process.c:158\n ret_from_fork_asm+0x1a/0x30 arch/x86/entry/entry_64.S:246\n\nFreed by task 5932:\n kasan_save_stack+0x33/0x60 mm/kasan/common.c:56\n kasan_save_track+0x14/0x30 mm/kasan/common.c:77\n __kasan_save_free_info+0x3b/0x60 mm/kasan/generic.c:587\n kasan_save_free_info mm/kasan/kasan.h:406 [inline]\n poison_slab_object mm/kasan/common.c:252 [inline]\n __kasan_slab_free+0x5f/0x80 mm/kasan/common.c:284\n kasan_slab_free include/linux/kasan.h:234 [inline]\n slab_free_hook mm/slub.c:2540 [inline]\n slab_free mm/slub.c:6663 [inline]\n kfree+0x2f8/0x6e0 mm/slub.c:6871\n device_release+0xa4/0x240 drivers/base/core.c:2565\n kobject_cleanup lib/kobject.c:689 [inline]\n kobject_release lib/kobject.c:720 [inline]\n kref_put include/linux/kref.h:65 [inline]\n kobject_put+0x1e7/0x590 lib/kobject.\n---truncated---",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-43322', 'description': 'In the Linux kernel, the following vulnerability has been resolved:\\n\\nBluetooth: hci_sync: Fix UAF in le_read_features_complete\\n\\nThis fixes the following backtrace caused by hci_conn being freed\\nbefore le_read_features_complete but after\\nhci_le_read_remote_features_sync so hci_conn_del -> hci_cmd_sync_dequeue\\nis not able to prevent it:\\n\\n==================================================================\\nBUG: KASAN: slab-use-after-free in instrument_atomic_read_write include/linux/instrumented.h:96 [inline]\\nBUG: KASAN: slab-use-after-free in atomic_dec_and_test include/linux/atomic/atomic-instrumented.h:1383 [inline]\\nBUG: KASAN: slab-use-after-free in hci_conn_drop include/net/bluetooth/hci_core.h:1688 [inline]\\nBUG: KASAN: slab-use-aft",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-22886",
+      "published": "2026-03-03T10:16:06.267",
+      "vuln_status": "Analyzed",
+      "description": "OpenMQ exposes a TCP-based management service (imqbrokerd) that by default requires\nauthentication. However, the product ships with a default administrative account (admin/\nadmin) and does not enforce a mandatory password change on first use. After the first\nsuccessful login, the server continues to accept the default password indefinitely without\nwarning or enforcement.\n\n\nIn real-world deployments, this service is often left enabled without changing the default\ncredentials. As a result, a remote attacker with access to the service port could authenticate\nas an administrator and gain full control of the protocol\u2019s administrative features.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "emo@eclipse.org",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-22886', 'description': 'OpenMQ exposes a TCP-based management service (imqbrokerd) that by default requires\\nauthentication. However, the product ships with a default administrative account (admin/\\nadmin) and does not enforce a mandatory password change on first use. After the first\\nsuccessful login, the server continues to accept the default password indefinitely without\\nwarning or enforcement.\\n\\n\\nIn real-world deployments, this service is often left enabled without changing the default\\ncredentials. As a result, a remote attacker with access to the service port could authenticate\\nas an administrator and gain full control of the protocol\u2019s administrative features.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2023-53005",
+      "published": "2025-03-27T17:15:49.420",
+      "vuln_status": "Modified",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntrace_events_hist: add check for return value of 'create_hist_field'\n\nFunction 'create_hist_field' is called recursively at\ntrace_events_hist.c:1954 and can return NULL-value that's why we have\nto check it to avoid null pointer dereference.\n\nFound by Linux Verification Center (linuxtesting.org) with SVACE.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2023-53005', 'description': \"In the Linux kernel, the following vulnerability has been resolved:\\n\\ntrace_events_hist: add check for return value of 'create_hist_field'\\n\\nFunction 'create_hist_field' is called recursively at\\ntrace_events_hist.c:1954 and can return NULL-value that's why we have\\nto check it to avoid null pointer dereference.\\n\\nFound by Linux Verification Center (linuxtesting.org) with SVACE.\", 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H', 'cvss_version': '3.1', 'base_score': 5.5, 'severity': 'MEDIUM', 'references': ['https://git.kernel.org/stable/c/31b2414abeaa6de0490e85164badc6dcb1bb8ec9', 'https://git.kernel.org/stable/c/592ba7116fa620425725ff0972691f352ba3caf6', 'https://git.kernel.org/stable/c/886aa449235f478e262bbd5dcdee6ed6bc202949'",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2025-55625",
+      "published": "2025-08-22T17:15:34.250",
+      "vuln_status": "Analyzed",
+      "description": "An open redirect vulnerability in Reolink v4.54.0.4.20250526 allows attackers to redirect users to a malicious site via a crafted URL. NOTE: this is disputed by the Supplier because it is intentional behavior that supports redirection to Alexa URLs, which are not guaranteed to remain at the same domain indefinitely.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-55625', 'description': 'An open redirect vulnerability in Reolink v4.54.0.4.20250526 allows attackers to redirect users to a malicious site via a crafted URL. NOTE: this is disputed by the Supplier because it is intentional behavior that supports redirection to Alexa URLs, which are not guaranteed to remain at the same domain indefinitely.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L', 'cvss_version': '3.1', 'base_score': 6.3, 'severity': 'MEDIUM', 'references': ['https://cwe.mitre.org/data/definitions/601.html', 'https://relieved-knuckle-264.notion.site/Reolink-Deeplink-Redirect-21b437003642804a865af2fb02942f66']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-61021",
+      "published": "2026-08-18T21:16:52.607",
+      "vuln_status": "Analyzed",
+      "description": "Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle WebCenter Sites.  While the vulnerability is in Oracle WebCenter Sites, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Sites. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.9,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "source": "secalert_us@oracle.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-61021', 'description': 'Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle WebCenter Sites.  While the vulnerability is in Oracle WebCenter Sites, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Sites. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H', 'cvss_version': '3.1',",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2019-3650",
+      "published": "2019-11-13T23:15:11.887",
+      "vuln_status": "Modified",
+      "description": "Information Disclosure vulnerability in McAfee Advanced Threat Defense (ATD prior to 4.8 allows remote authenticated attackers to gain access to the atduser credentials via carefully constructed GET request extracting insecurely information stored in the database.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "source": "trellixpsirt@trellix.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 4.0,
+          "severity": "MEDIUM",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2019-3650', 'description': 'Information Disclosure vulnerability in McAfee Advanced Threat Defense (ATD prior to 4.8 allows remote authenticated attackers to gain access to the atduser credentials via carefully constructed GET request extracting insecurely information stored in the database.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N', 'cvss_version': '3.1', 'base_score': 5.3, 'severity': 'MEDIUM', 'references': ['https://kc.mcafee.com/corporate/index?page=content&id=SB10304', 'https://kc.mcafee.com/corporate/index?page=content&id=SB10304']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2025-12648",
+      "published": "2026-01-07T12:16:47.120",
+      "vuln_status": "Deferred",
+      "description": "The WP-Members Membership Plugin for WordPress is vulnerable to unauthorized file access in versions up to, and including, 3.5.4.4. This is due to storing user-uploaded files in predictable directories (wp-content/uploads/wpmembers/user_files/<user_id>/) without implementing proper access controls beyond basic directory listing protection (.htaccess with Options -Indexes). This makes it possible for unauthenticated attackers to directly access and download sensitive documents uploaded by site users via direct URL access, granted they can guess or enumerate user IDs and filenames.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "source": "security@wordfence.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-12648', 'description': 'The WP-Members Membership Plugin for WordPress is vulnerable to unauthorized file access in versions up to, and including, 3.5.4.4. This is due to storing user-uploaded files in predictable directories (wp-content/uploads/wpmembers/user_files/<user_id>/) without implementing proper access controls beyond basic directory listing protection (.htaccess with Options -Indexes). This makes it possible for unauthenticated attackers to directly access and download sensitive documents uploaded by site users via direct URL access, granted they can guess or enumerate user IDs and filenames.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N', 'cvss_version': '3.1', 'base_score': 5.3, 'severity': 'MEDIUM', 'references': ['https://plugins.trac.wo",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2020-7537",
+      "published": "2020-12-11T01:15:12.253",
+      "vuln_status": "Modified",
+      "description": "A CWE-754: Improper Check for Unusual or Exceptional Conditions vulnerability exists in Modicon M580, Modicon M340, Legacy Controllers Modicon Quantum & Modicon Premium (see security notifications for affected versions), that could cause denial of service when a specially crafted Read Physical Memory request over Modbus is sent to the controller.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 5.0,
+          "severity": "MEDIUM",
+          "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2020-7537', 'description': 'A CWE-754: Improper Check for Unusual or Exceptional Conditions vulnerability exists in Modicon M580, Modicon M340, Legacy Controllers Modicon Quantum & Modicon Premium (see security notifications for affected versions), that could cause denial of service when a specially crafted Read Physical Memory request over Modbus is sent to the controller.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H', 'cvss_version': '3.1', 'base_score': 7.5, 'severity': 'HIGH', 'references': ['https://www.se.com/ww/en/download/document/SEVD-2020-343-08/', 'https://www.se.com/ww/en/download/document/SEVD-2020-343-08/']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-41273",
+      "published": "2026-04-23T20:16:15.973",
+      "vuln_status": "Modified",
+      "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, Flowise contains an authentication bypass vulnerability that allows an unauthenticated attacker to obtain OAuth 2.0 access tokens associated with a public chatflow. By accessing a public chatflow configuration endpoint, an attacker can retrieve internal workflow data, including OAuth credential identifiers, which can then be used to refresh and obtain valid OAuth 2.0 access tokens without authentication. This vulnerability is fixed in 3.1.0.",
+      "scores": [
+        {
+          "metric": "cvssMetricV40",
+          "score": 7.7,
+          "severity": "HIGH",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:H/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "security-advisories@github.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.2,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-41273', 'description': 'Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, Flowise contains an authentication bypass vulnerability that allows an unauthenticated attacker to obtain OAuth 2.0 access tokens associated with a public chatflow. By accessing a public chatflow configuration endpoint, an attacker can retrieve internal workflow data, including OAuth credential identifiers, which can then be used to refresh and obtain valid OAuth 2.0 access tokens without authentication. This vulnerability is fixed in 3.1.0.', 'cvss_vector': 'CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:H/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X', 'cvss_ver",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2020-27904",
+      "published": "2020-12-08T21:15:13.077",
+      "vuln_status": "Modified",
+      "description": "A logic issue existed resulting in memory corruption. This was addressed with improved state management. This issue is fixed in macOS Big Sur 11.0.1. An application may be able to execute arbitrary code with kernel privileges.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 9.3,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2020-27904', 'description': 'A logic issue existed resulting in memory corruption. This was addressed with improved state management. This issue is fixed in macOS Big Sur 11.0.1. An application may be able to execute arbitrary code with kernel privileges.', 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.8, 'severity': 'HIGH', 'references': ['http://seclists.org/fulldisclosure/2020/Dec/32', 'http://seclists.org/fulldisclosure/2021/Feb/14', 'https://support.apple.com/en-us/HT211931', 'https://support.apple.com/kb/HT212147', 'http://seclists.org/fulldisclosure/2020/Dec/32', 'http://seclists.org/fulldisclosure/2021/Feb/14', 'https://support.apple.com/en-us/HT211931', 'https://support.apple.com/kb/HT212147']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-25806",
+      "published": "2026-02-09T21:15:49.807",
+      "vuln_status": "Analyzed",
+      "description": "PlaciPy is a placement management system designed for educational institutions. In version 1.0.0, the GET /api/students/:email\nPUT /api/students/:email/status, and DELETE /api/students/:email routes in backend/src/routes/student.routes.ts only enforce authentication using authenticateToken but do not enforce authorization. The application does not verify whether the authenticated user owns the student record being accessed, has an administrative / staff role, or is permitted to modify or delete the target student.",
+      "scores": [
+        {
+          "metric": "cvssMetricV40",
+          "score": 5.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "security-advisories@github.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-25806', 'description': 'PlaciPy is a placement management system designed for educational institutions. In version 1.0.0, the GET /api/students/:email\\nPUT /api/students/:email/status, and DELETE /api/students/:email routes in backend/src/routes/student.routes.ts only enforce authentication using authenticateToken but do not enforce authorization. The application does not verify whether the authenticated user owns the student record being accessed, has an administrative / staff role, or is permitted to modify or delete the target student.', 'cvss_vector': 'CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X', 'cvss_version': '4.0', 'base_score': 5.",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2022-43166",
+      "published": "2022-10-28T17:15:27.130",
+      "vuln_status": "Modified",
+      "description": "A stored cross-site scripting (XSS) vulnerability in the Global Entities feature (/index.php?module=entities/entities) of Rukovoditel v3.2.1 allows authenticated attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name parameter after clicking \"Add New Entity\".",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.4,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.4,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-43166', 'description': 'A stored cross-site scripting (XSS) vulnerability in the Global Entities feature (/index.php?module=entities/entities) of Rukovoditel v3.2.1 allows authenticated attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name parameter after clicking \"Add New Entity\".', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N', 'cvss_version': '3.1', 'base_score': 5.4, 'severity': 'MEDIUM', 'references': ['https://github.com/anhdq201/rukovoditel/issues/2', 'https://github.com/anhdq201/rukovoditel/issues/2']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2022-3338",
+      "published": "2022-10-18T10:15:10.637",
+      "vuln_status": "Modified",
+      "description": "An External XML entity (XXE) vulnerability in ePO prior to 5.10 Update 14 can lead to an unauthenticated remote attacker to potentially trigger a Server Side Request Forgery attack. This can be exploited by mimicking the Agent Handler call to ePO and passing the carefully constructed XML file through the API.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.4,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N",
+          "source": "trellixpsirt@trellix.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.4,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-3338', 'description': 'An External XML entity (XXE) vulnerability in ePO prior to 5.10 Update 14 can lead to an unauthenticated remote attacker to potentially trigger a Server Side Request Forgery attack. This can be exploited by mimicking the Agent Handler call to ePO and passing the carefully constructed XML file through the API.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N', 'cvss_version': '3.1', 'base_score': 5.4, 'severity': 'MEDIUM', 'references': ['https://kcm.trellix.com/corporate/index?page=content&id=SB10387', 'https://kcm.trellix.com/corporate/index?page=content&id=SB10387']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-48354",
+      "published": "2026-07-14T22:17:02.643",
+      "vuln_status": "Analyzed",
+      "description": "CAI Content Credentials is affected by an Integer Overflow or Wraparound vulnerability that could result in an application denial-of-service. An attacker could exploit this vulnerability to crash the application, leading to a denial-of-service condition. Exploitation of this issue does not require user interaction.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.2,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "source": "psirt@adobe.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-48354', 'description': 'CAI Content Credentials is affected by an Integer Overflow or Wraparound vulnerability that could result in an application denial-of-service. An attacker could exploit this vulnerability to crash the application, leading to a denial-of-service condition. Exploitation of this issue does not require user interaction.', 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H', 'cvss_version': '3.1', 'base_score': 6.2, 'severity': 'MEDIUM', 'references': ['https://helpx.adobe.com/security/products/content-authenticity-sdk/apsb26-80.html']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2025-36752",
+      "published": "2025-12-13T16:16:54.300",
+      "vuln_status": "Analyzed",
+      "description": "Growatt ShineLan-X communication dongle has an undocumented backup account with undocumented\u00a0credentials\u00a0which\u00a0allows significant level access to the device, such as\u00a0allowing any attacker to access the Setting\u00a0Center. This means that this is effectively backdoor for all devices utilizing a Growatt ShineLan-X communication dongle.",
+      "scores": [
+        {
+          "metric": "cvssMetricV40",
+          "score": 9.4,
+          "severity": "CRITICAL",
+          "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "csirt@divd.nl",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-36752', 'description': 'Growatt ShineLan-X communication dongle has an undocumented backup account with undocumented\\xa0credentials\\xa0which\\xa0allows significant level access to the device, such as\\xa0allowing any attacker to access the Setting\\xa0Center. This means that this is effectively backdoor for all devices utilizing a Growatt ShineLan-X communication dongle.', 'cvss_vector': 'CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X', 'cvss_version': '4.0', 'base_score': 9.4, 'severity': 'CRITICAL', 'references': ['https://csirt.divd.nl/CVE-2025-36752/']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-50262",
+      "published": "2026-06-05T12:16:39.770",
+      "vuln_status": "Modified",
+      "description": "An out-of-bounds read flaw was found in the X.Org X server and Xwayland in __glXDisp_ChangeDrawableAttributes(). A wrong size validation check can read a client-controlled number of bytes, exceeding the request buffer, leading to information disclosure. A write path also exists but requires byte-swapped clients which is disabled by default.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+          "source": "secalert@redhat.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-50262', 'description': 'An out-of-bounds read flaw was found in the X.Org X server and Xwayland in __glXDisp_ChangeDrawableAttributes(). A wrong size validation check can read a client-controlled number of bytes, exceeding the request buffer, leading to information disclosure. A write path also exists but requires byte-swapped clients which is disabled by default.', 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N', 'cvss_version': '3.1', 'base_score': 5.5, 'severity': 'MEDIUM', 'references': ['https://access.redhat.com/errata/RHSA-2026:26562', 'https://access.redhat.com/errata/RHSA-2026:26566', 'https://access.redhat.com/errata/RHSA-2026:26590', 'https://access.redhat.com/errata/RHSA-2026:26610', 'https://access.redhat.com/errata/RHSA-2026:26709', 'https:/",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2022-3218",
+      "published": "2022-09-19T17:15:14.630",
+      "vuln_status": "Modified",
+      "description": "Due to a reliance on client-side authentication, the WiFi Mouse (Mouse Server) from Necta LLC's authentication mechanism is trivially bypassed, which can result in remote code execution.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-3218', 'description': \"Due to a reliance on client-side authentication, the WiFi Mouse (Mouse Server) from Necta LLC's authentication mechanism is trivially bypassed, which can result in remote code execution.\", 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['http://packetstormsecurity.com/files/168509/WiFi-Mouse-1.8.3.4-Remote-Code-Execution.html', 'https://github.com/H4rk3nz0/PenTesting/blob/main/Exploits/wifi%20mouse/wifi-mouse-server-rce.py', 'https://github.com/rapid7/metasploit-framework/pull/16985', 'https://www.exploit-db.com/exploits/49601', 'https://www.exploit-db.com/exploits/50972', 'http://packetstormsecurity.com/files/168509/WiFi-Mouse-1.8.3.4-Remote-Code-Exec",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-16074",
+      "published": "2026-07-17T21:17:06.087",
+      "vuln_status": "Deferred",
+      "description": "A vulnerability was detected in AstrBotDevs AstrBot up to 4.25.2. This affects the function update_plugin/update_all_plugins of the file astrbot/dashboard/routes/plugin.py of the component Plugin Update Handler. The manipulation of the argument download_url/download_urls/proxy results in server-side request forgery. The attack may be performed from remote. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "scores": [
+        {
+          "metric": "cvssMetricV40",
+          "score": 2.1,
+          "severity": "LOW",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 6.5,
+          "severity": "MEDIUM",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-16074', 'description': 'A vulnerability was detected in AstrBotDevs AstrBot up to 4.25.2. This affects the function update_plugin/update_all_plugins of the file astrbot/dashboard/routes/plugin.py of the component Plugin Update Handler. The manipulation of the argument download_url/download_urls/proxy results in server-side request forgery. The attack may be performed from remote. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.', 'cvss_vector': 'CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X', 'cvss_version': '4.0', 'base_score': 2.1, 'severity': 'LOW', 'references'",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-42086",
+      "published": "2026-05-04T18:16:30.667",
+      "vuln_status": "Analyzed",
+      "description": "OpenC3 COSMOS provides the functionality needed to send commands to and receive data from one or more embedded systems. Prior to version 7.0.0, the Command Sender UI uses an unsafe eval() function on array-like command parameters, which allows a user-supplied payload to execute in the browser when sending a command. This creates a self-XSS risk because an attacker can trigger their own script execution in the victim\u2019s session, if allowed to influence the array parameter input, for example via phishing. If successful, an attacker may read or modify data in the authenticated browser context, including session tokens in local storage. This issue has been patched in version 7.0.0.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 4.6,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N",
+          "source": "security-advisories@github.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-42086', 'description': 'OpenC3 COSMOS provides the functionality needed to send commands to and receive data from one or more embedded systems. Prior to version 7.0.0, the Command Sender UI uses an unsafe eval() function on array-like command parameters, which allows a user-supplied payload to execute in the browser when sending a command. This creates a self-XSS risk because an attacker can trigger their own script execution in the victim\u2019s session, if allowed to influence the array parameter input, for example via phishing. If successful, an attacker may read or modify data in the authenticated browser context, including session tokens in local storage. This issue has been patched in version 7.0.0.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N', 'cvs",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2020-3425",
+      "published": "2020-09-24T18:15:19.213",
+      "vuln_status": "Modified",
+      "description": "Multiple vulnerabilities in the web management framework of Cisco IOS XE Software could allow an authenticated, remote attacker with read-only privileges to elevate privileges to the level of an Administrator user on an affected device. For more information about these vulnerabilities, see the Details section of this advisory.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "psirt@cisco.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 6.5,
+          "severity": "MEDIUM",
+          "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2020-3425', 'description': 'Multiple vulnerabilities in the web management framework of Cisco IOS XE Software could allow an authenticated, remote attacker with read-only privileges to elevate privileges to the level of an Administrator user on an affected device. For more information about these vulnerabilities, see the Details section of this advisory.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 8.8, 'severity': 'HIGH', 'references': ['https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ios-webui-priv-esc-K8zvEWM', 'https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ios-webui-priv-esc-K8zvEWM']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2024-53243",
+      "published": "2024-12-10T18:15:41.093",
+      "vuln_status": "Deferred",
+      "description": "In Splunk Enterprise versions below 9.3.2, 9.2.4, and 9.1.7 and versions below 3.2.462, 3.7.18, and 3.8.5 of the Splunk Secure Gateway app on Splunk Cloud Platform, a low-privileged user that does not hold the \u201cadmin\u201c or \u201cpower\u201c Splunk roles could see alert search query responses using Splunk Secure Gateway App Key Value Store (KVstore) collections endpoints due to improper access control.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 4.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+          "source": "prodsec@splunk.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2024-53243', 'description': 'In Splunk Enterprise versions below 9.3.2, 9.2.4, and 9.1.7 and versions below 3.2.462, 3.7.18, and 3.8.5 of the Splunk Secure Gateway app on Splunk Cloud Platform, a low-privileged user that does not hold the \u201cadmin\u201c or \u201cpower\u201c Splunk roles could see alert search query responses using Splunk Secure Gateway App Key Value Store (KVstore) collections endpoints due to improper access control.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N', 'cvss_version': '3.1', 'base_score': 4.3, 'severity': 'MEDIUM', 'references': ['https://advisory.splunk.com/advisories/SVD-2024-1201']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2023-29048",
+      "published": "2024-01-08T09:15:19.893",
+      "vuln_status": "Modified",
+      "description": "A component for parsing OXMF templates could be abused to execute arbitrary system commands that would be executed as the non-privileged runtime user. Users and attackers could run system commands with limited privilege to gain unauthorized access to confidential information and potentially violate integrity by modifying resources. The template engine has been reconfigured to deny execution of harmful commands on a system level. No publicly available exploits are known.\n\n",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "security@open-xchange.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 8.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2023-29048', 'description': 'A component for parsing OXMF templates could be abused to execute arbitrary system commands that would be executed as the non-privileged runtime user. Users and attackers could run system commands with limited privilege to gain unauthorized access to confidential information and potentially violate integrity by modifying resources. The template engine has been reconfigured to deny execution of harmful commands on a system level. No publicly available exploits are known.\\n\\n', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 8.8, 'severity': 'HIGH', 'references': ['http://packetstormsecurity.com/files/176421/OX-App-Suite-7.10.6-XSS-Command-Execution-LDAP-Injection.html', 'http://seclists.org/full",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2026-26712",
+      "published": "2026-03-02T20:16:26.990",
+      "vuln_status": "Modified",
+      "description": "code-projects Simple Food Order System v1.0 is vulnerable to SQL Injection in /food/view-ticket-admin.php.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-26712', 'description': 'code-projects Simple Food Order System v1.0 is vulnerable to SQL Injection in /food/view-ticket-admin.php.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['https://github.com/Thirtypenny77/bug_report/blob/main/code-projects/simple-food-order-system/SQL-1.md']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "eval"
+    },
+    {
+      "cve_id": "CVE-2022-48846",
+      "published": "2024-07-16T13:15:11.883",
+      "vuln_status": "Modified",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nblock: release rq qos structures for queue without disk\n\nblkcg_init_queue() may add rq qos structures to request queue, previously\nblk_cleanup_queue() calls rq_qos_exit() to release them, but commit\n8e141f9eb803 (\"block: drain file system I/O on del_gendisk\")\nmoves rq_qos_exit() into del_gendisk(), so memory leak is caused\nbecause queues may not have disk, such as un-present scsi luns, nvme\nadmin queue, ...\n\nFixes the issue by adding rq_qos_exit() to blk_cleanup_queue() back.\n\nBTW, v5.18 won't need this patch any more since we move\nblkcg_init_queue()/blkcg_exit_queue() into disk allocation/release\nhandler, and patches have been in for-5.18/block.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-48846', 'description': 'In the Linux kernel, the following vulnerability has been resolved:\\n\\nblock: release rq qos structures for queue without disk\\n\\nblkcg_init_queue() may add rq qos structures to request queue, previously\\nblk_cleanup_queue() calls rq_qos_exit() to release them, but commit\\n8e141f9eb803 (\"block: drain file system I/O on del_gendisk\")\\nmoves rq_qos_exit() into del_gendisk(), so memory leak is caused\\nbecause queues may not have disk, such as un-present scsi luns, nvme\\nadmin queue, ...\\n\\nFixes the issue by adding rq_qos_exit() to blk_cleanup_queue() back.\\n\\nBTW, v5.18 won\\'t need this patch any more since we move\\nblkcg_init_queue()/blkcg_exit_queue() into disk allocation/release\\nhandler, and patches have been in for-5.18/block.', 'cvss_vector'",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2025-9336",
+      "published": "2025-10-13T10:15:46.280",
+      "vuln_status": "Deferred",
+      "description": "A stack buffer overflow has been identified in the AsIO3.sys driver. This vulnerability can be triggered by input manipulation, may leading to a system crash (BSOD) or other potentially undefined execution. \nRefer to the 'Security Update for Armoury Crate App' section on the ASUS Security Advisory for more information.",
+      "scores": [
+        {
+          "metric": "cvssMetricV40",
+          "score": 6.8,
+          "severity": "MEDIUM",
+          "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "54bf65a7-a193-42d2-b1ba-8e150d3c35e1",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-9336', 'description': \"A stack buffer overflow has been identified in the AsIO3.sys driver. This vulnerability can be triggered by input manipulation, may leading to a system crash (BSOD) or other potentially undefined execution. \\nRefer to the 'Security Update for Armoury Crate App' section on the ASUS Security Advisory for more information.\", 'cvss_vector': 'CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X', 'cvss_version': '4.0', 'base_score': 6.8, 'severity': 'MEDIUM', 'references': ['https://www.asus.com/security-advisory/']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2026-72171",
+      "published": "2026-08-15T06:21:35.220",
+      "vuln_status": "Received",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmtd: slram: remove failed entries from the device list\n\nregister_device() links a new slram_mtdlist entry before allocating all\nof the state needed by the entry. If a later allocation, memremap(), or\nmtd_device_register() fails, the partially initialized entry remains on\nthe global list. A later cleanup can then dereference or free invalid\nstate from that failed entry.\n\nUnwind the partially initialized entry and clear the list tail on each\nfailure path after the entry has been linked.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-72171', 'description': 'In the Linux kernel, the following vulnerability has been resolved:\\n\\nmtd: slram: remove failed entries from the device list\\n\\nregister_device() links a new slram_mtdlist entry before allocating all\\nof the state needed by the entry. If a later allocation, memremap(), or\\nmtd_device_register() fails, the partially initialized entry remains on\\nthe global list. A later cleanup can then dereference or free invalid\\nstate from that failed entry.\\n\\nUnwind the partially initialized entry and clear the list tail on each\\nfailure path after the entry has been linked.', 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.8, 'severity': 'HIGH', 'references': ['https://git.kernel.org/stable/c/200b8bc5b6",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2017-13318",
+      "published": "2025-01-28T17:15:08.310",
+      "vuln_status": "Analyzed",
+      "description": "In HeifDataSource::readAt of HeifDecoderImpl.cpp, there is a possible out of bounds read due to an integer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is needed for exploitation.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.7,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2017-13318', 'description': 'In HeifDataSource::readAt of HeifDecoderImpl.cpp, there is a possible out of bounds read due to an integer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is needed for exploitation.', 'cvss_vector': 'CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N', 'cvss_version': '3.1', 'base_score': 5.7, 'severity': 'MEDIUM', 'references': ['https://source.android.com/security/bulletin/pixel/2018-05-01']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2020-24627",
+      "published": "2020-10-02T19:15:13.790",
+      "vuln_status": "Modified",
+      "description": "A remote stored xss vulnerability was discovered in HPE KVM IP Console Switches version(s): G2 4x1Ex32 Prior to 2.8.3.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.4,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 3.5,
+          "severity": "LOW",
+          "vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2020-24627', 'description': 'A remote stored xss vulnerability was discovered in HPE KVM IP Console Switches version(s): G2 4x1Ex32 Prior to 2.8.3.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N', 'cvss_version': '3.1', 'base_score': 5.4, 'severity': 'MEDIUM', 'references': ['https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf04044en_us', 'https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf04044en_us']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2025-43502",
+      "published": "2025-11-04T02:15:53.177",
+      "vuln_status": "Modified",
+      "description": "A privacy issue was addressed by removing sensitive data. This issue is fixed in Safari 26.1, iOS 26.1 and iPadOS 26.1, macOS Tahoe 26.1, visionOS 26.1. An app may be able to bypass certain Privacy preferences.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-43502', 'description': 'A privacy issue was addressed by removing sensitive data. This issue is fixed in Safari 26.1, iOS 26.1 and iPadOS 26.1, macOS Tahoe 26.1, visionOS 26.1. An app may be able to bypass certain Privacy preferences.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N', 'cvss_version': '3.1', 'base_score': 7.5, 'severity': 'HIGH', 'references': ['https://support.apple.com/en-us/125632', 'https://support.apple.com/en-us/125634', 'https://support.apple.com/en-us/125638', 'https://support.apple.com/en-us/125640']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2021-26904",
+      "published": "2021-02-26T15:15:12.447",
+      "vuln_status": "Modified",
+      "description": "LMA ISIDA Retriever 5.2 allows SQL Injection.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2021-26904', 'description': 'LMA ISIDA Retriever 5.2 allows SQL Injection.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 9.8, 'severity': 'CRITICAL', 'references': ['https://github.com/Security-AVS/-CVE-2021-26904', 'https://www.isida.by/category/news/', 'https://github.com/Security-AVS/-CVE-2021-26904', 'https://www.isida.by/category/news/']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2023-45065",
+      "published": "2023-10-18T13:15:08.987",
+      "vuln_status": "Modified",
+      "description": "Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Mad Fish Digital Bulk NoIndex & NoFollow Toolkit plugin <=\u00a01.42 versions.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.1,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+          "source": "audit@patchstack.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.1,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2023-45065', 'description': 'Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Mad Fish Digital Bulk NoIndex & NoFollow Toolkit plugin <=\\xa01.42 versions.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L', 'cvss_version': '3.1', 'base_score': 7.1, 'severity': 'HIGH', 'references': ['https://patchstack.com/database/vulnerability/bulk-noindex-nofollow-toolkit-by-mad-fish/wordpress-bulk-noindex-nofollow-toolkit-plugin-1-42-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve', 'https://patchstack.com/database/vulnerability/bulk-noindex-nofollow-toolkit-by-mad-fish/wordpress-bulk-noindex-nofollow-toolkit-plugin-1-42-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2021-3903",
+      "published": "2021-10-27T21:15:08.047",
+      "vuln_status": "Modified",
+      "description": "vim is vulnerable to Heap-based Buffer Overflow",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV30",
+          "score": 7.3,
+          "severity": "HIGH",
+          "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:H",
+          "source": "security@huntr.dev",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 4.6,
+          "severity": "MEDIUM",
+          "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2021-3903', 'description': 'vim is vulnerable to Heap-based Buffer Overflow', 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.8, 'severity': 'HIGH', 'references': ['http://www.openwall.com/lists/oss-security/2022/01/15/1', 'https://github.com/vim/vim/commit/777e7c21b7627be80961848ac560cb0a9978ff43', 'https://huntr.dev/bounties/35738a4f-55ce-446c-b836-2fb0b39625f8', 'https://lists.debian.org/debian-lts-announce/2022/06/msg00014.html', 'https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BN4EX7BPQU7RP6PXCNCSDORUZBXQ4JUH/', 'https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DU26T75PYA3OF7XJGNKMT2ZCQEU4UKP5/', 'https://lists.fedorapro",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2022-3002",
+      "published": "2022-10-06T18:16:19.653",
+      "vuln_status": "Modified",
+      "description": "Cross-site Scripting (XSS) - Stored in GitHub repository yetiforcecompany/yetiforcecrm prior to 6.4.0.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.4,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV30",
+          "score": 5.4,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+          "source": "security@huntr.dev",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-3002', 'description': 'Cross-site Scripting (XSS) - Stored in GitHub repository yetiforcecompany/yetiforcecrm prior to 6.4.0.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N', 'cvss_version': '3.1', 'base_score': 5.4, 'severity': 'MEDIUM', 'references': ['https://github.com/yetiforcecompany/yetiforcecrm/commit/54728becfdad9b6e686bbe336007cba2ce518248', 'https://huntr.dev/bounties/d213d7ea-fe92-40b2-a1f9-2ba32dec50f5', 'https://github.com/yetiforcecompany/yetiforcecrm/commit/54728becfdad9b6e686bbe336007cba2ce518248', 'https://huntr.dev/bounties/d213d7ea-fe92-40b2-a1f9-2ba32dec50f5']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2021-29666",
+      "published": "2021-04-27T17:15:08.440",
+      "vuln_status": "Modified",
+      "description": "IBM Spectrum Scale 5.0.0 through 5.0.5.6 and 5.1.0 through 5.1.0.2 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 199400.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.4,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV30",
+          "score": 5.4,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+          "source": "psirt@us.ibm.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 3.5,
+          "severity": "LOW",
+          "vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2021-29666', 'description': 'IBM Spectrum Scale 5.0.0 through 5.0.5.6 and 5.1.0 through 5.1.0.2 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 199400.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N', 'cvss_version': '3.1', 'base_score': 5.4, 'severity': 'MEDIUM', 'references': ['https://exchange.xforce.ibmcloud.com/vulnerabilities/199400', 'https://www.ibm.com/support/pages/node/6447107', 'https://exchange.xforce.ibmcloud.com/vulnerabilities/199400', 'https://www.ibm.com/support/pages/node/6447107']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2025-7290",
+      "published": "2025-07-21T20:15:51.477",
+      "vuln_status": "Analyzed",
+      "description": "IrfanView CADImage Plugin DXF File Parsing Memory Corruption Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView CADImage Plugin. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of DXF files. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-26226.",
+      "scores": [
+        {
+          "metric": "cvssMetricV30",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "source": "zdi-disclosures@trendmicro.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-7290', 'description': 'IrfanView CADImage Plugin DXF File Parsing Memory Corruption Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView CADImage Plugin. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\\n\\nThe specific flaw exists within the parsing of DXF files. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-26226.', 'cvss_vector': 'CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H', 'cvss_version': '3.0', 'base_s",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2022-1542",
+      "published": "2022-05-30T09:15:09.533",
+      "vuln_status": "Modified",
+      "description": "The HPB Dashboard WordPress plugin through 1.3.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Cross-Site Scripting attacks even when unfiltered_html is disallowed.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 4.8,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 3.5,
+          "severity": "LOW",
+          "vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2022-1542', 'description': 'The HPB Dashboard WordPress plugin through 1.3.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Cross-Site Scripting attacks even when unfiltered_html is disallowed.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N', 'cvss_version': '3.1', 'base_score': 4.8, 'severity': 'MEDIUM', 'references': ['https://wpscan.com/vulnerability/40916242-df03-49a1-9a6a-9af33907e359', 'https://wpscan.com/vulnerability/40916242-df03-49a1-9a6a-9af33907e359']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2023-5100",
+      "published": "2023-10-09T13:15:10.487",
+      "vuln_status": "Modified",
+      "description": "\nCleartext Transmission of Sensitive Information in RDT400 in SICK APU allows an\nunprivileged remote attacker to retrieve potentially sensitive information via intercepting network traffic\nthat is not encrypted.\n\n",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.9,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:L/A:N",
+          "source": "psirt@sick.de",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2023-5100', 'description': '\\nCleartext Transmission of Sensitive Information in RDT400 in SICK APU allows an\\nunprivileged remote attacker to retrieve potentially sensitive information via intercepting network traffic\\nthat is not encrypted.\\n\\n', 'cvss_vector': 'CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:L/A:N', 'cvss_version': '3.1', 'base_score': 5.9, 'severity': 'MEDIUM', 'references': ['https://sick.com/.well-known/csaf/white/2023/sca-2023-0010.json', 'https://sick.com/.well-known/csaf/white/2023/sca-2023-0010.pdf', 'https://sick.com/psirt', 'https://sick.com/.well-known/csaf/white/2023/sca-2023-0010.json', 'https://sick.com/.well-known/csaf/white/2023/sca-2023-0010.pdf', 'https://sick.com/psirt']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2020-6346",
+      "published": "2020-09-09T13:15:14.300",
+      "vuln_status": "Modified",
+      "description": "SAP 3D Visual Enterprise Viewer, version - 9, allows a user to open manipulated BMP file received from untrusted sources which results in crashing of the application and becoming temporarily unavailable until the user restarts the application, this is caused due to Improper Input Validation.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 4.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV30",
+          "score": 4.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+          "source": "cna@sap.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 4.3,
+          "severity": "MEDIUM",
+          "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2020-6346', 'description': 'SAP 3D Visual Enterprise Viewer, version - 9, allows a user to open manipulated BMP file received from untrusted sources which results in crashing of the application and becoming temporarily unavailable until the user restarts the application, this is caused due to Improper Input Validation.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L', 'cvss_version': '3.1', 'base_score': 4.3, 'severity': 'MEDIUM', 'references': ['https://launchpad.support.sap.com/#/notes/2960815', 'https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=557449700', 'https://www.zerodayinitiative.com/advisories/ZDI-20-1163/', 'https://launchpad.support.sap.com/#/notes/2960815', 'https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=557449700', 'https:/",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2026-7681",
+      "published": "2026-05-03T06:15:58.190",
+      "vuln_status": "Deferred",
+      "description": "A security vulnerability has been detected in jsbroks COCO Annotator up to 0.11.1. Affected by this vulnerability is an unknown functionality of the file backend/webserver/api/datasets.py of the component Dataset API. The manipulation of the argument DatasetId leads to authorization bypass. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "scores": [
+        {
+          "metric": "cvssMetricV40",
+          "score": 5.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 6.5,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 6.4,
+          "severity": "MEDIUM",
+          "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2026-7681', 'description': 'A security vulnerability has been detected in jsbroks COCO Annotator up to 0.11.1. Affected by this vulnerability is an unknown functionality of the file backend/webserver/api/datasets.py of the component Dataset API. The manipulation of the argument DatasetId leads to authorization bypass. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.', 'cvss_vector': 'CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X', 'cvss_version': '4.0', 'base_score': 5.5, 'severity': 'MEDIUM', 'references': ['https://g",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2020-1208",
+      "published": "2020-06-09T20:15:14.020",
+      "vuln_status": "Modified",
+      "description": "A remote code execution vulnerability exists when the Windows Jet Database Engine improperly handles objects in memory, aka 'Jet Database Engine Remote Code Execution Vulnerability'. This CVE ID is unique from CVE-2020-1236.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.8,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 9.3,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2020-1208', 'description': \"A remote code execution vulnerability exists when the Windows Jet Database Engine improperly handles objects in memory, aka 'Jet Database Engine Remote Code Execution Vulnerability'. This CVE ID is unique from CVE-2020-1236.\", 'cvss_vector': 'CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H', 'cvss_version': '3.1', 'base_score': 7.8, 'severity': 'HIGH', 'references': ['https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1208', 'https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1208']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2025-64775",
+      "published": "2025-12-01T16:15:56.873",
+      "vuln_status": "Analyzed",
+      "description": "Denial of Service vulnerability in Apache Struts, file leak in multipart request processing causes disk exhaustion.\n\nThis issue affects Apache Struts: from 2.0.0 through 6.7.0, from 7.0.0 through 7.0.3.\n\nUsers are recommended to upgrade to version 6.8.0 or 7.1.1, which fixes the issue.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2025-64775', 'description': 'Denial of Service vulnerability in Apache Struts, file leak in multipart request processing causes disk exhaustion.\\n\\nThis issue affects Apache Struts: from 2.0.0 through 6.7.0, from 7.0.0 through 7.0.3.\\n\\nUsers are recommended to upgrade to version 6.8.0 or 7.1.1, which fixes the issue.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H', 'cvss_version': '3.1', 'base_score': 7.5, 'severity': 'HIGH', 'references': ['https://cwiki.apache.org/confluence/display/WW/S2-068', 'http://www.openwall.com/lists/oss-security/2025/12/01/2']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2024-10290",
+      "published": "2024-10-23T15:15:30.110",
+      "vuln_status": "Analyzed",
+      "description": "A vulnerability, which was classified as problematic, was found in ZZCMS 2023. This affects an unknown part of the file 3/qq-connect2.0/API/com/inc.php. The manipulation leads to information disclosure. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+      "scores": [
+        {
+          "metric": "cvssMetricV40",
+          "score": 6.9,
+          "severity": "MEDIUM",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 5.3,
+          "severity": "MEDIUM",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV31",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 5.0,
+          "severity": "MEDIUM",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+          "source": "cna@vuldb.com",
+          "type": "Secondary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2024-10290', 'description': 'A vulnerability, which was classified as problematic, was found in ZZCMS 2023. This affects an unknown part of the file 3/qq-connect2.0/API/com/inc.php. The manipulation leads to information disclosure. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.', 'cvss_vector': 'CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X', 'cvss_version': '4.0', 'base_score': 6.9, 'severity': 'MEDIUM', 'references': ['https://github.com/LvZCh/zzcms2023/issues/1', 'https://vuldb.com/?ctiid.281559', 'https://vuldb.com/?id.281559', 'https://vuldb.com/?submit.427069']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    },
+    {
+      "cve_id": "CVE-2019-17137",
+      "published": "2020-02-10T21:51:10.563",
+      "vuln_status": "Modified",
+      "description": "This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of NETGEAR AC1200 R6220 Firmware version 1.1.0.86 Smart WiFi Router. Authentication is not required to exploit this vulnerability. The specific flaw exists within the processing of path strings. By inserting a null byte into the path, the user can skip most authentication checks. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-8616.",
+      "scores": [
+        {
+          "metric": "cvssMetricV31",
+          "score": 9.4,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:H",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        },
+        {
+          "metric": "cvssMetricV30",
+          "score": 9.4,
+          "severity": "CRITICAL",
+          "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:H",
+          "source": "zdi-disclosures@trendmicro.com",
+          "type": "Secondary"
+        },
+        {
+          "metric": "cvssMetricV2",
+          "score": 7.5,
+          "severity": "HIGH",
+          "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+          "source": "nvd@nist.gov",
+          "type": "Primary"
+        }
+      ],
+      "tool_excerpt": "{'cve_id': 'CVE-2019-17137', 'description': 'This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of NETGEAR AC1200 R6220 Firmware version 1.1.0.86 Smart WiFi Router. Authentication is not required to exploit this vulnerability. The specific flaw exists within the processing of path strings. By inserting a null byte into the path, the user can skip most authentication checks. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-8616.', 'cvss_vector': 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:H', 'cvss_version': '3.1', 'base_score': 9.4, 'severity': 'CRITICAL', 'references': ['https://www.zerodayinitiative.com/advisories/ZDI-19-866/', 'https://www.zerodayinitiative.com/advisories/ZDI-19-866/']}",
+      "nvd_kev_date": null,
+      "in_kev": false,
+      "pool": "nonkev",
+      "set": "m3_only"
+    }
+  ]
+}

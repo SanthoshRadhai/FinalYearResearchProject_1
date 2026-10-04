@@ -1,0 +1,71 @@
+# Whitelist: ignore everything at the project root, then allow only our own work.
+# This keeps the third-party clones (CAI-modified, caldera, hexstrike-ai, kit,
+# stealth-browser-mcp, 5.3.0, MCPHost-modifed, mcp-cli, ...) and local tooling out.
+/*
+
+!/.gitignore
+!/README.md
+!/RedBlue-MultiAgent/
+!/CyberTuringAgnet/
+!/Benchmark/
+!/Research-Paper resources/
+!/Langchain/
+!/rag/
+!/mitre-attack-kb/
+!/cwe-kb/
+!/capec-kb/
+!/cisa-kev-kb/
+!/d3fend-kb/
+!/owasp-cheatsheets-kb/
+!/findings/
+
+# --- Local cleanup and working notes (kept on disk, never pushed)
+_local_cleanup/
+Research-Paper resources/PAPER-GAPS-FOR-FIXING.md
+
+# --- Sensitive or withheld material
+# The paper states the red-team prompts are withheld; never publish them.
+Benchmark/CyberMetric/offensive_cybersecurity_red_team_100_prompts.csv
+# Personal screenshots
+*.jpeg
+*.jpg
+# Local chat history database
+*.db
+*.db-wal
+*.db-shm
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*.tlp
+
+# --- Third-party data and generated artifacts that can be rebuilt
+CVE-fetching-Agent/
+*-kb/raw/
+rag/rag_corpus.jsonl
+
+# --- Python / tooling caches
+__pycache__/
+*.pyc
+.playwright-mcp/
+.ipynb_checkpoints/
+.venv/
+venv/
+node_modules/
+
+# --- LaTeX build outputs (the PDF itself is kept)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# --- Backups and OS files
+*.bak
+paper_backup*.tex
+paper_before*.tex
+.DS_Store
+Thumbs.db

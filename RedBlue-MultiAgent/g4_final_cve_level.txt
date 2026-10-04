@@ -1,0 +1,32 @@
+
+=== all: 50 CVEs ===
+CVE answered in a majority of repeats : 49/50 = 98.0% [89.5, 99.6]
+CVE answered AND mostly correct       : 50/50 = 100.0% [92.9, 100.0]
+CVE with any false-accepted claim     : 0/50 = 0.0% [0.0, 7.1]
+CVE with any wrong displayed answer   : 0/50 = 0.0% [0.0, 7.1]
+  pool kev    : answered (majority) 20/20 = 100.0% [83.9, 100.0]
+  pool nonkev : answered (majority) 29/30 = 96.7% [83.3, 99.4]
+
+=== off: 50 CVEs ===
+CVE answered in a majority of repeats : 50/50 = 100.0% [92.9, 100.0]
+CVE answered AND mostly correct       : 49/50 = 98.0% [89.5, 99.6]
+CVE with any false-accepted claim     : 1/50 = 2.0% [0.4, 10.5]
+CVE with any wrong displayed answer   : 1/50 = 2.0% [0.4, 10.5]
+  pool kev    : answered (majority) 20/20 = 100.0% [83.9, 100.0]
+  pool nonkev : answered (majority) 30/30 = 100.0% [88.6, 100.0]
+
+=== on: 50 CVEs ===
+CVE answered in a majority of repeats : 4/50 = 8.0% [3.2, 18.8]
+CVE answered AND mostly correct       : 13/50 = 26.0% [15.9, 39.6]
+CVE with any false-accepted claim     : 0/50 = 0.0% [0.0, 7.1]
+CVE with any wrong displayed answer   : 0/50 = 0.0% [0.0, 7.1]
+  pool kev    : answered (majority) 0/20 = 0.0% [0.0, 16.1]
+  pool nonkev : answered (majority) 4/30 = 13.3% [5.3, 29.7]
+
+=== every INCORRECT claim (accepted or rejected) ===
+- CVE-2022-31206 [off rep2] decision=verified stated={'scores': [9.8], 'severities': ['CRITICAL'], 'kev': True} truth scores=[9.8] kev=False
+- CVE-2022-31206 [all rep2] decision=rejected stated={'scores': [9.8], 'severities': ['CRITICAL'], 'kev': True} truth scores=[9.8] kev=False
+
+=== errors ===
+- CVE-2022-31206 on 2 GraphRecursionError: Recursion limit of 30 reached without hitting a stop condition. You c
+- CVE-2022-31206 off 3 GraphRecursionError: Recursion limit of 30 reached without hitting a stop condition. You c

@@ -1,0 +1,20 @@
+# CWE-1077: Floating Point Comparison with Incorrect Operator
+
+**Abstraction:** Variant  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/1077.html  
+
+## Description
+The code performs a comparison such as an equality test between two float (floating point) values, but it uses comparison operators that do not account for the possibility of loss of precision.
+
+## Extended Description
+Numeric calculation using floating point values can generate imprecise results because of rounding errors. As a result, two different calculations might generate numbers that are mathematically equal, but have slightly different bit representations that do not translate to the same mathematically-equal values. As a result, an equality test or other comparison might produce unexpected results.
+
+## Related Weaknesses
+- ChildOf: CWE-697
+
+## Common Consequences
+- Scope: Other; Impact: Reduce Reliability — This issue can prevent the product from running reliably. If the relevant code is reachable by an attacker, then this reliability problem might introduce a vulnerability.
+
+## Detection Methods
+- [Automated Static Analysis] Automated static analysis, commonly referred to as Static Application Security Testing (SAST), can find some instances of this weakness by analyzing source code (or binary/compiled code) without having to execute it. Typically, this is done by building a model of data flow and control flow, then searching for potentially-vulnerable patterns that connect "sources" (origins of input) with "sinks" (destinations where the data interacts with external components, a lower layer such as the OS, etc.)

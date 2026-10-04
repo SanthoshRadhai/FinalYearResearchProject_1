@@ -1,0 +1,85 @@
+<mxfile host="Electron" agent="claude-code">
+  <diagram name="RAG Pipeline" id="rag-pipeline">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1820" pageHeight="806" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;fontStyle=1;fontSize=30;" value="Local RAG Pipeline Wired into the Recon Agent" vertex="1">
+          <mxGeometry height="39" width="650" x="26" y="13" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=22;" value="mitre-attack-kb (2317 chunks)" vertex="1">
+          <mxGeometry height="52" width="286" x="26" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=22;" value="cisa-kev-kb (1721 chunks)" vertex="1">
+          <mxGeometry height="52" width="286" x="26" y="143" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=22;" value="cwe-kb (969 chunks)" vertex="1">
+          <mxGeometry height="52" width="286" x="26" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=22;" value="capec-kb (615 chunks)" vertex="1">
+          <mxGeometry height="52" width="286" x="26" y="273" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=22;" value="d3fend-kb (278 chunks)" vertex="1">
+          <mxGeometry height="52" width="286" x="26" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=22;" value="owasp-cheatsheets-kb (122 chunks)" vertex="1">
+          <mxGeometry height="52" width="286" x="26" y="403" as="geometry" />
+        </mxCell>
+        <mxCell id="s7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=22;" value="4 reference papers (Docling, 466 chunks)" vertex="1">
+          <mxGeometry height="52" width="286" x="26" y="468" as="geometry" />
+        </mxCell>
+        <mxCell id="s8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=22;" value="project docs (225 chunks)" vertex="1">
+          <mxGeometry height="52" width="286" x="26" y="533" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ingest" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=22;" value="ingest.py&#xa;KB one-chunk-per-entry +&#xa;Docling PDF split (1500/200)" vertex="1">
+          <mxGeometry height="143" width="338" x="442" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="corpus" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=22;" value="rag_corpus.jsonl&#xa;6713 chunks total&#xa;(BM25Okapi index, lru_cache)" vertex="1">
+          <mxGeometry height="143" width="338" x="910" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="tool" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=22;" value="search_knowledge_base&#xa;(shared @tool, tools/__init__.py)" vertex="1">
+          <mxGeometry height="104" width="364" x="1378" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="recon" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=22;" value="Recon Agent&#xa;(also has lookup_cve + browser)" vertex="1">
+          <mxGeometry height="104" width="364" x="1378" y="429" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" edge="1" parent="1" source="s1" target="ingest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=1;exitY=0.5;entryX=0;entryY=0.15;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="s2" target="ingest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=1;exitY=0.5;entryX=0;entryY=0.3;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="s3" target="ingest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=1;exitY=0.5;entryX=0;entryY=0.4;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="s4" target="ingest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="s5" target="ingest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=1;exitY=0.5;entryX=0;entryY=0.6;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="s6" target="ingest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=1;exitY=0.5;entryX=0;entryY=0.7;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="s7" target="ingest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=1;exitY=0.5;entryX=0;entryY=0.8;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="s8" target="ingest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=1;exitY=0.5;entryX=0;entryY=0.9;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="ingest" target="corpus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="corpus" target="tool" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=1;exitY=0.3;entryX=0;entryY=0.5;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="tool" target="recon" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;curved=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,4307 @@
+[
+  {
+    "id": "CAPEC-1",
+    "type": "attack-pattern",
+    "name": "Accessing Functionality Not Properly Constrained by ACLs",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-1__Accessing_Functionality_Not_Properly_Constrained_by_ACLs.md"
+  },
+  {
+    "id": "CAPEC-10",
+    "type": "attack-pattern",
+    "name": "Buffer Overflow via Environment Variables",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-10__Buffer_Overflow_via_Environment_Variables.md"
+  },
+  {
+    "id": "CAPEC-100",
+    "type": "attack-pattern",
+    "name": "Overflow Buffers",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-100__Overflow_Buffers.md"
+  },
+  {
+    "id": "CAPEC-101",
+    "type": "attack-pattern",
+    "name": "Server Side Include (SSI) Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-101__Server_Side_Include_SSI_Injection.md"
+  },
+  {
+    "id": "CAPEC-102",
+    "type": "attack-pattern",
+    "name": "Session Sidejacking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-102__Session_Sidejacking.md"
+  },
+  {
+    "id": "CAPEC-103",
+    "type": "attack-pattern",
+    "name": "Clickjacking",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-103__Clickjacking.md"
+  },
+  {
+    "id": "CAPEC-104",
+    "type": "attack-pattern",
+    "name": "Cross Zone Scripting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-104__Cross_Zone_Scripting.md"
+  },
+  {
+    "id": "CAPEC-105",
+    "type": "attack-pattern",
+    "name": "HTTP Request Splitting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-105__HTTP_Request_Splitting.md"
+  },
+  {
+    "id": "CAPEC-106",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: XSS through Log Files",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-106__DEPRECATED_XSS_through_Log_Files.md"
+  },
+  {
+    "id": "CAPEC-107",
+    "type": "attack-pattern",
+    "name": "Cross Site Tracing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-107__Cross_Site_Tracing.md"
+  },
+  {
+    "id": "CAPEC-108",
+    "type": "attack-pattern",
+    "name": "Command Line Execution through SQL Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-108__Command_Line_Execution_through_SQL_Injection.md"
+  },
+  {
+    "id": "CAPEC-109",
+    "type": "attack-pattern",
+    "name": "Object Relational Mapping Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-109__Object_Relational_Mapping_Injection.md"
+  },
+  {
+    "id": "CAPEC-11",
+    "type": "attack-pattern",
+    "name": "Cause Web Server Misclassification",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-11__Cause_Web_Server_Misclassification.md"
+  },
+  {
+    "id": "CAPEC-110",
+    "type": "attack-pattern",
+    "name": "SQL Injection through SOAP Parameter Tampering",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-110__SQL_Injection_through_SOAP_Parameter_Tampering.md"
+  },
+  {
+    "id": "CAPEC-111",
+    "type": "attack-pattern",
+    "name": "JSON Hijacking (aka JavaScript Hijacking)",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-111__JSON_Hijacking_aka_JavaScript_Hijacking.md"
+  },
+  {
+    "id": "CAPEC-112",
+    "type": "attack-pattern",
+    "name": "Brute Force",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-112__Brute_Force.md"
+  },
+  {
+    "id": "CAPEC-113",
+    "type": "attack-pattern",
+    "name": "Interface Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-113__Interface_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-114",
+    "type": "attack-pattern",
+    "name": "Authentication Abuse",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-114__Authentication_Abuse.md"
+  },
+  {
+    "id": "CAPEC-115",
+    "type": "attack-pattern",
+    "name": "Authentication Bypass",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-115__Authentication_Bypass.md"
+  },
+  {
+    "id": "CAPEC-116",
+    "type": "attack-pattern",
+    "name": "Excavation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-116__Excavation.md"
+  },
+  {
+    "id": "CAPEC-117",
+    "type": "attack-pattern",
+    "name": "Interception",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-117__Interception.md"
+  },
+  {
+    "id": "CAPEC-12",
+    "type": "attack-pattern",
+    "name": "Choosing Message Identifier",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-12__Choosing_Message_Identifier.md"
+  },
+  {
+    "id": "CAPEC-120",
+    "type": "attack-pattern",
+    "name": "Double Encoding",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-120__Double_Encoding.md"
+  },
+  {
+    "id": "CAPEC-121",
+    "type": "attack-pattern",
+    "name": "Exploit Non-Production Interfaces",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-121__Exploit_Non_Production_Interfaces.md"
+  },
+  {
+    "id": "CAPEC-122",
+    "type": "attack-pattern",
+    "name": "Privilege Abuse",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-122__Privilege_Abuse.md"
+  },
+  {
+    "id": "CAPEC-123",
+    "type": "attack-pattern",
+    "name": "Buffer Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-123__Buffer_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-124",
+    "type": "attack-pattern",
+    "name": "Shared Resource Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-124__Shared_Resource_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-125",
+    "type": "attack-pattern",
+    "name": "Flooding",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-125__Flooding.md"
+  },
+  {
+    "id": "CAPEC-126",
+    "type": "attack-pattern",
+    "name": "Path Traversal",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-126__Path_Traversal.md"
+  },
+  {
+    "id": "CAPEC-127",
+    "type": "attack-pattern",
+    "name": "Directory Indexing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-127__Directory_Indexing.md"
+  },
+  {
+    "id": "CAPEC-128",
+    "type": "attack-pattern",
+    "name": "Integer Attacks",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-128__Integer_Attacks.md"
+  },
+  {
+    "id": "CAPEC-129",
+    "type": "attack-pattern",
+    "name": "Pointer Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-129__Pointer_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-13",
+    "type": "attack-pattern",
+    "name": "Subverting Environment Variable Values",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-13__Subverting_Environment_Variable_Values.md"
+  },
+  {
+    "id": "CAPEC-130",
+    "type": "attack-pattern",
+    "name": "Excessive Allocation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-130__Excessive_Allocation.md"
+  },
+  {
+    "id": "CAPEC-131",
+    "type": "attack-pattern",
+    "name": "Resource Leak Exposure",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-131__Resource_Leak_Exposure.md"
+  },
+  {
+    "id": "CAPEC-132",
+    "type": "attack-pattern",
+    "name": "Symlink Attack",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-132__Symlink_Attack.md"
+  },
+  {
+    "id": "CAPEC-133",
+    "type": "attack-pattern",
+    "name": "Try All Common Switches",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-133__Try_All_Common_Switches.md"
+  },
+  {
+    "id": "CAPEC-134",
+    "type": "attack-pattern",
+    "name": "Email Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-134__Email_Injection.md"
+  },
+  {
+    "id": "CAPEC-135",
+    "type": "attack-pattern",
+    "name": "Format String Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-135__Format_String_Injection.md"
+  },
+  {
+    "id": "CAPEC-136",
+    "type": "attack-pattern",
+    "name": "LDAP Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-136__LDAP_Injection.md"
+  },
+  {
+    "id": "CAPEC-137",
+    "type": "attack-pattern",
+    "name": "Parameter Injection",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-137__Parameter_Injection.md"
+  },
+  {
+    "id": "CAPEC-138",
+    "type": "attack-pattern",
+    "name": "Reflection Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-138__Reflection_Injection.md"
+  },
+  {
+    "id": "CAPEC-139",
+    "type": "attack-pattern",
+    "name": "Relative Path Traversal",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-139__Relative_Path_Traversal.md"
+  },
+  {
+    "id": "CAPEC-14",
+    "type": "attack-pattern",
+    "name": "Client-side Injection-induced Buffer Overflow",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-14__Client_side_Injection_induced_Buffer_Overflow.md"
+  },
+  {
+    "id": "CAPEC-140",
+    "type": "attack-pattern",
+    "name": "Bypassing of Intermediate Forms in Multiple-Form Sets",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-140__Bypassing_of_Intermediate_Forms_in_Multiple_Form_Sets.md"
+  },
+  {
+    "id": "CAPEC-141",
+    "type": "attack-pattern",
+    "name": "Cache Poisoning",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-141__Cache_Poisoning.md"
+  },
+  {
+    "id": "CAPEC-142",
+    "type": "attack-pattern",
+    "name": "DNS Cache Poisoning",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-142__DNS_Cache_Poisoning.md"
+  },
+  {
+    "id": "CAPEC-143",
+    "type": "attack-pattern",
+    "name": "Detect Unpublicized Web Pages",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-143__Detect_Unpublicized_Web_Pages.md"
+  },
+  {
+    "id": "CAPEC-144",
+    "type": "attack-pattern",
+    "name": "Detect Unpublicized Web Services",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-144__Detect_Unpublicized_Web_Services.md"
+  },
+  {
+    "id": "CAPEC-145",
+    "type": "attack-pattern",
+    "name": "Checksum Spoofing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-145__Checksum_Spoofing.md"
+  },
+  {
+    "id": "CAPEC-146",
+    "type": "attack-pattern",
+    "name": "XML Schema Poisoning",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-146__XML_Schema_Poisoning.md"
+  },
+  {
+    "id": "CAPEC-147",
+    "type": "attack-pattern",
+    "name": "XML Ping of the Death",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-147__XML_Ping_of_the_Death.md"
+  },
+  {
+    "id": "CAPEC-148",
+    "type": "attack-pattern",
+    "name": "Content Spoofing",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-148__Content_Spoofing.md"
+  },
+  {
+    "id": "CAPEC-149",
+    "type": "attack-pattern",
+    "name": "Explore for Predictable Temporary File Names",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-149__Explore_for_Predictable_Temporary_File_Names.md"
+  },
+  {
+    "id": "CAPEC-15",
+    "type": "attack-pattern",
+    "name": "Command Delimiters",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-15__Command_Delimiters.md"
+  },
+  {
+    "id": "CAPEC-150",
+    "type": "attack-pattern",
+    "name": "Collect Data from Common Resource Locations",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-150__Collect_Data_from_Common_Resource_Locations.md"
+  },
+  {
+    "id": "CAPEC-151",
+    "type": "attack-pattern",
+    "name": "Identity Spoofing",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-151__Identity_Spoofing.md"
+  },
+  {
+    "id": "CAPEC-153",
+    "type": "attack-pattern",
+    "name": "Input Data Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-153__Input_Data_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-154",
+    "type": "attack-pattern",
+    "name": "Resource Location Spoofing",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-154__Resource_Location_Spoofing.md"
+  },
+  {
+    "id": "CAPEC-155",
+    "type": "attack-pattern",
+    "name": "Screen Temporary Files for Sensitive Information",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-155__Screen_Temporary_Files_for_Sensitive_Information.md"
+  },
+  {
+    "id": "CAPEC-157",
+    "type": "attack-pattern",
+    "name": "Sniffing Attacks",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-157__Sniffing_Attacks.md"
+  },
+  {
+    "id": "CAPEC-158",
+    "type": "attack-pattern",
+    "name": "Sniffing Network Traffic",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-158__Sniffing_Network_Traffic.md"
+  },
+  {
+    "id": "CAPEC-159",
+    "type": "attack-pattern",
+    "name": "Redirect Access to Libraries",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-159__Redirect_Access_to_Libraries.md"
+  },
+  {
+    "id": "CAPEC-16",
+    "type": "attack-pattern",
+    "name": "Dictionary-based Password Attack",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-16__Dictionary_based_Password_Attack.md"
+  },
+  {
+    "id": "CAPEC-160",
+    "type": "attack-pattern",
+    "name": "Exploit Script-Based APIs",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-160__Exploit_Script_Based_APIs.md"
+  },
+  {
+    "id": "CAPEC-161",
+    "type": "attack-pattern",
+    "name": "Infrastructure Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-161__Infrastructure_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-162",
+    "type": "attack-pattern",
+    "name": "Manipulating Hidden Fields",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-162__Manipulating_Hidden_Fields.md"
+  },
+  {
+    "id": "CAPEC-163",
+    "type": "attack-pattern",
+    "name": "Spear Phishing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-163__Spear_Phishing.md"
+  },
+  {
+    "id": "CAPEC-164",
+    "type": "attack-pattern",
+    "name": "Mobile Phishing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-164__Mobile_Phishing.md"
+  },
+  {
+    "id": "CAPEC-165",
+    "type": "attack-pattern",
+    "name": "File Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-165__File_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-166",
+    "type": "attack-pattern",
+    "name": "Force the System to Reset Values",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-166__Force_the_System_to_Reset_Values.md"
+  },
+  {
+    "id": "CAPEC-167",
+    "type": "attack-pattern",
+    "name": "White Box Reverse Engineering",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-167__White_Box_Reverse_Engineering.md"
+  },
+  {
+    "id": "CAPEC-168",
+    "type": "attack-pattern",
+    "name": "Windows ::DATA Alternate Data Stream",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-168__Windows_DATA_Alternate_Data_Stream.md"
+  },
+  {
+    "id": "CAPEC-169",
+    "type": "attack-pattern",
+    "name": "Footprinting",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-169__Footprinting.md"
+  },
+  {
+    "id": "CAPEC-17",
+    "type": "attack-pattern",
+    "name": "Using Malicious Files",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-17__Using_Malicious_Files.md"
+  },
+  {
+    "id": "CAPEC-170",
+    "type": "attack-pattern",
+    "name": "Web Application Fingerprinting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-170__Web_Application_Fingerprinting.md"
+  },
+  {
+    "id": "CAPEC-171",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Variable Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-171__DEPRECATED_Variable_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-173",
+    "type": "attack-pattern",
+    "name": "Action Spoofing",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-173__Action_Spoofing.md"
+  },
+  {
+    "id": "CAPEC-174",
+    "type": "attack-pattern",
+    "name": "Flash Parameter Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-174__Flash_Parameter_Injection.md"
+  },
+  {
+    "id": "CAPEC-175",
+    "type": "attack-pattern",
+    "name": "Code Inclusion",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-175__Code_Inclusion.md"
+  },
+  {
+    "id": "CAPEC-176",
+    "type": "attack-pattern",
+    "name": "Configuration/Environment Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-176__Configuration_Environment_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-177",
+    "type": "attack-pattern",
+    "name": "Create files with the same name as files protected with a higher classification",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-177__Create_files_with_the_same_name_as_files_protected_with_a_higher_classification.md"
+  },
+  {
+    "id": "CAPEC-178",
+    "type": "attack-pattern",
+    "name": "Cross-Site Flashing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-178__Cross_Site_Flashing.md"
+  },
+  {
+    "id": "CAPEC-179",
+    "type": "attack-pattern",
+    "name": "Calling Micro-Services Directly",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-179__Calling_Micro_Services_Directly.md"
+  },
+  {
+    "id": "CAPEC-18",
+    "type": "attack-pattern",
+    "name": "XSS Targeting Non-Script Elements",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-18__XSS_Targeting_Non_Script_Elements.md"
+  },
+  {
+    "id": "CAPEC-180",
+    "type": "attack-pattern",
+    "name": "Exploiting Incorrectly Configured Access Control Security Levels",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-180__Exploiting_Incorrectly_Configured_Access_Control_Security_Levels.md"
+  },
+  {
+    "id": "CAPEC-181",
+    "type": "attack-pattern",
+    "name": "Flash File Overlay",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-181__Flash_File_Overlay.md"
+  },
+  {
+    "id": "CAPEC-182",
+    "type": "attack-pattern",
+    "name": "Flash Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-182__Flash_Injection.md"
+  },
+  {
+    "id": "CAPEC-183",
+    "type": "attack-pattern",
+    "name": "IMAP/SMTP Command Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-183__IMAP_SMTP_Command_Injection.md"
+  },
+  {
+    "id": "CAPEC-184",
+    "type": "attack-pattern",
+    "name": "Software Integrity Attack",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-184__Software_Integrity_Attack.md"
+  },
+  {
+    "id": "CAPEC-185",
+    "type": "attack-pattern",
+    "name": "Malicious Software Download",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-185__Malicious_Software_Download.md"
+  },
+  {
+    "id": "CAPEC-186",
+    "type": "attack-pattern",
+    "name": "Malicious Software Update",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-186__Malicious_Software_Update.md"
+  },
+  {
+    "id": "CAPEC-187",
+    "type": "attack-pattern",
+    "name": "Malicious Automated Software Update via Redirection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-187__Malicious_Automated_Software_Update_via_Redirection.md"
+  },
+  {
+    "id": "CAPEC-188",
+    "type": "attack-pattern",
+    "name": "Reverse Engineering",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-188__Reverse_Engineering.md"
+  },
+  {
+    "id": "CAPEC-189",
+    "type": "attack-pattern",
+    "name": "Black Box Reverse Engineering",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-189__Black_Box_Reverse_Engineering.md"
+  },
+  {
+    "id": "CAPEC-19",
+    "type": "attack-pattern",
+    "name": "Embedding Scripts within Scripts",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-19__Embedding_Scripts_within_Scripts.md"
+  },
+  {
+    "id": "CAPEC-190",
+    "type": "attack-pattern",
+    "name": "Reverse Engineer an Executable to Expose Assumed Hidden Functionality",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-190__Reverse_Engineer_an_Executable_to_Expose_Assumed_Hidden_Functionality.md"
+  },
+  {
+    "id": "CAPEC-191",
+    "type": "attack-pattern",
+    "name": "Read Sensitive Constants Within an Executable",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-191__Read_Sensitive_Constants_Within_an_Executable.md"
+  },
+  {
+    "id": "CAPEC-192",
+    "type": "attack-pattern",
+    "name": "Protocol Analysis",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-192__Protocol_Analysis.md"
+  },
+  {
+    "id": "CAPEC-193",
+    "type": "attack-pattern",
+    "name": "PHP Remote File Inclusion",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-193__PHP_Remote_File_Inclusion.md"
+  },
+  {
+    "id": "CAPEC-194",
+    "type": "attack-pattern",
+    "name": "Fake the Source of Data",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-194__Fake_the_Source_of_Data.md"
+  },
+  {
+    "id": "CAPEC-195",
+    "type": "attack-pattern",
+    "name": "Principal Spoof",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-195__Principal_Spoof.md"
+  },
+  {
+    "id": "CAPEC-196",
+    "type": "attack-pattern",
+    "name": "Session Credential Falsification through Forging",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-196__Session_Credential_Falsification_through_Forging.md"
+  },
+  {
+    "id": "CAPEC-197",
+    "type": "attack-pattern",
+    "name": "Exponential Data Expansion",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-197__Exponential_Data_Expansion.md"
+  },
+  {
+    "id": "CAPEC-198",
+    "type": "attack-pattern",
+    "name": "XSS Targeting Error Pages",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-198__XSS_Targeting_Error_Pages.md"
+  },
+  {
+    "id": "CAPEC-199",
+    "type": "attack-pattern",
+    "name": "XSS Using Alternate Syntax",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-199__XSS_Using_Alternate_Syntax.md"
+  },
+  {
+    "id": "CAPEC-2",
+    "type": "attack-pattern",
+    "name": "Inducing Account Lockout",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-2__Inducing_Account_Lockout.md"
+  },
+  {
+    "id": "CAPEC-20",
+    "type": "attack-pattern",
+    "name": "Encryption Brute Forcing",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-20__Encryption_Brute_Forcing.md"
+  },
+  {
+    "id": "CAPEC-200",
+    "type": "attack-pattern",
+    "name": "Removal of filters: Input filters, output filters, data masking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-200__Removal_of_filters_Input_filters_output_filters_data_masking.md"
+  },
+  {
+    "id": "CAPEC-201",
+    "type": "attack-pattern",
+    "name": "Serialized Data External Linking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-201__Serialized_Data_External_Linking.md"
+  },
+  {
+    "id": "CAPEC-202",
+    "type": "attack-pattern",
+    "name": "Create Malicious Client",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-202__Create_Malicious_Client.md"
+  },
+  {
+    "id": "CAPEC-203",
+    "type": "attack-pattern",
+    "name": "Manipulate Registry Information",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-203__Manipulate_Registry_Information.md"
+  },
+  {
+    "id": "CAPEC-204",
+    "type": "attack-pattern",
+    "name": "Lifting Sensitive Data Embedded in Cache",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-204__Lifting_Sensitive_Data_Embedded_in_Cache.md"
+  },
+  {
+    "id": "CAPEC-205",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Lifting credential(s)/key material embedded in client distributions (thick or thin)",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-205__DEPRECATED_Lifting_credential_s_key_material_embedded_in_client_distributions_th.md"
+  },
+  {
+    "id": "CAPEC-206",
+    "type": "attack-pattern",
+    "name": "Signing Malicious Code",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-206__Signing_Malicious_Code.md"
+  },
+  {
+    "id": "CAPEC-207",
+    "type": "attack-pattern",
+    "name": "Removing Important Client Functionality",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-207__Removing_Important_Client_Functionality.md"
+  },
+  {
+    "id": "CAPEC-208",
+    "type": "attack-pattern",
+    "name": "Removing/short-circuiting 'Purse' logic: removing/mutating 'cash' decrements",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-208__Removing_short_circuiting_Purse_logic_removing_mutating_cash_decrements.md"
+  },
+  {
+    "id": "CAPEC-209",
+    "type": "attack-pattern",
+    "name": "XSS Using MIME Type Mismatch",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-209__XSS_Using_MIME_Type_Mismatch.md"
+  },
+  {
+    "id": "CAPEC-21",
+    "type": "attack-pattern",
+    "name": "Exploitation of Trusted Identifiers",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-21__Exploitation_of_Trusted_Identifiers.md"
+  },
+  {
+    "id": "CAPEC-211",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Leveraging web tools (e.g. Mozilla's GreaseMonkey, Firebug) to change application behavior",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-211__DEPRECATED_Leveraging_web_tools_e_g_Mozilla_s_GreaseMonkey_Firebug_to_change_app.md"
+  },
+  {
+    "id": "CAPEC-212",
+    "type": "attack-pattern",
+    "name": "Functionality Misuse",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-212__Functionality_Misuse.md"
+  },
+  {
+    "id": "CAPEC-213",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Directory Traversal",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-213__DEPRECATED_Directory_Traversal.md"
+  },
+  {
+    "id": "CAPEC-214",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Fuzzing for garnering J2EE/.NET-based stack traces, for application mapping",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-214__DEPRECATED_Fuzzing_for_garnering_J2EE_NET_based_stack_traces_for_application_map.md"
+  },
+  {
+    "id": "CAPEC-215",
+    "type": "attack-pattern",
+    "name": "Fuzzing for application mapping",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-215__Fuzzing_for_application_mapping.md"
+  },
+  {
+    "id": "CAPEC-216",
+    "type": "attack-pattern",
+    "name": "Communication Channel Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-216__Communication_Channel_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-217",
+    "type": "attack-pattern",
+    "name": "Exploiting Incorrectly Configured SSL/TLS",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-217__Exploiting_Incorrectly_Configured_SSL_TLS.md"
+  },
+  {
+    "id": "CAPEC-218",
+    "type": "attack-pattern",
+    "name": "Spoofing of UDDI/ebXML Messages",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-218__Spoofing_of_UDDI_ebXML_Messages.md"
+  },
+  {
+    "id": "CAPEC-219",
+    "type": "attack-pattern",
+    "name": "XML Routing Detour Attacks",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-219__XML_Routing_Detour_Attacks.md"
+  },
+  {
+    "id": "CAPEC-22",
+    "type": "attack-pattern",
+    "name": "Exploiting Trust in Client",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-22__Exploiting_Trust_in_Client.md"
+  },
+  {
+    "id": "CAPEC-220",
+    "type": "attack-pattern",
+    "name": "Client-Server Protocol Manipulation",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-220__Client_Server_Protocol_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-221",
+    "type": "attack-pattern",
+    "name": "Data Serialization External Entities Blowup",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-221__Data_Serialization_External_Entities_Blowup.md"
+  },
+  {
+    "id": "CAPEC-222",
+    "type": "attack-pattern",
+    "name": "iFrame Overlay",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-222__iFrame_Overlay.md"
+  },
+  {
+    "id": "CAPEC-224",
+    "type": "attack-pattern",
+    "name": "Fingerprinting",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-224__Fingerprinting.md"
+  },
+  {
+    "id": "CAPEC-226",
+    "type": "attack-pattern",
+    "name": "Session Credential Falsification through Manipulation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-226__Session_Credential_Falsification_through_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-227",
+    "type": "attack-pattern",
+    "name": "Sustained Client Engagement",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-227__Sustained_Client_Engagement.md"
+  },
+  {
+    "id": "CAPEC-228",
+    "type": "attack-pattern",
+    "name": "DTD Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-228__DTD_Injection.md"
+  },
+  {
+    "id": "CAPEC-229",
+    "type": "attack-pattern",
+    "name": "Serialized Data Parameter Blowup",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-229__Serialized_Data_Parameter_Blowup.md"
+  },
+  {
+    "id": "CAPEC-23",
+    "type": "attack-pattern",
+    "name": "File Content Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-23__File_Content_Injection.md"
+  },
+  {
+    "id": "CAPEC-230",
+    "type": "attack-pattern",
+    "name": "Serialized Data with Nested Payloads",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-230__Serialized_Data_with_Nested_Payloads.md"
+  },
+  {
+    "id": "CAPEC-231",
+    "type": "attack-pattern",
+    "name": "Oversized Serialized Data Payloads",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-231__Oversized_Serialized_Data_Payloads.md"
+  },
+  {
+    "id": "CAPEC-233",
+    "type": "attack-pattern",
+    "name": "Privilege Escalation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-233__Privilege_Escalation.md"
+  },
+  {
+    "id": "CAPEC-234",
+    "type": "attack-pattern",
+    "name": "Hijacking a privileged process",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-234__Hijacking_a_privileged_process.md"
+  },
+  {
+    "id": "CAPEC-235",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Implementing a callback to system routine (old AWT Queue)",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-235__DEPRECATED_Implementing_a_callback_to_system_routine_old_AWT_Queue.md"
+  },
+  {
+    "id": "CAPEC-236",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Catching exception throw/signal from privileged block",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-236__DEPRECATED_Catching_exception_throw_signal_from_privileged_block.md"
+  },
+  {
+    "id": "CAPEC-237",
+    "type": "attack-pattern",
+    "name": "Escaping a Sandbox by Calling Code in Another Language",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-237__Escaping_a_Sandbox_by_Calling_Code_in_Another_Language.md"
+  },
+  {
+    "id": "CAPEC-238",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Using URL/codebase / G.A.C. (code source) to convince sandbox of privilege",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-238__DEPRECATED_Using_URL_codebase_G_A_C_code_source_to_convince_sandbox_of_privilege.md"
+  },
+  {
+    "id": "CAPEC-239",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Subversion of Authorization Checks: Cache Filtering, Programmatic Security, etc.",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-239__DEPRECATED_Subversion_of_Authorization_Checks_Cache_Filtering_Programmatic_Secur.md"
+  },
+  {
+    "id": "CAPEC-24",
+    "type": "attack-pattern",
+    "name": "Filter Failure through Buffer Overflow",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-24__Filter_Failure_through_Buffer_Overflow.md"
+  },
+  {
+    "id": "CAPEC-240",
+    "type": "attack-pattern",
+    "name": "Resource Injection",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-240__Resource_Injection.md"
+  },
+  {
+    "id": "CAPEC-241",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Code Injection",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-241__DEPRECATED_Code_Injection.md"
+  },
+  {
+    "id": "CAPEC-242",
+    "type": "attack-pattern",
+    "name": "Code Injection",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-242__Code_Injection.md"
+  },
+  {
+    "id": "CAPEC-243",
+    "type": "attack-pattern",
+    "name": "XSS Targeting HTML Attributes",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-243__XSS_Targeting_HTML_Attributes.md"
+  },
+  {
+    "id": "CAPEC-244",
+    "type": "attack-pattern",
+    "name": "XSS Targeting URI Placeholders",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-244__XSS_Targeting_URI_Placeholders.md"
+  },
+  {
+    "id": "CAPEC-245",
+    "type": "attack-pattern",
+    "name": "XSS Using Doubled Characters",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-245__XSS_Using_Doubled_Characters.md"
+  },
+  {
+    "id": "CAPEC-246",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: XSS Using Flash",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-246__DEPRECATED_XSS_Using_Flash.md"
+  },
+  {
+    "id": "CAPEC-247",
+    "type": "attack-pattern",
+    "name": "XSS Using Invalid Characters",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-247__XSS_Using_Invalid_Characters.md"
+  },
+  {
+    "id": "CAPEC-248",
+    "type": "attack-pattern",
+    "name": "Command Injection",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-248__Command_Injection.md"
+  },
+  {
+    "id": "CAPEC-249",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Linux Terminal Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-249__DEPRECATED_Linux_Terminal_Injection.md"
+  },
+  {
+    "id": "CAPEC-25",
+    "type": "attack-pattern",
+    "name": "Forced Deadlock",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-25__Forced_Deadlock.md"
+  },
+  {
+    "id": "CAPEC-250",
+    "type": "attack-pattern",
+    "name": "XML Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-250__XML_Injection.md"
+  },
+  {
+    "id": "CAPEC-251",
+    "type": "attack-pattern",
+    "name": "Local Code Inclusion",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-251__Local_Code_Inclusion.md"
+  },
+  {
+    "id": "CAPEC-252",
+    "type": "attack-pattern",
+    "name": "PHP Local File Inclusion",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-252__PHP_Local_File_Inclusion.md"
+  },
+  {
+    "id": "CAPEC-253",
+    "type": "attack-pattern",
+    "name": "Remote Code Inclusion",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-253__Remote_Code_Inclusion.md"
+  },
+  {
+    "id": "CAPEC-254",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: DTD Injection in a SOAP Message",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-254__DEPRECATED_DTD_Injection_in_a_SOAP_Message.md"
+  },
+  {
+    "id": "CAPEC-256",
+    "type": "attack-pattern",
+    "name": "SOAP Array Overflow",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-256__SOAP_Array_Overflow.md"
+  },
+  {
+    "id": "CAPEC-257",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Abuse of Transaction Data Structure",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-257__DEPRECATED_Abuse_of_Transaction_Data_Structure.md"
+  },
+  {
+    "id": "CAPEC-258",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Passively Sniffing and Capturing Application Code Bound for an Authorized Client During Dynamic Update",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-258__DEPRECATED_Passively_Sniffing_and_Capturing_Application_Code_Bound_for_an_Author.md"
+  },
+  {
+    "id": "CAPEC-259",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Passively Sniffing and Capturing Application Code Bound for an Authorized Client During Patching",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-259__DEPRECATED_Passively_Sniffing_and_Capturing_Application_Code_Bound_for_an_Author.md"
+  },
+  {
+    "id": "CAPEC-26",
+    "type": "attack-pattern",
+    "name": "Leveraging Race Conditions",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-26__Leveraging_Race_Conditions.md"
+  },
+  {
+    "id": "CAPEC-260",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Passively Sniffing and Capturing Application Code Bound for an Authorized Client During Initial Distribution",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-260__DEPRECATED_Passively_Sniffing_and_Capturing_Application_Code_Bound_for_an_Author.md"
+  },
+  {
+    "id": "CAPEC-261",
+    "type": "attack-pattern",
+    "name": "Fuzzing for garnering other adjacent user/sensitive data",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-261__Fuzzing_for_garnering_other_adjacent_user_sensitive_data.md"
+  },
+  {
+    "id": "CAPEC-263",
+    "type": "attack-pattern",
+    "name": "Force Use of Corrupted Files",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-263__Force_Use_of_Corrupted_Files.md"
+  },
+  {
+    "id": "CAPEC-264",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Environment Variable Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-264__DEPRECATED_Environment_Variable_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-265",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Global variable manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-265__DEPRECATED_Global_variable_manipulation.md"
+  },
+  {
+    "id": "CAPEC-266",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Manipulate Canonicalization",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-266__DEPRECATED_Manipulate_Canonicalization.md"
+  },
+  {
+    "id": "CAPEC-267",
+    "type": "attack-pattern",
+    "name": "Leverage Alternate Encoding",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-267__Leverage_Alternate_Encoding.md"
+  },
+  {
+    "id": "CAPEC-268",
+    "type": "attack-pattern",
+    "name": "Audit Log Manipulation",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-268__Audit_Log_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-269",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Registry Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-269__DEPRECATED_Registry_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-27",
+    "type": "attack-pattern",
+    "name": "Leveraging Race Conditions via Symbolic Links",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-27__Leveraging_Race_Conditions_via_Symbolic_Links.md"
+  },
+  {
+    "id": "CAPEC-270",
+    "type": "attack-pattern",
+    "name": "Modification of Registry Run Keys",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-270__Modification_of_Registry_Run_Keys.md"
+  },
+  {
+    "id": "CAPEC-271",
+    "type": "attack-pattern",
+    "name": "Schema Poisoning",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-271__Schema_Poisoning.md"
+  },
+  {
+    "id": "CAPEC-272",
+    "type": "attack-pattern",
+    "name": "Protocol Manipulation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-272__Protocol_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-273",
+    "type": "attack-pattern",
+    "name": "HTTP Response Smuggling",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-273__HTTP_Response_Smuggling.md"
+  },
+  {
+    "id": "CAPEC-274",
+    "type": "attack-pattern",
+    "name": "HTTP Verb Tampering",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-274__HTTP_Verb_Tampering.md"
+  },
+  {
+    "id": "CAPEC-275",
+    "type": "attack-pattern",
+    "name": "DNS Rebinding",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-275__DNS_Rebinding.md"
+  },
+  {
+    "id": "CAPEC-276",
+    "type": "attack-pattern",
+    "name": "Inter-component Protocol Manipulation",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-276__Inter_component_Protocol_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-277",
+    "type": "attack-pattern",
+    "name": "Data Interchange Protocol Manipulation",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-277__Data_Interchange_Protocol_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-278",
+    "type": "attack-pattern",
+    "name": "Web Services Protocol Manipulation",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-278__Web_Services_Protocol_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-279",
+    "type": "attack-pattern",
+    "name": "SOAP Manipulation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-279__SOAP_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-28",
+    "type": "attack-pattern",
+    "name": "Fuzzing",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-28__Fuzzing.md"
+  },
+  {
+    "id": "CAPEC-280",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: SOAP Parameter Tampering",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-280__DEPRECATED_SOAP_Parameter_Tampering.md"
+  },
+  {
+    "id": "CAPEC-285",
+    "type": "attack-pattern",
+    "name": "ICMP Echo Request Ping",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-285__ICMP_Echo_Request_Ping.md"
+  },
+  {
+    "id": "CAPEC-287",
+    "type": "attack-pattern",
+    "name": "TCP SYN Scan",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-287__TCP_SYN_Scan.md"
+  },
+  {
+    "id": "CAPEC-288",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: ICMP Echo Request Ping",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-288__DEPRECATED_ICMP_Echo_Request_Ping.md"
+  },
+  {
+    "id": "CAPEC-289",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Infrastructure-based footprinting",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-289__DEPRECATED_Infrastructure_based_footprinting.md"
+  },
+  {
+    "id": "CAPEC-29",
+    "type": "attack-pattern",
+    "name": "Leveraging Time-of-Check and Time-of-Use (TOCTOU) Race Conditions",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-29__Leveraging_Time_of_Check_and_Time_of_Use_TOCTOU_Race_Conditions.md"
+  },
+  {
+    "id": "CAPEC-290",
+    "type": "attack-pattern",
+    "name": "Enumerate Mail Exchange (MX) Records",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-290__Enumerate_Mail_Exchange_MX_Records.md"
+  },
+  {
+    "id": "CAPEC-291",
+    "type": "attack-pattern",
+    "name": "DNS Zone Transfers",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-291__DNS_Zone_Transfers.md"
+  },
+  {
+    "id": "CAPEC-292",
+    "type": "attack-pattern",
+    "name": "Host Discovery",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-292__Host_Discovery.md"
+  },
+  {
+    "id": "CAPEC-293",
+    "type": "attack-pattern",
+    "name": "Traceroute Route Enumeration",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-293__Traceroute_Route_Enumeration.md"
+  },
+  {
+    "id": "CAPEC-294",
+    "type": "attack-pattern",
+    "name": "ICMP Address Mask Request",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-294__ICMP_Address_Mask_Request.md"
+  },
+  {
+    "id": "CAPEC-295",
+    "type": "attack-pattern",
+    "name": "Timestamp Request",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-295__Timestamp_Request.md"
+  },
+  {
+    "id": "CAPEC-296",
+    "type": "attack-pattern",
+    "name": "ICMP Information Request",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-296__ICMP_Information_Request.md"
+  },
+  {
+    "id": "CAPEC-297",
+    "type": "attack-pattern",
+    "name": "TCP ACK Ping",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-297__TCP_ACK_Ping.md"
+  },
+  {
+    "id": "CAPEC-298",
+    "type": "attack-pattern",
+    "name": "UDP Ping",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-298__UDP_Ping.md"
+  },
+  {
+    "id": "CAPEC-299",
+    "type": "attack-pattern",
+    "name": "TCP SYN Ping",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-299__TCP_SYN_Ping.md"
+  },
+  {
+    "id": "CAPEC-3",
+    "type": "attack-pattern",
+    "name": "Using Leading 'Ghost' Character Sequences to Bypass Input Filters",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-3__Using_Leading_Ghost_Character_Sequences_to_Bypass_Input_Filters.md"
+  },
+  {
+    "id": "CAPEC-30",
+    "type": "attack-pattern",
+    "name": "Hijacking a Privileged Thread of Execution",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-30__Hijacking_a_Privileged_Thread_of_Execution.md"
+  },
+  {
+    "id": "CAPEC-300",
+    "type": "attack-pattern",
+    "name": "Port Scanning",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-300__Port_Scanning.md"
+  },
+  {
+    "id": "CAPEC-301",
+    "type": "attack-pattern",
+    "name": "TCP Connect Scan",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-301__TCP_Connect_Scan.md"
+  },
+  {
+    "id": "CAPEC-302",
+    "type": "attack-pattern",
+    "name": "TCP FIN Scan",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-302__TCP_FIN_Scan.md"
+  },
+  {
+    "id": "CAPEC-303",
+    "type": "attack-pattern",
+    "name": "TCP Xmas Scan",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-303__TCP_Xmas_Scan.md"
+  },
+  {
+    "id": "CAPEC-304",
+    "type": "attack-pattern",
+    "name": "TCP Null Scan",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-304__TCP_Null_Scan.md"
+  },
+  {
+    "id": "CAPEC-305",
+    "type": "attack-pattern",
+    "name": "TCP ACK Scan",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-305__TCP_ACK_Scan.md"
+  },
+  {
+    "id": "CAPEC-306",
+    "type": "attack-pattern",
+    "name": "TCP Window Scan",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-306__TCP_Window_Scan.md"
+  },
+  {
+    "id": "CAPEC-307",
+    "type": "attack-pattern",
+    "name": "TCP RPC Scan",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-307__TCP_RPC_Scan.md"
+  },
+  {
+    "id": "CAPEC-308",
+    "type": "attack-pattern",
+    "name": "UDP Scan",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-308__UDP_Scan.md"
+  },
+  {
+    "id": "CAPEC-309",
+    "type": "attack-pattern",
+    "name": "Network Topology Mapping",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-309__Network_Topology_Mapping.md"
+  },
+  {
+    "id": "CAPEC-31",
+    "type": "attack-pattern",
+    "name": "Accessing/Intercepting/Modifying HTTP Cookies",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-31__Accessing_Intercepting_Modifying_HTTP_Cookies.md"
+  },
+  {
+    "id": "CAPEC-310",
+    "type": "attack-pattern",
+    "name": "Scanning for Vulnerable Software",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-310__Scanning_for_Vulnerable_Software.md"
+  },
+  {
+    "id": "CAPEC-311",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: OS Fingerprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-311__DEPRECATED_OS_Fingerprinting.md"
+  },
+  {
+    "id": "CAPEC-312",
+    "type": "attack-pattern",
+    "name": "Active OS Fingerprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-312__Active_OS_Fingerprinting.md"
+  },
+  {
+    "id": "CAPEC-313",
+    "type": "attack-pattern",
+    "name": "Passive OS Fingerprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-313__Passive_OS_Fingerprinting.md"
+  },
+  {
+    "id": "CAPEC-314",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: IP Fingerprinting Probes",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-314__DEPRECATED_IP_Fingerprinting_Probes.md"
+  },
+  {
+    "id": "CAPEC-315",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: TCP/IP Fingerprinting Probes",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-315__DEPRECATED_TCP_IP_Fingerprinting_Probes.md"
+  },
+  {
+    "id": "CAPEC-316",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: ICMP Fingerprinting Probes",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-316__DEPRECATED_ICMP_Fingerprinting_Probes.md"
+  },
+  {
+    "id": "CAPEC-317",
+    "type": "attack-pattern",
+    "name": "IP ID Sequencing Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-317__IP_ID_Sequencing_Probe.md"
+  },
+  {
+    "id": "CAPEC-318",
+    "type": "attack-pattern",
+    "name": "IP 'ID' Echoed Byte-Order Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-318__IP_ID_Echoed_Byte_Order_Probe.md"
+  },
+  {
+    "id": "CAPEC-319",
+    "type": "attack-pattern",
+    "name": "IP (DF) 'Don't Fragment Bit' Echoing Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-319__IP_DF_Don_t_Fragment_Bit_Echoing_Probe.md"
+  },
+  {
+    "id": "CAPEC-32",
+    "type": "attack-pattern",
+    "name": "XSS Through HTTP Query Strings",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-32__XSS_Through_HTTP_Query_Strings.md"
+  },
+  {
+    "id": "CAPEC-320",
+    "type": "attack-pattern",
+    "name": "TCP Timestamp Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-320__TCP_Timestamp_Probe.md"
+  },
+  {
+    "id": "CAPEC-321",
+    "type": "attack-pattern",
+    "name": "TCP Sequence Number Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-321__TCP_Sequence_Number_Probe.md"
+  },
+  {
+    "id": "CAPEC-322",
+    "type": "attack-pattern",
+    "name": "TCP (ISN) Greatest Common Divisor Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-322__TCP_ISN_Greatest_Common_Divisor_Probe.md"
+  },
+  {
+    "id": "CAPEC-323",
+    "type": "attack-pattern",
+    "name": "TCP (ISN) Counter Rate Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-323__TCP_ISN_Counter_Rate_Probe.md"
+  },
+  {
+    "id": "CAPEC-324",
+    "type": "attack-pattern",
+    "name": "TCP (ISN) Sequence Predictability Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-324__TCP_ISN_Sequence_Predictability_Probe.md"
+  },
+  {
+    "id": "CAPEC-325",
+    "type": "attack-pattern",
+    "name": "TCP Congestion Control Flag (ECN) Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-325__TCP_Congestion_Control_Flag_ECN_Probe.md"
+  },
+  {
+    "id": "CAPEC-326",
+    "type": "attack-pattern",
+    "name": "TCP Initial Window Size Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-326__TCP_Initial_Window_Size_Probe.md"
+  },
+  {
+    "id": "CAPEC-327",
+    "type": "attack-pattern",
+    "name": "TCP Options Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-327__TCP_Options_Probe.md"
+  },
+  {
+    "id": "CAPEC-328",
+    "type": "attack-pattern",
+    "name": "TCP 'RST' Flag Checksum Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-328__TCP_RST_Flag_Checksum_Probe.md"
+  },
+  {
+    "id": "CAPEC-329",
+    "type": "attack-pattern",
+    "name": "ICMP Error Message Quoting Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-329__ICMP_Error_Message_Quoting_Probe.md"
+  },
+  {
+    "id": "CAPEC-33",
+    "type": "attack-pattern",
+    "name": "HTTP Request Smuggling",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-33__HTTP_Request_Smuggling.md"
+  },
+  {
+    "id": "CAPEC-330",
+    "type": "attack-pattern",
+    "name": "ICMP Error Message Echoing Integrity Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-330__ICMP_Error_Message_Echoing_Integrity_Probe.md"
+  },
+  {
+    "id": "CAPEC-331",
+    "type": "attack-pattern",
+    "name": "ICMP IP Total Length Field Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-331__ICMP_IP_Total_Length_Field_Probe.md"
+  },
+  {
+    "id": "CAPEC-332",
+    "type": "attack-pattern",
+    "name": "ICMP IP 'ID' Field Error Message Probe",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-332__ICMP_IP_ID_Field_Error_Message_Probe.md"
+  },
+  {
+    "id": "CAPEC-34",
+    "type": "attack-pattern",
+    "name": "HTTP Response Splitting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-34__HTTP_Response_Splitting.md"
+  },
+  {
+    "id": "CAPEC-35",
+    "type": "attack-pattern",
+    "name": "Leverage Executable Code in Non-Executable Files",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-35__Leverage_Executable_Code_in_Non_Executable_Files.md"
+  },
+  {
+    "id": "CAPEC-36",
+    "type": "attack-pattern",
+    "name": "Using Unpublished Interfaces or Functionality",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-36__Using_Unpublished_Interfaces_or_Functionality.md"
+  },
+  {
+    "id": "CAPEC-37",
+    "type": "attack-pattern",
+    "name": "Retrieve Embedded Sensitive Data",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-37__Retrieve_Embedded_Sensitive_Data.md"
+  },
+  {
+    "id": "CAPEC-38",
+    "type": "attack-pattern",
+    "name": "Leveraging/Manipulating Configuration File Search Paths",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-38__Leveraging_Manipulating_Configuration_File_Search_Paths.md"
+  },
+  {
+    "id": "CAPEC-383",
+    "type": "attack-pattern",
+    "name": "Harvesting Information via API Event Monitoring",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-383__Harvesting_Information_via_API_Event_Monitoring.md"
+  },
+  {
+    "id": "CAPEC-384",
+    "type": "attack-pattern",
+    "name": "Application API Message Manipulation via Man-in-the-Middle",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-384__Application_API_Message_Manipulation_via_Man_in_the_Middle.md"
+  },
+  {
+    "id": "CAPEC-385",
+    "type": "attack-pattern",
+    "name": "Transaction or Event Tampering via Application API Manipulation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-385__Transaction_or_Event_Tampering_via_Application_API_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-386",
+    "type": "attack-pattern",
+    "name": "Application API Navigation Remapping",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-386__Application_API_Navigation_Remapping.md"
+  },
+  {
+    "id": "CAPEC-387",
+    "type": "attack-pattern",
+    "name": "Navigation Remapping To Propagate Malicious Content",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-387__Navigation_Remapping_To_Propagate_Malicious_Content.md"
+  },
+  {
+    "id": "CAPEC-388",
+    "type": "attack-pattern",
+    "name": "Application API Button Hijacking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-388__Application_API_Button_Hijacking.md"
+  },
+  {
+    "id": "CAPEC-389",
+    "type": "attack-pattern",
+    "name": "Content Spoofing Via Application API Manipulation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-389__Content_Spoofing_Via_Application_API_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-39",
+    "type": "attack-pattern",
+    "name": "Manipulating Opaque Client-based Data Tokens",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-39__Manipulating_Opaque_Client_based_Data_Tokens.md"
+  },
+  {
+    "id": "CAPEC-390",
+    "type": "attack-pattern",
+    "name": "Bypassing Physical Security",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-390__Bypassing_Physical_Security.md"
+  },
+  {
+    "id": "CAPEC-391",
+    "type": "attack-pattern",
+    "name": "Bypassing Physical Locks",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-391__Bypassing_Physical_Locks.md"
+  },
+  {
+    "id": "CAPEC-392",
+    "type": "attack-pattern",
+    "name": "Lock Bumping",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-392__Lock_Bumping.md"
+  },
+  {
+    "id": "CAPEC-393",
+    "type": "attack-pattern",
+    "name": "Lock Picking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-393__Lock_Picking.md"
+  },
+  {
+    "id": "CAPEC-394",
+    "type": "attack-pattern",
+    "name": "Using a Snap Gun Lock to Force a Lock",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-394__Using_a_Snap_Gun_Lock_to_Force_a_Lock.md"
+  },
+  {
+    "id": "CAPEC-395",
+    "type": "attack-pattern",
+    "name": "Bypassing Electronic Locks and Access Controls",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-395__Bypassing_Electronic_Locks_and_Access_Controls.md"
+  },
+  {
+    "id": "CAPEC-396",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Bypassing Card or Badge-Based Systems",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-396__DEPRECATED_Bypassing_Card_or_Badge_Based_Systems.md"
+  },
+  {
+    "id": "CAPEC-397",
+    "type": "attack-pattern",
+    "name": "Cloning Magnetic Strip Cards",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-397__Cloning_Magnetic_Strip_Cards.md"
+  },
+  {
+    "id": "CAPEC-398",
+    "type": "attack-pattern",
+    "name": "Magnetic Strip Card Brute Force Attacks",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-398__Magnetic_Strip_Card_Brute_Force_Attacks.md"
+  },
+  {
+    "id": "CAPEC-399",
+    "type": "attack-pattern",
+    "name": "Cloning RFID Cards or Chips",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-399__Cloning_RFID_Cards_or_Chips.md"
+  },
+  {
+    "id": "CAPEC-4",
+    "type": "attack-pattern",
+    "name": "Using Alternative IP Address Encodings",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-4__Using_Alternative_IP_Address_Encodings.md"
+  },
+  {
+    "id": "CAPEC-40",
+    "type": "attack-pattern",
+    "name": "Manipulating Writeable Terminal Devices",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-40__Manipulating_Writeable_Terminal_Devices.md"
+  },
+  {
+    "id": "CAPEC-400",
+    "type": "attack-pattern",
+    "name": "RFID Chip Deactivation or Destruction",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-400__RFID_Chip_Deactivation_or_Destruction.md"
+  },
+  {
+    "id": "CAPEC-401",
+    "type": "attack-pattern",
+    "name": "Physically Hacking Hardware",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-401__Physically_Hacking_Hardware.md"
+  },
+  {
+    "id": "CAPEC-402",
+    "type": "attack-pattern",
+    "name": "Bypassing ATA Password Security",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-402__Bypassing_ATA_Password_Security.md"
+  },
+  {
+    "id": "CAPEC-404",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Social Information Gathering Attacks",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-404__DEPRECATED_Social_Information_Gathering_Attacks.md"
+  },
+  {
+    "id": "CAPEC-405",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Social Information Gathering via Research",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-405__DEPRECATED_Social_Information_Gathering_via_Research.md"
+  },
+  {
+    "id": "CAPEC-406",
+    "type": "attack-pattern",
+    "name": "Dumpster Diving",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-406__Dumpster_Diving.md"
+  },
+  {
+    "id": "CAPEC-407",
+    "type": "attack-pattern",
+    "name": "Pretexting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-407__Pretexting.md"
+  },
+  {
+    "id": "CAPEC-408",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Information Gathering from Traditional Sources",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-408__DEPRECATED_Information_Gathering_from_Traditional_Sources.md"
+  },
+  {
+    "id": "CAPEC-409",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Information Gathering from Non-Traditional Sources",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-409__DEPRECATED_Information_Gathering_from_Non_Traditional_Sources.md"
+  },
+  {
+    "id": "CAPEC-41",
+    "type": "attack-pattern",
+    "name": "Using Meta-characters in E-mail Headers to Inject Malicious Payloads",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-41__Using_Meta_characters_in_E_mail_Headers_to_Inject_Malicious_Payloads.md"
+  },
+  {
+    "id": "CAPEC-410",
+    "type": "attack-pattern",
+    "name": "Information Elicitation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-410__Information_Elicitation.md"
+  },
+  {
+    "id": "CAPEC-411",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Pretexting",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-411__DEPRECATED_Pretexting.md"
+  },
+  {
+    "id": "CAPEC-412",
+    "type": "attack-pattern",
+    "name": "Pretexting via Customer Service",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-412__Pretexting_via_Customer_Service.md"
+  },
+  {
+    "id": "CAPEC-413",
+    "type": "attack-pattern",
+    "name": "Pretexting via Tech Support",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-413__Pretexting_via_Tech_Support.md"
+  },
+  {
+    "id": "CAPEC-414",
+    "type": "attack-pattern",
+    "name": "Pretexting via Delivery Person",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-414__Pretexting_via_Delivery_Person.md"
+  },
+  {
+    "id": "CAPEC-415",
+    "type": "attack-pattern",
+    "name": "Pretexting via Phone",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-415__Pretexting_via_Phone.md"
+  },
+  {
+    "id": "CAPEC-416",
+    "type": "attack-pattern",
+    "name": "Manipulate Human Behavior",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-416__Manipulate_Human_Behavior.md"
+  },
+  {
+    "id": "CAPEC-417",
+    "type": "attack-pattern",
+    "name": "Influence Perception",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-417__Influence_Perception.md"
+  },
+  {
+    "id": "CAPEC-418",
+    "type": "attack-pattern",
+    "name": "Influence Perception of Reciprocation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-418__Influence_Perception_of_Reciprocation.md"
+  },
+  {
+    "id": "CAPEC-419",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Target Influence via Perception of Concession",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-419__DEPRECATED_Target_Influence_via_Perception_of_Concession.md"
+  },
+  {
+    "id": "CAPEC-42",
+    "type": "attack-pattern",
+    "name": "MIME Conversion",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-42__MIME_Conversion.md"
+  },
+  {
+    "id": "CAPEC-420",
+    "type": "attack-pattern",
+    "name": "Influence Perception of Scarcity",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-420__Influence_Perception_of_Scarcity.md"
+  },
+  {
+    "id": "CAPEC-421",
+    "type": "attack-pattern",
+    "name": "Influence Perception of Authority",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-421__Influence_Perception_of_Authority.md"
+  },
+  {
+    "id": "CAPEC-422",
+    "type": "attack-pattern",
+    "name": "Influence Perception of Commitment and Consistency",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-422__Influence_Perception_of_Commitment_and_Consistency.md"
+  },
+  {
+    "id": "CAPEC-423",
+    "type": "attack-pattern",
+    "name": "Influence Perception of Liking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-423__Influence_Perception_of_Liking.md"
+  },
+  {
+    "id": "CAPEC-424",
+    "type": "attack-pattern",
+    "name": "Influence Perception of Consensus or Social Proof",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-424__Influence_Perception_of_Consensus_or_Social_Proof.md"
+  },
+  {
+    "id": "CAPEC-425",
+    "type": "attack-pattern",
+    "name": "Target Influence via Framing",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-425__Target_Influence_via_Framing.md"
+  },
+  {
+    "id": "CAPEC-426",
+    "type": "attack-pattern",
+    "name": "Influence via Incentives",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-426__Influence_via_Incentives.md"
+  },
+  {
+    "id": "CAPEC-427",
+    "type": "attack-pattern",
+    "name": "Influence via Psychological Principles",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-427__Influence_via_Psychological_Principles.md"
+  },
+  {
+    "id": "CAPEC-428",
+    "type": "attack-pattern",
+    "name": "Influence via Modes of Thinking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-428__Influence_via_Modes_of_Thinking.md"
+  },
+  {
+    "id": "CAPEC-429",
+    "type": "attack-pattern",
+    "name": "Target Influence via Eye Cues",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-429__Target_Influence_via_Eye_Cues.md"
+  },
+  {
+    "id": "CAPEC-43",
+    "type": "attack-pattern",
+    "name": "Exploiting Multiple Input Interpretation Layers",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-43__Exploiting_Multiple_Input_Interpretation_Layers.md"
+  },
+  {
+    "id": "CAPEC-430",
+    "type": "attack-pattern",
+    "name": "DEPRECATED:  Target Influence via Micro-Expressions",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-430__DEPRECATED_Target_Influence_via_Micro_Expressions.md"
+  },
+  {
+    "id": "CAPEC-431",
+    "type": "attack-pattern",
+    "name": "DEPRECATED:  Target Influence via Neuro-Linguistic Programming (NLP)",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-431__DEPRECATED_Target_Influence_via_Neuro_Linguistic_Programming_NLP.md"
+  },
+  {
+    "id": "CAPEC-432",
+    "type": "attack-pattern",
+    "name": "DEPRECATED:  Target Influence via Voice in NLP",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-432__DEPRECATED_Target_Influence_via_Voice_in_NLP.md"
+  },
+  {
+    "id": "CAPEC-433",
+    "type": "attack-pattern",
+    "name": "Target Influence via The Human Buffer Overflow",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-433__Target_Influence_via_The_Human_Buffer_Overflow.md"
+  },
+  {
+    "id": "CAPEC-434",
+    "type": "attack-pattern",
+    "name": "Target Influence via Interview and Interrogation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-434__Target_Influence_via_Interview_and_Interrogation.md"
+  },
+  {
+    "id": "CAPEC-435",
+    "type": "attack-pattern",
+    "name": "Target Influence via Instant Rapport",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-435__Target_Influence_via_Instant_Rapport.md"
+  },
+  {
+    "id": "CAPEC-438",
+    "type": "attack-pattern",
+    "name": "Modification During Manufacture",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-438__Modification_During_Manufacture.md"
+  },
+  {
+    "id": "CAPEC-439",
+    "type": "attack-pattern",
+    "name": "Manipulation During Distribution",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-439__Manipulation_During_Distribution.md"
+  },
+  {
+    "id": "CAPEC-44",
+    "type": "attack-pattern",
+    "name": "Overflow Binary Resource File",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-44__Overflow_Binary_Resource_File.md"
+  },
+  {
+    "id": "CAPEC-440",
+    "type": "attack-pattern",
+    "name": "Hardware Integrity Attack",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-440__Hardware_Integrity_Attack.md"
+  },
+  {
+    "id": "CAPEC-441",
+    "type": "attack-pattern",
+    "name": "Malicious Logic Insertion",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-441__Malicious_Logic_Insertion.md"
+  },
+  {
+    "id": "CAPEC-442",
+    "type": "attack-pattern",
+    "name": "Infected Software",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-442__Infected_Software.md"
+  },
+  {
+    "id": "CAPEC-443",
+    "type": "attack-pattern",
+    "name": "Malicious Logic Inserted Into Product by Authorized Developer",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-443__Malicious_Logic_Inserted_Into_Product_by_Authorized_Developer.md"
+  },
+  {
+    "id": "CAPEC-444",
+    "type": "attack-pattern",
+    "name": "Development Alteration",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-444__Development_Alteration.md"
+  },
+  {
+    "id": "CAPEC-445",
+    "type": "attack-pattern",
+    "name": "Malicious Logic Insertion into Product Software via Configuration Management Manipulation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-445__Malicious_Logic_Insertion_into_Product_Software_via_Configuration_Management_Man.md"
+  },
+  {
+    "id": "CAPEC-446",
+    "type": "attack-pattern",
+    "name": "Malicious Logic Insertion into Product via Inclusion of Third-Party Component",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-446__Malicious_Logic_Insertion_into_Product_via_Inclusion_of_Third_Party_Component.md"
+  },
+  {
+    "id": "CAPEC-447",
+    "type": "attack-pattern",
+    "name": "Design Alteration",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-447__Design_Alteration.md"
+  },
+  {
+    "id": "CAPEC-448",
+    "type": "attack-pattern",
+    "name": "Embed Virus into DLL",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-448__Embed_Virus_into_DLL.md"
+  },
+  {
+    "id": "CAPEC-449",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Malware Propagation via USB Stick",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-449__DEPRECATED_Malware_Propagation_via_USB_Stick.md"
+  },
+  {
+    "id": "CAPEC-45",
+    "type": "attack-pattern",
+    "name": "Buffer Overflow via Symbolic Links",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-45__Buffer_Overflow_via_Symbolic_Links.md"
+  },
+  {
+    "id": "CAPEC-450",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Malware Propagation via USB U3 Autorun",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-450__DEPRECATED_Malware_Propagation_via_USB_U3_Autorun.md"
+  },
+  {
+    "id": "CAPEC-451",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Malware Propagation via Infected Peripheral Device",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-451__DEPRECATED_Malware_Propagation_via_Infected_Peripheral_Device.md"
+  },
+  {
+    "id": "CAPEC-452",
+    "type": "attack-pattern",
+    "name": "Infected Hardware",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-452__Infected_Hardware.md"
+  },
+  {
+    "id": "CAPEC-453",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Malicious Logic Insertion via Counterfeit Hardware",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-453__DEPRECATED_Malicious_Logic_Insertion_via_Counterfeit_Hardware.md"
+  },
+  {
+    "id": "CAPEC-454",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Modification of Existing Components with Counterfeit Hardware",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-454__DEPRECATED_Modification_of_Existing_Components_with_Counterfeit_Hardware.md"
+  },
+  {
+    "id": "CAPEC-455",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Malicious Logic Insertion via Inclusion of Counterfeit Hardware Components",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-455__DEPRECATED_Malicious_Logic_Insertion_via_Inclusion_of_Counterfeit_Hardware_Compo.md"
+  },
+  {
+    "id": "CAPEC-456",
+    "type": "attack-pattern",
+    "name": "Infected Memory",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-456__Infected_Memory.md"
+  },
+  {
+    "id": "CAPEC-457",
+    "type": "attack-pattern",
+    "name": "USB Memory Attacks",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-457__USB_Memory_Attacks.md"
+  },
+  {
+    "id": "CAPEC-458",
+    "type": "attack-pattern",
+    "name": "Flash Memory Attacks",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-458__Flash_Memory_Attacks.md"
+  },
+  {
+    "id": "CAPEC-459",
+    "type": "attack-pattern",
+    "name": "Creating a Rogue Certification Authority Certificate",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-459__Creating_a_Rogue_Certification_Authority_Certificate.md"
+  },
+  {
+    "id": "CAPEC-46",
+    "type": "attack-pattern",
+    "name": "Overflow Variables and Tags",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-46__Overflow_Variables_and_Tags.md"
+  },
+  {
+    "id": "CAPEC-460",
+    "type": "attack-pattern",
+    "name": "HTTP Parameter Pollution (HPP)",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-460__HTTP_Parameter_Pollution_HPP.md"
+  },
+  {
+    "id": "CAPEC-461",
+    "type": "attack-pattern",
+    "name": "Web Services API Signature Forgery Leveraging Hash Function Extension Weakness",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-461__Web_Services_API_Signature_Forgery_Leveraging_Hash_Function_Extension_Weakness.md"
+  },
+  {
+    "id": "CAPEC-462",
+    "type": "attack-pattern",
+    "name": "Cross-Domain Search Timing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-462__Cross_Domain_Search_Timing.md"
+  },
+  {
+    "id": "CAPEC-463",
+    "type": "attack-pattern",
+    "name": "Padding Oracle Crypto Attack",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-463__Padding_Oracle_Crypto_Attack.md"
+  },
+  {
+    "id": "CAPEC-464",
+    "type": "attack-pattern",
+    "name": "Evercookie",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-464__Evercookie.md"
+  },
+  {
+    "id": "CAPEC-465",
+    "type": "attack-pattern",
+    "name": "Transparent Proxy Abuse",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-465__Transparent_Proxy_Abuse.md"
+  },
+  {
+    "id": "CAPEC-466",
+    "type": "attack-pattern",
+    "name": "Leveraging Active Adversary in the Middle Attacks to Bypass Same Origin Policy",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-466__Leveraging_Active_Adversary_in_the_Middle_Attacks_to_Bypass_Same_Origin_Policy.md"
+  },
+  {
+    "id": "CAPEC-467",
+    "type": "attack-pattern",
+    "name": "Cross Site Identification",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-467__Cross_Site_Identification.md"
+  },
+  {
+    "id": "CAPEC-468",
+    "type": "attack-pattern",
+    "name": "Generic Cross-Browser Cross-Domain Theft",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-468__Generic_Cross_Browser_Cross_Domain_Theft.md"
+  },
+  {
+    "id": "CAPEC-469",
+    "type": "attack-pattern",
+    "name": "HTTP DoS",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-469__HTTP_DoS.md"
+  },
+  {
+    "id": "CAPEC-47",
+    "type": "attack-pattern",
+    "name": "Buffer Overflow via Parameter Expansion",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-47__Buffer_Overflow_via_Parameter_Expansion.md"
+  },
+  {
+    "id": "CAPEC-470",
+    "type": "attack-pattern",
+    "name": "Expanding Control over the Operating System from the Database",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-470__Expanding_Control_over_the_Operating_System_from_the_Database.md"
+  },
+  {
+    "id": "CAPEC-471",
+    "type": "attack-pattern",
+    "name": "Search Order Hijacking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-471__Search_Order_Hijacking.md"
+  },
+  {
+    "id": "CAPEC-472",
+    "type": "attack-pattern",
+    "name": "Browser Fingerprinting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-472__Browser_Fingerprinting.md"
+  },
+  {
+    "id": "CAPEC-473",
+    "type": "attack-pattern",
+    "name": "Signature Spoof",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-473__Signature_Spoof.md"
+  },
+  {
+    "id": "CAPEC-474",
+    "type": "attack-pattern",
+    "name": "Signature Spoofing by Key Theft",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-474__Signature_Spoofing_by_Key_Theft.md"
+  },
+  {
+    "id": "CAPEC-475",
+    "type": "attack-pattern",
+    "name": "Signature Spoofing by Improper Validation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-475__Signature_Spoofing_by_Improper_Validation.md"
+  },
+  {
+    "id": "CAPEC-476",
+    "type": "attack-pattern",
+    "name": "Signature Spoofing by Misrepresentation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-476__Signature_Spoofing_by_Misrepresentation.md"
+  },
+  {
+    "id": "CAPEC-477",
+    "type": "attack-pattern",
+    "name": "Signature Spoofing by Mixing Signed and Unsigned Content",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-477__Signature_Spoofing_by_Mixing_Signed_and_Unsigned_Content.md"
+  },
+  {
+    "id": "CAPEC-478",
+    "type": "attack-pattern",
+    "name": "Modification of Windows Service Configuration",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-478__Modification_of_Windows_Service_Configuration.md"
+  },
+  {
+    "id": "CAPEC-479",
+    "type": "attack-pattern",
+    "name": "Malicious Root Certificate",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-479__Malicious_Root_Certificate.md"
+  },
+  {
+    "id": "CAPEC-48",
+    "type": "attack-pattern",
+    "name": "Passing Local Filenames to Functions That Expect a URL",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-48__Passing_Local_Filenames_to_Functions_That_Expect_a_URL.md"
+  },
+  {
+    "id": "CAPEC-480",
+    "type": "attack-pattern",
+    "name": "Escaping Virtualization",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-480__Escaping_Virtualization.md"
+  },
+  {
+    "id": "CAPEC-481",
+    "type": "attack-pattern",
+    "name": "Contradictory Destinations in Traffic Routing Schemes",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-481__Contradictory_Destinations_in_Traffic_Routing_Schemes.md"
+  },
+  {
+    "id": "CAPEC-482",
+    "type": "attack-pattern",
+    "name": "TCP Flood",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-482__TCP_Flood.md"
+  },
+  {
+    "id": "CAPEC-484",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: XML Client-Side Attack",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-484__DEPRECATED_XML_Client_Side_Attack.md"
+  },
+  {
+    "id": "CAPEC-485",
+    "type": "attack-pattern",
+    "name": "Signature Spoofing by Key Recreation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-485__Signature_Spoofing_by_Key_Recreation.md"
+  },
+  {
+    "id": "CAPEC-486",
+    "type": "attack-pattern",
+    "name": "UDP Flood",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-486__UDP_Flood.md"
+  },
+  {
+    "id": "CAPEC-487",
+    "type": "attack-pattern",
+    "name": "ICMP Flood",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-487__ICMP_Flood.md"
+  },
+  {
+    "id": "CAPEC-488",
+    "type": "attack-pattern",
+    "name": "HTTP Flood",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-488__HTTP_Flood.md"
+  },
+  {
+    "id": "CAPEC-489",
+    "type": "attack-pattern",
+    "name": "SSL Flood",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-489__SSL_Flood.md"
+  },
+  {
+    "id": "CAPEC-49",
+    "type": "attack-pattern",
+    "name": "Password Brute Forcing",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-49__Password_Brute_Forcing.md"
+  },
+  {
+    "id": "CAPEC-490",
+    "type": "attack-pattern",
+    "name": "Amplification",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-490__Amplification.md"
+  },
+  {
+    "id": "CAPEC-491",
+    "type": "attack-pattern",
+    "name": "Quadratic Data Expansion",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-491__Quadratic_Data_Expansion.md"
+  },
+  {
+    "id": "CAPEC-492",
+    "type": "attack-pattern",
+    "name": "Regular Expression Exponential Blowup",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-492__Regular_Expression_Exponential_Blowup.md"
+  },
+  {
+    "id": "CAPEC-493",
+    "type": "attack-pattern",
+    "name": "SOAP Array Blowup",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-493__SOAP_Array_Blowup.md"
+  },
+  {
+    "id": "CAPEC-494",
+    "type": "attack-pattern",
+    "name": "TCP Fragmentation",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-494__TCP_Fragmentation.md"
+  },
+  {
+    "id": "CAPEC-495",
+    "type": "attack-pattern",
+    "name": "UDP Fragmentation",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-495__UDP_Fragmentation.md"
+  },
+  {
+    "id": "CAPEC-496",
+    "type": "attack-pattern",
+    "name": "ICMP Fragmentation",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-496__ICMP_Fragmentation.md"
+  },
+  {
+    "id": "CAPEC-497",
+    "type": "attack-pattern",
+    "name": "File Discovery",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-497__File_Discovery.md"
+  },
+  {
+    "id": "CAPEC-498",
+    "type": "attack-pattern",
+    "name": "Probe iOS Screenshots",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-498__Probe_iOS_Screenshots.md"
+  },
+  {
+    "id": "CAPEC-499",
+    "type": "attack-pattern",
+    "name": "Android Intent Intercept",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-499__Android_Intent_Intercept.md"
+  },
+  {
+    "id": "CAPEC-5",
+    "type": "attack-pattern",
+    "name": "Blue Boxing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-5__Blue_Boxing.md"
+  },
+  {
+    "id": "CAPEC-50",
+    "type": "attack-pattern",
+    "name": "Password Recovery Exploitation",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-50__Password_Recovery_Exploitation.md"
+  },
+  {
+    "id": "CAPEC-500",
+    "type": "attack-pattern",
+    "name": "WebView Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-500__WebView_Injection.md"
+  },
+  {
+    "id": "CAPEC-501",
+    "type": "attack-pattern",
+    "name": "Android Activity Hijack",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-501__Android_Activity_Hijack.md"
+  },
+  {
+    "id": "CAPEC-502",
+    "type": "attack-pattern",
+    "name": "Intent Spoof",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-502__Intent_Spoof.md"
+  },
+  {
+    "id": "CAPEC-503",
+    "type": "attack-pattern",
+    "name": "WebView Exposure",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-503__WebView_Exposure.md"
+  },
+  {
+    "id": "CAPEC-504",
+    "type": "attack-pattern",
+    "name": "Task Impersonation",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-504__Task_Impersonation.md"
+  },
+  {
+    "id": "CAPEC-505",
+    "type": "attack-pattern",
+    "name": "Scheme Squatting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-505__Scheme_Squatting.md"
+  },
+  {
+    "id": "CAPEC-506",
+    "type": "attack-pattern",
+    "name": "Tapjacking",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-506__Tapjacking.md"
+  },
+  {
+    "id": "CAPEC-507",
+    "type": "attack-pattern",
+    "name": "Physical Theft",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-507__Physical_Theft.md"
+  },
+  {
+    "id": "CAPEC-508",
+    "type": "attack-pattern",
+    "name": "Shoulder Surfing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-508__Shoulder_Surfing.md"
+  },
+  {
+    "id": "CAPEC-509",
+    "type": "attack-pattern",
+    "name": "Kerberoasting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-509__Kerberoasting.md"
+  },
+  {
+    "id": "CAPEC-51",
+    "type": "attack-pattern",
+    "name": "Poison Web Service Registry",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-51__Poison_Web_Service_Registry.md"
+  },
+  {
+    "id": "CAPEC-510",
+    "type": "attack-pattern",
+    "name": "SaaS User Request Forgery",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-510__SaaS_User_Request_Forgery.md"
+  },
+  {
+    "id": "CAPEC-511",
+    "type": "attack-pattern",
+    "name": "Infiltration of Software Development Environment",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-511__Infiltration_of_Software_Development_Environment.md"
+  },
+  {
+    "id": "CAPEC-516",
+    "type": "attack-pattern",
+    "name": "Hardware Component Substitution During Baselining",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-516__Hardware_Component_Substitution_During_Baselining.md"
+  },
+  {
+    "id": "CAPEC-517",
+    "type": "attack-pattern",
+    "name": "Documentation Alteration to Circumvent Dial-down",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-517__Documentation_Alteration_to_Circumvent_Dial_down.md"
+  },
+  {
+    "id": "CAPEC-518",
+    "type": "attack-pattern",
+    "name": "Documentation Alteration to Produce Under-performing Systems",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-518__Documentation_Alteration_to_Produce_Under_performing_Systems.md"
+  },
+  {
+    "id": "CAPEC-519",
+    "type": "attack-pattern",
+    "name": "Documentation Alteration to Cause Errors in System Design",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-519__Documentation_Alteration_to_Cause_Errors_in_System_Design.md"
+  },
+  {
+    "id": "CAPEC-52",
+    "type": "attack-pattern",
+    "name": "Embedding NULL Bytes",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-52__Embedding_NULL_Bytes.md"
+  },
+  {
+    "id": "CAPEC-520",
+    "type": "attack-pattern",
+    "name": "Counterfeit Hardware Component Inserted During Product Assembly",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-520__Counterfeit_Hardware_Component_Inserted_During_Product_Assembly.md"
+  },
+  {
+    "id": "CAPEC-521",
+    "type": "attack-pattern",
+    "name": "Hardware Design Specifications Are Altered",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-521__Hardware_Design_Specifications_Are_Altered.md"
+  },
+  {
+    "id": "CAPEC-522",
+    "type": "attack-pattern",
+    "name": "Malicious Hardware Component Replacement",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-522__Malicious_Hardware_Component_Replacement.md"
+  },
+  {
+    "id": "CAPEC-523",
+    "type": "attack-pattern",
+    "name": "Malicious Software Implanted",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-523__Malicious_Software_Implanted.md"
+  },
+  {
+    "id": "CAPEC-524",
+    "type": "attack-pattern",
+    "name": "Rogue Integration Procedures",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-524__Rogue_Integration_Procedures.md"
+  },
+  {
+    "id": "CAPEC-528",
+    "type": "attack-pattern",
+    "name": "XML Flood",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-528__XML_Flood.md"
+  },
+  {
+    "id": "CAPEC-529",
+    "type": "attack-pattern",
+    "name": "Malware-Directed Internal Reconnaissance",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-529__Malware_Directed_Internal_Reconnaissance.md"
+  },
+  {
+    "id": "CAPEC-53",
+    "type": "attack-pattern",
+    "name": "Postfix, Null Terminate, and Backslash",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-53__Postfix_Null_Terminate_and_Backslash.md"
+  },
+  {
+    "id": "CAPEC-530",
+    "type": "attack-pattern",
+    "name": "Provide Counterfeit Component",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-530__Provide_Counterfeit_Component.md"
+  },
+  {
+    "id": "CAPEC-531",
+    "type": "attack-pattern",
+    "name": "Hardware Component Substitution",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-531__Hardware_Component_Substitution.md"
+  },
+  {
+    "id": "CAPEC-532",
+    "type": "attack-pattern",
+    "name": "Altered Installed BIOS",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-532__Altered_Installed_BIOS.md"
+  },
+  {
+    "id": "CAPEC-533",
+    "type": "attack-pattern",
+    "name": "Malicious Manual Software Update",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-533__Malicious_Manual_Software_Update.md"
+  },
+  {
+    "id": "CAPEC-534",
+    "type": "attack-pattern",
+    "name": "Malicious Hardware Update",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-534__Malicious_Hardware_Update.md"
+  },
+  {
+    "id": "CAPEC-535",
+    "type": "attack-pattern",
+    "name": "Malicious Gray Market Hardware",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-535__Malicious_Gray_Market_Hardware.md"
+  },
+  {
+    "id": "CAPEC-536",
+    "type": "attack-pattern",
+    "name": "Data Injected During Configuration",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-536__Data_Injected_During_Configuration.md"
+  },
+  {
+    "id": "CAPEC-537",
+    "type": "attack-pattern",
+    "name": "Infiltration of Hardware Development Environment",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-537__Infiltration_of_Hardware_Development_Environment.md"
+  },
+  {
+    "id": "CAPEC-538",
+    "type": "attack-pattern",
+    "name": "Open-Source Library Manipulation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-538__Open_Source_Library_Manipulation.md"
+  },
+  {
+    "id": "CAPEC-539",
+    "type": "attack-pattern",
+    "name": "ASIC With Malicious Functionality",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-539__ASIC_With_Malicious_Functionality.md"
+  },
+  {
+    "id": "CAPEC-54",
+    "type": "attack-pattern",
+    "name": "Query System for Information",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-54__Query_System_for_Information.md"
+  },
+  {
+    "id": "CAPEC-540",
+    "type": "attack-pattern",
+    "name": "Overread Buffers",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-540__Overread_Buffers.md"
+  },
+  {
+    "id": "CAPEC-541",
+    "type": "attack-pattern",
+    "name": "Application Fingerprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-541__Application_Fingerprinting.md"
+  },
+  {
+    "id": "CAPEC-542",
+    "type": "attack-pattern",
+    "name": "Targeted Malware",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-542__Targeted_Malware.md"
+  },
+  {
+    "id": "CAPEC-543",
+    "type": "attack-pattern",
+    "name": "Counterfeit Websites",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-543__Counterfeit_Websites.md"
+  },
+  {
+    "id": "CAPEC-544",
+    "type": "attack-pattern",
+    "name": "Counterfeit Organizations",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-544__Counterfeit_Organizations.md"
+  },
+  {
+    "id": "CAPEC-545",
+    "type": "attack-pattern",
+    "name": "Pull Data from System Resources",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-545__Pull_Data_from_System_Resources.md"
+  },
+  {
+    "id": "CAPEC-546",
+    "type": "attack-pattern",
+    "name": "Incomplete Data Deletion in a Multi-Tenant Environment",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-546__Incomplete_Data_Deletion_in_a_Multi_Tenant_Environment.md"
+  },
+  {
+    "id": "CAPEC-547",
+    "type": "attack-pattern",
+    "name": "Physical Destruction of Device or Component",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-547__Physical_Destruction_of_Device_or_Component.md"
+  },
+  {
+    "id": "CAPEC-548",
+    "type": "attack-pattern",
+    "name": "Contaminate Resource",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-548__Contaminate_Resource.md"
+  },
+  {
+    "id": "CAPEC-549",
+    "type": "attack-pattern",
+    "name": "Local Execution of Code",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-549__Local_Execution_of_Code.md"
+  },
+  {
+    "id": "CAPEC-55",
+    "type": "attack-pattern",
+    "name": "Rainbow Table Password Cracking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-55__Rainbow_Table_Password_Cracking.md"
+  },
+  {
+    "id": "CAPEC-550",
+    "type": "attack-pattern",
+    "name": "Install New Service",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-550__Install_New_Service.md"
+  },
+  {
+    "id": "CAPEC-551",
+    "type": "attack-pattern",
+    "name": "Modify Existing Service",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-551__Modify_Existing_Service.md"
+  },
+  {
+    "id": "CAPEC-552",
+    "type": "attack-pattern",
+    "name": "Install Rootkit ",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-552__Install_Rootkit.md"
+  },
+  {
+    "id": "CAPEC-554",
+    "type": "attack-pattern",
+    "name": "Functionality Bypass",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-554__Functionality_Bypass.md"
+  },
+  {
+    "id": "CAPEC-555",
+    "type": "attack-pattern",
+    "name": "Remote Services with Stolen Credentials",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-555__Remote_Services_with_Stolen_Credentials.md"
+  },
+  {
+    "id": "CAPEC-556",
+    "type": "attack-pattern",
+    "name": "Replace File Extension Handlers",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-556__Replace_File_Extension_Handlers.md"
+  },
+  {
+    "id": "CAPEC-557",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Schedule Software To Run",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-557__DEPRECATED_Schedule_Software_To_Run.md"
+  },
+  {
+    "id": "CAPEC-558",
+    "type": "attack-pattern",
+    "name": "Replace Trusted Executable",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-558__Replace_Trusted_Executable.md"
+  },
+  {
+    "id": "CAPEC-559",
+    "type": "attack-pattern",
+    "name": "Orbital Jamming",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-559__Orbital_Jamming.md"
+  },
+  {
+    "id": "CAPEC-56",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Removing/short-circuiting 'guard logic'",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-56__DEPRECATED_Removing_short_circuiting_guard_logic.md"
+  },
+  {
+    "id": "CAPEC-560",
+    "type": "attack-pattern",
+    "name": "Use of Known Domain Credentials",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-560__Use_of_Known_Domain_Credentials.md"
+  },
+  {
+    "id": "CAPEC-561",
+    "type": "attack-pattern",
+    "name": "Windows Admin Shares with Stolen Credentials",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-561__Windows_Admin_Shares_with_Stolen_Credentials.md"
+  },
+  {
+    "id": "CAPEC-562",
+    "type": "attack-pattern",
+    "name": "Modify Shared File",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-562__Modify_Shared_File.md"
+  },
+  {
+    "id": "CAPEC-563",
+    "type": "attack-pattern",
+    "name": "Add Malicious File to Shared Webroot",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-563__Add_Malicious_File_to_Shared_Webroot.md"
+  },
+  {
+    "id": "CAPEC-564",
+    "type": "attack-pattern",
+    "name": "Run Software at Logon",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-564__Run_Software_at_Logon.md"
+  },
+  {
+    "id": "CAPEC-565",
+    "type": "attack-pattern",
+    "name": "Password Spraying",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-565__Password_Spraying.md"
+  },
+  {
+    "id": "CAPEC-566",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Dump Password Hashes",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-566__DEPRECATED_Dump_Password_Hashes.md"
+  },
+  {
+    "id": "CAPEC-567",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Obtain Data via Utilities",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-567__DEPRECATED_Obtain_Data_via_Utilities.md"
+  },
+  {
+    "id": "CAPEC-568",
+    "type": "attack-pattern",
+    "name": "Capture Credentials via Keylogger",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-568__Capture_Credentials_via_Keylogger.md"
+  },
+  {
+    "id": "CAPEC-569",
+    "type": "attack-pattern",
+    "name": "Collect Data as Provided by Users",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-569__Collect_Data_as_Provided_by_Users.md"
+  },
+  {
+    "id": "CAPEC-57",
+    "type": "attack-pattern",
+    "name": "Utilizing REST's Trust in the System Resource to Obtain Sensitive Data",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-57__Utilizing_REST_s_Trust_in_the_System_Resource_to_Obtain_Sensitive_Data.md"
+  },
+  {
+    "id": "CAPEC-570",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Signature-Based Avoidance",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-570__DEPRECATED_Signature_Based_Avoidance.md"
+  },
+  {
+    "id": "CAPEC-571",
+    "type": "attack-pattern",
+    "name": "Block Logging to Central Repository",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-571__Block_Logging_to_Central_Repository.md"
+  },
+  {
+    "id": "CAPEC-572",
+    "type": "attack-pattern",
+    "name": "Artificially Inflate File Sizes",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-572__Artificially_Inflate_File_Sizes.md"
+  },
+  {
+    "id": "CAPEC-573",
+    "type": "attack-pattern",
+    "name": "Process Footprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-573__Process_Footprinting.md"
+  },
+  {
+    "id": "CAPEC-574",
+    "type": "attack-pattern",
+    "name": "Services Footprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-574__Services_Footprinting.md"
+  },
+  {
+    "id": "CAPEC-575",
+    "type": "attack-pattern",
+    "name": "Account Footprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-575__Account_Footprinting.md"
+  },
+  {
+    "id": "CAPEC-576",
+    "type": "attack-pattern",
+    "name": "Group Permission Footprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-576__Group_Permission_Footprinting.md"
+  },
+  {
+    "id": "CAPEC-577",
+    "type": "attack-pattern",
+    "name": "Owner Footprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-577__Owner_Footprinting.md"
+  },
+  {
+    "id": "CAPEC-578",
+    "type": "attack-pattern",
+    "name": "Disable Security Software",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-578__Disable_Security_Software.md"
+  },
+  {
+    "id": "CAPEC-579",
+    "type": "attack-pattern",
+    "name": "Replace Winlogon Helper DLL",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-579__Replace_Winlogon_Helper_DLL.md"
+  },
+  {
+    "id": "CAPEC-58",
+    "type": "attack-pattern",
+    "name": "Restful Privilege Elevation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-58__Restful_Privilege_Elevation.md"
+  },
+  {
+    "id": "CAPEC-580",
+    "type": "attack-pattern",
+    "name": "System Footprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-580__System_Footprinting.md"
+  },
+  {
+    "id": "CAPEC-581",
+    "type": "attack-pattern",
+    "name": "Security Software Footprinting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-581__Security_Software_Footprinting.md"
+  },
+  {
+    "id": "CAPEC-582",
+    "type": "attack-pattern",
+    "name": "Route Disabling",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-582__Route_Disabling.md"
+  },
+  {
+    "id": "CAPEC-583",
+    "type": "attack-pattern",
+    "name": "Disabling Network Hardware",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-583__Disabling_Network_Hardware.md"
+  },
+  {
+    "id": "CAPEC-584",
+    "type": "attack-pattern",
+    "name": "BGP Route Disabling",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-584__BGP_Route_Disabling.md"
+  },
+  {
+    "id": "CAPEC-585",
+    "type": "attack-pattern",
+    "name": "DNS Domain Seizure",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-585__DNS_Domain_Seizure.md"
+  },
+  {
+    "id": "CAPEC-586",
+    "type": "attack-pattern",
+    "name": "Object Injection",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-586__Object_Injection.md"
+  },
+  {
+    "id": "CAPEC-587",
+    "type": "attack-pattern",
+    "name": "Cross Frame Scripting (XFS)",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-587__Cross_Frame_Scripting_XFS.md"
+  },
+  {
+    "id": "CAPEC-588",
+    "type": "attack-pattern",
+    "name": "DOM-Based XSS",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-588__DOM_Based_XSS.md"
+  },
+  {
+    "id": "CAPEC-589",
+    "type": "attack-pattern",
+    "name": "DNS Blocking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-589__DNS_Blocking.md"
+  },
+  {
+    "id": "CAPEC-59",
+    "type": "attack-pattern",
+    "name": "Session Credential Falsification through Prediction",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-59__Session_Credential_Falsification_through_Prediction.md"
+  },
+  {
+    "id": "CAPEC-590",
+    "type": "attack-pattern",
+    "name": "IP Address Blocking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-590__IP_Address_Blocking.md"
+  },
+  {
+    "id": "CAPEC-591",
+    "type": "attack-pattern",
+    "name": "Reflected XSS",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-591__Reflected_XSS.md"
+  },
+  {
+    "id": "CAPEC-592",
+    "type": "attack-pattern",
+    "name": "Stored XSS",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-592__Stored_XSS.md"
+  },
+  {
+    "id": "CAPEC-593",
+    "type": "attack-pattern",
+    "name": "Session Hijacking",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-593__Session_Hijacking.md"
+  },
+  {
+    "id": "CAPEC-594",
+    "type": "attack-pattern",
+    "name": "Traffic Injection",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-594__Traffic_Injection.md"
+  },
+  {
+    "id": "CAPEC-595",
+    "type": "attack-pattern",
+    "name": "Connection Reset",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-595__Connection_Reset.md"
+  },
+  {
+    "id": "CAPEC-596",
+    "type": "attack-pattern",
+    "name": "TCP RST Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-596__TCP_RST_Injection.md"
+  },
+  {
+    "id": "CAPEC-597",
+    "type": "attack-pattern",
+    "name": "Absolute Path Traversal",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-597__Absolute_Path_Traversal.md"
+  },
+  {
+    "id": "CAPEC-598",
+    "type": "attack-pattern",
+    "name": "DNS Spoofing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-598__DNS_Spoofing.md"
+  },
+  {
+    "id": "CAPEC-599",
+    "type": "attack-pattern",
+    "name": "Terrestrial Jamming",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-599__Terrestrial_Jamming.md"
+  },
+  {
+    "id": "CAPEC-6",
+    "type": "attack-pattern",
+    "name": "Argument Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-6__Argument_Injection.md"
+  },
+  {
+    "id": "CAPEC-60",
+    "type": "attack-pattern",
+    "name": "Reusing Session IDs (aka Session Replay)",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-60__Reusing_Session_IDs_aka_Session_Replay.md"
+  },
+  {
+    "id": "CAPEC-600",
+    "type": "attack-pattern",
+    "name": "Credential Stuffing",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-600__Credential_Stuffing.md"
+  },
+  {
+    "id": "CAPEC-601",
+    "type": "attack-pattern",
+    "name": "Jamming",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-601__Jamming.md"
+  },
+  {
+    "id": "CAPEC-602",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Degradation",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-602__DEPRECATED_Degradation.md"
+  },
+  {
+    "id": "CAPEC-603",
+    "type": "attack-pattern",
+    "name": "Blockage",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-603__Blockage.md"
+  },
+  {
+    "id": "CAPEC-604",
+    "type": "attack-pattern",
+    "name": "Wi-Fi Jamming",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-604__Wi_Fi_Jamming.md"
+  },
+  {
+    "id": "CAPEC-605",
+    "type": "attack-pattern",
+    "name": "Cellular Jamming",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-605__Cellular_Jamming.md"
+  },
+  {
+    "id": "CAPEC-606",
+    "type": "attack-pattern",
+    "name": "Weakening of Cellular Encryption",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-606__Weakening_of_Cellular_Encryption.md"
+  },
+  {
+    "id": "CAPEC-607",
+    "type": "attack-pattern",
+    "name": "Obstruction",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-607__Obstruction.md"
+  },
+  {
+    "id": "CAPEC-608",
+    "type": "attack-pattern",
+    "name": "Cryptanalysis of Cellular Encryption",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-608__Cryptanalysis_of_Cellular_Encryption.md"
+  },
+  {
+    "id": "CAPEC-609",
+    "type": "attack-pattern",
+    "name": "Cellular Traffic Intercept",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-609__Cellular_Traffic_Intercept.md"
+  },
+  {
+    "id": "CAPEC-61",
+    "type": "attack-pattern",
+    "name": "Session Fixation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-61__Session_Fixation.md"
+  },
+  {
+    "id": "CAPEC-610",
+    "type": "attack-pattern",
+    "name": "Cellular Data Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-610__Cellular_Data_Injection.md"
+  },
+  {
+    "id": "CAPEC-611",
+    "type": "attack-pattern",
+    "name": "BitSquatting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-611__BitSquatting.md"
+  },
+  {
+    "id": "CAPEC-612",
+    "type": "attack-pattern",
+    "name": "WiFi MAC Address Tracking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-612__WiFi_MAC_Address_Tracking.md"
+  },
+  {
+    "id": "CAPEC-613",
+    "type": "attack-pattern",
+    "name": "WiFi SSID Tracking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-613__WiFi_SSID_Tracking.md"
+  },
+  {
+    "id": "CAPEC-614",
+    "type": "attack-pattern",
+    "name": "Rooting SIM Cards",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-614__Rooting_SIM_Cards.md"
+  },
+  {
+    "id": "CAPEC-615",
+    "type": "attack-pattern",
+    "name": "Evil Twin Wi-Fi Attack",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-615__Evil_Twin_Wi_Fi_Attack.md"
+  },
+  {
+    "id": "CAPEC-616",
+    "type": "attack-pattern",
+    "name": "Establish Rogue Location",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-616__Establish_Rogue_Location.md"
+  },
+  {
+    "id": "CAPEC-617",
+    "type": "attack-pattern",
+    "name": "Cellular Rogue Base Station",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-617__Cellular_Rogue_Base_Station.md"
+  },
+  {
+    "id": "CAPEC-618",
+    "type": "attack-pattern",
+    "name": "Cellular Broadcast Message Request",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-618__Cellular_Broadcast_Message_Request.md"
+  },
+  {
+    "id": "CAPEC-619",
+    "type": "attack-pattern",
+    "name": "Signal Strength Tracking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-619__Signal_Strength_Tracking.md"
+  },
+  {
+    "id": "CAPEC-62",
+    "type": "attack-pattern",
+    "name": "Cross Site Request Forgery",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-62__Cross_Site_Request_Forgery.md"
+  },
+  {
+    "id": "CAPEC-620",
+    "type": "attack-pattern",
+    "name": "Drop Encryption Level",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-620__Drop_Encryption_Level.md"
+  },
+  {
+    "id": "CAPEC-621",
+    "type": "attack-pattern",
+    "name": "Analysis of Packet Timing and Sizes",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-621__Analysis_of_Packet_Timing_and_Sizes.md"
+  },
+  {
+    "id": "CAPEC-622",
+    "type": "attack-pattern",
+    "name": "Electromagnetic Side-Channel Attack",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-622__Electromagnetic_Side_Channel_Attack.md"
+  },
+  {
+    "id": "CAPEC-623",
+    "type": "attack-pattern",
+    "name": "Compromising Emanations Attack",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-623__Compromising_Emanations_Attack.md"
+  },
+  {
+    "id": "CAPEC-624",
+    "type": "attack-pattern",
+    "name": "Hardware Fault Injection",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-624__Hardware_Fault_Injection.md"
+  },
+  {
+    "id": "CAPEC-625",
+    "type": "attack-pattern",
+    "name": "Mobile Device Fault Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-625__Mobile_Device_Fault_Injection.md"
+  },
+  {
+    "id": "CAPEC-626",
+    "type": "attack-pattern",
+    "name": "Smudge Attack",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-626__Smudge_Attack.md"
+  },
+  {
+    "id": "CAPEC-627",
+    "type": "attack-pattern",
+    "name": "Counterfeit GPS Signals",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-627__Counterfeit_GPS_Signals.md"
+  },
+  {
+    "id": "CAPEC-628",
+    "type": "attack-pattern",
+    "name": "Carry-Off GPS Attack",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-628__Carry_Off_GPS_Attack.md"
+  },
+  {
+    "id": "CAPEC-629",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Unauthorized Use of Device Resources",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-629__DEPRECATED_Unauthorized_Use_of_Device_Resources.md"
+  },
+  {
+    "id": "CAPEC-63",
+    "type": "attack-pattern",
+    "name": "Cross-Site Scripting (XSS)",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-63__Cross_Site_Scripting_XSS.md"
+  },
+  {
+    "id": "CAPEC-630",
+    "type": "attack-pattern",
+    "name": "TypoSquatting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-630__TypoSquatting.md"
+  },
+  {
+    "id": "CAPEC-631",
+    "type": "attack-pattern",
+    "name": "SoundSquatting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-631__SoundSquatting.md"
+  },
+  {
+    "id": "CAPEC-632",
+    "type": "attack-pattern",
+    "name": "Homograph Attack via Homoglyphs",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-632__Homograph_Attack_via_Homoglyphs.md"
+  },
+  {
+    "id": "CAPEC-633",
+    "type": "attack-pattern",
+    "name": "Token Impersonation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-633__Token_Impersonation.md"
+  },
+  {
+    "id": "CAPEC-634",
+    "type": "attack-pattern",
+    "name": "Probe Audio and Video Peripherals",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-634__Probe_Audio_and_Video_Peripherals.md"
+  },
+  {
+    "id": "CAPEC-635",
+    "type": "attack-pattern",
+    "name": "Alternative Execution Due to Deceptive Filenames",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-635__Alternative_Execution_Due_to_Deceptive_Filenames.md"
+  },
+  {
+    "id": "CAPEC-636",
+    "type": "attack-pattern",
+    "name": "Hiding Malicious Data or Code within Files",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-636__Hiding_Malicious_Data_or_Code_within_Files.md"
+  },
+  {
+    "id": "CAPEC-637",
+    "type": "attack-pattern",
+    "name": "Collect Data from Clipboard",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-637__Collect_Data_from_Clipboard.md"
+  },
+  {
+    "id": "CAPEC-638",
+    "type": "attack-pattern",
+    "name": "Altered Component Firmware",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-638__Altered_Component_Firmware.md"
+  },
+  {
+    "id": "CAPEC-639",
+    "type": "attack-pattern",
+    "name": "Probe System Files",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-639__Probe_System_Files.md"
+  },
+  {
+    "id": "CAPEC-64",
+    "type": "attack-pattern",
+    "name": "Using Slashes and URL Encoding Combined to Bypass Validation Logic",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-64__Using_Slashes_and_URL_Encoding_Combined_to_Bypass_Validation_Logic.md"
+  },
+  {
+    "id": "CAPEC-640",
+    "type": "attack-pattern",
+    "name": "Inclusion of Code in Existing Process",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-640__Inclusion_of_Code_in_Existing_Process.md"
+  },
+  {
+    "id": "CAPEC-641",
+    "type": "attack-pattern",
+    "name": "DLL Side-Loading",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-641__DLL_Side_Loading.md"
+  },
+  {
+    "id": "CAPEC-642",
+    "type": "attack-pattern",
+    "name": "Replace Binaries",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-642__Replace_Binaries.md"
+  },
+  {
+    "id": "CAPEC-643",
+    "type": "attack-pattern",
+    "name": "Identify Shared Files/Directories on System",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-643__Identify_Shared_Files_Directories_on_System.md"
+  },
+  {
+    "id": "CAPEC-644",
+    "type": "attack-pattern",
+    "name": "Use of Captured Hashes (Pass The Hash)",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-644__Use_of_Captured_Hashes_Pass_The_Hash.md"
+  },
+  {
+    "id": "CAPEC-645",
+    "type": "attack-pattern",
+    "name": "Use of Captured Tickets (Pass The Ticket)",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-645__Use_of_Captured_Tickets_Pass_The_Ticket.md"
+  },
+  {
+    "id": "CAPEC-646",
+    "type": "attack-pattern",
+    "name": "Peripheral Footprinting",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-646__Peripheral_Footprinting.md"
+  },
+  {
+    "id": "CAPEC-647",
+    "type": "attack-pattern",
+    "name": "Collect Data from Registries",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-647__Collect_Data_from_Registries.md"
+  },
+  {
+    "id": "CAPEC-648",
+    "type": "attack-pattern",
+    "name": "Collect Data from Screen Capture",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-648__Collect_Data_from_Screen_Capture.md"
+  },
+  {
+    "id": "CAPEC-649",
+    "type": "attack-pattern",
+    "name": "Adding a Space to a File Extension",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-649__Adding_a_Space_to_a_File_Extension.md"
+  },
+  {
+    "id": "CAPEC-65",
+    "type": "attack-pattern",
+    "name": "Sniff Application Code",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-65__Sniff_Application_Code.md"
+  },
+  {
+    "id": "CAPEC-650",
+    "type": "attack-pattern",
+    "name": "Upload a Web Shell to a Web Server",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-650__Upload_a_Web_Shell_to_a_Web_Server.md"
+  },
+  {
+    "id": "CAPEC-651",
+    "type": "attack-pattern",
+    "name": "Eavesdropping",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-651__Eavesdropping.md"
+  },
+  {
+    "id": "CAPEC-652",
+    "type": "attack-pattern",
+    "name": "Use of Known Kerberos Credentials",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-652__Use_of_Known_Kerberos_Credentials.md"
+  },
+  {
+    "id": "CAPEC-653",
+    "type": "attack-pattern",
+    "name": "Use of Known Operating System Credentials",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-653__Use_of_Known_Operating_System_Credentials.md"
+  },
+  {
+    "id": "CAPEC-654",
+    "type": "attack-pattern",
+    "name": "Credential Prompt Impersonation",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-654__Credential_Prompt_Impersonation.md"
+  },
+  {
+    "id": "CAPEC-655",
+    "type": "attack-pattern",
+    "name": "Avoid Security Tool Identification by Adding Data",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-655__Avoid_Security_Tool_Identification_by_Adding_Data.md"
+  },
+  {
+    "id": "CAPEC-656",
+    "type": "attack-pattern",
+    "name": "Voice Phishing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-656__Voice_Phishing.md"
+  },
+  {
+    "id": "CAPEC-657",
+    "type": "attack-pattern",
+    "name": "Malicious Automated Software Update via Spoofing",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-657__Malicious_Automated_Software_Update_via_Spoofing.md"
+  },
+  {
+    "id": "CAPEC-66",
+    "type": "attack-pattern",
+    "name": "SQL Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-66__SQL_Injection.md"
+  },
+  {
+    "id": "CAPEC-660",
+    "type": "attack-pattern",
+    "name": "Root/Jailbreak Detection Evasion via Hooking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-660__Root_Jailbreak_Detection_Evasion_via_Hooking.md"
+  },
+  {
+    "id": "CAPEC-661",
+    "type": "attack-pattern",
+    "name": "Root/Jailbreak Detection Evasion via Debugging",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-661__Root_Jailbreak_Detection_Evasion_via_Debugging.md"
+  },
+  {
+    "id": "CAPEC-662",
+    "type": "attack-pattern",
+    "name": "Adversary in the Browser (AiTB)",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-662__Adversary_in_the_Browser_AiTB.md"
+  },
+  {
+    "id": "CAPEC-663",
+    "type": "attack-pattern",
+    "name": "Exploitation of Transient Instruction Execution",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-663__Exploitation_of_Transient_Instruction_Execution.md"
+  },
+  {
+    "id": "CAPEC-664",
+    "type": "attack-pattern",
+    "name": "Server Side Request Forgery",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-664__Server_Side_Request_Forgery.md"
+  },
+  {
+    "id": "CAPEC-665",
+    "type": "attack-pattern",
+    "name": "Exploitation of Thunderbolt Protection Flaws",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-665__Exploitation_of_Thunderbolt_Protection_Flaws.md"
+  },
+  {
+    "id": "CAPEC-666",
+    "type": "attack-pattern",
+    "name": "BlueSmacking",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-666__BlueSmacking.md"
+  },
+  {
+    "id": "CAPEC-667",
+    "type": "attack-pattern",
+    "name": "Bluetooth Impersonation AttackS (BIAS)",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-667__Bluetooth_Impersonation_AttackS_BIAS.md"
+  },
+  {
+    "id": "CAPEC-668",
+    "type": "attack-pattern",
+    "name": "Key Negotiation of Bluetooth Attack (KNOB)",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-668__Key_Negotiation_of_Bluetooth_Attack_KNOB.md"
+  },
+  {
+    "id": "CAPEC-669",
+    "type": "attack-pattern",
+    "name": "Alteration of a Software Update",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-669__Alteration_of_a_Software_Update.md"
+  },
+  {
+    "id": "CAPEC-67",
+    "type": "attack-pattern",
+    "name": "String Format Overflow in syslog()",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-67__String_Format_Overflow_in_syslog.md"
+  },
+  {
+    "id": "CAPEC-670",
+    "type": "attack-pattern",
+    "name": "Software Development Tools Maliciously Altered",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-670__Software_Development_Tools_Maliciously_Altered.md"
+  },
+  {
+    "id": "CAPEC-671",
+    "type": "attack-pattern",
+    "name": "Requirements for ASIC Functionality Maliciously Altered",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-671__Requirements_for_ASIC_Functionality_Maliciously_Altered.md"
+  },
+  {
+    "id": "CAPEC-672",
+    "type": "attack-pattern",
+    "name": "Malicious Code Implanted During Chip Programming",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-672__Malicious_Code_Implanted_During_Chip_Programming.md"
+  },
+  {
+    "id": "CAPEC-673",
+    "type": "attack-pattern",
+    "name": "Developer Signing Maliciously Altered Software",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-673__Developer_Signing_Maliciously_Altered_Software.md"
+  },
+  {
+    "id": "CAPEC-674",
+    "type": "attack-pattern",
+    "name": "Design for FPGA Maliciously Altered",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-674__Design_for_FPGA_Maliciously_Altered.md"
+  },
+  {
+    "id": "CAPEC-675",
+    "type": "attack-pattern",
+    "name": "Retrieve Data from Decommissioned Devices",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-675__Retrieve_Data_from_Decommissioned_Devices.md"
+  },
+  {
+    "id": "CAPEC-676",
+    "type": "attack-pattern",
+    "name": "NoSQL Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-676__NoSQL_Injection.md"
+  },
+  {
+    "id": "CAPEC-677",
+    "type": "attack-pattern",
+    "name": "Server Motherboard Compromise",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-677__Server_Motherboard_Compromise.md"
+  },
+  {
+    "id": "CAPEC-678",
+    "type": "attack-pattern",
+    "name": "System Build Data Maliciously Altered",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-678__System_Build_Data_Maliciously_Altered.md"
+  },
+  {
+    "id": "CAPEC-679",
+    "type": "attack-pattern",
+    "name": "Exploitation of Improperly Configured or Implemented Memory Protections",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-679__Exploitation_of_Improperly_Configured_or_Implemented_Memory_Protections.md"
+  },
+  {
+    "id": "CAPEC-68",
+    "type": "attack-pattern",
+    "name": "Subvert Code-signing Facilities",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-68__Subvert_Code_signing_Facilities.md"
+  },
+  {
+    "id": "CAPEC-680",
+    "type": "attack-pattern",
+    "name": "Exploitation of Improperly Controlled Registers",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-680__Exploitation_of_Improperly_Controlled_Registers.md"
+  },
+  {
+    "id": "CAPEC-681",
+    "type": "attack-pattern",
+    "name": "Exploitation of Improperly Controlled Hardware Security Identifiers",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-681__Exploitation_of_Improperly_Controlled_Hardware_Security_Identifiers.md"
+  },
+  {
+    "id": "CAPEC-682",
+    "type": "attack-pattern",
+    "name": "Exploitation of Firmware or ROM Code with Unpatchable Vulnerabilities",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-682__Exploitation_of_Firmware_or_ROM_Code_with_Unpatchable_Vulnerabilities.md"
+  },
+  {
+    "id": "CAPEC-69",
+    "type": "attack-pattern",
+    "name": "Target Programs with Elevated Privileges",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-69__Target_Programs_with_Elevated_Privileges.md"
+  },
+  {
+    "id": "CAPEC-690",
+    "type": "attack-pattern",
+    "name": "Metadata Spoofing",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-690__Metadata_Spoofing.md"
+  },
+  {
+    "id": "CAPEC-691",
+    "type": "attack-pattern",
+    "name": "Spoof Open-Source Software Metadata",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-691__Spoof_Open_Source_Software_Metadata.md"
+  },
+  {
+    "id": "CAPEC-692",
+    "type": "attack-pattern",
+    "name": "Spoof Version Control System Commit Metadata",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-692__Spoof_Version_Control_System_Commit_Metadata.md"
+  },
+  {
+    "id": "CAPEC-693",
+    "type": "attack-pattern",
+    "name": "StarJacking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-693__StarJacking.md"
+  },
+  {
+    "id": "CAPEC-694",
+    "type": "attack-pattern",
+    "name": "System Location Discovery",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-694__System_Location_Discovery.md"
+  },
+  {
+    "id": "CAPEC-695",
+    "type": "attack-pattern",
+    "name": "Repo Jacking",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-695__Repo_Jacking.md"
+  },
+  {
+    "id": "CAPEC-696",
+    "type": "attack-pattern",
+    "name": "Load Value Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-696__Load_Value_Injection.md"
+  },
+  {
+    "id": "CAPEC-697",
+    "type": "attack-pattern",
+    "name": "DHCP Spoofing",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-697__DHCP_Spoofing.md"
+  },
+  {
+    "id": "CAPEC-698",
+    "type": "attack-pattern",
+    "name": "Install Malicious Extension",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-698__Install_Malicious_Extension.md"
+  },
+  {
+    "id": "CAPEC-699",
+    "type": "attack-pattern",
+    "name": "Eavesdropping on a Monitor",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-699__Eavesdropping_on_a_Monitor.md"
+  },
+  {
+    "id": "CAPEC-7",
+    "type": "attack-pattern",
+    "name": "Blind SQL Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-7__Blind_SQL_Injection.md"
+  },
+  {
+    "id": "CAPEC-70",
+    "type": "attack-pattern",
+    "name": "Try Common or Default Usernames and Passwords",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-70__Try_Common_or_Default_Usernames_and_Passwords.md"
+  },
+  {
+    "id": "CAPEC-700",
+    "type": "attack-pattern",
+    "name": "Network Boundary Bridging",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-700__Network_Boundary_Bridging.md"
+  },
+  {
+    "id": "CAPEC-701",
+    "type": "attack-pattern",
+    "name": "Browser in the Middle (BiTM)",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-701__Browser_in_the_Middle_BiTM.md"
+  },
+  {
+    "id": "CAPEC-702",
+    "type": "attack-pattern",
+    "name": "Exploiting Incorrect Chaining or Granularity of Hardware Debug Components",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-702__Exploiting_Incorrect_Chaining_or_Granularity_of_Hardware_Debug_Components.md"
+  },
+  {
+    "id": "CAPEC-71",
+    "type": "attack-pattern",
+    "name": "Using Unicode Encoding to Bypass Validation Logic",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-71__Using_Unicode_Encoding_to_Bypass_Validation_Logic.md"
+  },
+  {
+    "id": "CAPEC-72",
+    "type": "attack-pattern",
+    "name": "URL Encoding",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-72__URL_Encoding.md"
+  },
+  {
+    "id": "CAPEC-73",
+    "type": "attack-pattern",
+    "name": "User-Controlled Filename",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-73__User_Controlled_Filename.md"
+  },
+  {
+    "id": "CAPEC-74",
+    "type": "attack-pattern",
+    "name": "Manipulating State",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-74__Manipulating_State.md"
+  },
+  {
+    "id": "CAPEC-75",
+    "type": "attack-pattern",
+    "name": "Manipulating Writeable Configuration Files",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-75__Manipulating_Writeable_Configuration_Files.md"
+  },
+  {
+    "id": "CAPEC-76",
+    "type": "attack-pattern",
+    "name": "Manipulating Web Input to File System Calls",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-76__Manipulating_Web_Input_to_File_System_Calls.md"
+  },
+  {
+    "id": "CAPEC-77",
+    "type": "attack-pattern",
+    "name": "Manipulating User-Controlled Variables",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-77__Manipulating_User_Controlled_Variables.md"
+  },
+  {
+    "id": "CAPEC-78",
+    "type": "attack-pattern",
+    "name": "Using Escaped Slashes in Alternate Encoding",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-78__Using_Escaped_Slashes_in_Alternate_Encoding.md"
+  },
+  {
+    "id": "CAPEC-79",
+    "type": "attack-pattern",
+    "name": "Using Slashes in Alternate Encoding",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-79__Using_Slashes_in_Alternate_Encoding.md"
+  },
+  {
+    "id": "CAPEC-8",
+    "type": "attack-pattern",
+    "name": "Buffer Overflow in an API Call",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-8__Buffer_Overflow_in_an_API_Call.md"
+  },
+  {
+    "id": "CAPEC-80",
+    "type": "attack-pattern",
+    "name": "Using UTF-8 Encoding to Bypass Validation Logic",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-80__Using_UTF_8_Encoding_to_Bypass_Validation_Logic.md"
+  },
+  {
+    "id": "CAPEC-81",
+    "type": "attack-pattern",
+    "name": "Web Server Logs Tampering",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-81__Web_Server_Logs_Tampering.md"
+  },
+  {
+    "id": "CAPEC-82",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: Violating Implicit Assumptions Regarding XML Content (aka XML Denial of Service (XDoS))",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-82__DEPRECATED_Violating_Implicit_Assumptions_Regarding_XML_Content_aka_XML_Denial_o.md"
+  },
+  {
+    "id": "CAPEC-83",
+    "type": "attack-pattern",
+    "name": "XPath Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-83__XPath_Injection.md"
+  },
+  {
+    "id": "CAPEC-84",
+    "type": "attack-pattern",
+    "name": "XQuery Injection",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-84__XQuery_Injection.md"
+  },
+  {
+    "id": "CAPEC-85",
+    "type": "attack-pattern",
+    "name": "AJAX Footprinting",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-85__AJAX_Footprinting.md"
+  },
+  {
+    "id": "CAPEC-86",
+    "type": "attack-pattern",
+    "name": "XSS Through HTTP Headers",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-86__XSS_Through_HTTP_Headers.md"
+  },
+  {
+    "id": "CAPEC-87",
+    "type": "attack-pattern",
+    "name": "Forceful Browsing",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-87__Forceful_Browsing.md"
+  },
+  {
+    "id": "CAPEC-88",
+    "type": "attack-pattern",
+    "name": "OS Command Injection",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-88__OS_Command_Injection.md"
+  },
+  {
+    "id": "CAPEC-89",
+    "type": "attack-pattern",
+    "name": "Pharming",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-89__Pharming.md"
+  },
+  {
+    "id": "CAPEC-9",
+    "type": "attack-pattern",
+    "name": "Buffer Overflow in Local Command-Line Utilities",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-9__Buffer_Overflow_in_Local_Command_Line_Utilities.md"
+  },
+  {
+    "id": "CAPEC-90",
+    "type": "attack-pattern",
+    "name": "Reflection Attack in Authentication Protocol",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-90__Reflection_Attack_in_Authentication_Protocol.md"
+  },
+  {
+    "id": "CAPEC-91",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: XSS in IMG Tags",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-91__DEPRECATED_XSS_in_IMG_Tags.md"
+  },
+  {
+    "id": "CAPEC-92",
+    "type": "attack-pattern",
+    "name": "Forced Integer Overflow",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-92__Forced_Integer_Overflow.md"
+  },
+  {
+    "id": "CAPEC-93",
+    "type": "attack-pattern",
+    "name": "Log Injection-Tampering-Forging",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-93__Log_Injection_Tampering_Forging.md"
+  },
+  {
+    "id": "CAPEC-94",
+    "type": "attack-pattern",
+    "name": "Adversary in the Middle (AiTM)",
+    "abstraction": "Meta",
+    "path": "patterns/CAPEC-94__Adversary_in_the_Middle_AiTM.md"
+  },
+  {
+    "id": "CAPEC-95",
+    "type": "attack-pattern",
+    "name": "WSDL Scanning",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-95__WSDL_Scanning.md"
+  },
+  {
+    "id": "CAPEC-96",
+    "type": "attack-pattern",
+    "name": "Block Access to Libraries",
+    "abstraction": "Detailed",
+    "path": "patterns/CAPEC-96__Block_Access_to_Libraries.md"
+  },
+  {
+    "id": "CAPEC-97",
+    "type": "attack-pattern",
+    "name": "Cryptanalysis",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-97__Cryptanalysis.md"
+  },
+  {
+    "id": "CAPEC-98",
+    "type": "attack-pattern",
+    "name": "Phishing",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-98__Phishing.md"
+  },
+  {
+    "id": "CAPEC-99",
+    "type": "attack-pattern",
+    "name": "DEPRECATED: XML Parser Attack",
+    "abstraction": "Standard",
+    "path": "patterns/CAPEC-99__DEPRECATED_XML_Parser_Attack.md"
+  }
+]

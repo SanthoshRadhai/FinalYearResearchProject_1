@@ -1,0 +1,434 @@
+# T1082: System Information Discovery
+
+
+**ATT&CK ID:** T1082  
+**Domain:** Mitre Attack  
+**Tactic(s):** Discovery  
+**Platforms:** ESXi, IaaS, Linux, macOS, Network Devices, Windows  
+**Reference:** https://attack.mitre.org/techniques/T1082  
+
+## Description
+An adversary may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture. Adversaries may use this information to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions. This behavior is distinct from [Local Storage Discovery](https://attack.mitre.org/techniques/T1680) which is an adversary's discovery of local drive, disks and/or volumes.
+
+Tools such as [Systeminfo](https://attack.mitre.org/software/S0096) can be used to gather detailed system information. If running with privileged access, a breakdown of system data can be gathered through the <code>systemsetup</code> configuration tool on macOS. Adversaries may leverage a [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) on network devices to gather detailed system information (e.g. <code>show version</code>).(Citation: US-CERT-TA18-106A) On ESXi servers, threat actors may gather system information from various esxcli utilities, such as `system hostname get` and `system version get`.(Citation: Crowdstrike Hypervisor Jackpotting Pt 2 2021)(Citation: Varonis)
+
+Infrastructure as a Service (IaaS) cloud providers such as AWS, GCP, and Azure allow access to instance and virtual machine information via APIs. Successful authenticated API calls can return data such as the operating system platform and status of a particular instance or the model view of a virtual machine.(Citation: Amazon Describe Instance)(Citation: Google Instances Resource)(Citation: Microsoft Virutal Machine API)
+
+[System Information Discovery](https://attack.mitre.org/techniques/T1082) combined with information gathered from other forms of discovery and reconnaissance can drive payload development and concealment.(Citation: OSX.FairyTale)(Citation: 20 macOS Common Tools and Techniques)
+
+## Known Threat Groups Using This Technique
+- G0026: APT18
+- G0073: APT19
+- G0022: APT3
+- G0050: APT32
+- G0067: APT37
+- G0082: APT38
+- G0096: APT41
+- G1044: APT42
+- G0143: Aquatic Panda
+- G1043: BlackByte
+- G0108: Blue Mockingbird
+- G1012: CURIUM
+- G1052: Contagious Interview
+- G1034: Daggerfly
+- G0012: Darkhotel
+- G1016: FIN13
+- G0046: FIN7
+- G0061: FIN8
+- G0047: Gamaredon Group
+- G1001: HEXANE
+- G0126: Higaisa
+- G0100: Inception
+- G0004: Ke3chang
+- G0094: Kimsuky
+- G0032: Lazarus Group
+- G0059: Magic Hound
+- G1026: Malteiro
+- G1051: Medusa Group
+- G1054: MirrorFace
+- G1036: Moonstone Sleet
+- G1009: Moses Staff
+- G0069: MuddyWater
+- G0129: Mustang Panda
+- G1020: Mustard Tempest
+- G0049: OilRig
+- G0040: Patchwork
+- G1040: Play
+- G1039: RedCurl
+- G0106: Rocke
+- G0034: Sandworm Team
+- G1015: Scattered Spider
+- G1057: ShinyHunters
+- G1008: SideCopy
+- G0121: Sidewinder
+- G0054: Sowbug
+- G0038: Stealth Falcon
+- G1053: Storm-0501
+- G1018: TA2541
+- G0139: TeamTNT
+- G0081: Tropic Trooper
+- G0010: Turla
+- G1055: VOID MANTICORE
+- G0124: Windigo
+- G0112: Windshift
+- G1035: Winter Vivern
+- G0102: Wizard Spider
+- G0128: ZIRCONIUM
+- G0018: admin@338
+
+## Known Software Using This Technique
+- S0065: 4H RAT
+- S0045: ADVSTORESHELL
+- S1167: AcidPour
+- S1028: Action RAT
+- S0331: Agent Tesla
+- S1129: Akira
+- S1025: Amadey
+- S0504: Anchor
+- S0584: AppleJeus
+- S0622: AppleSeed
+- S0456: Aria-body
+- S9031: AshTag
+- S0373: Astaroth
+- S1029: AuTo Stealer
+- S0473: Avenger
+- S0344: Azorult
+- S0031: BACKSPACE
+- S0245: BADCALL
+- S0642: BADFLICK
+- S1081: BADHATCH
+- S0017: BISCUIT
+- S0520: BLINDINGCAN
+- S0657: BLUELIGHT
+- S1184: BOLDMOVE
+- S0043: BUBBLEWRAP
+- S0414: BabyShark
+- S0475: BackConfig
+- S0093: Backdoor.Oldrea
+- S0337: BadPatch
+- S0239: Bankshot
+- S0534: Bazar
+- S1246: BeaverTail
+- S0268: Bisonal
+- S1070: Black Basta
+- S1180: BlackByte Ransomware
+- S1068: BlackCat
+- S0089: BlackEnergy
+- S0486: Bonadan
+- S0635: BoomBox
+- S0252: Brave Prince
+- S1039: Bumblebee
+- S0482: Bundlore
+- S0462: CARROTBAT
+- S0137: CORESHELL
+- S0693: CaddyWiper
+- S0454: Cadelspy
+- S0351: Cannon
+- S0484: Carberp
+- S0348: Cardinal RAT
+- S0572: Caterpillar WebShell
+- S0144: ChChes
+- S0631: Chaes
+- S0674: CharmPower
+- S0667: Chrommme
+- S0660: Clambling
+- S0244: Comnie
+- S1155: Covenant
+- S0046: CozyCar
+- S0115: Crimson
+- S1153: Cuckoo Stealer
+- S0687: Cyclops Blink
+- S1052: DEADEYE
+- S1159: DUSTTRAP
+- S0334: DarkComet
+- S1111: DarkGate
+- S1066: DarkTortilla
+- S0673: DarkWatchman
+- S0354: Denis
+- S0021: Derusbi
+- S0659: Diavol
+- S9002: Diskpart
+- S0186: DownPaper
+- S0384: Dridex
+- S0547: DropBook
+- S0567: Dtrack
+- S0062: DustySky
+- S0024: Dyre
+- S0568: EVILNUM
+- S0554: Egregor
+- S0081: Elise
+- S0082: Emissary
+- S0363: Empire
+- S0634: EnvyScout
+- S0091: Epic
+- S0569: Explosive
+- S0181: FALLCHILL
+- S0267: FELIXROOT
+- S0512: FatDuke
+- S0171: Felismus
+- S0679: Ferocious
+- S0182: FinFisher
+- S0355: Final1stspy
+- S0381: FlawedAmmyy
+- S0410: Fysbis
+- S0417: GRIFFON
+- S0666: Gelsemium
+- S0460: Get2
+- S9010: GlassWorm
+- S0249: Gold Dragon
+- S0493: GoldenSpy
+- S1198: Gomir
+- S1138: Gootloader
+- S0531: Grandoreiro
+- S0237: GravityRAT
+- S0690: Green Lambert
+- S0632: GrimAgent
+- S0151: HALFBAKED
+- S0214: HAPPYWORK
+- S0391: HAWKBALL
+- S0376: HOPLIGHT
+- S1229: Havoc
+- S0697: HermeticWiper
+- S1249: HexEval Loader
+- S9023: HiddenFace
+- S0601: Hildegard
+- S0431: HotCroissant
+- S0203: Hydraq
+- S1152: IMAPLoader
+- S1022: IceApple
+- S0483: IcedID
+- S0604: Industroyer
+- S0259: InnaputRAT
+- S0260: InvisiMole
+- S1245: InvisibleFerret
+- S9029: IronWind
+- S0015: Ixeshe
+- S0201: JPIN
+- S0215: KARAE
+- S0271: KEYMARBLE
+- S0669: KOCTOPUS
+- S0156: KOMPROGO
+- S0356: KONNI
+- S1190: Kapeka
+- S0088: Kasidet
+- S0265: Kazuar
+- S0585: Kerrdown
+- S0487: Kessel
+- S1020: Kevin
+- S0387: KeyBoy
+- S0250: Koadic
+- S0641: Kobalos
+- S0236: Kwampirs
+- S9035: LAMEHUG
+- S1121: LITTLELAMB.WOOLTEA
+- S9020: LODEINFO
+- S1160: Latrodectus
+- S9039: LazyWiper
+- S0395: LightNeuron
+- S1185: LightSpy
+- S1186: Line Dancer
+- S0211: Linfo
+- S0513: LiteDuke
+- S0680: LitePower
+- S0681: Lizar
+- S1199: LockBit 2.0
+- S1202: LockBit 3.0
+- S0447: Lokibot
+- S0451: LoudMiner
+- S0532: Lucifer
+- S1213: Lumma Stealer
+- S1142: LunarMail
+- S1141: LunarWeb
+- S0233: MURKYTOP
+- S1016: MacMa
+- S0409: Machete
+- S1060: Mafalda
+- S1182: MagicRAT
+- S1169: Mango
+- S1156: Manjusaka
+- S0652: MarkiRAT
+- S0449: Maze
+- S1244: Medusa Ransomware
+- S0455: Metamorfo
+- S0688: Meteor
+- S0339: Micropsia
+- S1015: Milan
+- S9043: Mini Shai-Hulud
+- S0051: MiniDuke
+- S0280: MirageFox
+- S0084: Mis-Type
+- S0083: Misdat
+- S1122: Mispadu
+- S0079: MobileOrder
+- S0553: MoleNet
+- S1026: Mongall
+- S0149: MoonWind
+- S0284: More_eggs
+- S0272: NDiskMonitor
+- S0198: NETWIRE
+- S1107: NKAbuse
+- S0353: NOKKI
+- S9025: NOOPLDR
+- S0205: Naid
+- S0228: NanHaiShu
+- S0247: NavRAT
+- S0691: Neoichor
+- S0457: Netwalker
+- S1147: Nightdoor
+- S1100: Ninja
+- S0165: OSInfo
+- S0402: OSX/Shlayer
+- S0352: OSX_OCEANLOTUS.D
+- S0644: ObliqueRAT
+- S0346: OceanSalt
+- S0340: Octopus
+- S1172: OilBooster
+- S0439: Okrum
+- S0264: OopsIE
+- S0229: Orz
+- S0254: PLAINTEE
+- S0216: POORAIM
+- S0223: POWERSTATS
+- S0184: POWRUNER
+- S1228: PUBLOAD
+- S0196: PUNCHBUGGY
+- S0208: Pasam
+- S0556: Pay2Key
+- S0587: Penquin
+- S1145: Pikabot
+- S0048: PinchDuke
+- S1031: PingPull
+- S0501: PipeMon
+- S0124: Pisloader
+- S0013: PlugX
+- S0428: PoetRAT
+- S0453: Pony
+- S0378: PoshC2
+- S0139: PowerDuke
+- S0441: PowerShower
+- S0113: Prikormka
+- S0238: Proxysvc
+- S0192: Pupy
+- S9019: PureCrypter
+- S0650: QakBot
+- S1242: Qilin
+- S0262: QuasarRAT
+- S0241: RATANKBA
+- S0662: RCSession
+- S0496: REvil
+- S1222: RIFLESPINE
+- S0240: ROKRAT
+- S0148: RTM
+- S1148: Raccoon Stealer
+- S1212: RansomHub
+- S1130: Raspberry Robin
+- S0172: Reaver
+- S0153: RedLeaves
+- S1240: RedLine Stealer
+- S0332: Remcos
+- S0125: Remsec
+- S0379: Revenge RAT
+- S0433: Rifdoor
+- S0448: Rising Sun
+- S0270: RogueRobin
+- S1078: RotaJakiro
+- S1073: Royal
+- S0253: RunningRAT
+- S9037: RustyWater
+- S0085: S-Type
+- S0461: SDBbot
+- S0450: SHARPSTATS
+- S0217: SHUTTERSPEED
+- S0692: SILENTTRINITY
+- S0533: SLOTHFULMEDIA
+- S0218: SLOWDRIFT
+- S0649: SMOKEDHAM
+- S0157: SOUNDBITE
+- S9024: SPAWNCHIMERA
+- S1037: STARWHALE
+- S0559: SUNBURST
+- S1064: SVCReady
+- S0464: SYSCON
+- S1210: Sagerunex
+- S1018: Saint Bot
+- S1168: SampleCheck5000
+- S1085: Sardonic
+- S0382: ServHelper
+- S0596: ShadowPad
+- S9008: Shai-Hulud
+- S0140: Shamoon
+- S1019: Shark
+- S0546: SharpStage
+- S0445: ShimRatReporter
+- S1178: ShrinkLocker
+- S0610: SideTwist
+- S0468: Skidmap
+- S1086: Snip3
+- S1124: SocGholish
+- S0627: SodaMaster
+- S1166: Solar
+- S0615: SombRAT
+- S0516: SoreFang
+- S0543: Spark
+- S0374: SpeakUp
+- S0646: SpicyOmelette
+- S1234: SplatCloak
+- S1030: Squirrelwaffle
+- S0058: SslMM
+- S1200: StealBit
+- S0380: StoneDrill
+- S0142: StreamEx
+- S1183: StrelaStealer
+- S1034: StrifeWater
+- S0603: Stuxnet
+- S0242: SynAck
+- S0060: Sys10
+- S0663: SysUpdate
+- S9001: SystemBC
+- S0096: Systeminfo
+- S0098: T9000
+- S1239: TONESHELL
+- S0199: TURNEDUP
+- S0467: TajMahal
+- S9041: TeamPCP Cloud Stealer
+- S0665: ThreatNeedle
+- S0266: TrickBot
+- S0094: Trojan.Karagany
+- S1196: Troll Stealer
+- S9034: Tsundere Botnet
+- S0647: Turian
+- S0275: UPPERCUT
+- S0130: Unknown Logger
+- S0022: Uroburos
+- S0386: Ursnif
+- S0257: VERMIN
+- S0476: Valak
+- S0180: Volgmer
+- S0155: WINDSHIELD
+- S0219: WINERACK
+- S0670: WarzoneRAT
+- S0514: WellMess
+- S0059: WinMM
+- S0176: Wingbird
+- S0141: Winnti for Windows
+- S1065: Woody RAT
+- S0161: XAgentOSX
+- S0658: XCSSET
+- S1207: XLoader
+- S1248: XORIndex Loader
+- S0388: YAHOYAH
+- S0086: ZLib
+- S0251: Zebrocy
+- S0230: ZeroT
+- S0330: Zeus Panda
+- S0412: ZxShell
+- S1013: ZxxZ
+- S0106: cmd
+- S0105: dsquery
+- S0032: gh0st RAT
+- S0283: jRAT
+- S1048: macOS.OSAMiner
+- S1059: metaMain
+- S0385: njRAT
+- S0248: yty
+- S0350: zwShell

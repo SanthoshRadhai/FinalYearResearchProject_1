@@ -1,0 +1,255 @@
+# T1033: System Owner/User Discovery
+
+
+**ATT&CK ID:** T1033  
+**Domain:** Mitre Attack  
+**Tactic(s):** Discovery  
+**Platforms:** Linux, macOS, Network Devices, Windows  
+**Reference:** https://attack.mitre.org/techniques/T1033  
+
+## Description
+Adversaries may attempt to identify the primary user, currently logged in user, set of users that commonly uses a system, or whether a user is actively using the system. They may do this, for example, by retrieving account usernames or by using [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). The information may be collected in a number of different ways using other Discovery techniques, because user and username details are prevalent throughout a system and include running process ownership, file/directory ownership, session information, and system logs. Adversaries may use the information from [System Owner/User Discovery](https://attack.mitre.org/techniques/T1033) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+
+Various utilities and commands may acquire this information, including <code>whoami</code>. In macOS and Linux, the currently logged in user can be identified with <code>w</code> and <code>who</code>. On macOS the <code>dscl . list /Users | grep -v '_'</code> command can also be used to enumerate user accounts. Environment variables, such as <code>%USERNAME%</code> and <code>$USER</code>, may also be used to access this information.
+
+On network devices, [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) commands such as `show users` and `show ssh` can be used to display users currently logged into the device.(Citation: show_ssh_users_cmd_cisco)(Citation: US-CERT TA18-106A Network Infrastructure Devices 2018)
+
+## Known Threat Groups Using This Technique
+- G0073: APT19
+- G0022: APT3
+- G0050: APT32
+- G0067: APT37
+- G0082: APT38
+- G0087: APT39
+- G0096: APT41
+- G0143: Aquatic Panda
+- G0114: Chimera
+- G0035: Dragonfly
+- G1006: Earth Lusca
+- G0051: FIN10
+- G0046: FIN7
+- G0061: FIN8
+- G0093: GALLIUM
+- G0047: Gamaredon Group
+- G0125: HAFNIUM
+- G1001: HEXANE
+- G0004: Ke3chang
+- G0094: Kimsuky
+- G0032: Lazarus Group
+- G1014: LuminousMoth
+- G0059: Magic Hound
+- G1051: Medusa Group
+- G1054: MirrorFace
+- G1036: Moonstone Sleet
+- G0069: MuddyWater
+- G0049: OilRig
+- G0040: Patchwork
+- G0034: Sandworm Team
+- G0121: Sidewinder
+- G0038: Stealth Falcon
+- G1046: Storm-1811
+- G0027: Threat Group-3390
+- G0081: Tropic Trooper
+- G1017: Volt Typhoon
+- G0112: Windshift
+- G1035: Winter Vivern
+- G0102: Wizard Spider
+- G0128: ZIRCONIUM
+
+## Known Software Using This Technique
+- S1028: Action RAT
+- S0331: Agent Tesla
+- S0092: Agent.btz
+- S1025: Amadey
+- S0456: Aria-body
+- S1087: AsyncRAT
+- S1029: AuTo Stealer
+- S0344: Azorult
+- S1081: BADHATCH
+- S0017: BISCUIT
+- S0657: BLUELIGHT
+- S1226: BOOKWORM
+- S0414: BabyShark
+- S0093: Backdoor.Oldrea
+- S0534: Bazar
+- S1068: BlackCat
+- S0521: BloodHound
+- S0486: Bonadan
+- S0635: BoomBox
+- S1039: Bumblebee
+- S1149: CHIMNEYSWEEP
+- S9042: CanisterWorm
+- S0351: Cannon
+- S0348: Cardinal RAT
+- S0572: Caterpillar WebShell
+- S0631: Chaes
+- S0667: Chrommme
+- S0660: Clambling
+- S1024: CreepySnail
+- S0115: Crimson
+- S0498: Cryptoistic
+- S1153: Cuckoo Stealer
+- S0694: DRATzarus
+- S0334: DarkComet
+- S0673: DarkWatchman
+- S0354: Denis
+- S0021: Derusbi
+- S0659: Diavol
+- S1021: DnsSystem
+- S0186: DownPaper
+- S0024: Dyre
+- S0568: EVILNUM
+- S0554: Egregor
+- S0367: Emotet
+- S0363: Empire
+- S0091: Epic
+- S0401: Exaramel for Linux
+- S0569: Explosive
+- S0267: FELIXROOT
+- S0171: Felismus
+- S0696: Flagpro
+- S0381: FlawedAmmyy
+- S1044: FunnyDream
+- S0168: Gazer
+- S0666: Gelsemium
+- S0460: Get2
+- S0249: Gold Dragon
+- S0477: Goopy
+- S0531: Grandoreiro
+- S0237: GravityRAT
+- S0632: GrimAgent
+- S0214: HAPPYWORK
+- S0391: HAWKBALL
+- S1229: Havoc
+- S1249: HexEval Loader
+- S9023: HiddenFace
+- S0431: HotCroissant
+- S0260: InvisiMole
+- S1245: InvisibleFerret
+- S9029: IronWind
+- S0015: Ixeshe
+- S0201: JPIN
+- S0356: KONNI
+- S1075: KOPILUWAK
+- S0265: Kazuar
+- S0250: Koadic
+- S0162: Komplex
+- S0236: Kwampirs
+- S9035: LAMEHUG
+- S9020: LODEINFO
+- S1160: Latrodectus
+- S0362: Linux Rabbit
+- S0513: LiteDuke
+- S0680: LitePower
+- S0681: Lizar
+- S0447: Lokibot
+- S0532: Lucifer
+- S1141: LunarWeb
+- S1016: MacMa
+- S1060: Mafalda
+- S1169: Mango
+- S0652: MarkiRAT
+- S0459: MechaFlounder
+- S0455: Metamorfo
+- S1146: MgBot
+- S0339: Micropsia
+- S1015: Milan
+- S9043: Mini Shai-Hulud
+- S0280: MirageFox
+- S0084: Mis-Type
+- S0149: MoonWind
+- S0284: More_eggs
+- S0256: Mosquito
+- S0590: NBTscan
+- S0272: NDiskMonitor
+- S1106: NGLite
+- S0353: NOKKI
+- S0228: NanHaiShu
+- S0691: Neoichor
+- S1147: Nightdoor
+- S0644: ObliqueRAT
+- S0340: Octopus
+- S1172: OilBooster
+- S0439: Okrum
+- S0223: POWERSTATS
+- S0184: POWRUNER
+- S1228: PUBLOAD
+- S0013: PlugX
+- S0428: PoetRAT
+- S0139: PowerDuke
+- S0441: PowerShower
+- S0113: Prikormka
+- S0192: Pupy
+- S9019: PureCrypter
+- S1032: PyDCrypt
+- S0269: QUADAGENT
+- S0650: QakBot
+- S0262: QuasarRAT
+- S0241: RATANKBA
+- S0662: RCSession
+- S0258: RGDoor
+- S0240: ROKRAT
+- S0148: RTM
+- S1148: Raccoon Stealer
+- S1130: Raspberry Robin
+- S0172: Reaver
+- S0153: RedLeaves
+- S1240: RedLine Stealer
+- S0332: Remcos
+- S0125: Remsec
+- S0379: Revenge RAT
+- S0433: Rifdoor
+- S0448: Rising Sun
+- S0270: RogueRobin
+- S9037: RustyWater
+- S0085: S-Type
+- S0461: SDBbot
+- S0450: SHARPSTATS
+- S0692: SILENTTRINITY
+- S0533: SLOTHFULMEDIA
+- S0649: SMOKEDHAM
+- S1037: STARWHALE
+- S0559: SUNBURST
+- S1064: SVCReady
+- S1018: Saint Bot
+- S0382: ServHelper
+- S0596: ShadowPad
+- S0610: SideTwist
+- S1035: Small Sieve
+- S1124: SocGholish
+- S0627: SodaMaster
+- S0615: SombRAT
+- S0543: Spark
+- S0374: SpeakUp
+- S1030: Squirrelwaffle
+- S0058: SslMM
+- S1034: StrifeWater
+- S0242: SynAck
+- S0060: Sys10
+- S0663: SysUpdate
+- S0098: T9000
+- S1239: TONESHELL
+- S9041: TeamPCP Cloud Stealer
+- S0266: TrickBot
+- S0094: Trojan.Karagany
+- S0647: Turian
+- S0275: UPPERCUT
+- S0130: Unknown Logger
+- S0257: VERMIN
+- S0476: Valak
+- S0155: WINDSHIELD
+- S0219: WINERACK
+- S0515: WellMail
+- S0514: WellMess
+- S0059: WinMM
+- S1065: Woody RAT
+- S0161: XAgentOSX
+- S1207: XLoader
+- S1248: XORIndex Loader
+- S0251: Zebrocy
+- S0412: ZxShell
+- S1013: ZxxZ
+- S1059: metaMain
+- S0385: njRAT
+- S0248: yty
+- S0350: zwShell

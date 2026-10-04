@@ -1,0 +1,17 @@
+# CWE-1083: Data Access from Outside Expected Data Manager Component
+
+**Abstraction:** Base  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/1083.html  
+
+## Description
+The product is intended to manage data access through a particular data manager component such as a relational or non-SQL database, but it contains code that performs data access operations without using that component.
+
+## Extended Description
+When the product has a data access component, the design may be intended to handle all data access operations through that component. If a data access operation is performed outside of that component, then this may indicate a violation of the intended design.
+
+## Related Weaknesses
+- ChildOf: CWE-1061
+
+## Common Consequences
+- Scope: Other; Impact: Reduce Reliability — This issue can prevent the product from running reliably. If the relevant code is reachable by an attacker, then this reliability problem might introduce a vulnerability.

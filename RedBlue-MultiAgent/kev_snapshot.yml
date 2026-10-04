@@ -1,0 +1,954 @@
+- generic [active] [ref=f16e1]:
+  - link "Skip to main content" [ref=f16e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f16e4]:
+    - region "Official government website" [ref=f16e5]:
+      - generic [ref=f16e8]:
+        - img "U.S. flag" [ref=f16e10]
+        - paragraph [ref=f16e12]: An official website of the United States government
+        - button "Here’s how you know" [ref=f16e13] [cursor=pointer]
+    - banner [ref=f16e14]:
+      - paragraph [ref=f16e19]:
+        - link "Staying Secure at Events" [ref=f16e20] [cursor=pointer]:
+          - /url: /staying-secure-large-scale-events
+        - link "no-cost Cyber Services" [ref=f16e21] [cursor=pointer]:
+          - /url: /resources-tools/resources/free-cybersecurity-services-and-tools
+        - link "Cybersecurity Awareness Month" [ref=f16e22] [cursor=pointer]:
+          - /url: /cybersecurity-awareness-month
+        - link "KEV Catalog" [ref=f16e23] [cursor=pointer]:
+          - /url: /kev
+        - link "Report A Cyber Issue" [ref=f16e24] [cursor=pointer]:
+          - /url: /report
+    - generic [ref=f16e27]:
+      - link [ref=f16e35] [cursor=pointer]:
+        - /url: /
+        - img "Cybersecurity & Infrastructure Security Agency logo America’s Cyber Security Defense Agency National Coordinator For Critical Infrastructure Security and Resilience" [ref=f16e36]
+      - generic [ref=f16e37]:
+        - paragraph [ref=f16e39]: Search
+        - generic [ref=f16e43]:
+          - textbox "search" [ref=f16e45]
+          - button "search" [ref=f16e46] [cursor=pointer]:
+            - img "search" [ref=f16e47]
+    - navigation "Primary navigation" [ref=f16e49]:
+      - list [ref=f16e52]:
+        - listitem [ref=f16e53]:
+          - button "Topics" [ref=f16e54] [cursor=pointer]
+        - listitem [ref=f16e55]:
+          - link "Spotlight" [ref=f16e56] [cursor=pointer]:
+            - /url: /spotlight
+        - listitem [ref=f16e57]:
+          - button "Resources & Tools" [ref=f16e58] [cursor=pointer]
+        - listitem [ref=f16e59]:
+          - button "News & Events" [ref=f16e60] [cursor=pointer]
+        - listitem [ref=f16e61]:
+          - button "Careers" [ref=f16e62] [cursor=pointer]
+        - listitem [ref=f16e63]:
+          - button "About" [ref=f16e64] [cursor=pointer]
+    - generic [ref=f16e67]:
+      - navigation "Breadcrumb" [ref=f16e68]:
+        - generic [ref=f16e69]:
+          - generic [ref=f16e70]: Breadcrumb
+          - list [ref=f16e71]:
+            - listitem [ref=f16e72]:
+              - link "Home" [ref=f16e73] [cursor=pointer]:
+                - /url: /
+              - text: /
+            - listitem [ref=f16e74]:
+              - generic [ref=f16e75]: Known Exploited Vulnerabilities Catalog
+      - generic [ref=f16e78]:
+        - generic [ref=f16e79]: "Share:"
+        - generic [ref=f16e80]:
+          - link "Share to Facebook (opens in a new window)" [ref=f16e81] [cursor=pointer]:
+            - /url: https://www.facebook.com/sharer/sharer.php?u=https://www.cisa.gov/known-exploited-vulnerabilities-catalog&title=Known%20Exploited%20Vulnerabilities%20Catalog
+            - generic [ref=f16e82]: Opens in a new window
+          - link "Share to X (opens in a new window)" [ref=f16e83] [cursor=pointer]:
+            - /url: https://twitter.com/intent/tweet?text=Known%20Exploited%20Vulnerabilities%20Catalog+https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+            - generic [ref=f16e84]: Opens in a new window
+          - link "Share to LinkedIn (opens in a new window)" [ref=f16e85] [cursor=pointer]:
+            - /url: https://www.linkedin.com/sharing/share-offsite/?url=https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+            - generic [ref=f16e86]: Opens in a new window
+          - link "Share by email" [ref=f16e87] [cursor=pointer]:
+            - /url: mailto:?subject=Known%20Exploited%20Vulnerabilities%20Catalog&body=https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+    - main [ref=f16e88]:
+      - generic [ref=f16e91]:
+        - complementary [ref=f16e92]:
+          - generic [ref=f16e94]:
+            - heading "Search all Known Exploited Vulnerabilities Catalog" [level=3] [ref=f16e95]
+            - generic [ref=f16e96]:
+              - generic [ref=f16e97]:
+                - generic [ref=f16e98]: Search by keyword, term, or phrase
+                - textbox "Search by keyword, term, or phrase" [ref=f16e99]
+              - generic [ref=f16e100]:
+                - generic [ref=f16e101]: Date Added (optional)
+                - combobox "Date Added (optional)" [ref=f16e102]:
+                  - option [selected]
+                  - option "Last 30 Days"
+                  - option "Last 60 Days"
+                  - option "Last 90 Days"
+                  - option "Last Year"
+              - generic: CVE
+              - generic [ref=f16e104]:
+                - generic [ref=f16e105]: Sort by (optional)
+                - combobox "Sort by (optional)" [ref=f16e106]:
+                  - option "Date Added" [selected]
+                  - option "Due Date"
+                  - option "Vendor/Project A-Z"
+              - generic [ref=f16e107]:
+                - generic [ref=f16e108]: Items per page (optional)
+                - combobox "Items per page (optional)" [ref=f16e109]:
+                  - option "20" [selected]
+                  - option "- All -"
+              - button "Apply" [ref=f16e111]
+          - heading [level=4] [ref=f16e112]:
+            - strong [ref=f16e113]: Filters
+          - button [ref=f16e116] [cursor=pointer]:
+            - heading "Vendor/Project" [level=3] [ref=f16e117]
+        - generic [ref=f16e120]:
+          - heading "Known Exploited Vulnerabilities Catalog" [level=1] [ref=f16e123]
+          - generic [ref=f16e125]:
+            - paragraph [ref=f16e126]:
+              - text: For the benefit of the cybersecurity community and network defenders—and to help every organization better manage vulnerabilities and keep pace with threat activity—CISA maintains the authoritative source of vulnerabilities that have been exploited in the wild. Organizations should use the KEV catalog as an input to their vulnerability management prioritization framework. Learn more about
+              - link "how to use the KEV catalog" [ref=f16e127] [cursor=pointer]:
+                - /url: /known-exploited-vulnerabilities-catalog/reducing-significant-risk-known-exploited-vulnerabilities
+              - text: in your organization.
+            - paragraph [ref=f16e128]:
+              - text: Are you aware of an actively exploited vulnerability not included in the KEV Catalog?
+              - link "NOMINATE A NEW KEV" [ref=f16e129] [cursor=pointer]:
+                - /url: https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w
+            - paragraph [ref=f16e130]:
+              - text: "The KEV catalog is also available in these formats:"
+              - link "CSV" [ref=f16e131] [cursor=pointer]:
+                - /url: /sites/default/files/csv/known_exploited_vulnerabilities.csv
+              - link "JSON" [ref=f16e132] [cursor=pointer]:
+                - /url: /sites/default/files/feeds/known_exploited_vulnerabilities.json
+              - link "Print View" [ref=f16e133] [cursor=pointer]:
+                - /url: /known-exploited-vulnerabilities-catalog-print
+              - link "JSON Schema" [ref=f16e134] [cursor=pointer]:
+                - /url: /sites/default/files/feeds/known_exploited_vulnerabilities_schema.json
+              - text: (updated 09-02-2026)
+              - link "License" [ref=f16e135] [cursor=pointer]:
+                - /url: /sites/default/files/licenses/kev/license.txt
+          - separator [ref=f16e136]
+          - generic [ref=f16e137]:
+            - generic [ref=f16e138]: Showing 1 to 20 of 1733 results
+            - article [ref=f16e141]:
+              - generic [ref=f16e143]:
+                - generic [ref=f16e144]: Zammad GmbH | Zammad
+                - heading [level=3] [ref=f16e146]:
+                  - link [ref=f16e147] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-102489
+                    - text: CVE-2026-102489
+                    - img "(link is external)" [ref=f16e148]
+                - generic [ref=f16e151]: "Zammad GmbH Zammad Session Fixation Vulnerability: Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490."
+                - paragraph [ref=f16e154]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e155] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/384
+                    - text: CWE-384
+                    - img "(link is external)" [ref=f16e156]
+                - list [ref=f16e159]:
+                  - generic [ref=f16e160]:
+                    - listitem [ref=f16e161]:
+                      - generic [ref=f16e162]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e163]: Unknown
+                    - listitem [ref=f16e164]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e165]: "Yes"
+                  - generic [ref=f16e166]:
+                    - listitem [ref=f16e167]:
+                      - generic [ref=f16e168]: "Date Added:"
+                      - text: 2026-10-02
+                    - listitem [ref=f16e169]:
+                      - generic [ref=f16e170]: "Due Date:"
+                      - text: 2026-10-05
+                - generic [ref=f16e171]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e173] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e175]:
+              - generic [ref=f16e177]:
+                - generic [ref=f16e178]: Zammad GmbH | Zammad
+                - heading [level=3] [ref=f16e180]:
+                  - link [ref=f16e181] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-102490
+                    - text: CVE-2026-102490
+                    - img "(link is external)" [ref=f16e182]
+                - generic [ref=f16e185]: "Zammad GmbH Zammad Improper Privilege Management Vulnerability: Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489."
+                - paragraph [ref=f16e188]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e189] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/269
+                    - text: CWE-269
+                    - img "(link is external)" [ref=f16e190]
+                - list [ref=f16e193]:
+                  - generic [ref=f16e194]:
+                    - listitem [ref=f16e195]:
+                      - generic [ref=f16e196]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e197]: Unknown
+                    - listitem [ref=f16e198]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e199]: "Yes"
+                  - generic [ref=f16e200]:
+                    - listitem [ref=f16e201]:
+                      - generic [ref=f16e202]: "Date Added:"
+                      - text: 2026-10-02
+                    - listitem [ref=f16e203]:
+                      - generic [ref=f16e204]: "Due Date:"
+                      - text: 2026-10-05
+                - generic [ref=f16e205]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e207] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e209]:
+              - generic [ref=f16e211]:
+                - generic [ref=f16e212]: Fortinet | FortiMail
+                - heading [level=3] [ref=f16e214]:
+                  - link [ref=f16e215] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-104286
+                    - text: CVE-2026-104286
+                    - img "(link is external)" [ref=f16e216]
+                - generic [ref=f16e219]: "Fortinet FortiMail Path Traversal Vulnerability: Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests."
+                - paragraph [ref=f16e222]:
+                  - text: "Related CWEs:"
+                  - generic [ref=f16e223]:
+                    - link [ref=f16e224] [cursor=pointer]:
+                      - /url: https://cwe.mitre.org/data/definitions/22
+                      - text: CWE-22
+                      - img "(link is external)" [ref=f16e225]
+                    - text: "|"
+                  - link [ref=f16e229] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/158
+                    - text: CWE-158
+                    - img "(link is external)" [ref=f16e230]
+                - list [ref=f16e233]:
+                  - generic [ref=f16e234]:
+                    - listitem [ref=f16e235]:
+                      - generic [ref=f16e236]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e237]: Unknown
+                    - listitem [ref=f16e238]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e239]: "Yes"
+                  - generic [ref=f16e240]:
+                    - listitem [ref=f16e241]:
+                      - generic [ref=f16e242]: "Date Added:"
+                      - text: 2026-10-01
+                    - listitem [ref=f16e243]:
+                      - generic [ref=f16e244]: "Due Date:"
+                      - text: 2026-10-04
+                - generic [ref=f16e245]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e247] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e249]:
+              - generic [ref=f16e251]:
+                - generic [ref=f16e252]: Cisco | Catalyst SD-WAN Manager
+                - heading [level=3] [ref=f16e254]:
+                  - link [ref=f16e255] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-76504
+                    - text: CVE-2026-76504
+                    - img "(link is external)" [ref=f16e256]
+                - generic [ref=f16e259]: "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability: Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request."
+                - paragraph [ref=f16e262]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e263] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/177
+                    - text: CWE-177
+                    - img "(link is external)" [ref=f16e264]
+                - list [ref=f16e267]:
+                  - generic [ref=f16e268]:
+                    - listitem [ref=f16e269]:
+                      - generic [ref=f16e270]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e271]: Unknown
+                    - listitem [ref=f16e272]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e273]: "Yes"
+                  - generic [ref=f16e274]:
+                    - listitem [ref=f16e275]:
+                      - generic [ref=f16e276]: "Date Added:"
+                      - text: 2026-09-30
+                    - listitem [ref=f16e277]:
+                      - generic [ref=f16e278]: "Due Date:"
+                      - text: 2026-10-03
+                - generic [ref=f16e279]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e281] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e283]:
+              - generic [ref=f16e285]:
+                - generic [ref=f16e286]: Apple | Multiple Products
+                - heading [level=3] [ref=f16e288]:
+                  - link [ref=f16e289] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-86950
+                    - text: CVE-2026-86950
+                    - img "(link is external)" [ref=f16e290]
+                - generic [ref=f16e293]: "Apple Multiple Products Out-of-Bounds Write Vulnerability: Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution."
+                - paragraph [ref=f16e296]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e297] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/787
+                    - text: CWE-787
+                    - img "(link is external)" [ref=f16e298]
+                - list [ref=f16e301]:
+                  - generic [ref=f16e302]:
+                    - listitem [ref=f16e303]:
+                      - generic [ref=f16e304]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e305]: Unknown
+                    - listitem [ref=f16e306]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e307]: "Yes"
+                  - generic [ref=f16e308]:
+                    - listitem [ref=f16e309]:
+                      - generic [ref=f16e310]: "Date Added:"
+                      - text: 2026-09-29
+                    - listitem [ref=f16e311]:
+                      - generic [ref=f16e312]: "Due Date:"
+                      - text: 2026-10-02
+                - generic [ref=f16e313]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e315] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e317]:
+              - generic [ref=f16e319]:
+                - generic [ref=f16e320]: Citrix | NetScaler
+                - heading [level=3] [ref=f16e322]:
+                  - link [ref=f16e323] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-88771
+                    - text: CVE-2026-88771
+                    - img "(link is external)" [ref=f16e324]
+                - generic [ref=f16e327]: "Citrix NetScaler Improper Input Validation Vulnerability: Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands."
+                - paragraph [ref=f16e330]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e331] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/119
+                    - text: CWE-119
+                    - img "(link is external)" [ref=f16e332]
+                - list [ref=f16e335]:
+                  - generic [ref=f16e336]:
+                    - listitem [ref=f16e337]:
+                      - generic [ref=f16e338]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e339]: Unknown
+                    - listitem [ref=f16e340]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e341]: "Yes"
+                  - generic [ref=f16e342]:
+                    - listitem [ref=f16e343]:
+                      - generic [ref=f16e344]: "Date Added:"
+                      - text: 2026-09-27
+                    - listitem [ref=f16e345]:
+                      - generic [ref=f16e346]: "Due Date:"
+                      - text: 2026-09-30
+                - generic [ref=f16e347]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e349] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e351]:
+              - generic [ref=f16e353]:
+                - generic [ref=f16e354]: Citrix | NetScaler
+                - heading [level=3] [ref=f16e356]:
+                  - link [ref=f16e357] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-88772
+                    - text: CVE-2026-88772
+                    - img "(link is external)" [ref=f16e358]
+                - generic [ref=f16e361]: "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability: Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service"
+                - paragraph [ref=f16e364]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e365] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/119
+                    - text: CWE-119
+                    - img "(link is external)" [ref=f16e366]
+                - list [ref=f16e369]:
+                  - generic [ref=f16e370]:
+                    - listitem [ref=f16e371]:
+                      - generic [ref=f16e372]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e373]: Unknown
+                    - listitem [ref=f16e374]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e375]: "Yes"
+                  - generic [ref=f16e376]:
+                    - listitem [ref=f16e377]:
+                      - generic [ref=f16e378]: "Date Added:"
+                      - text: 2026-09-27
+                    - listitem [ref=f16e379]:
+                      - generic [ref=f16e380]: "Due Date:"
+                      - text: 2026-09-30
+                - generic [ref=f16e381]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e383] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e385]:
+              - generic [ref=f16e387]:
+                - generic [ref=f16e388]: WordPress | Core
+                - heading [level=3] [ref=f16e390]:
+                  - link [ref=f16e391] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-87902
+                    - text: CVE-2026-87902
+                    - img "(link is external)" [ref=f16e392]
+                - generic [ref=f16e395]: "WordPress Core Remote File Inclusion Vulnerability: WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme directories, leading to remote code execution."
+                - paragraph [ref=f16e398]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e399] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/98.html
+                    - text: CWE-98
+                    - img "(link is external)" [ref=f16e400]
+                - list [ref=f16e403]:
+                  - generic [ref=f16e404]:
+                    - listitem [ref=f16e405]:
+                      - generic [ref=f16e406]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e407]: Unknown
+                    - listitem [ref=f16e408]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e409]: "Yes"
+                  - generic [ref=f16e410]:
+                    - listitem [ref=f16e411]:
+                      - generic [ref=f16e412]: "Date Added:"
+                      - text: 2026-09-25
+                    - listitem [ref=f16e413]:
+                      - generic [ref=f16e414]: "Due Date:"
+                      - text: 2026-09-28
+                - generic [ref=f16e415]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e417] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e419]:
+              - generic [ref=f16e421]:
+                - generic [ref=f16e422]: Microsoft | SharePoint
+                - heading [level=3] [ref=f16e424]:
+                  - link [ref=f16e425] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-65660
+                    - text: CVE-2026-65660
+                    - img "(link is external)" [ref=f16e426]
+                - generic [ref=f16e429]: "Microsoft SharePoint Code Injection Vulnerability: Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network."
+                - paragraph [ref=f16e432]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e433] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/94.html
+                    - text: CWE-94
+                    - img "(link is external)" [ref=f16e434]
+                - list [ref=f16e437]:
+                  - generic [ref=f16e438]:
+                    - listitem [ref=f16e439]:
+                      - generic [ref=f16e440]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e441]: Unknown
+                    - listitem [ref=f16e442]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e443]: "Yes"
+                  - generic [ref=f16e444]:
+                    - listitem [ref=f16e445]:
+                      - generic [ref=f16e446]: "Date Added:"
+                      - text: 2026-09-25
+                    - listitem [ref=f16e447]:
+                      - generic [ref=f16e448]: "Due Date:"
+                      - text: 2026-09-28
+                - generic [ref=f16e449]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e451] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e453]:
+              - generic [ref=f16e455]:
+                - generic [ref=f16e456]: MikroTik | RouterOS
+                - heading [level=3] [ref=f16e458]:
+                  - link [ref=f16e459] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-67279
+                    - text: CVE-2026-67279
+                    - img "(link is external)" [ref=f16e460]
+                - generic [ref=f16e463]: "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability: Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerability can be chained to achieve unauthenticated exploitation of CVE-2026-86060."
+                - paragraph [ref=f16e466]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e467] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/841.html
+                    - text: CWE-841
+                    - img "(link is external)" [ref=f16e468]
+                - list [ref=f16e471]:
+                  - generic [ref=f16e472]:
+                    - listitem [ref=f16e473]:
+                      - generic [ref=f16e474]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e475]: Unknown
+                    - listitem [ref=f16e476]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e477]: "No"
+                  - generic [ref=f16e478]:
+                    - listitem [ref=f16e479]:
+                      - generic [ref=f16e480]: "Date Added:"
+                      - text: 2026-09-25
+                    - listitem [ref=f16e481]:
+                      - generic [ref=f16e482]: "Due Date:"
+                      - text: 2026-09-28
+                - generic [ref=f16e483]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e485] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e487]:
+              - generic [ref=f16e489]:
+                - generic [ref=f16e490]: Adobe | Commerce and Magento
+                - heading [level=3] [ref=f16e492]:
+                  - link [ref=f16e493] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-71362
+                    - text: CVE-2026-71362
+                    - img "(link is external)" [ref=f16e494]
+                - generic [ref=f16e497]: "Adobe Commerce and Magento Incorrect Authorization Vulnerability : Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction."
+                - paragraph [ref=f16e500]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e501] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/863
+                    - text: CWE-863
+                    - img "(link is external)" [ref=f16e502]
+                - list [ref=f16e505]:
+                  - generic [ref=f16e506]:
+                    - listitem [ref=f16e507]:
+                      - generic [ref=f16e508]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e509]: Unknown
+                    - listitem [ref=f16e510]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e511]: "Yes"
+                  - generic [ref=f16e512]:
+                    - listitem [ref=f16e513]:
+                      - generic [ref=f16e514]: "Date Added:"
+                      - text: 2026-09-24
+                    - listitem [ref=f16e515]:
+                      - generic [ref=f16e516]: "Due Date:"
+                      - text: 2026-09-27
+                - generic [ref=f16e517]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e519] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e521]:
+              - generic [ref=f16e523]:
+                - generic [ref=f16e524]: WSO2 | Multiple Products
+                - heading [level=3] [ref=f16e526]:
+                  - link [ref=f16e527] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-5430
+                    - text: CVE-2026-5430
+                    - img "(link is external)" [ref=f16e528]
+                - generic [ref=f16e531]: "WSO2 Multiple Products Path Traversal Vulnerability : WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution."
+                - paragraph [ref=f16e534]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e535] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/347
+                    - text: CWE-347
+                    - img "(link is external)" [ref=f16e536]
+                - list [ref=f16e539]:
+                  - generic [ref=f16e540]:
+                    - listitem [ref=f16e541]:
+                      - generic [ref=f16e542]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e543]: Unknown
+                    - listitem [ref=f16e544]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e545]: "Yes"
+                  - generic [ref=f16e546]:
+                    - listitem [ref=f16e547]:
+                      - generic [ref=f16e548]: "Date Added:"
+                      - text: 2026-09-24
+                    - listitem [ref=f16e549]:
+                      - generic [ref=f16e550]: "Due Date:"
+                      - text: 2026-09-27
+                - generic [ref=f16e551]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e553] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e555]:
+              - generic [ref=f16e557]:
+                - generic [ref=f16e558]: Check Point | Multiple Products
+                - heading [level=3] [ref=f16e560]:
+                  - link [ref=f16e561] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-85102
+                    - text: CVE-2026-85102
+                    - img "(link is external)" [ref=f16e562]
+                - generic [ref=f16e565]: "Check Point Multiple Products Improper Certificate Validation Vulnerability: Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway."
+                - paragraph [ref=f16e568]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e569] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/295
+                    - text: CWE-295
+                    - img "(link is external)" [ref=f16e570]
+                - list [ref=f16e573]:
+                  - generic [ref=f16e574]:
+                    - listitem [ref=f16e575]:
+                      - generic [ref=f16e576]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e577]: Unknown
+                    - listitem [ref=f16e578]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e579]: "Yes"
+                  - generic [ref=f16e580]:
+                    - listitem [ref=f16e581]:
+                      - generic [ref=f16e582]: "Date Added:"
+                      - text: 2026-09-22
+                    - listitem [ref=f16e583]:
+                      - generic [ref=f16e584]: "Due Date:"
+                      - text: 2026-09-25
+                - generic [ref=f16e585]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e587] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e589]:
+              - generic [ref=f16e591]:
+                - generic [ref=f16e592]: Check Point | Multiple Products
+                - heading [level=3] [ref=f16e594]:
+                  - link [ref=f16e595] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-93616
+                    - text: CVE-2026-93616
+                    - img "(link is external)" [ref=f16e596]
+                - generic [ref=f16e599]: "Check Point Multiple Products Path Traversal Vulnerability: Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticated attacker to upload and execute arbitrary scripts."
+                - paragraph [ref=f16e602]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e603] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/22
+                    - text: CWE-22
+                    - img "(link is external)" [ref=f16e604]
+                - list [ref=f16e607]:
+                  - generic [ref=f16e608]:
+                    - listitem [ref=f16e609]:
+                      - generic [ref=f16e610]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e611]: Unknown
+                    - listitem [ref=f16e612]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e613]: "Yes"
+                  - generic [ref=f16e614]:
+                    - listitem [ref=f16e615]:
+                      - generic [ref=f16e616]: "Date Added:"
+                      - text: 2026-09-22
+                    - listitem [ref=f16e617]:
+                      - generic [ref=f16e618]: "Due Date:"
+                      - text: 2026-09-25
+                - generic [ref=f16e619]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e621] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e623]:
+              - generic [ref=f16e625]:
+                - generic [ref=f16e626]: F5 | BIG-IP APM
+                - heading [level=3] [ref=f16e628]:
+                  - link [ref=f16e629] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-94127
+                    - text: CVE-2026-94127
+                    - img "(link is external)" [ref=f16e630]
+                - generic [ref=f16e633]: "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability: F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution."
+                - paragraph [ref=f16e636]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e637] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/122
+                    - text: CWE-122
+                    - img "(link is external)" [ref=f16e638]
+                - list [ref=f16e641]:
+                  - generic [ref=f16e642]:
+                    - listitem [ref=f16e643]:
+                      - generic [ref=f16e644]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e645]: Unknown
+                    - listitem [ref=f16e646]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e647]: "Yes"
+                  - generic [ref=f16e648]:
+                    - listitem [ref=f16e649]:
+                      - generic [ref=f16e650]: "Date Added:"
+                      - text: 2026-09-22
+                    - listitem [ref=f16e651]:
+                      - generic [ref=f16e652]: "Due Date:"
+                      - text: 2026-09-25
+                - generic [ref=f16e653]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e655] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e657]:
+              - generic [ref=f16e659]:
+                - generic [ref=f16e660]: Arista | VeloCloud Orchestrator
+                - heading [level=3] [ref=f16e662]:
+                  - link [ref=f16e663] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-93952
+                    - text: CVE-2026-93952
+                    - img "(link is external)" [ref=f16e664]
+                - generic [ref=f16e667]: "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability: Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator."
+                - paragraph [ref=f16e670]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e671] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/20
+                    - text: CWE-20
+                    - img "(link is external)" [ref=f16e672]
+                - list [ref=f16e675]:
+                  - generic [ref=f16e676]:
+                    - listitem [ref=f16e677]:
+                      - generic [ref=f16e678]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e679]: Unknown
+                    - listitem [ref=f16e680]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e681]: "Yes"
+                  - generic [ref=f16e682]:
+                    - listitem [ref=f16e683]:
+                      - generic [ref=f16e684]: "Date Added:"
+                      - text: 2026-09-22
+                    - listitem [ref=f16e685]:
+                      - generic [ref=f16e686]: "Due Date:"
+                      - text: 2026-09-25
+                - generic [ref=f16e687]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e689] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e691]:
+              - generic [ref=f16e693]:
+                - generic [ref=f16e694]: Zyxel | GS1900 Series Switches
+                - heading [level=3] [ref=f16e696]:
+                  - link [ref=f16e697] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-7273
+                    - text: CVE-2026-7273
+                    - img "(link is external)" [ref=f16e698]
+                - generic [ref=f16e701]: "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability: Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request."
+                - paragraph [ref=f16e704]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e705] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/121.html
+                    - text: CWE-121
+                    - img "(link is external)" [ref=f16e706]
+                - list [ref=f16e709]:
+                  - generic [ref=f16e710]:
+                    - listitem [ref=f16e711]:
+                      - generic [ref=f16e712]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e713]: Unknown
+                    - listitem [ref=f16e714]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e715]: "Yes"
+                  - generic [ref=f16e716]:
+                    - listitem [ref=f16e717]:
+                      - generic [ref=f16e718]: "Date Added:"
+                      - text: 2026-09-21
+                    - listitem [ref=f16e719]:
+                      - generic [ref=f16e720]: "Due Date:"
+                      - text: 2026-09-24
+                - generic [ref=f16e721]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e723] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e725]:
+              - generic [ref=f16e727]:
+                - generic [ref=f16e728]: Linux | Kernel
+                - heading [level=3] [ref=f16e730]:
+                  - link [ref=f16e731] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2025-39682
+                    - text: CVE-2025-39682
+                    - img "(link is external)" [ref=f16e732]
+                - generic [ref=f16e735]: "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability: Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version."
+                - paragraph [ref=f16e738]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e739] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/754
+                    - text: CWE-754
+                    - img "(link is external)" [ref=f16e740]
+                - list [ref=f16e743]:
+                  - generic [ref=f16e744]:
+                    - listitem [ref=f16e745]:
+                      - generic [ref=f16e746]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e747]: Unknown
+                    - listitem [ref=f16e748]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e749]: "Yes"
+                  - generic [ref=f16e750]:
+                    - listitem [ref=f16e751]:
+                      - generic [ref=f16e752]: "Date Added:"
+                      - text: 2026-09-18
+                    - listitem [ref=f16e753]:
+                      - generic [ref=f16e754]: "Due Date:"
+                      - text: 2026-09-21
+                - generic [ref=f16e755]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e757] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e759]:
+              - generic [ref=f16e761]:
+                - generic [ref=f16e762]: Linux | Kernel
+                - heading [level=3] [ref=f16e764]:
+                  - link [ref=f16e765] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2026-53266
+                    - text: CVE-2026-53266
+                    - img "(link is external)" [ref=f16e766]
+                - generic [ref=f16e769]: "Linux Kernel Out-of-Bounds Write Vulnerability: Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version."
+                - paragraph [ref=f16e772]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e773] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/787
+                    - text: CWE-787
+                    - img "(link is external)" [ref=f16e774]
+                - list [ref=f16e777]:
+                  - generic [ref=f16e778]:
+                    - listitem [ref=f16e779]:
+                      - generic [ref=f16e780]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e781]: Unknown
+                    - listitem [ref=f16e782]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e783]: "Yes"
+                  - generic [ref=f16e784]:
+                    - listitem [ref=f16e785]:
+                      - generic [ref=f16e786]: "Date Added:"
+                      - text: 2026-09-18
+                    - listitem [ref=f16e787]:
+                      - generic [ref=f16e788]: "Due Date:"
+                      - text: 2026-09-21
+                - generic [ref=f16e789]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e791] [cursor=pointer]: Additional Notes +
+            - article [ref=f16e793]:
+              - generic [ref=f16e795]:
+                - generic [ref=f16e796]: Linux | Kernel
+                - heading [level=3] [ref=f16e798]:
+                  - link [ref=f16e799] [cursor=pointer]:
+                    - /url: https://www.cve.org/CVERecord?id=CVE-2025-39964
+                    - text: CVE-2025-39964
+                    - img "(link is external)" [ref=f16e800]
+                - generic [ref=f16e803]: "Linux Kernel Race Condition Vulnerability: Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state."
+                - paragraph [ref=f16e806]:
+                  - text: "Related CWE:"
+                  - link [ref=f16e807] [cursor=pointer]:
+                    - /url: https://cwe.mitre.org/data/definitions/362
+                    - text: CWE-362
+                    - img "(link is external)" [ref=f16e808]
+                - list [ref=f16e811]:
+                  - generic [ref=f16e812]:
+                    - listitem [ref=f16e813]:
+                      - generic [ref=f16e814]:
+                        - text: Known To Be Used in Ransomware Campaigns?
+                        - strong [ref=f16e815]: Unknown
+                    - listitem [ref=f16e816]:
+                      - text: "Forensic triage required per BOD 26-04:"
+                      - strong [ref=f16e817]: "Yes"
+                  - generic [ref=f16e818]:
+                    - listitem [ref=f16e819]:
+                      - generic [ref=f16e820]: "Date Added:"
+                      - text: 2026-09-18
+                    - listitem [ref=f16e821]:
+                      - generic [ref=f16e822]: "Due Date:"
+                      - text: 2026-09-21
+                - generic [ref=f16e823]: "Action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+                - generic [ref=f16e825] [cursor=pointer]: Additional Notes +
+            - navigation [ref=f16e826]:
+              - list [ref=f16e827]:
+                - listitem [ref=f16e828]:
+                  - generic [ref=f16e829]: Currently on page
+                  - text: "1"
+                - listitem [ref=f16e830]:
+                  - link "Go to page 2" [ref=f16e831] [cursor=pointer]:
+                    - /url: "?page=1"
+                    - generic [ref=f16e832]: Page
+                    - text: "2"
+                - listitem [ref=f16e833]:
+                  - link "Go to page 3" [ref=f16e834] [cursor=pointer]:
+                    - /url: "?page=2"
+                    - generic [ref=f16e835]: Page
+                    - text: "3"
+                - listitem [ref=f16e836]:
+                  - link "Go to page 4" [ref=f16e837] [cursor=pointer]:
+                    - /url: "?page=3"
+                    - generic [ref=f16e838]: Page
+                    - text: "4"
+                - listitem [ref=f16e839]:
+                  - link "Go to page 5" [ref=f16e840] [cursor=pointer]:
+                    - /url: "?page=4"
+                    - generic [ref=f16e841]: Page
+                    - text: "5"
+                - listitem [ref=f16e842]:
+                  - link "Go to page 6" [ref=f16e843] [cursor=pointer]:
+                    - /url: "?page=5"
+                    - generic [ref=f16e844]: Page
+                    - text: "6"
+                - listitem [ref=f16e845]:
+                  - link "Go to page 7" [ref=f16e846] [cursor=pointer]:
+                    - /url: "?page=6"
+                    - generic [ref=f16e847]: Page
+                    - text: "7"
+                - listitem [ref=f16e848]:
+                  - link "Go to page 8" [ref=f16e849] [cursor=pointer]:
+                    - /url: "?page=7"
+                    - generic [ref=f16e850]: Page
+                    - text: "8"
+                - listitem [ref=f16e851]:
+                  - link "Go to page 9" [ref=f16e852] [cursor=pointer]:
+                    - /url: "?page=8"
+                    - generic [ref=f16e853]: Page
+                    - text: "9"
+                - text: …
+                - listitem [ref=f16e854]:
+                  - link "Go to next page" [ref=f16e855] [cursor=pointer]:
+                    - /url: "?page=1"
+                    - text: Next
+                - listitem [ref=f16e859]:
+                  - link "Go to last page" [ref=f16e860] [cursor=pointer]:
+                    - /url: "?page=86"
+                    - text: Last
+          - generic [ref=f16e869]:
+            - heading "Subscribe to the KEV Catalog Updates" [level=2] [ref=f16e870]
+            - paragraph [ref=f16e871]: Stay up to date on the latest known exploited vulnerabilities.
+            - link "Subscribe Now" [ref=f16e872] [cursor=pointer]:
+              - /url: https://public.govdelivery.com/accounts/USDHSCISA/subscriber/new?topic_id=USDHSCISA_136
+    - contentinfo [ref=f16e875]:
+      - link "Return to top" [ref=f16e878] [cursor=pointer]:
+        - /url: "#top"
+      - list [ref=f16e881]:
+        - listitem [ref=f16e882]:
+          - link "Topics" [ref=f16e883] [cursor=pointer]:
+            - /url: /topics
+        - listitem [ref=f16e884]:
+          - link "Spotlight" [ref=f16e885] [cursor=pointer]:
+            - /url: /spotlight
+        - listitem [ref=f16e886]:
+          - link "Resources & Tools" [ref=f16e887] [cursor=pointer]:
+            - /url: /resources-tools
+        - listitem [ref=f16e888]:
+          - link "News & Events" [ref=f16e889] [cursor=pointer]:
+            - /url: /news-events
+        - listitem [ref=f16e890]:
+          - link "Careers" [ref=f16e891] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=f16e892]:
+          - link "About" [ref=f16e893] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=f16e896]:
+        - link "Cybersecurity & Infrastructure Security Agency" [ref=f16e898] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f16e899]:
+          - list [ref=f16e900]:
+            - listitem [ref=f16e901]:
+              - link "Facebook" [ref=f16e902] [cursor=pointer]:
+                - /url: https://www.facebook.com/CISA
+            - listitem [ref=f16e903]:
+              - link "X" [ref=f16e904] [cursor=pointer]:
+                - /url: https://x.com/CISAgov
+            - listitem [ref=f16e905]:
+              - link "LinkedIn" [ref=f16e906] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/cybersecurity-and-infrastructure-security-agency
+            - listitem [ref=f16e907]:
+              - link "YouTube" [ref=f16e908] [cursor=pointer]:
+                - /url: https://www.youtube.com/@cisagov
+            - listitem [ref=f16e909]:
+              - link "Instagram" [ref=f16e910] [cursor=pointer]:
+                - /url: https://www.instagram.com/cisagov
+            - listitem [ref=f16e911]:
+              - link "RSS" [ref=f16e912] [cursor=pointer]:
+                - /url: /subscribe-updates-cisa
+          - generic [ref=f16e913]:
+            - generic [ref=f16e914]: CISA Central
+            - link "1-844-Say-CISA" [ref=f16e915] [cursor=pointer]:
+              - /url: tel:1-844-Say-CISA
+            - link "contact@cisa.dhs.gov" [ref=f16e916] [cursor=pointer]:
+              - /url: mailto:contact@cisa.dhs.gov
+      - generic [ref=f16e919]:
+        - generic [ref=f16e920]:
+          - generic [ref=f16e921]:
+            - generic [ref=f16e922]: DHS Seal
+            - generic [ref=f16e923]:
+              - generic [ref=f16e924]: CISA.gov
+              - generic [ref=f16e925]: An official website of the U.S. Department of Homeland Security
+          - list [ref=f16e926]:
+            - listitem [ref=f16e927]:
+              - link "About CISA" [ref=f16e928] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f16e929]:
+              - link "Budget and Performance" [ref=f16e930] [cursor=pointer]:
+                - /url: https://www.dhs.gov/performance-financial-reports
+            - listitem [ref=f16e931]:
+              - link "DHS.gov" [ref=f16e932] [cursor=pointer]:
+                - /url: https://www.dhs.gov
+            - listitem [ref=f16e933]:
+              - link "FOIA Requests" [ref=f16e934] [cursor=pointer]:
+                - /url: https://www.dhs.gov/foia
+            - listitem [ref=f16e935]:
+              - link "No FEAR Act" [ref=f16e936] [cursor=pointer]:
+                - /url: /no-fear-act
+            - listitem [ref=f16e937]:
+              - link "Office of Inspector General" [ref=f16e938] [cursor=pointer]:
+                - /url: https://www.oig.dhs.gov/
+            - listitem [ref=f16e939]:
+              - link "Privacy Policy" [ref=f16e940] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=f16e941]:
+              - link "Subscribe" [ref=f16e942] [cursor=pointer]:
+                - /url: https://public.govdelivery.com/accounts/USDHSCISA/subscriber/new?topic_id=USDHSCISA_138
+            - listitem [ref=f16e943]:
+              - link "The White House" [ref=f16e944] [cursor=pointer]:
+                - /url: https://www.whitehouse.gov/
+            - listitem [ref=f16e945]:
+              - link "USA.gov" [ref=f16e946] [cursor=pointer]:
+                - /url: https://www.usa.gov/
+            - listitem [ref=f16e947]:
+              - link "Website Feedback" [ref=f16e948] [cursor=pointer]:
+                - /url: /forms/feedback
+        - iframe [ref=f16e950]:
+          - link [ref=f17e3] [cursor=pointer]:
+            - /url: /national-terrorism-advisory-system
+            - 'img "DHS National Terrorism Advisory System: There are no current advisories" [ref=f17e4]'

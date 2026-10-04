@@ -1,0 +1,28 @@
+# CWE-824: Access of Uninitialized Pointer
+
+**Abstraction:** Base  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/824.html  
+
+## Description
+The product accesses or uses a pointer that has not been initialized.
+
+## Extended Description
+If the pointer contains an uninitialized value, then the value might not point to a valid memory location. This could cause the product to read from or write to unexpected memory locations, leading to a denial of service. If the uninitialized pointer is used as a function call, then arbitrary functions could be invoked. If an attacker can influence the portion of uninitialized memory that is contained in the pointer, this weakness could be leveraged to execute code or perform other attacks. Depending on memory layout, associated memory management behaviors, and product operation, the attacker might be able to influence the contents of the uninitialized pointer, thus gaining more fine-grained control of the memory location to be accessed.
+
+## Related Weaknesses
+- ChildOf: CWE-119
+- ChildOf: CWE-119
+- ChildOf: CWE-119
+- ChildOf: CWE-119
+- CanPrecede: CWE-125
+- CanPrecede: CWE-787
+
+## Common Consequences
+- Scope: Confidentiality; Impact: Read Memory — If the uninitialized pointer is used in a read operation, an attacker might be able to read sensitive portions of memory.
+- Scope: Availability; Impact: DoS: Crash, Exit, or Restart — If the uninitialized pointer references a memory location that is not accessible to the product, or points to a location that is "malformed" (such as NULL) or larger than expected by a read or write operation, then a crash may occur.
+- Scope: Integrity, Confidentiality, Availability; Impact: Execute Unauthorized Code or Commands — If the uninitialized pointer is used in a function call, or points to unexpected data in a write operation, then code execution may be possible.
+
+## Detection Methods
+- [Automated Static Analysis] Automated static analysis, commonly referred to as Static Application Security Testing (SAST), can find some instances of this weakness by analyzing source code (or binary/compiled code) without having to execute it. Typically, this is done by building a model of data flow and control flow, then searching for potentially-vulnerable patterns that connect "sources" (origins of input) with "sinks" (destinations where the data interacts with external components, a lower layer such as the OS, etc.)
+- [Automated Dynamic Analysis] Use tools that are integrated during compilation to insert runtime error-checking mechanisms related to memory safety errors, such as AddressSanitizer (ASan) for C/C++ [REF-1518].

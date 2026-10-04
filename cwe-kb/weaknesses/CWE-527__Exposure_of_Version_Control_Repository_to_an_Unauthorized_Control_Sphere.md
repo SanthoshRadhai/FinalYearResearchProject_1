@@ -1,0 +1,20 @@
+# CWE-527: Exposure of Version-Control Repository to an Unauthorized Control Sphere
+
+**Abstraction:** Variant  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/527.html  
+
+## Description
+The product stores a CVS, git, or other repository in a directory, archive, or other resource that is stored, transferred, or otherwise made accessible to unauthorized actors.
+
+## Extended Description
+Version control repositories such as CVS or git store version-specific metadata and other details within subdirectories. If these subdirectories are stored on a web server or added to an archive, then these could be used by an attacker. This information may include usernames, filenames, path root, IP addresses, and detailed "diff" data about how files have been changed - which could reveal source code snippets that were never intended to be made public.
+
+## Related Weaknesses
+- ChildOf: CWE-552
+
+## Common Consequences
+- Scope: Confidentiality; Impact: Read Application Data, Read Files or Directories
+
+## Potential Mitigations
+- [Operation, Distribution, System Configuration] Recommendations include removing any CVS directories and repositories from the production server, disabling the use of remote CVS repositories, and ensuring that the latest CVS patches and version updates have been performed.

@@ -1,0 +1,14 @@
+# CWE-1042: Static Member Data Element outside of a Singleton Class Element
+
+**Abstraction:** Variant  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/1042.html  
+
+## Description
+The code contains a member element that is declared as static (but not final), in which its parent class element is not a singleton class - that is, a class element that can be used only once in the 'to' association of a Create action.
+
+## Related Weaknesses
+- ChildOf: CWE-1176
+
+## Common Consequences
+- Scope: Other; Impact: Reduce Performance — This issue can make the product perform more slowly. If the relevant code is reachable by an attacker, then this performance problem might introduce a vulnerability.

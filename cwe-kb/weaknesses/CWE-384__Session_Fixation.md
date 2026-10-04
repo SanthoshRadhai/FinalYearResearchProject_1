@@ -1,0 +1,30 @@
+# CWE-384: Session Fixation
+
+**Abstraction:** Compound  
+**Status:** Incomplete  
+**Reference:** https://cwe.mitre.org/data/definitions/384.html  
+
+## Description
+Authenticating a user, or otherwise establishing a new user session, without invalidating any existing session identifier gives an attacker the opportunity to steal authenticated sessions.
+
+## Extended Description
+Such a scenario is commonly observed when: A web application authenticates a user without first invalidating the existing session, thereby continuing to use the session already associated with the user. An attacker is able to force a known session identifier on a user so that, once the user authenticates, the attacker has access to the authenticated session. The application or container uses predictable session identifiers. In the generic exploit of session fixation vulnerabilities, an attacker creates a new session on a web application and records the associated session identifier. The attacker then causes the victim to associate, and possibly authenticate, against the server using that session identifier, giving the attacker access to the user's account through the active session.
+
+## Related Weaknesses
+- ChildOf: CWE-610
+- ChildOf: CWE-610
+- Requires: CWE-346
+- Requires: CWE-472
+- Requires: CWE-441
+
+## Common Consequences
+- Scope: Access Control; Impact: Gain Privileges or Assume Identity
+
+## Potential Mitigations
+- [Architecture and Design] Invalidate any existing session identifiers prior to authorizing a new user session.
+- [Architecture and Design] For platforms such as ASP that do not generate new values for sessionid cookies, utilize a secondary cookie. In this approach, set a secondary cookie on the user's browser to a random value and set a session variable to the same value. If the session variable and the cookie value ever don't match, invalidate the session, and force the user to log on again.
+- [Operation] Use an application firewall that can detect attacks against this weakness. It can be beneficial in cases in which the code cannot be fixed (because it is controlled by a third party), as an emergency prevention measure while more comprehensive software assurance measures are applied, or to provide defense in depth [REF-1481].
+
+## Demonstrative Examples (summary)
+- The following example shows a snippet of code from a J2EE web application where the application authenticates users with LoginContext.login() without first calling HttpSession.invalidate().
+- The following example shows a snippet of code from a J2EE web application where the application authenticates users with a direct post to the <code>j_security_check</code>, which typically does not invalidate the existing session before processing the login request.
